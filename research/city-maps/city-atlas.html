@@ -808,6 +808,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
         label:item.source_name || item.label || "资料来源",
         url:item.source_url || item.url || "",
         recordId:item.record_id || item.recordId || "",
+        recordUrl:item.record_url || item.recordUrl || "",
         sourceType:item.source_type || item.sourceType || "",
         checkedAt:item.checked_at_hkt || item.checkedAt || "",
         evidenceStatus:item.evidence_status || item.evidenceStatus || ""
@@ -825,12 +826,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
       const item = normalizeSourceItem(source);
       const href = safeHref(item.url);
       const link = href ? "<a href='"+href+"' target='_blank' rel='noreferrer'>"+esc(item.label)+" ↗</a>" : "<span>"+esc(item.label)+"（无来源链接）</span>";
+      const recordHref = safeHref(item.recordUrl);
+      const recordLink = recordHref ? "<a class='record-link' href='"+recordHref+"' target='_blank' rel='noreferrer'>查看研究记录 ↗</a>" : "";
       const meta = [];
       meta.push(item.recordId ? "record_id: "+item.recordId : "缺少 record_id");
       if (item.sourceType) meta.push("来源类型: "+item.sourceType);
       if (item.evidenceStatus) meta.push("核验状态: "+(EVIDENCE_STATUS_LABELS[item.evidenceStatus] || item.evidenceStatus));
       if (item.checkedAt) meta.push("核对时间: "+item.checkedAt);
-      return "<div class='source-entry'>"+link+"<div class='evidence-meta'>"+meta.map(esc).join(" · ")+"</div></div>";
+      return "<div class='source-entry'>"+link+recordLink+"<div class='evidence-meta'>"+meta.map(esc).join(" · ")+"</div></div>";
     }
     function geometryCoordinates(geometry) {
       if (!geometry || !ALLOWED_GEOMETRIES.has(geometry.type)) return [];
@@ -1068,7 +1071,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
         const marks = combinedFeatures(cityId).map((feature)=>{
           const p = featureProps(feature);
           const desc = [featureLocalName(feature),featureDescription(feature)].filter(Boolean).join("\n");
-          const sources = sourceItems(feature).map((source)=>[source.label,source.url,"record_id: "+(source.recordId || "missing"),"source_type: "+(source.sourceType || ""),"evidence_status: "+(source.evidenceStatus || ""),"checked_at_hkt: "+(source.checkedAt || "")].filter(Boolean).join(" | ")).join("\n");
+          const sources = sourceItems(feature).map((source)=>[source.label,source.url,"record_id: "+(source.recordId || "missing"),"record_url: "+(source.recordUrl || ""),"source_type: "+(source.sourceType || ""),"evidence_status: "+(source.evidenceStatus || ""),"checked_at_hkt: "+(source.checkedAt || "")].filter(Boolean).join(" | ")).join("\n");
           return "<Placemark><name>"+kmlEsc(featureName(feature))+"</name><description>"+kmlEsc([desc,sources].filter(Boolean).join("\n\n"))+"</description>"+kmlGeometry(feature.geometry)+"</Placemark>";
         }).join("");
         return "<Folder><name>"+kmlEsc(city.label)+" · "+kmlEsc(city.roman)+"</name>"+marks+"</Folder>";

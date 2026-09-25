@@ -24,7 +24,7 @@ city-atlas.html 交互地图 / 即时 KML 导出
 
 ## GeoJSON 要素格式
 
-长期要素保存在 `city-data.js` 中对应城市的 `features` 数组。采用 GeoJSON `Feature` / `FeatureCollection`，坐标遵循 `[经度, 纬度]`。点、线、多线、多边形和多多边形均可显示。每个 Feature 需要稳定的 `id`、`properties.cityId`、`properties.layer`、展示名称和至少一条带有效 `record_id` 的 `evidence` 引用。
+长期要素保存在 `city-data.js`（当前 `schemaVersion: 2`）中对应城市的 `features` 数组。采用 GeoJSON `Feature` / `FeatureCollection`，坐标遵循 `[经度, 纬度]`。点、线、多线、多边形和多多边形均可显示。每个 Feature 需要稳定的 `id`、`properties.cityId`、`properties.layer`、展示名称和至少一条带有效 `record_id` 的 `evidence` 引用。
 
 ```json
 {
@@ -43,6 +43,7 @@ city-atlas.html 交互地图 / 即时 KML 导出
     "evidence": [
       {
         "record_id": "replace-with-existing-research-record-id",
+        "record_url": "",
         "source_name": "来源名称",
         "source_type": "other",
         "source_url": "",
@@ -54,7 +55,7 @@ city-atlas.html 交互地图 / 即时 KML 导出
 }
 ```
 
-以上 ID、名称、链接和时间均为格式示例占位值，不能当作真实研究记录。`record_id` 必须先存在于相应研究记录中；不得为了填满地图字段而编造 ID 或时间。旧字段 `sources`、`sourceUrl` 仍为导入兼容格式，但页面会提示缺少研究记录 ID；新增长期要素使用 `evidence`。
+以上 ID、名称、链接和时间均为格式示例占位值，不能当作真实研究记录。`record_id` 必须先存在于相应研究记录中；不得为了填满地图字段而编造 ID 或时间。可选的 `record_url` 指向项目内对应研究记录，地图标记可直接打开；`source_url` 指向原始来源。旧字段 `sources`、`sourceUrl` 仍为导入兼容格式，但页面会提示缺少研究记录 ID；新增长期要素使用 `evidence`。
 
 支持的 `cityId`：`barcelona`、`granada`、`seville`，也接受城市中文名。支持的 `layer`：`zone`、`sight`、`transit`、`stay`、`market`、`souvenir`、`safety`、`route`。这些字段只决定显示位置和图层类别，不会自动生成推荐、危险等级或安全结论。`status`、`details` 可用于展示原始记录中的属性，不应替来源作解释。
 
@@ -68,6 +69,7 @@ content: {
     summary: "由来源记录支持的展示文字",
     evidence: [{
       record_id: "replace-with-existing-research-record-id",
+      record_url: "",
       source_name: "来源名称",
       source_type: "other",
       source_url: "",

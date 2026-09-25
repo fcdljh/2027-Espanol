@@ -38,7 +38,7 @@
 - [城市间交通](trip/ground-transport.md)
 - 城市指南：[Barcelona](destinations/barcelona.md)、[Granada](destinations/granada.md)、[Seville](destinations/seville.md)
 - [小红书研究总索引](research/xhs/README.md)：每城六类、每类十篇完整笔记；配额和逐篇记录以此处为准。笔记只提供灵感，不作为运营信息依据。
-- [三城中文交互地图](research/city-maps/city-atlas.html)是地图展示入口；[地图目录](research/city-maps/README.md)说明地图数据接口。当前三城的研究图层为空，需由研究记录通过 `record_id` 接入后才会显示。
+- [三城中文交互地图](research/city-maps/city-atlas.html)是地图展示入口；[地图目录](research/city-maps/README.md)说明地图数据接口和研究记录的引用方式。
 - [旅行工具与平台调研](research/tools-and-sources.md)
 - [研究记录与证据规范](research/README.md)：价格快照、来源核验和记录编号规则。
 

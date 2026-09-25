@@ -50,7 +50,6 @@ flowchart LR
 
 - [研究记录规范与数据表](research/README.md)
 - [可视化产物规范](visualizations/README.md)
-- [地图目录](research/city-maps/README.md)
 - [小红书逐条研究总索引](research/xhs/README.md)，含 Barcelona、Granada、Seville 分页
 - [中文交互地图](research/city-maps/city-atlas.html)与[地图接口规范](research/city-maps/README.md)
 - [旅行工具与平台调研](research/tools-and-sources.md)

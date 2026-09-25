@@ -5,7 +5,7 @@
  * 单次预览可在页面导入 GeoJSON，临时数据不会写回此文件。
  */
 window.CITY_ATLAS_DATA = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   cities: {
     barcelona: {
       label: "巴塞罗那",

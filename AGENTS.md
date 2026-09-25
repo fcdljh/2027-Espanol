@@ -18,6 +18,7 @@
 ## Parallel work isolation
 
 - When multiple agents or tasks work in this project, use a separate Git worktree and branch for each concurrent task. Do not have agents edit the same checkout concurrently.
+- Create an isolated checkout with `git worktree add ../Espanol-<task> -b task/<slug>`; merge the task branch after review, then remove its worktree with `git worktree remove ../Espanol-<task>`.
 - Assign one owner per canonical file. Research tasks own their category records; map integration owns `research/city-maps/city-data.js`; only the integration owner updates root `README.md`, `CONTEXT.md`, and cross-category indexes after merging.
 - Send file-level findings or patches to the integration owner instead of editing another task's worktree. Keep each change scoped and merge through Git so conflicts and rollback points are visible.
 
