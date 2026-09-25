@@ -5,6 +5,7 @@
 ## 当前状态
 
 - [打开中文交互地图](city-atlas.html)：三个城市的图层接口已准备好；目前 `city-data.js` 中三个城市的 `features` 均为空，所以地图底图加载后不会出现研究标记。
+- 地图底图使用 OpenFreeMap 公共服务，不需要 API key、账号或注册；地图瓦片需要联网。双击 `open-city-map.command` 会在本机 `localhost` 启动临时网页服务并打开地图。保持终端窗口打开；关闭终端或按 Ctrl+C 即停止服务。直接双击 HTML 以 `file://` 打开时，浏览器的本地文件跨域限制可能阻止 WebGL 地图资源加载。
 - [长期地图展示数据](city-data.js)：保存地图所需的名称、坐标、图层及证据引用；它是地图展示数据源，不替代 `research/` 中的原始研究记录。
 - [官方地图文件](official/)：按城市分类保存的交通图、旅游图和街区图。
 - [KML 导出](city-atlas.html)：页面根据当前已接入数据即时导出。`three-cities-orientation.kml` 只保留空城市文件夹，不含点位。

@@ -908,7 +908,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       notice.textContent = "正在加载在线街道底图…";
       notice.hidden = false;
       glMap.once("load",()=>{basemapReady=true;notice.hidden=true;});
-      glMap.on("error",()=>{if(!basemapReady){notice.textContent="街道底图暂不可用（需要网络）；已接入的中文数据图层仍可使用。";notice.hidden=false;}});
+      glMap.on("error",()=>{if(!basemapReady){notice.textContent="街道底图未加载。请检查联网状态；若通过 file:// 打开，请使用 open-city-map.command 从 localhost 启动。";notice.hidden=false;}});
       L.control.zoom({position:"bottomright"}).addTo(map);
       L.control.scale({imperial:false,position:"bottomright"}).addTo(map);
       featureLayerGroup = L.layerGroup().addTo(map);
