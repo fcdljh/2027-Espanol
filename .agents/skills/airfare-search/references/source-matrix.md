@@ -1,0 +1,27 @@
+# Flight-search source candidates
+
+Snapshot checked 2026-09-25. Stars and activity are GitHub signals, not evidence that fare coverage is complete or prices are correct. Recheck each repository and tool connection before relying on it.
+
+## General and international search
+
+| Candidate | Published source coverage | Current project signals | Practical limits |
+|---|---|---|---|
+| [trvl](https://github.com/MikkoParkkola/trvl) | Default merge: Google Flights, Kiwi, and Skiplagged; optional direct searches for AF/KLM, Ryanair, Wizz Air, Transavia, easyJet, Vueling, and Norwegian. | About 82 stars; pushed 2026-09-24. Codex support, typed partial-failure/provider status, active CI and documented tests. | Does not directly query Ctrip, Fliggy, Tongcheng, or Trip.com. Google Flights uses a reverse-engineered interface; upstream blocking can limit results. It is PolyForm Noncommercial. Its docs say it reads browser cookies automatically at launch, even before a search, so do not install or launch it until the user authorizes that credential access. |
+| [Flight Finder](https://github.com/affromero/flight-finder) | Google Flights and supported airline-direct pages are enabled; Skyscanner and Kayak are optional and described as experimental, off by default. | About 159 stars; pushed 2026-09-23; 1,148 commits; MIT. | Better for self-hosted price history and alerts than broad metasearch. Requires Docker and an LLM for extraction; the maintainers report rate limits and anti-bot issues for scraping sources. No China OTA adapters found. |
+| [LetsFG](https://github.com/LetsFG/LetsFG) | Repository claims coverage across hundreds of airlines and major search/booking sources including Google Flights, Skyscanner, and Kiwi. | About 2,060 stars; pushed 2026-09-20. Active codebase and MCP/CLI/SDK. | Server-side engine is not fully open; programmatic search onboarding asks to connect a payment method even though search is advertised as free. Repository guidance conflicts with some public pricing/markup claims. No direct China OTA support verified. Do not make it the default until the user accepts its account/payment setup and the live data is validated. |
+| [trip-search-mcp](https://github.com/nanwer/trip-search-mcp) | Flight search through Google Flights via `fli`; also flight-price watches. | About 5 stars; pushed 2026-06-01; README reports 350 fixture-driven tests. | One flight-search backend, so less useful for broad provider coverage; the tests do not validate live provider responses. |
+| [Kiwi.com MCP install guide](https://github.com/alpic-ai/kiwi-mcp-server-public) | Kiwi.com flight search, flexible dates (up to ±3 days), and direct Kiwi booking links. | About 12 stars; documentation identifies Kiwi as the service owner. | The repository is generated installation documentation, not the server implementation; one platform only. Useful as an official-source add-on, not a broad base. |
+
+## China-focused candidates
+
+| Candidate | Published source coverage | Current project signals | Practical limits |
+|---|---|---|---|
+| [FlyAI](https://github.com/alibaba-flyai/flyai-skill) | Fliggy (飞猪) travel search; flight command supports dates, date ranges, price ceiling, and sorting. | About 1,156 stars; pushed 2026-09-16; MIT. | High popularity and recent maintenance, but an open issue reports 403/451 risk-control responses and an unclear result cap; another request says flight/train endpoints require higher authorization. Treat flight access as unverified until a live query succeeds. |
+| [Tuniu CLI](https://github.com/tuniucorp/tuniu-cli) | Tuniu (途牛) Open Platform flight search/detail workflow. | About 9 stars; pushed 2026-04-10; MIT; published under the Tuniu organization. | Requires a Tuniu API key. It is a single-platform integration; do not call its order tools in a read-only airfare search. |
+| [fly-flight](https://github.com/baizhexue/fly-flight) | Tongcheng (同程) public flight pages; its other mode queries public 12306 train data. | About 2 stars; pushed 2026-03-19; no license found. | Public-page parsing is brittle and not an official flight API; low adoption and no recent activity found. Use only as a secondary comparison, then confirm on Tongcheng's own results page. |
+| [China Travel MCP](https://github.com/mako202605/china-travel-mcp) | README claims Trip.com / TripGenie flight inventory and Trip.com booking links. | 0 stars; 12 commits; pushed 2026-07-09; MIT. | Very small project and the Trip.com affiliate/API claims have not been independently verified. Validate the MCP response against Trip.com before using its price. |
+| Ctrip (携程) flight search | No mature public flight-search MCP/Skill found in this GitHub review. | The Ctrip skill located was hotel-only and had a single commit. | Use Ctrip's public flight results in a browser if available; do not present the hotel skill as flight coverage. |
+
+## Preferred starting point
+
+Use `trvl` as the international multi-source design reference, not as proof of China-platform coverage. Build a separate read-only source adapter layer for Trip.com, Fliggy, Ctrip, Tongcheng, and Tuniu. Prefer a provider's official API/MCP where access is available; otherwise use ordinary browser navigation to public search pages and leave the source unverified if it blocks or requires unavailable login. Do not bypass access controls. Normalize the outputs in the airfare-search skill and show which sources actually answered.

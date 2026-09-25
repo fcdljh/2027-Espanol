@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>西班牙三城地图数据模板</name><description>空模板。请从 city-atlas.html 导出当前接入的地图数据。</description><Folder><name>巴塞罗那 · Barcelona</name></Folder><Folder><name>格拉纳达 · Granada</name></Folder><Folder><name>塞维利亚 · Seville</name></Folder></Document></kml>

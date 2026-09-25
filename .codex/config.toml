@@ -1,0 +1,5 @@
+[mcp_servers.tourmind]
+url = "https://api.tourmind.com/mcp/toc"
+
+[mcp_servers.ticketlens_experiences]
+url = "https://mcp.ticketlens.com/"

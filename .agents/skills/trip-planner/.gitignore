@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated while planning a real trip — the plan JSON is yours, not the repo's.
+# Anything under examples/ is deliberately tracked (see the negations below).
+/geocache.json
+/plan.geo.json
+/trip.html
+/trip.kml
+**/geocache.json
+**/suncache.json
+!examples/**
+
+# macOS
+.DS_Store
+
+# Personal trip data — never committed
+trips/
+
+# themes/ — the theme system ships (code + webp/woff2/mp4 assets); keep out
+# the OpenRouter credentials gen.py reads from there and the PNG originals.
+themes/.or_key
+themes/.auth_header
+themes/.payload.json
+themes/**/*.png
+
+# Built demo site (scripts/build_site.py) — GitHub Actions builds it on push
+_site/
+
+# US portal reference chain (19 mp4, ~35 MB) is a release asset, not tracked:
+# https://github.com/skywain/trip-planner-skill/releases/tag/demo-assets-v1
+themes/assets/portal/*.mp4
