@@ -19,6 +19,13 @@ When implementing from a selected generated mock, treat that image as the source
 - City photo-reference cards use the checked-in local assets and their matching Xiaohongshu `explore` share URLs. The action copies the share URL, then uses the official `xhsdiscover://item/<note_id>` deep link to open the mobile app; only an unavailable app should fall back to the web URL. The card must state that social posts are inspiration, not operating or access evidence.
 - Keep traveler-facing Chinese natural and concrete. Prefer “转场确认”“预约事项”“备用安排”等 plain-language labels over internal planning jargon such as “决策门” or “预约锚点”.
 
+## Page-change commit rule
+
+- Any change that can alter `site/`, `public/` data copied into `site/`, published assets, or page-linked UI documentation is a page-impacting change.
+- Before handoff, run the relevant checks: `node --check site/app.js`, `node scripts/check-mobile-runtime.mjs`, `node --test tests/sites-worker.test.mjs`, and verify that synchronized `public/` and `site/` data match. For visual changes, inspect the local preview as well.
+- After the checks pass, stage only the files changed for the task and create a clear local Git commit. Do not leave a page-impacting task uncommitted, and do not include unrelated user changes.
+- Do not push, publish, or deploy automatically; those remain separate actions that require an explicit user request.
+
 ## Editing Boundary
 
 - Build app-specific UI in `src/Prototype.tsx` and `src/prototype.css`.

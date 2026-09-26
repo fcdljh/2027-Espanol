@@ -12,6 +12,8 @@
 - At the start of project work, read this file, CONTEXT.md, README.md, and research/README.md. Then read only the category pages needed for the task.
 - Check the canonical page and data file before adding information. Update the existing record instead of creating a duplicate.
 - Before finishing, update README.md when a material finding or decision changes. Summarize changed paths, evidence limits, and unresolved follow-up in the handoff.
+- If a change affects a published page, its static data, page assets, or a page-linked document, do not finish with an uncommitted worktree. Run the relevant page/runtime checks, stage only the files belonging to the task, and create a clear local Git commit before handoff. Preserve unrelated user changes instead of absorbing them into the commit.
+- A local commit is required for page-impacting updates; pushing to a remote, publishing, or deploying remains a separate action and requires an explicit user request.
 - Keep user-facing reports, research summaries, and trip content in Chinese. Rule and instruction files, including AGENTS.md, may be in English. Product names, source titles, URLs, and machine-readable field names may retain their original form.
 - Keep CONTEXT.md limited to stable traveler facts, labeled assumptions, open decisions, and links. Do not put live prices or raw research results there.
 
