@@ -389,44 +389,37 @@ function walkingStatus(day) {
   return { km: `${km} km`, label: "偏多·提前折返", tone: "hard" };
 }
 
-function budgetGuardMarkup() {
+function changeGuardMarkup(day) {
+  const rain = String(day?.rain_alt || "").trim();
+  const late = String(day?.late_cut || "").trim();
+  const plans = [
+    rain ? `<p><b>下雨</b>${escapeHtml(rain)}</p>` : "",
+    late ? `<p><b>晚到/延误</b>${escapeHtml(late)}</p>` : ""
+  ].filter(Boolean);
+  if (!plans.length) return "";
   return `
-    <details class="guard-card">
-      <summary><span class="guard-icon budget-icon">￥</span><span><strong>预算护栏</strong><small>先看上限，再决定</small></span></summary>
-      <div class="guard-detail">
-        <p>住宿目标约 CNY 1200/晚，上限 CNY 1500/晚；当前候选仍未预订。</p>
-        <p>机票每人目标不超过 RMB 4500 / HKD 5000；没写清税费、行李和完整行程，就先不付款。</p>
-        <p class="guard-muted">金额是研究基准，不是当天可购买价格。</p>
-      </div>
+    <details class="guard-card change-card">
+      <summary><span class="guard-icon delay-icon">↗</span><span><strong>遇到变化怎么办</strong><small>只显示有明确替代的情况</small></span></summary>
+      <div class="guard-detail change-detail">${plans.join("")}</div>
     </details>
   `;
 }
 
-function safetyGuardMarkup(plan) {
-  const emergency = plan?.brief?.emergency || "西班牙紧急电话 112；出发前补入领馆、医院和保险援助电话。";
-  const safety = plan?.brief?.safety || "人多时把包放身前，夜间走照明主路，使用正规交通。";
+function safetyFooterMarkup() {
   return `
-    <details class="guard-card">
-      <summary><span class="guard-icon safety-icon">!</span><span><strong>安全与应急</strong><small>三人一起走，先保安全</small></span></summary>
-      <div class="guard-detail">
-        <p>${escapeHtml(safety)}</p>
-        <p>${escapeHtml(emergency)}</p>
+    <section class="safety-footer-card" aria-label="安全与应急">
+      <div class="safety-footer-heading">
+        <div><span class="section-kicker">SAFETY</span><h3>安全与应急</h3></div>
         <a class="emergency-link" href="tel:112">拨打 112</a>
       </div>
-    </details>
+      <p>人多把包放身前，夜间走亮路，使用正规交通；遇到紧急情况拨打 112。</p>
+    </section>
   `;
 }
 
-function delayGuardMarkup(day) {
-  return `
-    <details class="guard-card">
-      <summary><span class="guard-icon delay-icon">↗</span><span><strong>遇到变化怎么办</strong><small>按备用安排走，不追赶</small></span></summary>
-      <div class="guard-detail">
-        <p>${escapeHtml(day.late_cut || "遇到延误时，按已经准备好的转场、入住和用餐安排执行。")}</p>
-        <p>${escapeHtml(day.rain_alt || "下雨时，按已经准备好的室内或有遮蔽路线执行；不临时增加跨区行程。")}</p>
-      </div>
-    </details>
-  `;
+function ticketPriceMarkup(item) {
+  const price = String(item?.ticket_price || "").trim();
+  return price ? `<p class="timeline-price"><strong>门票</strong>${escapeHtml(price)}</p>` : "";
 }
 
 function walkingGuardMarkup(day) {
@@ -435,25 +428,23 @@ function walkingGuardMarkup(day) {
     <details class="guard-card">
       <summary><span class="guard-icon walk-icon">↝</span><span><strong>今天走多少</strong><small>${escapeHtml(walking.km)} · ${escapeHtml(walking.label)}</small></span></summary>
       <div class="guard-detail">
-        <p>${escapeHtml(day.walking_km?.how || "按三位旅伴的体力分段；任何时候都可以坐车或提前回住处。")}</p>
-        <p>路线已经提前排好，按三位旅伴的体力完成主线即可，不需要为了赶进度加速。</p>
+        <p>${escapeHtml(day.walking_km?.how || "按三位旅伴的体力分段，累了就坐车或提前回住处。")}</p>
       </div>
     </details>
   `;
 }
 
 function guardPanelMarkup(day) {
+  const changeMarkup = changeGuardMarkup(day);
   return `
     <section class="guard-panel">
       <div class="card-heading-row">
-        <div><span class="section-kicker">EASY MODE</span><h3>三人同行，只要记住这四件事</h3></div>
-        <span class="muted-label">点开看细节</span>
+        <div><span class="section-kicker">EASY MODE</span><h3>三人同行，今天只看重点</h3></div>
+        <span class="muted-label">只放有用信息</span>
       </div>
-      <div class="guard-grid">
+      <div class="guard-grid ${changeMarkup ? "" : "is-single"}">
         ${walkingGuardMarkup(day)}
-        ${budgetGuardMarkup()}
-        ${delayGuardMarkup(day)}
-        ${safetyGuardMarkup(state.plan)}
+        ${changeMarkup}
       </div>
     </section>
   `;
@@ -765,24 +756,13 @@ function renderToday(day) {
       </div>
       <h2>${escapeHtml(day.label)}</h2>
       <p class="day-city">${escapeHtml(cityDisplay(day))}</p>
-      <p class="day-ribbon">${escapeHtml(day.ribbon || "按已经确定的顺序执行；遇到延误就转入当天备用安排。")}</p>
+      <p class="day-ribbon">${escapeHtml(day.ribbon || "按已经确定的顺序执行。")}</p>
       <div class="day-metrics">
         <span class="metric-pill metric-${walking.tone}"><b>走动</b><strong>${escapeHtml(walking.km)}</strong><small>${escapeHtml(walking.label)}</small></span>
         <span class="metric-pill"><b>节奏</b><strong>${isTravelDay(day) ? "缓冲日" : "分段走"}</strong><small>${isTravelDay(day) ? "先交通入住" : "累了就折返"}</small></span>
-        <span class="metric-pill"><b>住宿</b><strong>≤ CNY 1500</strong><small>每晚封顶</small></span>
-        <a class="metric-pill metric-link" href="tel:112"><b>应急</b><strong>112</strong><small>点击拨号</small></a>
       </div>
       <div class="progress-track" aria-label="今日完成度"><span style="width:${progress}%"></span></div>
       ${heroMarkup}
-    </section>
-
-    <section class="decision-card">
-      <div class="decision-icon" aria-hidden="true">!</div>
-      <div>
-        <span class="section-kicker">TODAY'S RULE</span>
-        <h3>${isTravelDay(day) ? "转场日：先保证交通和入住" : "先完成预约事项，再安排拍照"}</h3>
-        <p>${escapeHtml(day.late_cut || "体力下降、天气变差或排队过长时，按当天备用安排执行。")}</p>
-      </div>
     </section>
 
     <section class="simple-guide-card">
@@ -830,6 +810,7 @@ function renderToday(day) {
                 <div class="timeline-meta"><span class="kind-label">${escapeHtml(kindLabel(item.kind))}</span>${tagMarkup(item.tag)}</div>
                 <button class="timeline-title" data-open-step="${index}" type="button">${escapeHtml(item.what)}</button>
                 ${item.note ? `<p>${escapeHtml(item.note)}</p>` : ""}
+                ${ticketPriceMarkup(item)}
                 <div class="row-actions">
                   <button class="check-button ${done ? "is-done" : ""}" data-toggle-step="${index}" type="button" aria-label="${done ? "取消完成" : "标记完成"}">${done ? "完成" : "完成这步"}</button>
                   ${navigationRowMarkup(day, item, index)}
@@ -853,12 +834,9 @@ function renderToday(day) {
       </button>
     </section>
 
-    <section class="rain-card">
-      <span class="section-kicker">RAIN / LATE PLAN</span>
-      <h3>下雨或晚到时，按备用安排走</h3>
-      <p>${escapeHtml(day.rain_alt || "优先执行已经准备好的室内、平地和有遮蔽路线；不临时增加跨区行程。")}</p>
-    </section>
-  `;
+
+    ${safetyFooterMarkup()}
+ `;
 
   bindTodayEvents();
   bindXhsEvents();
@@ -895,8 +873,6 @@ function renderStep(day) {
     ${lodgingMarkup(day)}
     ${photoReferencesMarkup(day)}
 
-    ${guardPanelMarkup(day)}
-
     <section class="navigation-card">
       <div class="card-heading-row"><div><span class="section-kicker">NEXT MOVE</span><h3>只看前后两步</h3></div><span class="muted-label">${completedCount(day)}/${day.timeline.length} 完成</span></div>
       <div class="step-nav-buttons">
@@ -905,12 +881,16 @@ function renderStep(day) {
       </div>
     </section>
 
-    <section class="step-safety-card">
-      <span class="section-kicker">IF PLANS CHANGE</span>
-      <h3>如果现场有变化怎么办？</h3>
-      <p>${escapeHtml(day.late_cut || "保留既定主线，按当天备用安排执行；不要在陌生城市为了一张照片跨区折返。")}</p>
-      ${stepSafetyNavigationMarkup(day, item, index)}
-    </section>
+    ${day.late_cut ? `
+      <section class="step-safety-card">
+        <span class="section-kicker">IF PLANS CHANGE</span>
+        <h3>如果现场有变化怎么办？</h3>
+        <p>${escapeHtml(day.late_cut)}</p>
+        ${stepSafetyNavigationMarkup(day, item, index)}
+      </section>
+    ` : ""}
+
+    ${safetyFooterMarkup()}
   `;
 
   document.querySelectorAll("[data-toggle-step]").forEach((button) => {
