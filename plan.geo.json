@@ -1,0 +1,1239 @@
+{
+ "trip": "西班牙三城慢游｜建筑、历史与城市漫步",
+ "lang": "zh",
+ "tz": "Europe/Madrid",
+ "prefs": {
+  "theme": "illustrated",
+  "pictures": "stock",
+  "travel_style": "public",
+  "lodging": "三人一间；至少两张独立床；免费取消；Barcelona 优先高评分 Airbnb；Seville/Granada 优先四/五星含早餐；目标 CNY 1200/晚、上限 CNY 1500/晚",
+  "scenery": [
+   "city",
+   "mountain"
+  ],
+  "pace": 2,
+  "budget": "机票每人目标不超过 RMB 4500 或 HKD 5000；住宿硬约束优先",
+  "notes": "基准方案按 2027-01-26 抵达西班牙、2027-02-03 离境演示；去程可为 1/25–1/27 任一天。Madrid 仅机场/转机。香港 1 人、北京 2 人。航班、具体车次、景点库存和最终住宿尚未选定。"
+ },
+ "meta": {
+  "dates": "2027-01-25 → 2027-02-03",
+  "party": "3 adults: HKG 1, PEK 2",
+  "route": "入境/定位节点 → Barcelona → Granada → Seville → 返程机场",
+  "budget_total": "当前质量优先组合：Barcelona Airbnb 1659522 + Granada Sercotel Palacio de Los Gamboa + Seville Hotel Giralda Center，代表性页面价约 CNY 9092/8晚；Barcelona旅游税与Giralda床型仍需复核；三城住宿均未预订。",
+  "fx": "不把 CNY、HKD、EUR 强行换算；各记录保留原币并带查询日期",
+  "generated": "2026-09-26",
+  "self_check": "self-checked: 4 issues found and fixed: safety advisory prefix, clinic row, stock-art file, and art metadata"
+ },
+ "decisions": [
+  "已确认城市顺序为入境/定位节点 → Barcelona → Granada → Seville；代表性日历按当地 2027-01-26 抵达、2027-02-03 离境排演，实际航班到达日确定后整体平移。",
+  "若国际返程从 Madrid，优先在 2027-02-02 完成 Seville→Madrid 机场节点；不安排返程当天从其他城市临时跨城接国际航班。",
+  "Alhambra 是第一预约锚点；Sagrada Família 按当前约提前两个月放票的规则监测，Alcázar/Cathedral按官方页面复核，其他景点作为可替换模块。",
+  "住宿质量优先组合为 Barcelona Airbnb 1659522（selected candidate）+ Granada Gamboa + Seville Giralda Center（条件候选）；必须保留免费取消、至少两张独立床与 CNY 1500/晚硬上限，所有候选仍未预订。",
+  "当前机票没有合格候选；PEK–MAD 最近公开快照为 HKD 5522/人、去回均 23 kg，仍超 HKD 5000。",
+  "self-checked: 4 issues found and fixed: safety advisory prefix, clinic row, stock-art file, and art metadata"
+ ],
+ "checklist": [
+  {
+   "item": "确认香港旅客的 HKID/居留签证、香港领区资格和学校准假信",
+   "deadline": "2026-10-15",
+   "note": "签证资料不保存个人号码或扫描件；资格不明前不把香港递交点当作确定方案"
+  },
+  {
+   "item": "核对三本护照有效期、空白页、保险日期和返程日期",
+   "deadline": "2026-10-15",
+   "note": "按西班牙领馆/BLS最新清单复核"
+  },
+  {
+   "item": "咨询旅行门诊并按个人情况核对疫苗、常备药与保险援助",
+   "deadline": "T-60",
+   "note": "本计划不替代医疗建议；保留医生/保险方给出的个别化意见，不在项目文件写入健康隐私"
+  },
+  {
+   "item": "重新比较 1/25、1/26、1/27 的 HKG 1人与 PEK 2人完整往返票",
+   "deadline": "T-90",
+   "note": "逐条确认税费、实际承运人、去回各至少20kg行李、返程机场和原始链接"
+  },
+  {
+   "item": "检查 Alhambra 指定日期票务和 Nasrid Palaces 时段",
+   "deadline": "T-60",
+   "link": "https://tickets.alhambra-patronato.es/en/producto/alhambra-general/",
+   "link_text": "Alhambra 官方票务",
+   "note": "当前票规不应假定可改期或退款"
+  },
+  {
+   "item": "检查 Sagrada Família 是否已开放目标日期并核对实名及时段规则",
+   "deadline": "T-60",
+   "link": "https://sagradafamilia.org/en/faqs",
+   "link_text": "Sagrada Família 官方 FAQ",
+   "note": "当前页面通常约提前两个月开放，2027日期仍需重查"
+  },
+  {
+   "item": "按实际入住日期重新查询三城住宿",
+   "deadline": "T-45",
+   "link": "https://us.trip.com/hotels/",
+   "link_text": "Trip.com/携程住宿检索入口",
+   "note": "酒店只在 Trip.com/携程查询；3位成人、1间房；逐项确认两张独立床、早餐、免费取消截止和含税总价；Barcelona 民宿另在 Airbnb 官方房源页复核"
+  },
+  {
+   "item": "T-30 复核景点、铁路、巴士、机场接驳和地方活动",
+   "deadline": "T-30",
+   "note": "特别检查 Alcázar、Cathedral、Sagrada、Park Güell、La Pedrera 和 Renfe/ALSA"
+  },
+  {
+   "item": "T-14 复核签证/安全/营业时间/票价/天气和临时闭馆",
+   "deadline": "T-14",
+   "note": "把仍为 candidate 的项目逐一降级或选定；不要以小红书替代官方页面"
+  },
+  {
+   "item": "T-7 查看 AEMET 天气、雨天切换、Albaicín/Sacromonte 路面和交通改道",
+   "deadline": "T-7",
+   "note": "如降雨，保留中心室内建筑，削减坡地与屋顶项目"
+  },
+  {
+   "item": "T-3 复核罢工/施工/航站楼/车次，并把票券和住宿条款离线保存",
+   "deadline": "T-3",
+   "note": "所有动态条款以当前供应商页面为准"
+  },
+  {
+   "item": "T-1 检查手机漫游/eSIM、银行卡、证件副本和现金",
+   "deadline": "T-1",
+   "note": "保留能接收银行短信的本国号码；不要把护照或支付信息写入项目文件"
+  }
+ ],
+ "legs": [
+  {
+   "type": "international flight monitoring",
+   "date": "2027-01-25",
+   "carrier": "尚未选定",
+   "from": "PEK/HKG",
+   "to": "MAD/BCN",
+   "dep": "以最终出票页为准",
+   "arr": "以最终出票页为准",
+   "price": "暂无同时满足预算与20kg行李的合格报价",
+   "bags": "每个实际航段至少20kg为硬条件",
+   "link": "https://hk.trip.com/flights/showfarefirst?dcity=bjs&acity=mad&ddate=2027-01-26&rdate=2027-02-03&triptype=rt&class=y&quantity=2&locale=zh-HK&curr=HKD",
+   "note": "公开基准：PEK 2人 1/26 MAD往返 HKD11044总计，23kg/23kg，尚超预算；HKG 1人需另行比较。",
+   "backup": "比较 1/26 与 1/27；若返程 BCN 的开口票不满足预算，保留 MAD 机场节点方案"
+  },
+  {
+   "type": "airport / positioning transfer",
+   "date": "2027-01-26",
+   "carrier": "Renfe/航班（按最终入境机场与航班时间确定）",
+   "from": "MAD/BCN 入境节点",
+   "to": "Barcelona",
+   "dep": "完成入境、取行李、确认独立票衔接后",
+   "arr": "以最终车票/航班为准",
+   "price": "2027具体票价未锁定",
+   "bags": "按最终运营方当期行李规则",
+   "note": "Barcelona 是第一座游览城市；Madrid 仅作机场/转机节点。晚到不硬接当天定位交通，优先保护入住和睡眠。",
+   "backup": "晚到则保留机场/车站附近可取消方案，次日删减一个弹性户外模块"
+  },
+  {
+   "type": "intercity rail or domestic flight",
+   "date": "2027-01-29",
+   "carrier": "Renfe优先；时长/价格不合适再比较含20kg行李的国内航班",
+   "from": "Barcelona",
+   "to": "Granada",
+   "dep": "按实际日期查询",
+   "arr": "按实际日期查询",
+   "price": "2027具体票价未锁定",
+   "bags": "按最终运营方当期行李规则",
+   "link": "https://www.renfe.com/es/es/inspirate/rutas/barcelona-granada",
+   "note": "全程较长的交通日；抵达后只安排入住、补给与 Cathedral/Royal Chapel 平地短线，不叠加长坡。",
+   "backup": "比较同日铁路、GRX/AGP航班的总门到门时间、行李与退改"
+  },
+  {
+   "type": "intercity rail or coach",
+   "date": "2027-01-31",
+   "carrier": "Renfe优先，ALSA备选",
+   "from": "Granada",
+   "to": "Seville",
+   "dep": "按实际日期查询",
+   "arr": "按实际日期查询",
+   "price": "2027具体票价未锁定",
+   "bags": "按最终运营方当期行李规则",
+   "link": "https://www.renfe.com/es/es/inspirate/rutas/granada-sevilla",
+   "note": "三人带行李时把车站到酒店接驳单列；抵达后先入住和休息，再选择一个傍晚轴线。",
+   "backup": "比较同日 ALSA 价格、到站位置与退改"
+  },
+  {
+   "type": "return airport transfer",
+   "date": "2027-02-02",
+   "carrier": "Renfe/机场接驳（按返程机场确定）",
+   "from": "Seville",
+   "to": "Madrid airport node or Seville airport",
+   "dep": "按返程机场和国际航班时间确定",
+   "arr": "国际航班前至少3小时，并加真实市区转场缓冲",
+   "price": "未锁定",
+   "bags": "按最终出票结构",
+   "note": "若返程从 Madrid，2/2 完成 Seville→Madrid 机场节点；若从 Seville，则留在 Seville 整理行李并按机场接驳。",
+   "backup": "不安排 2/3 当天从 Barcelona/Granada 临时跨城接国际航班"
+  }
+ ],
+ "days": [
+  {
+   "date": "2027-01-26",
+   "city": "入境/定位节点→Barcelona",
+   "label": "抵达与入住缓冲",
+   "travel_day": true,
+   "ribbon": "入境取行李 → 按最终航班/车票定位至 Barcelona → 入住 → 住宿附近补给",
+   "rain_alt": "大雨或晚到时取消城市散步；只执行入住、买水/早餐和附近简餐。",
+   "late_cut": "国际航班或入境延误时，不硬接同日城际车；把定位交通顺延，并删除当天所有景点。",
+   "walking_km": {
+    "total": 2.5,
+    "how": "机场/车站与住宿附近短距离；不安排老城长线"
+   },
+   "timeline": [
+    {
+     "t": "落地–H+1:30",
+     "what": "入境、取行李、清点三人行李并确认航站楼与独立交通票的衔接条件",
+     "kind": "arrival",
+     "note": "一人看航站楼，一人看车票，一人看住宿地址；不在到达层临时分散",
+     "tag": "pinned"
+    },
+    {
+     "t": "H+1:30–H+2:00",
+     "what": "独立车票决策门：延误、重新托运或换机场时不强接同日城际交通",
+     "kind": "check",
+     "note": "晚到就执行可取消住宿/次日定位，不把 Madrid 当观光城市",
+     "tag": "pinned"
+    },
+    {
+     "t": "H+2:00–H+3:00",
+     "what": "按最终机场选择 Aerobús、R2 Nord、L9 Sud 或已购定位交通",
+     "kind": "hop",
+     "verify": "source_checked",
+     "note": "BCN机场地铁按专用票制；T-casual不用于机场地铁站",
+     "tag": "pinned"
+    },
+    {
+     "t": "H+3:00–H+5:00",
+     "what": "Barcelona 入住或寄存行李；确认门禁、Wi‑Fi、暖气和退房条款",
+     "kind": "lodging",
+     "tag": "pinned"
+    },
+    {
+     "t": "H+5:00–H+6:00",
+     "what": "住宿附近买水、早餐和简单晚餐；不为第一顿饭跨城",
+     "kind": "meal",
+     "tag": "skippable"
+    },
+    {
+     "t": "H+6:00–H+7:00",
+     "what": "打开 Sagrada Família 票券，确认入口、时段和三人姓名/票种",
+     "kind": "check",
+     "verify": "source_checked",
+     "tag": "pinned"
+    },
+    {
+     "t": "21:30后",
+     "what": "睡觉；删除所有额外夜游，给时差和第二天预约留缓冲",
+     "kind": "rest",
+     "tag": "pinned"
+    }
+   ],
+   "stops": [
+    {
+     "name": "入境/转机机场节点",
+     "query": "Adolfo Suárez Madrid–Barajas Airport or Barcelona–El Prat Airport, Spain",
+     "mode": "transit",
+     "lat": 40.4952269,
+     "lon": -3.5733733
+    }
+   ],
+   "sun": "天亮 07:59 · ☀ 08:27 / 🌇 18:25 · CET · sunrise-sunset.org",
+   "city_id": "barcelona"
+  },
+  {
+   "date": "2027-01-27",
+   "city": "Barcelona",
+   "label": "Sagrada Família—Sant Pau现代主义轴线",
+   "ribbon": "Sagrada Família预约 → Avinguda Gaudí → Sant Pau → 回住宿休息",
+   "rain_alt": "室内景点照常执行；减少外围拍摄，按官方最后入场保守排程。",
+   "late_cut": "Sagrada迟到不追赶；删Sant Pau外围散步，把午餐和休息保留下来。",
+   "walking_km": {
+    "total": 5,
+    "how": "两处预约/步行短连；以TMB当天运行核验"
+   },
+   "timeline": [
+    {
+     "t": "07:30–08:15",
+     "what": "早餐；住宿附近或365 Roger de Llúria/ONIS COFFEE候选先查开门",
+     "kind": "meal",
+     "tag": "skippable"
+    },
+    {
+     "t": "08:15–08:45",
+     "what": "前往 Sagrada Família；提前到入口附近，不在闸机口找票",
+     "kind": "hop",
+     "map": false,
+     "note": "步行或TMB L2/L5方向；具体站口按当天导航",
+     "tag": "pinned"
+    },
+    {
+     "t": "08:45–09:15",
+     "what": "Plaça de Gaudí水面、诞生立面和塔群外围拍摄",
+     "kind": "photo",
+     "note": "现场开放区域优先；不堵入口，不把机位当作保证空场",
+     "tag": "skippable"
+    },
+    {
+     "t": "09:15–11:15",
+     "what": "Sagrada Família实名及时段入场；先中央空间和光窗，再决定是否登塔",
+     "kind": "anchor",
+     "note": "当前冬季通常周一至周六09:00–18:00；2027日期和价格待复核",
+     "tag": "pinned"
+    },
+    {
+     "t": "11:15–11:40",
+     "what": "沿 Avinguda Gaudí 步行至 Sant Pau，拍现代主义轴线",
+     "kind": "hop",
+     "tag": "pinned",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=41.403505%2C2.174428&destination=41.413976%2C2.175547&travelmode=walking"
+    },
+    {
+     "t": "11:40–12:30",
+     "what": "Sant Pau主立面、拱廊、瓷砖细节；没买票就只看外部",
+     "kind": "anchor",
+     "tag": "skippable"
+    },
+    {
+     "t": "12:30–13:45",
+     "what": "Avinguda Gaudí附近午餐；先点少量共享，不为网红店穿城",
+     "kind": "meal",
+     "tag": "pinned"
+    },
+    {
+     "t": "13:45–15:30",
+     "what": "回住宿休息、充电、补水；不追加 Park Güell 或 Bunkers",
+     "kind": "rest",
+     "tag": "pinned"
+    },
+    {
+     "t": "15:30–16:30",
+     "what": "晴天可回 Sagrada 外围补拍；阴雨直接咖啡/休息",
+     "kind": "photo",
+     "tag": "skippable"
+    },
+    {
+     "t": "16:30–18:00",
+     "what": "Eixample社区短走或室内替代；冬季天黑前回熟悉路线",
+     "kind": "free",
+     "tag": "skippable"
+    },
+    {
+     "t": "18:00–19:30",
+     "what": "Anxoita Bodega或El Racó d’Urgell候选晚餐；先查营业、地址、排队和菜单",
+     "kind": "meal",
+     "note": "小红书候选，不把当前营业和口味当已确认",
+     "tag": "pinned"
+    },
+    {
+     "t": "19:30–21:00",
+     "what": "回住宿、检查D3主线与Casa Batlló/La Pedrera预约",
+     "kind": "check",
+     "tag": "pinned"
+    }
+   ],
+   "stops": [
+    {
+     "name": "Sagrada Família",
+     "query": "Basílica de la Sagrada Família, Barcelona, Spain",
+     "lat": 41.4035046,
+     "lon": 2.1744283
+    },
+    {
+     "name": "Sant Pau",
+     "query": "Hospital de Sant Pau, Barcelona, Spain",
+     "lat": 41.4139764,
+     "lon": 2.1755472
+    }
+   ],
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=41.403505%2C2.174428&destination=41.413976%2C2.175547&travelmode=walking",
+   "sun": "天亮 07:37 · ☀ 08:05 / 🌇 18:02 · CET · sunrise-sunset.org",
+   "city_id": "barcelona"
+  },
+  {
+   "date": "2027-01-28",
+   "city": "Barcelona",
+   "label": "Gothic/Born或Passeig de Gràcia",
+   "ribbon": "天气好：Casa Batlló/La Pedrera二选一 → Passeig de Gràcia；体力/天气合适再走Gothic/Born",
+   "rain_alt": "优先保留 Casa Batlló、La Pedrera、Sant Pau 或 Palau 等室内模块；取消远景和海边线。",
+   "late_cut": "只保留一个入内建筑；Gothic/Born与Passeig de Gràcia二选一，不追加远郊点。",
+   "walking_km": {
+    "total": 5.5,
+    "how": "Passeig de Gràcia短线；不强行塞Park Güell"
+   },
+   "timeline": [
+    {
+     "t": "08:00–08:45",
+     "what": "早餐；365 Roger de Llúria或住宿附近候选先查开门",
+     "kind": "meal",
+     "tag": "skippable"
+    },
+    {
+     "t": "08:45–09:15",
+     "what": "去 Passeig de Gràcia；看当日票面和阳光，决定现代主义线或Gothic/Born线",
+     "kind": "hop",
+     "map": false,
+     "tag": "pinned"
+    },
+    {
+     "t": "09:15–10:45",
+     "what": "Casa Batlló入内或外观；优先拍对街立面、阳台和街角透视",
+     "kind": "anchor",
+     "note": "具体时刻按最终票种保守排程",
+     "tag": "pinned"
+    },
+    {
+     "t": "10:45–11:15",
+     "what": "步行 Casa Batlló→La Pedrera；途中拍 Casa Amatller与Casa Batlló同框",
+     "kind": "hop",
+     "tag": "skippable",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=41.391545%2C2.164696&destination=41.395400%2C2.161762&travelmode=walking"
+    },
+    {
+     "t": "11:15–12:30",
+     "what": "La Pedrera入内或外观；没有预约就不排未知时长现场队",
+     "kind": "anchor",
+     "tag": "skippable"
+    },
+    {
+     "t": "12:30–13:45",
+     "what": "Ciutat Comtal或街区附近午餐；排队超过约30分钟换店",
+     "kind": "meal",
+     "tag": "pinned"
+    },
+    {
+     "t": "13:45–15:00",
+     "what": "回住宿/咖啡休息；不为甜品跨区",
+     "kind": "rest",
+     "tag": "pinned"
+    },
+    {
+     "t": "15:00–15:30",
+     "what": "步行 La Pedrera→Passeig de Gràcia；若走Gothic/Born线则改为Santa Caterina方向",
+     "kind": "hop",
+     "tag": "skippable",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=41.395400%2C2.161762&destination=41.390104%2C2.167757&travelmode=walking"
+    },
+    {
+     "t": "15:30–16:15",
+     "what": "Arc de Triomf中轴或Gothic侧巷短拍；体力不足直接回住宿",
+     "kind": "photo",
+     "tag": "skippable"
+    },
+    {
+     "t": "16:15–17:00",
+     "what": "Ciutadella或Born短线；不再追加Bunkers/Tibidabo",
+     "kind": "free",
+     "tag": "skippable"
+    },
+    {
+     "t": "17:00–18:00",
+     "what": "回住宿整理跨城行李、确认Barcelona→Granada车票",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "18:00–19:30",
+     "what": "El Racó d’Urgell或住宿附近晚餐；海鲜/猪肉先少点后加",
+     "kind": "meal",
+     "tag": "pinned"
+    },
+    {
+     "t": "19:30–21:00",
+     "what": "早睡；D4是长距离转场日",
+     "kind": "rest",
+     "tag": "pinned"
+    },
+    {
+     "t": "备用",
+     "what": "阴雨则删除远景和海边，保留一个入内建筑与Gothic/Born短线",
+     "kind": "check",
+     "tag": "skippable"
+    },
+    {
+     "t": "备注",
+     "what": "Passeig de Gràcia与Gothic/Born不要求同日完整走完",
+     "kind": "free",
+     "tag": "skippable"
+    }
+   ],
+   "stops": [
+    {
+     "name": "Casa Batlló",
+     "query": "Casa Batlló, Barcelona, Spain",
+     "lat": 41.3915446,
+     "lon": 2.1646961
+    },
+    {
+     "name": "La Pedrera",
+     "query": "Casa Milà, Barcelona, España",
+     "lat": 41.3953996,
+     "lon": 2.1617621
+    },
+    {
+     "name": "Passeig de Gràcia",
+     "query": "Passeig de Gràcia, Barcelona, Spain",
+     "lat": 41.3901035,
+     "lon": 2.167757
+    }
+   ],
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=41.391545%2C2.164696&destination=41.390104%2C2.167757&travelmode=walking&waypoints=41.395400%2C2.161762",
+   "sun": "天亮 07:37 · ☀ 08:05 / 🌇 18:03 · CET · sunrise-sunset.org",
+   "city_id": "barcelona"
+  },
+  {
+   "date": "2027-01-29",
+   "city": "Barcelona→Granada",
+   "label": "长距离转场与中心平地短线",
+   "travel_day": true,
+   "ribbon": "退房 → Barcelona→Granada长距离交通 → Gamboa入住 → Cathedral/Royal Chapel二选一",
+   "rain_alt": "雨天只做Granada中心室内建筑；不安排Albaicín/Sacromonte长坡。",
+   "late_cut": "车次/航班延误则删除景点，只保入住、补给和短距离晚餐。",
+   "walking_km": {
+    "total": 3.5,
+    "how": "车站/住宿/中心短走；行李日不追求景点数量"
+   },
+   "timeline": [
+    {
+     "t": "07:00–07:45",
+     "what": "早餐、退房、检查床下/浴室/充电器和三人护照",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "07:45–08:15",
+     "what": "前往 Barcelona Sants 或最终确认的机场节点",
+     "kind": "hop",
+     "map": false,
+     "note": "带箱不临时换站；按已购车票上的出发地执行",
+     "tag": "pinned"
+    },
+    {
+     "t": "08:15–09:00",
+     "what": "看电子屏、找站台、确认车厢和行李位置",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "09:00–午后",
+     "what": "Barcelona→Granada长距离交通；车上吃简单午餐、充电和休息",
+     "kind": "hop",
+     "verify": "source_checked",
+     "tag": "pinned"
+    },
+    {
+     "t": "抵达后+0:00–+1:00",
+     "what": "Granada base→Granada Cathedral；入住后沿平地中心短走",
+     "kind": "hop",
+     "tag": "pinned",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=37.174346%2C-3.597812&destination=37.176460%2C-3.599214&travelmode=transit"
+    },
+    {
+     "t": "+1:00–+2:00",
+     "what": "入住/寄存、买水和早餐，确认Alhambra票面时段与D5公交方向",
+     "kind": "lodging",
+     "tag": "pinned"
+    },
+    {
+     "t": "16:00–17:00",
+     "what": "Cathedral或Royal Chapel外围/室内二选一；晚到则只拍外观",
+     "kind": "anchor",
+     "tag": "skippable"
+    },
+    {
+     "t": "17:00–18:00",
+     "what": "San Jerónimo或Gran Vía平地短线；雨天不去Albaicín",
+     "kind": "free",
+     "tag": "skippable"
+    },
+    {
+     "t": "18:00–19:15",
+     "what": "Los Manueles、El Pescaito de Carmela或Bar Los Diamantes候选晚餐",
+     "kind": "meal",
+     "note": "先看队伍和菜单；三人少量共享，不把个人账单当当前报价",
+     "tag": "pinned"
+    },
+    {
+     "t": "19:15–20:00",
+     "what": "La tarta de la madre de Cris甜点候选或住宿附近收尾",
+     "kind": "meal",
+     "tag": "skippable"
+    },
+    {
+     "t": "20:00–21:00",
+     "what": "准备D5：护照原件、Alhambra票、轻水、防滑鞋和外层",
+     "kind": "check",
+     "tag": "pinned"
+    }
+   ],
+   "stops": [
+    {
+     "name": "Barcelona departure",
+     "query": "Barcelona Sants railway station, Barcelona, Spain",
+     "mode": "transit",
+     "lat": 41.378414,
+     "lon": 2.140543
+    },
+    {
+     "name": "Granada base",
+     "query": "Sercotel Palacio de Los Gamboa, Plaza de Gamboa, Granada, Spain",
+     "mode": "train",
+     "lat": 37.1743462,
+     "lon": -3.5978118
+    },
+    {
+     "name": "Granada Cathedral",
+     "query": "Catedral de Granada, Granada, España",
+     "mode": "transit",
+     "lat": 37.1764598,
+     "lon": -3.5992136
+    }
+   ],
+   "sun": "天亮 07:52 · ☀ 08:18 / 🌇 18:36 · CET · sunrise-sunset.org",
+   "city_id": "granada"
+  },
+  {
+   "date": "2027-01-30",
+   "city": "Granada",
+   "label": "Alhambra预约日",
+   "ribbon": "公交上坡 → Nasrid Palaces票面时段 → Alcazaba/Partal/Generalife → 回中心",
+   "rain_alt": "小雨时减少户外停留并穿防滑鞋；大雨时只能按票规决定是否仍前往，不能假定退改",
+   "late_cut": "错过Nasrid票面时段不强行追赶其他区域，改中心室内建筑",
+   "walking_km": {
+    "total": 5.5,
+    "how": "园区内慢走与拍照；不叠加Sacromonte"
+   },
+   "timeline": [
+    {
+     "t": "07:00–07:45",
+     "what": "早餐、带轻水/防水外层/护照原件，不带大箱和三脚架",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "07:45–08:15",
+     "what": "走到中心上坡公交站，打开Rober当前C30/C32等线路",
+     "kind": "hop",
+     "map": false,
+     "verify": "source_checked",
+     "tag": "pinned"
+    },
+    {
+     "t": "08:15–08:45",
+     "what": "到Alhambra后按现场指引找入口，票面Nasrid时间前留30–45分钟",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "票面时间前",
+     "what": "若票面较晚，先看Generalife/外围允许区域；不牺牲Nasrid时间",
+     "kind": "free",
+     "tag": "skippable"
+    },
+    {
+     "t": "Nasrid票面±1.5h",
+     "what": "按 Nasrid Palaces 票面时段入场；内部只用无闪光、无三脚架拍摄",
+     "kind": "anchor",
+     "note": "当前冬季日间 08:30–18:00；原件证件与票面时段为硬条件",
+     "tag": "pinned"
+    },
+    {
+     "t": "票面后+1.5h",
+     "what": "Alcazaba城墙、Charles V Palace与Alhambra Museum；风大时减少高处停留",
+     "kind": "anchor",
+     "tag": "pinned"
+    },
+    {
+     "t": "12:30–13:15",
+     "what": "园区内/随身小食和补水；不把未核验园区餐饮写死",
+     "kind": "meal",
+     "tag": "skippable"
+    },
+    {
+     "t": "13:15–15:00",
+     "what": "Partal→Generalife花园；寻找框景/水面机位，不堵通道",
+     "kind": "photo",
+     "tag": "skippable"
+    },
+    {
+     "t": "15:00–15:45",
+     "what": "Alhambra园区内步行至 Nasrid Palaces；下山另按实时公交或正规出租车",
+     "kind": "hop",
+     "tag": "pinned",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=37.176055%2C-3.588110&destination=37.176055%2C-3.588110&travelmode=walking"
+    },
+    {
+     "t": "15:45–17:00",
+     "what": "住宿休息、充电、热饮；不追加Sacromonte",
+     "kind": "rest",
+     "tag": "pinned"
+    },
+    {
+     "t": "17:00–18:30",
+     "what": "Perromedio或Restaurante Árabe Ambar候选晚餐；先看地址、开门和菜单",
+     "kind": "meal",
+     "note": "猪排、米饭、甜点和评分均是小红书线索，不是官方已核验",
+     "tag": "pinned"
+    },
+    {
+     "t": "18:30–20:00",
+     "what": "Cathedral/Gran Vía平地短走或甜点；不去San Nicolás追夜景",
+     "kind": "free",
+     "tag": "skippable"
+    },
+    {
+     "t": "20:00–21:00",
+     "what": "回住宿，检查D6 Granada→Seville车票与到站位置",
+     "kind": "check",
+     "tag": "pinned"
+    }
+   ],
+   "stops": [
+    {
+     "name": "Alhambra",
+     "query": "Alhambra, Granada, Spain",
+     "lat": 37.1760548,
+     "lon": -3.5881101
+    },
+    {
+     "name": "Nasrid Palaces",
+     "query": "Nasrid Palaces, Granada, Spain",
+     "lat": 37.1760548,
+     "lon": -3.5881101
+    }
+   ],
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=37.176055%2C-3.588110&destination=37.176055%2C-3.588110&travelmode=walking",
+   "sun": "天亮 07:51 · ☀ 08:17 / 🌇 18:37 · CET · sunrise-sunset.org",
+   "city_id": "granada"
+  },
+  {
+   "date": "2027-01-31",
+   "city": "Granada→Seville",
+   "label": "转场与Seville入住缓冲",
+   "travel_day": true,
+   "ribbon": "退房 → Renfe/ALSA → Seville入住 → Plaza de España或老城一个短线",
+   "rain_alt": "雨天保留入住、补给和一个室内/有遮蔽模块；删除河岸和长距离户外。",
+   "late_cut": "交通延误则取消傍晚景点，只保入住、晚餐和第二天预约检查。",
+   "walking_km": {
+    "total": 3.5,
+    "how": "车站/住宿/一个短线；三人带行李不追赶"
+   },
+   "timeline": [
+    {
+     "t": "07:30–08:15",
+     "what": "早餐、退房、检查三人护照/充电器/票券，问前台寄存规则",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "08:15–09:00",
+     "what": "去 Granada railway station 或 Bus Station；车票上的站名优先",
+     "kind": "hop",
+     "map": false,
+     "tag": "pinned"
+    },
+    {
+     "t": "09:00–午后",
+     "what": "按已购 Renfe/ALSA 车票前往 Seville；车上简单午餐和休息",
+     "kind": "hop",
+     "verify": "source_checked",
+     "tag": "pinned"
+    },
+    {
+     "t": "抵达后+0:00–+1:00",
+     "what": "Seville base→Plaza de España；入住/休息后仅保留一个傍晚短线",
+     "kind": "hop",
+     "tag": "pinned",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=37.381102%2C-5.982991&destination=37.376903%2C-5.985650&travelmode=walking"
+    },
+    {
+     "t": "+1:00–+2:00",
+     "what": "入住、补给、休息；确认早餐、寄存和D7门票",
+     "kind": "lodging",
+     "tag": "pinned"
+    },
+    {
+     "t": "16:00–17:00",
+     "what": "若仍有日光，Plaza de España第一轮外观和中央喷泉",
+     "kind": "anchor",
+     "tag": "skippable"
+    },
+    {
+     "t": "17:00–18:00",
+     "what": "María Luisa主轴短走；风雨或到达晚立即折返",
+     "kind": "photo",
+     "tag": "skippable"
+    },
+    {
+     "t": "18:00–19:30",
+     "what": "San Marco Santa Cruz候选晚餐；先确认座位、份量和盐度",
+     "kind": "meal",
+     "note": "海鲜饭/海鲜意面/甜点来自小红书体验，价格和营业待复核",
+     "tag": "pinned"
+    },
+    {
+     "t": "19:30–20:15",
+     "what": "回酒店，不再追加Setas或屋顶；打开D7官方入口和票券",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "20:15–21:00",
+     "what": "睡前确认Alcázar→Cathedral步行路线和雨天服装",
+     "kind": "rest",
+     "tag": "pinned"
+    }
+   ],
+   "stops": [
+    {
+     "name": "Granada departure",
+     "query": "Granada railway station, Granada, Spain",
+     "mode": "transit",
+     "lat": 37.1836936,
+     "lon": -3.6086283
+    },
+    {
+     "name": "Seville base",
+     "query": "Hotel Giralda Center, C. Juan de Mata Carriazo 7, Seville, Spain",
+     "mode": "train",
+     "lat": 37.3811022,
+     "lon": -5.9829914
+    },
+    {
+     "name": "Plaza de España",
+     "query": "Plaza de España, Seville, Spain",
+     "lat": 37.3769032,
+     "lon": -5.9856502
+    }
+   ],
+   "sun": "天亮 08:00 · ☀ 08:26 / 🌇 18:48 · CET · sunrise-sunset.org",
+   "city_id": "seville"
+  },
+  {
+   "date": "2027-02-01",
+   "city": "Seville",
+   "label": "王宫、主教座堂与Santa Cruz",
+   "ribbon": "Alcázar → Cathedral/Giralda → 午休 → Santa Cruz",
+   "rain_alt": "雨天保留 Alcázar 室内、Cathedral 与短街巷；取消长距离户外",
+   "late_cut": "预约迟到先保 Cathedral，再删 Santa Cruz 延伸",
+   "walking_km": {
+    "total": 5.5,
+    "how": "老城短距离串联；以官方入口和当日导航为准"
+   },
+   "timeline": [
+    {
+     "t": "07:45–08:30",
+     "what": "早餐；酒店早餐或Aba de Sevilla候选先查开门，不迟到早场",
+     "kind": "meal",
+     "tag": "skippable"
+    },
+    {
+     "t": "08:30–09:15",
+     "what": "步行/按T1接近老城，找到Real Alcázar入口并排在正确队列",
+     "kind": "hop",
+     "map": false,
+     "tag": "pinned"
+    },
+    {
+     "t": "09:15–11:45",
+     "what": "Real Alcázar：宫殿、庭院、花园与覆盖空间",
+     "kind": "anchor",
+     "note": "当前冬季参考09:30–17:00；2027日期需复核",
+     "tag": "opener"
+    },
+    {
+     "t": "11:45–12:15",
+     "what": "步行 Real Alcázar→Cathedral/Giralda；途中补水，不为人少照片回头排队",
+     "kind": "hop",
+     "tag": "skippable",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=37.383210%2C-5.990183&destination=37.385915%2C-5.993141&travelmode=walking"
+    },
+    {
+     "t": "12:15–13:45",
+     "what": "Cathedral/Giralda；预留安检、票券和容量缓冲",
+     "kind": "anchor",
+     "note": "周日当前模式从14:30起；按官方页面重查",
+     "tag": "pinned"
+    },
+    {
+     "t": "13:45–14:00",
+     "what": "步行 Cathedral/Giralda→Santa Cruz，进入橙树庭院和老城巷线",
+     "kind": "hop",
+     "tag": "skippable",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=37.385915%2C-5.993141&destination=37.386230%2C-5.991630&travelmode=walking"
+    },
+    {
+     "t": "14:00–14:30",
+     "what": "Patio de los Naranjos、Giralda仰角和橙树细节拍摄",
+     "kind": "photo",
+     "tag": "skippable"
+    },
+    {
+     "t": "14:30–15:45",
+     "what": "Bendala、La Sacristía或La Goleta候选午餐；三人先少量分点",
+     "kind": "meal",
+     "note": "先确认牛排熟度、海鲜饭份量、价格和账单",
+     "tag": "pinned"
+    },
+    {
+     "t": "15:45–16:30",
+     "what": "Santa Cruz：Callejón del Agua、白墙拐角、Murillo花园边缘",
+     "kind": "free",
+     "tag": "skippable"
+    },
+    {
+     "t": "16:30–17:15",
+     "what": "咖啡/橙树小巷；风雨大则回酒店充电",
+     "kind": "rest",
+     "tag": "skippable"
+    },
+    {
+     "t": "17:15–18:00",
+     "what": "回酒店，检查D8天气、Plaza de España和Triana路线",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "18:30–20:00",
+     "what": "La Bartola候选晚餐；Ratatouille Cheesecake Sevilla作为甜点候选",
+     "kind": "meal",
+     "note": "排队超过约30分钟换店；甜点先确认地址和是否售罄",
+     "tag": "pinned"
+    },
+    {
+     "t": "20:00–21:00",
+     "what": "回酒店；不为屋顶/弗拉明戈压缩睡眠",
+     "kind": "rest",
+     "tag": "pinned"
+    }
+   ],
+   "stops": [
+    {
+     "name": "Real Alcázar",
+     "query": "Real Alcázar de Sevilla, Seville, Spain",
+     "lat": 37.3832105,
+     "lon": -5.9901835
+    },
+    {
+     "name": "Cathedral and Giralda",
+     "query": "Catedral de Sevilla, Seville, Spain",
+     "lat": 37.385915,
+     "lon": -5.9931406
+    },
+    {
+     "name": "Santa Cruz",
+     "query": "Barrio de Santa Cruz, Seville, Spain",
+     "lat": 37.3862299,
+     "lon": -5.9916299
+    }
+   ],
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=37.383210%2C-5.990183&destination=37.386230%2C-5.991630&travelmode=walking&waypoints=37.385915%2C-5.993141",
+   "sun": "天亮 07:59 · ☀ 08:25 / 🌇 18:49 · CET · sunrise-sunset.org",
+   "city_id": "seville"
+  },
+  {
+   "date": "2027-02-02",
+   "city": "Seville",
+   "label": "Plaza de España—María Luisa—Triana",
+   "ribbon": "Plaza de España → María Luisa → Arenal → Triana",
+   "rain_alt": "雨天改Museo de Bellas Artes或老城室内餐饮；保留一个可遮蔽模块，删除河岸延伸。",
+   "late_cut": "若返程从Madrid，提前执行Seville→Madrid机场节点；若从Seville，下午开始整理行李并按机场接驳。",
+   "walking_km": {
+    "total": 6.5,
+    "how": "分段步行；河岸与Triana按体力提前折返"
+   },
+   "timeline": [
+    {
+     "t": "08:00–08:45",
+     "what": "早餐并看风雨/能见度；决定晴天户外线或雨天室内线",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "08:45–09:15",
+     "what": "步行或按T1到Prado，先找Plaza de España主要入口",
+     "kind": "hop",
+     "map": false,
+     "tag": "pinned"
+    },
+    {
+     "t": "09:15–10:45",
+     "what": "Plaza de España：拱廊、中央喷泉与半圆建筑第一轮全景",
+     "kind": "anchor",
+     "note": "开放时间存在官方页面冲突，只依赖白天至傍晚",
+     "tag": "pinned"
+    },
+    {
+     "t": "10:45–11:30",
+     "what": "省份瓷砖长椅；三人轮拍，不坐湿砖、不把相机放栏杆",
+     "kind": "photo",
+     "tag": "skippable"
+    },
+    {
+     "t": "11:30–12:15",
+     "what": "小桥与拱廊局部拍摄；人多不等空场，改拍瓷砖细节",
+     "kind": "photo",
+     "tag": "skippable"
+    },
+    {
+     "t": "12:15–13:15",
+     "what": "María Luisa主轴短走；雨风大立即删掉",
+     "kind": "free",
+     "tag": "skippable"
+    },
+    {
+     "t": "13:15–14:30",
+     "what": "La Escalona或Prado/老城附近候选午餐；先确认座位和菜单",
+     "kind": "meal",
+     "tag": "pinned"
+    },
+    {
+     "t": "14:30–15:15",
+     "what": "步行 Plaza de España→Arenal；顺路拍Torre del Oro外观，体力不足跳过河岸",
+     "kind": "hop",
+     "tag": "skippable",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=37.376903%2C-5.985650&destination=37.386615%2C-5.996933&travelmode=walking"
+    },
+    {
+     "t": "15:15–16:00",
+     "what": "沿河到Triana Bridge；风冷/下雨立刻过桥",
+     "kind": "hop",
+     "tag": "skippable",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=37.386615%2C-5.996933&destination=37.386278%2C-6.002431&travelmode=walking"
+    },
+    {
+     "t": "16:00–17:00",
+     "what": "Triana Bridge拍Giralda/河面，Calle Betis拍彩色立面和蓝调",
+     "kind": "photo",
+     "tag": "skippable"
+    },
+    {
+     "t": "17:00–18:00",
+     "what": "Triana Market咖啡/小食候选；先看市场、摊位和排队",
+     "kind": "meal",
+     "tag": "skippable"
+    },
+    {
+     "t": "18:00–19:00",
+     "what": "返酒店整理；若返程从Madrid，立即执行Triana Bridge→机场/车站节点",
+     "kind": "hop",
+     "map": false,
+     "note": "返程从Madrid时，不再把这一小时用于观光",
+     "tag": "pinned"
+    },
+    {
+     "t": "19:00–20:30",
+     "what": "仍在Seville时就近最后一顿；不为榜单第一跨区",
+     "kind": "meal",
+     "tag": "skippable"
+    },
+    {
+     "t": "20:30–21:00",
+     "what": "整理D9返程文件、航站楼和机场接驳",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "雨天替代",
+     "what": "删除Arenal、Triana、河岸；保留未完成的Cathedral/Alcázar或室内美术馆候选",
+     "kind": "free",
+     "tag": "skippable"
+    }
+   ],
+   "stops": [
+    {
+     "name": "Plaza de España",
+     "query": "Plaza de España, Seville, Spain",
+     "lat": 37.3769032,
+     "lon": -5.9856502
+    },
+    {
+     "name": "Arenal",
+     "query": "El Arenal, Seville, Spain",
+     "lat": 37.386615,
+     "lon": -5.9969328
+    },
+    {
+     "name": "Triana Bridge",
+     "query": "Puente de Isabel II, Seville, Spain",
+     "lat": 37.3862778,
+     "lon": -6.0024309
+    }
+   ],
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=37.376903%2C-5.985650&destination=37.386278%2C-6.002431&travelmode=walking&waypoints=37.386615%2C-5.996933",
+   "sun": "天亮 07:58 · ☀ 08:24 / 🌇 18:50 · CET · sunrise-sunset.org",
+   "city_id": "seville"
+  },
+  {
+   "date": "2027-02-03",
+   "city": "Seville→返程机场",
+   "label": "离境",
+   "travel_day": true,
+   "ribbon": "住宿 → 机场接驳或已完成的Madrid机场节点 → 国际返程",
+   "rain_alt": "不安排户外项目；预留值机、行李、航站楼和安检缓冲。",
+   "late_cut": "只执行机场转移；不安排任何城市景点，也不在当天临时跨城。",
+   "walking_km": {
+    "total": 1.5,
+    "how": "住宿至机场接驳点与航站楼"
+   },
+   "timeline": [
+    {
+     "t": "起床后",
+     "what": "检查床下、浴室、插座、保险箱、冰箱；确认三人护照和手机",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "起飞前约5小时",
+     "what": "退房并离开住宿；按机场、航站楼、是否托运行李倒推",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "起飞前约3小时",
+     "what": "到已确认的国际机场节点；若从Madrid，D8前一日必须完成跨城",
+     "kind": "hop",
+     "verify": "source_checked",
+     "tag": "pinned"
+    },
+    {
+     "t": "值机后",
+     "what": "确认行李条终点、转机是否取行李、航站楼和安检方向",
+     "kind": "check",
+     "tag": "pinned"
+    },
+    {
+     "t": "登机前",
+     "what": "只按航司/机场当前指示行动；不在机场临时购买未核实服务",
+     "kind": "check",
+     "tag": "pinned"
+    }
+   ],
+   "stops": [
+    {
+     "name": "Seville departure / airport node",
+     "query": "Seville Airport, Seville, Spain",
+     "mode": "transit",
+     "lat": 37.418013,
+     "lon": -5.893106
+    }
+   ],
+   "sun": "天亮 07:57 · ☀ 08:23 / 🌇 18:50 · CET · sunrise-sunset.org",
+   "city_id": "seville"
+  }
+ ],
+ "hotels": [
+  {
+   "city_id": "barcelona",
+   "status": "selected_candidate",
+   "base": "Barcelona 2027-01-26 → 2027-01-29（代表性日期）",
+   "area": "Plaça Espanya / Sants一带（准确地址以最终房源页为准）",
+   "why": "Airbnb整套房源 1659522“带露台的阁楼”为当前 selected candidate；2卧2卫、厨房、露台与独立床位条件较好，当前页面价在 CNY 1500/晚上限内，但旅游税与最终取消条款仍需重查。",
+   "options": [
+    {
+     "name": "Airbnb 1659522 · 带露台的阁楼（selected candidate，未预订）",
+     "band": "页面 CNY 3147 / 3晚（约 CNY 1049/晚）；整套2卧2卫；1张双人床+1张单人床；私人露台、完整厨房、洗衣机、空调；无早餐；旅游税待最终结算页复核",
+     "link": "https://zh.airbnb.com/rooms/1659522?adults=3&check_in=2027-01-26&check_out=2027-01-29"
+    },
+    {
+     "name": "Casa Felipa · Airbnb预算内备选",
+     "band": "页面约 CNY 3182 / 3晚；整套公寓；具体房号/床型与税项需结算前确认；未预订",
+     "link": "https://zh.airbnb.com/rooms/26920348?adults=3&check_in=2027-01-26&check_out=2027-01-29"
+    }
+   ]
+  },
+  {
+   "city_id": "granada",
+   "status": "candidate",
+   "base": "Granada 2027-01-29 → 2027-01-31（代表性日期）",
+   "area": "Cathedral / Gran Vía平地步行区",
+   "why": "Sercotel Palacio de Los Gamboa为酒店优先候选；Trip.com公开价较携程低约CNY164，三张单人床、早餐与免费取消条件明确，仍不是预订。",
+   "options": [
+    {
+     "name": "Sercotel Palacio de Los Gamboa · Trip.com（当前优先候选）",
+     "band": "CNY 2240 / 2晚含税费（约CNY1120/晚）；Classic Triple；3张单人床；含3份早餐；免费取消至2027-01-21",
+     "link": "https://us.trip.com/hotels/granada-hotel-detail-1625246/hesperia-granada-hotel/"
+    },
+    {
+     "name": "Sercotel Palacio de Los Gamboa · 携程对照",
+     "band": "经典三人房；3张0.8米单人床；含3份早餐；免费取消至2027-01-21；含税/费后约CNY2404/2晚（均价折算）",
+     "link": "https://hotels.ctrip.com/hotels/1625246.html?checkIn=2027-01-29&checkOut=2027-01-31&crn=1&adult=3"
+    }
+   ]
+  },
+  {
+   "city_id": "seville",
+   "status": "conditional_candidate",
+   "base": "Seville 2027-01-31 → 2027-02-03（代表性日期）",
+   "area": "Plaza de España / Prado",
+   "why": "Hotel Giralda Center为酒店优先条件候选；Trip.com页面价约CNY3705/3晚，含早餐且在硬上限内，但“1张特大床或2张单人床”仍需在最终房型页确认至少两张独立床。确认失败才切换Airbnb例外。",
+   "options": [
+    {
+     "name": "Hotel Giralda Center · Trip.com（条件候选，未预订）",
+     "band": "约CNY3705 / 3晚含税费（约CNY1235/晚）；高级加床房；含3份早餐；免费取消；床型为1张特大床或2张单人床，需确认",
+     "link": "https://us.trip.com/hotels/detail/?cityEnName=Seville&cityId=1350&hotelId=94971922&checkIn=2027-01-31&checkOut=2027-02-03&adult=3&children=0&crn=1&curr=CNY"
+    },
+    {
+     "name": "历史街区公寓 4563863 · Airbnb床位明确备选",
+     "band": "CNY2088 / 3晚（约CNY696/晚）；2张单人床+沙发床；整套1卧、厨房、洗衣机、空调；无早餐；未预订",
+     "link": "https://zh.airbnb.com/rooms/4563863?adults=3&check_in=2027-01-31&check_out=2027-02-03"
+    },
+    {
+     "name": "历史中心两卧公寓 679472… · Airbnb两卫/露台备选",
+     "band": "CNY2100 / 3晚（约CNY700/晚）；2卧2卫、2张单人床+1张双人床、露台、厨房和洗衣机；无早餐；税项待复核",
+     "link": "https://zh.airbnb.com/rooms/679472671924054054?adults=3&check_in=2027-01-31&check_out=2027-02-03"
+    }
+   ]
+  }
+ ],
+ "budget": [
+  {
+   "cat": "flights",
+   "per_person": "无合格报价；PEK–MAD最近公开快照 HKD 5522/人，去回23kg",
+   "total": "PEK 2人公开快照 HKD 11044；HKG 1人需另计",
+   "note": "Trip.com香港站公开往返快照，checked 2026-09-26；超HKD5000/人"
+  },
+  {
+   "cat": "lodging snapshot",
+   "per_person": "严格预算组合8晚折算约 CNY 3466.67/人（房间总价均分，仅压力测试；Barcelona携程总价为均价折算）",
+   "total": "约CNY 10400（Seville Giralda Center Trip.com + Granada Sercotel Palacio Trip.com + Barcelona Htop携程；8晚）",
+   "note": "Trip.com与携程登录后同条件页面快照；checked 2026-09-26；Seville/Granada Trip.com较低，Barcelona携程较低；所有当前房价均在CNY1500/晚以内；Htop不满足四/五星偏好，Seville随机床型和最终结算页仍需重查"
+  },
+  {
+   "cat": "intercity transport",
+   "per_person": "未锁定",
+   "total": "未锁定",
+   "note": "Renfe/ALSA当前路线已核验；2027具体票价和退改尚未锁定"
+  },
+  {
+   "cat": "attractions",
+   "per_person": "当前参考：Alhambra EUR22.27；其他门票按当期官网",
+   "total": "未锁定",
+   "note": "2027日期库存、最终价格和门票组合需复核"
+  }
+ ],
+ "brief": {
+  "visa": "中国普通护照需要短期申根签证；三城均在西班牙，西班牙为主要目的地。北京两人按BLS北京准备；香港旅客先确认合法居住资格。来源：EU Schengen、Spain Beijing/Hong Kong consulates；checked 2026-09-26。",
+  "emergency": "西班牙紧急电话 112；警察/救护/消防由当地调度。中国驻西班牙使领馆联系方式、最近医院、保险援助电话在出发前按官方页面补入手机和离线副本；本计划不保存护照或保单号码。来源：Spain/UK travel advice；checked 2026-09-26。",
+  "safety": "警示: 蓝色（低风险） · 中国外交部；US/UK官方安全建议 · as-of 2026-09-26。人多交通/景点把包放身前，使用机场官方车站/出租车，夜间走照明主路；被盗先报警并保留报案号。来源：China MFA、US State、UK FCDO。",
+  "health": "本计划不代替旅行医学意见；T-14查看CDC Spain/当地旅行门诊对常规疫苗、食物饮水、动物接触和保险的最新建议；不自行按本页服药。当前窗口为冬季城市旅行，天气与路面防滑纳入每日切换。",
+  "holidays": "date.nager.at Spain 2027 数据 checked 2026-09-26：1/25–2/3 没有西班牙全国/地区节日列入该窗口；1/1、1/6已在窗口外，安达卢西亚日2/28在窗口后。宗教场馆与地方活动仍需T-14复核。",
+  "weather": "当前不能对2027做逐日预报；按冬季气候基线准备分层、防雨和防滑鞋，T-7使用AEMET/当地预报重排户外模块。模式：seasonal baseline，as-of 2026-09-26。",
+  "money": "付款终端/ATM选择EUR本币，拒绝DCC；优先低外汇费Visa/Mastercard并保留1.5–3%汇率缓冲；使用银行网点ATM、少量多次大额取现；欧洲城市多数刷卡但准备少量现金。香港/内地两地出发都携带可用国际卡，不把单一银联作为唯一支付手段。",
+  "connectivity": "准备能保留本国号码收银行短信的漫游/eSIM；出发前保存护照、签证、保险和票券的云端/离线副本；公共Wi-Fi不做银行操作，启用Find My/SIM PIN并准备第二设备冻结卡片。",
+  "insurance": "签证材料需覆盖申根全程、医疗保额至少EUR30000；保险还应覆盖行李、航班延误和因预订条款允许的取消。出发前核对既往病史、活动限制和24小时援助方式。",
+  "baggage": "航班硬条件是每个实际航段至少20kg托运行李；平台仅写“含托运行李”而不显示公斤数时不算合格。住宿行李转场按三人行李量和车站/机场接驳重新核对。"
+ },
+ "unverified": [
+  "三人最终去程日期、集合方式、首个申根入境机场和返程机场。",
+  "任何满足每人HKD5000/RMB4500、去回各至少20kg、含税和定位成本的完整机票。",
+  "2027具体Renfe/ALSA车次、票价、退改和座位；Barcelona机场至市区的临近日期班次。",
+  "按实际入住日期在Trip.com与携程同条件复核三城住宿；当前登录页结论为Seville/Granada取Trip.com较低价、Barcelona取携程Htop较低价。重查时复核含税总价、早餐、免费取消、床位、Htop评分风险和Barcelona Airbnb旅游税；若Htop不接受则保持Barcelona待定，不改用超预算房源。",
+  "香港旅客能否在香港领区递交；三本护照具体有效期和空白页。",
+  "Alhambra、Sagrada Família、Alcázar及其他景点的2027库存、最终价格、礼拜/活动冲突。",
+  "餐厅实时营业、菜单、价格、排队和任何饮食禁忌要求。"
+ ]
+}
