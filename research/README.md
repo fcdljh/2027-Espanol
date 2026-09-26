@@ -51,11 +51,12 @@
 ## 机票与住宿快照
 
 - [机票票价快照](flights/fare-snapshots.csv)：一行对应一组明确的搜索条件和一条价格观察。`observation_role` 区分实际行程搜索、邻近月份参照和市场基准；这些类别不可混成同一条趋势线。只有查询条件可比时才计算价差。
+- [机票特价结构研究](flights/fare-patterns.md)：记录多程、开口程、甩尾、错误票价和漏油线索的风险分级、来源核验与后续监测矩阵；不把社区经验当作出票事实。
 - [住宿房价快照](accommodation/rate-snapshots.csv)：一行对应一个住宿、房型、入住日期、入住人数和取消条件。相同酒店的不同房型/取消政策分别记录。
 - 机票表先记录平台页面实际显示的 `displayed_amount_as_shown`，再用 `amount_basis` 标注 `per_person`、`group_total` 或 `unknown`。只有口径明确时才填 `displayed_amount_per_person` 或 `displayed_total_amount`；未知时留空，不推算。金额均使用 `currency` 表示。`search_filters` 和 `baggage_filter_scope` 记录平台筛选；筛选不等于逐段确认了公斤数。
 - 机票表的 `observation_role` 使用 `trip_option`、`adjacent_month_reference` 或 `market_reference`；`baggage_filter_scope` 使用 `displayed_both_legs`、`outbound_only` 或 `not_recorded`；布尔值写小写 `true` / `false`。不适用写 `not_applicable`，未知值留空或按相应状态列写 `unknown`。
-- 机票合格方案须为平台“往返”模式的一张往返票，去程和回程分别有至少 20 kg 托运行李。不得用拆分单程、多目的地或多张票拼价达到预算。返程经北京后甩尾时，另记录承运人是否同意在北京提前提取行李及行李牌终点；未知则不得作为已确认条件。
-- 只有 `decision_status=candidate` 且日期、旅客数、路线、两程行李、税费和主要票规足以对比的记录，才进入候选比较。邻月参照只能用于观察价格变化，不能声称目标日期可买到该价格。
+- 机票方案可来自普通往返、开口、多程、漏油/异常低价或甩尾等搜索结构。每位旅客必须记录覆盖完整去程与返程的最终可支付总价；多张票组合要逐张列价、求和并标明独立出票及自助衔接，不能把单段或未含行李的低价写成全程合格价。每个实际搭乘航段须有至少 20 kg 托运行李，或把加购费计入总价。返程经北京甩尾时，另记录承运人是否同意在北京提前提取行李及行李牌终点；未知则不得作为已确认条件。
+- 只有 `decision_status=candidate` 且日期、旅客数、完整路线、各实际搭乘航段行李、税费和主要票规足以对比的记录，才进入候选比较。邻月参照只能用于观察价格变化，不能声称目标日期可买到该价格。
 - 住宿须按具体房型记录三人入住、床型、总价、税费和免费取消截止时间。未确认入住日期或房型的参考价不得当作可预订候选。
 
 ## 地图与可视化

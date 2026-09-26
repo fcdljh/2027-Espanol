@@ -1,6 +1,6 @@
 # Seville 城市指南
 
-资料快照：2026-09-25。交通线路、运营时间、门票和街道状况出行前需复核。
+资料快照：2026-09-26。交通线路、运营时间、门票和街道状况出行前需复核。
 
 ## 空间与住宿片区
 
@@ -32,3 +32,22 @@ Casco Antiguo 集中 Setas、Salvador、大教堂和 Alcázar；Plaza de España
 多人场景看管随身物品，夜间走熟悉、照明良好且有人流的路线。紧急电话 112，西班牙国家警察 091。
 - [西班牙警方游客安全提示](https://www.policia.es/_es/colabora_participacion_video_turismo_seguro_transcripcion_en.php)
 - [安达卢西亚紧急联络](https://www.juntadeandalucia.es/temas/seguridad/ciudadania/contactar-policia.html)
+
+## 2026-09-26 执行模块
+
+### 推荐的两日骨架
+
+- **核心建筑日：**Alcázar → Cathedral/Giralda → Santa Cruz。按小红书多篇经验，先拍庭院、拱门、橙树和建筑细节，再在街巷中休息；官方当前冬季时段和周日规则见[景点与门票](../trip/attractions-and-tickets.md)。
+- **户外生活日：**Plaza de España → María Luisa → Arenal/黄金塔外观 → Triana/河岸。西班牙广场安排在午后至日落，拍拱廊、彩瓷长椅、桥和三人轮拍；雨风时删除河岸与屋顶。
+- **餐饮/伴手礼：**老城、Alfalfa、Triana Market、河岸分别作为就近主题；小红书提到的 La Sacristía、La Bartola、San Marco、Ratatouille Cheesecake、Orange Tree 等只进候选池，先核对当前营业和价格。
+
+### 冬季与交通落地
+
+- 冬季专项提示白天阳光、夜间偏凉、橙树和雨天替代；因此每天最多两个高密度景点，晚上不为屋顶或弗拉明戈压缩回住宿路线。
+- 机场 EA、Santa Justa、老城和河岸在小红书里常被作为不同节点；本方案按住宿位置选 EA 下车站，晚到准备出租车，不把个人票价/末班时间写死。
+- 住宿 Top 3 已按同一日期完成：质量首选 Hotel Giralda Center（Trip.com 3 晚含税约 CNY 3,891，即 CNY 1,297/晚；携程约 CNY 4,152，Trip.com 低约 CNY 261），但床型随机，必须确认两张独立床；严格床位首选 Airbnb Daniel（CNY 1,928/3 晚，Santa Cruz，2 单人床+沙发床）和 4563863（CNY 2,088/3 晚，Alameda，2 单人床+沙发床）。三套 Seville 收藏民宿都不是差房源，只是没有早餐；Daniel 在反向日期不可订，支持当前顺序。详见[住宿比较](../trip/accommodation.md)。
+
+### 动态信息
+
+- Plaza de España 和 Setas 的官方页面存在时间差异，因此路线只依赖白天至傍晚；Alcázar/Cathedral 才是需要预约和官方复核的建筑锚点。
+- 这部分路线吸收了 Seville 60/60 篇主配额和 6/6 篇冬季专项；小红书只提供空间组织、拍照光线、餐饮气氛和住宿避坑线索。

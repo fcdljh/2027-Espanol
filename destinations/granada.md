@@ -1,6 +1,6 @@
 # Granada 城市指南
 
-资料快照：2026-09-25。交通线路、运营时间、门票和街道状况出行前需复核。
+资料快照：2026-09-26。交通线路、运营时间、门票和街道状况出行前需复核。
 
 ## 空间与住宿片区
 
@@ -27,3 +27,22 @@
 - [对应小红书笔记](https://www.xiaohongshu.com/explore/6a79e7f80000000005031d2a)
 - [小红书逐条研究页](../research/xhs/granada.md)
 - [地图目录](../research/city-maps/README.md)
+
+## 2026-09-26 执行模块
+
+### 推荐的轻松路线
+
+- **抵达日：**从 Seville 到达后先入住/寄存，优先 Cathedral、Royal Chapel、San Jerónimo 这条平地中心雨天线，最多选一至二处；不把抵达日用在 Albaicín/Sacromonte 长坡上。
+- **Alhambra 专门日：**按 Nasrid Palaces 票面时段倒排，留公交、找入口和证件缓冲；园区内部慢拍 Partal、Alcazaba、Generalife，不再叠加远端观景路线。
+- **晴天弹性：**若体力和天气允许，再选 Albaicín/San Nicolás 或 Sacromonte 中一个；公交上坡、短段步行，天黑前回到照明好且易导航的路线。
+
+### 小红书与住宿取舍
+
+- 建筑/Citywalk 笔记共同把 Cathedral—修道院—观景台、Alhambra 分区和慢游街巷拆开；本方案采纳“恢复日/雨天线”逻辑，不把作者的 6 km、步数或分钟数当作导航时间。
+- 交通笔记常提 C30/C31/C32/C34 和公交卡跨城线索；本方案只把 Rober 当前线路作为减负工具，交通卡范围、票价和跨城复用一律按官方核验。
+- 住宿笔记在 Cathedral/Gran Vía、Alhambra 近旁和车站之间存在取舍；当前 Top 3 为：Sercotel Palacio de Los Gamboa（综合首选，Trip.com Classic Triple 为 3 张单人床、含早餐、免费取消，约 CNY 1,120/晚；比携程低约 CNY 164）、Catalonia Granada（约 25 m²、2 单人床+沙发床、屋顶泳池/桑拿，Trip.com 列表约 CNY 1,233/晚）和 Hotel Inglaterra（约 19 m²、3 张单人床、含早餐，Trip.com 约 CNY 850/晚）。Gamboa 最适合跨城到达和低强度 citywalk；Catalonia 以设施换距离；Inglaterra 以低价换面积/隔音。详见[住宿比较](../trip/accommodation.md)。
+
+### 动态信息
+
+- Alhambra 当前冬季模式、票面时段、证件和拍摄规则见[景点与门票](../trip/attractions-and-tickets.md)；2027 日期库存与最终价格仍待复核。
+- 这部分路线吸收了 Granada 60/60 篇主配额和 6/6 篇冬季专项；小红书仍只作路线、坡度、光线和居住体验线索。

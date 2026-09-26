@@ -1,0 +1,110 @@
+{
+ "schema": 1,
+ "_note": "Pictures picked by themes/stock_art.py from the built-in stock kit (themes/assets/stock) — the words are still to be written: every \"\" in _stock_todo. cover.credit and end.fine carry the stock notice and must stay on the page (clay prints credit, not end.fine); if you give the cover a poem and its source, keep the notice line as well. Render with --assets themes/assets/stock or the stock stems resolve to nothing.",
+ "_stock": {
+  "generated": "2026-09-26",
+  "index": "themes/assets/stock/index.json",
+  "theme": "illustrated",
+  "assets": "themes/assets/stock"
+ },
+  "_stock_todo": [],
+  "cover": {
+    "kick": "西班牙三城",
+    "kick_en": "SPAIN 2027",
+    "credit": "图片来自内置素材库(本次未接入生图能力)。"
+  },
+  "end": {
+    "line": "把建筑、街巷和光线带回家",
+  "fine": "图片来自内置素材库(本次未接入生图能力);接入生图模型或 KEY 后可为本次行程定制生成。"
+ },
+ "days": {
+    "2027-01-26": {
+      "theme": "抵达",
+      "en": "ARRIVE",
+      "mark": "01"
+    },
+    "2027-01-27": {
+      "theme": "圣家堂",
+      "en": "SAGRADA",
+      "mark": "02"
+    },
+    "2027-01-28": {
+      "theme": "老城",
+      "en": "OLD CITY",
+      "mark": "03"
+    },
+    "2027-01-29": {
+      "theme": "转场",
+      "en": "TRANSFER",
+      "mark": "04"
+    },
+    "2027-01-30": {
+      "theme": "阿尔罕布拉",
+      "en": "ALHAMBRA",
+      "mark": "05"
+    },
+    "2027-01-31": {
+      "theme": "塞维利亚",
+      "en": "SEVILLE",
+      "mark": "06"
+    },
+    "2027-02-01": {
+      "theme": "王宫",
+      "en": "ALCAZAR",
+      "mark": "07"
+    },
+    "2027-02-02": {
+      "theme": "广场与河",
+      "en": "PLAZA RIVER",
+      "mark": "08"
+    },
+    "2027-02-03": {
+      "theme": "返程",
+      "en": "RETURN",
+      "mark": "09"
+  }
+ },
+ "themes": {
+  "illustrated": {
+      "cover": {
+        "zh": "冬日西行",
+        "en": "ARCHITECTURE · LIGHT · WALK",
+        "sub": "Barcelona → Granada → Seville",
+    "hero": "stock-cover-mediterranean-coast"
+   },
+   "end": {
+    "hero": "plane"
+   },
+   "days": {
+    "2027-01-26": {
+     "hero": "stock-sagrada-familia",
+     "feature": true
+    },
+    "2027-01-27": {
+     "hero": "stock-cafe"
+    },
+    "2027-01-28": {
+     "hero": "stock-luggage"
+    },
+    "2027-01-29": {
+     "hero": "plane"
+    },
+    "2027-01-30": {
+     "hero": "stock-museum"
+    },
+    "2027-01-31": {
+     "hero": "japan-train"
+    },
+    "2027-02-01": {
+     "hero": "stock-cathedral"
+    },
+    "2027-02-02": {
+     "hero": "stock-bridge"
+    },
+    "2027-02-03": {
+     "hero": "plane"
+    }
+   }
+  }
+ }
+}

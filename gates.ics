@@ -1,0 +1,287 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//trip-planner//trip-gates//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:西班牙三城慢游｜建筑、历史与城市漫步 — boo
+ king gates
+BEGIN:VEVENT
+UID:trip-71c276399a@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20261015T090000
+DTEND:20261015T100000
+SUMMARY:确认香港旅客的 HKID/居留签证、香港领区资格和学
+ 校准假信
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: 2026-10-15\nDO: 签
+ 证资料不保存个人号码或扫描件；资格不明前不把香港
+ 递交点当作确定方案
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: 确认香港旅客的 HKID/居留签证、香港领
+ 区资格和学校准假信
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: 确认香港旅客的 HKID/居留签证、香港领区资
+ 格和学校准假信
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-f9a5138fdd@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20261015T090000
+DTEND:20261015T100000
+SUMMARY:核对三本护照有效期、空白页、保险日期和返程日
+ 期
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: 2026-10-15\nDO: 按
+ 西班牙领馆/BLS最新清单复核
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: 核对三本护照有效期、空白页、保险日
+ 期和返程日期
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: 核对三本护照有效期、空白页、保险日期和
+ 返程日期
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-c28833269a@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20261028T090000
+DTEND:20261028T100000
+SUMMARY:重新比较 1/25、1/26、1/27 的 HKG 1人与 PEK 2人完整往
+ 返票
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-90\nDO: 逐条确
+ 认税费、实际承运人、去回各至少20kg行李、返程机场和
+ 原始链接
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: 重新比较 1/25、1/26、1/27 的 HKG 1人与 PEK 2
+ 人完整往返票
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: 重新比较 1/25、1/26、1/27 的 HKG 1人与 PEK 2人
+ 完整往返票
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-5310a3f146@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20261127T090000
+DTEND:20261127T100000
+SUMMARY:咨询旅行门诊并按个人情况核对疫苗、常备药与保
+ 险援助
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-60\nDO: 本计划
+ 不替代医疗建议；保留医生/保险方给出的个别化意见，
+ 不在项目文件写入健康隐私
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: 咨询旅行门诊并按个人情况核对疫苗、
+ 常备药与保险援助
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: 咨询旅行门诊并按个人情况核对疫苗、常备
+ 药与保险援助
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-31bbf2d188@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20261127T090000
+DTEND:20261127T100000
+SUMMARY:检查 Alhambra 指定日期票务和 Nasrid Palaces 时段
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-60\nDO: 当前票
+ 规不应假定可改期或退款\nLINK: https://tickets.alhambra-patronat
+ o.es/en/producto/alhambra-general/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: 检查 Alhambra 指定日期票务和 Nasrid Palaces
+ 时段
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: 检查 Alhambra 指定日期票务和 Nasrid Palaces 时
+ 段
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-a704d8e91d@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20261127T090000
+DTEND:20261127T100000
+SUMMARY:检查 Sagrada Família 是否已开放目标日期并核对实名
+ 及时段规则
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-60\nDO: 当前页
+ 面通常约提前两个月开放，2027日期仍需重查\nLINK: https://
+ sagradafamilia.org/en/faqs
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: 检查 Sagrada Família 是否已开放目标日期
+ 并核对实名及时段规则
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: 检查 Sagrada Família 是否已开放目标日期并核
+ 对实名及时段规则
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-f3ae13608a@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20261212T090000
+DTEND:20261212T100000
+SUMMARY:按实际入住日期重新查询三城住宿
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-45\nDO: 酒店只
+ 在 Trip.com/携程查询；3位成人、1间房；逐项确认两张独
+ 立床、早餐、免费取消截止和含税总价；Barcelona 民宿另
+ 在 Airbnb 官方房源页复核\nLINK: https://us.trip.com/hotels/
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: 按实际入住日期重新查询三城住宿
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: 按实际入住日期重新查询三城住宿
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-33f386ce6e@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20261227T090000
+DTEND:20261227T100000
+SUMMARY:T-30 复核景点、铁路、巴士、机场接驳和地方活动
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-30\nDO: 特别检
+ 查 Alcázar、Cathedral、Sagrada、Park Güell、La Pedrera 和 Renfe/AL
+ SA
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: T-30 复核景点、铁路、巴士、机场接驳和
+ 地方活动
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: T-30 复核景点、铁路、巴士、机场接驳和地
+ 方活动
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-90073e0578@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20270112T090000
+DTEND:20270112T100000
+SUMMARY:T-14 复核签证/安全/营业时间/票价/天气和临时闭馆
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-14\nDO: 把仍为
+ candidate 的项目逐一降级或选定；不要以小红书替代官方
+ 页面
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: T-14 复核签证/安全/营业时间/票价/天气
+ 和临时闭馆
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: T-14 复核签证/安全/营业时间/票价/天气和临
+ 时闭馆
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-7d3ba8337f@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20270119T090000
+DTEND:20270119T100000
+SUMMARY:T-7 查看 AEMET 天气、雨天切换、Albaicín/Sacromonte 路
+ 面和交通改道
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-7\nDO: 如降雨
+ ，保留中心室内建筑，削减坡地与屋顶项目
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: T-7 查看 AEMET 天气、雨天切换、Albaicín/Sa
+ cromonte 路面和交通改道
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: T-7 查看 AEMET 天气、雨天切换、Albaicín/Sacromo
+ nte 路面和交通改道
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-41554af200@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20270123T090000
+DTEND:20270123T100000
+SUMMARY:T-3 复核罢工/施工/航站楼/车次，并把票券和住宿条
+ 款离线保存
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-3\nDO: 所有动
+ 态条款以当前供应商页面为准
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: T-3 复核罢工/施工/航站楼/车次，并把票
+ 券和住宿条款离线保存
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: T-3 复核罢工/施工/航站楼/车次，并把票券和
+ 住宿条款离线保存
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:trip-bc368a3657@trip-planner
+DTSTAMP:20260926T153258Z
+SEQUENCE:0
+DTSTART:20270125T090000
+DTEND:20270125T100000
+SUMMARY:T-1 检查手机漫游/eSIM、银行卡、证件副本和现金
+DESCRIPTION:09:00 local\, wherever you are.\nDEADLINE: T-1\nDO: 保留能
+ 接收银行短信的本国号码；不要把护照或支付信息写入
+ 项目文件
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Tomorrow: T-1 检查手机漫游/eSIM、银行卡、证件副
+ 本和现金
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Now: T-1 检查手机漫游/eSIM、银行卡、证件副本和
+ 现金
+TRIGGER:-PT30M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

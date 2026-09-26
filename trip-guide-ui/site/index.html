@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#18394a" />
+    <meta name="description" content="西班牙三城慢游的当天安排、当前步骤、交通和拍照机位。" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>冬日西行 · 西班牙旅行攻略</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="eyebrow"><span class="brand-mark" aria-hidden="true"></span>MAD · BCN · GRX · SVQ</div>
+        <div class="topbar-row">
+          <div>
+            <h1>冬日西行</h1>
+            <p id="trip-subtitle">西班牙三城慢游 · 建筑、历史与城市漫步</p>
+          </div>
+          <div class="topbar-actions">
+            <button class="install-button" id="install-button" type="button" hidden>安装到手机</button>
+          </div>
+        </div>
+        <div class="status-line">
+          <span id="connection-state" class="status-pill"><span class="status-dot"></span>正在检查网络</span>
+          <span class="status-copy">进度自动保存 · 地图需联网</span>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="day-strip" aria-label="选择旅行日">
+          <div class="section-heading compact-heading">
+            <div>
+              <span class="section-kicker">TRIP DAYS</span>
+              <h2>选择今天</h2>
+            </div>
+            <span id="day-count" class="muted-label">加载中</span>
+          </div>
+          <div id="day-picker" class="day-picker" role="list"></div>
+        </section>
+
+        <nav class="view-tabs" aria-label="攻略视图" role="tablist">
+          <button class="view-tab is-active" data-tab="today" role="tab" aria-selected="true" type="button">
+            <span class="tab-symbol" aria-hidden="true">☷</span>今日安排
+          </button>
+          <button class="view-tab" data-tab="step" role="tab" aria-selected="false" type="button">
+            <span class="tab-symbol" aria-hidden="true">◎</span>当前步骤
+          </button>
+        </nav>
+
+        <div id="app-content" aria-live="polite">
+          <section class="loading-card"><span class="loading-spinner"></span>正在载入行程数据…</section>
+        </div>
+      </main>
+
+      <footer class="bottom-bar">
+        <div class="bottom-bar-inner">
+          <button class="bottom-action is-active" data-tab="today" type="button"><span aria-hidden="true">☷</span><span>今日安排</span></button>
+          <button class="bottom-action" data-tab="step" type="button"><span aria-hidden="true">◎</span><span>当前步骤</span></button>
+          <button class="bottom-action" data-tab="prep" type="button"><span aria-hidden="true">✓</span><span>出发前</span></button>
+          <button class="bottom-action" id="copy-link-button" type="button"><span aria-hidden="true">↗</span><span>分享入口</span></button>
+        </div>
+      </footer>
+    </div>
+
+    <dialog id="install-dialog" class="install-dialog">
+      <div class="dialog-icon" aria-hidden="true">✦</div>
+      <h2>把攻略放到主屏幕</h2>
+      <p>在 Chrome 右上角点 <strong>⋮</strong>，选择“添加到主屏幕”或“安装应用”。安装后可像 App 一样打开，行程数据和进度会保存在这台手机上。</p>
+      <button class="primary-button" id="close-install-dialog" type="button">知道了</button>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
