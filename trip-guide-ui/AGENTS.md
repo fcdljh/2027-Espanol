@@ -18,7 +18,7 @@ When implementing from a selected generated mock, treat that image as the source
 - Accommodation cards may open existing Airbnb, Trip.com, Ctrip, Aena, or other supplier links for review, but must not present them as booking actions or start checkout. Keep the candidate/verification boundary visible.
 - City photo-reference cards use the checked-in local assets and their matching Xiaohongshu `explore` share URLs. The action copies the share URL, then uses the official `xhsdiscover://item/<note_id>` deep link to open the mobile app; only an unavailable app should fall back to the web URL. The card must state that social posts are inspiration, not operating or access evidence.
 - Keep traveler-facing Chinese natural and concrete. Prefer “转场确认”“预约事项”“备用安排”等 plain-language labels over internal planning jargon such as “决策门” or “预约锚点”.
-- The daily page's high-value summary should only keep today's walking amount and change plans that have a concrete destination or action. Do not use a budget guard as a daily summary item; show lodging and attraction prices next to their relevant cards instead. Keep safety and emergency guidance short at the bottom of the page.
+- The daily page's high-value summary should only keep today's walking amount and change plans that have a concrete destination or action. Do not use a budget guard as a daily summary item; show lodging and attraction prices next to their relevant cards instead. Keep safety and emergency guidance short at the bottom of the page, prioritizing actionable insurance-policy checks over research-source labels.
 
 ## Page-change commit rule
 

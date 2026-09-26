@@ -405,7 +405,8 @@ function changeGuardMarkup(day) {
   `;
 }
 
-function safetyFooterMarkup() {
+function safetyFooterMarkup(plan) {
+  const insurance = String(plan?.brief?.insurance || "出发前确认覆盖申根全程，医疗保额至少 EUR 30,000，并保存 24 小时援助方式。").trim();
   return `
     <section class="safety-footer-card" aria-label="安全与应急">
       <div class="safety-footer-heading">
@@ -413,6 +414,7 @@ function safetyFooterMarkup() {
         <a class="emergency-link" href="tel:112">拨打 112</a>
       </div>
       <p>人多把包放身前，夜间走亮路，使用正规交通；遇到紧急情况拨打 112。</p>
+      <p class="insurance-note"><strong>保险政策：</strong>${escapeHtml(insurance)}</p>
     </section>
   `;
 }
@@ -835,7 +837,7 @@ function renderToday(day) {
     </section>
 
 
-    ${safetyFooterMarkup()}
+    ${safetyFooterMarkup(state.plan)}
  `;
 
   bindTodayEvents();
@@ -890,7 +892,7 @@ function renderStep(day) {
       </section>
     ` : ""}
 
-    ${safetyFooterMarkup()}
+    ${safetyFooterMarkup(state.plan)}
   `;
 
   document.querySelectorAll("[data-toggle-step]").forEach((button) => {

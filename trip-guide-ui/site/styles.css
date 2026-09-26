@@ -221,6 +221,8 @@ a { color: inherit; }
 .safety-footer-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .safety-footer-card h3 { margin: 4px 0 0; color: var(--navy); font-family: Georgia, "Songti SC", serif; font-size: 18px; }
 .safety-footer-card p { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+.safety-footer-card .insurance-note { margin-top: 6px; }
+.safety-footer-card .insurance-note strong { color: var(--navy); }
 .safety-footer-card .emergency-link { flex: 0 0 auto; margin-top: 0; }
 
 .photo-reference-section { margin-top: 12px; padding: 17px; border: 1px solid rgba(185, 98, 70, 0.16); border-radius: 24px; background: #fff8ee; box-shadow: 0 8px 26px rgba(24, 57, 74, 0.05); }
