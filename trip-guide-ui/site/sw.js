@@ -1,4 +1,4 @@
-const CACHE_NAME = "spain-guide-static-v11";
+const CACHE_NAME = "spain-guide-static-v12";
 const PRECACHE = [
   "./",
   "./index.html",
@@ -75,9 +75,10 @@ self.addEventListener("fetch", (event) => {
   const requestUrl = new URL(event.request.url);
   if (requestUrl.origin !== self.location.origin) return;
 
-  // The itinerary is the one mutable payload: refresh it when online, but keep
-  // the last known copy available when the phone is offline.
-  if (requestUrl.pathname.endsWith("/plan.geo.json")) {
+  // JSON files are mutable trip data: refresh them when online, but keep the
+  // last known copy available when the phone is offline. This covers the
+  // itinerary, pre-departure checklist, and photo-reference index together.
+  if (requestUrl.pathname.endsWith(".json")) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
