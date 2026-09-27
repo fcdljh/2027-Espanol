@@ -48,8 +48,8 @@ const tagLabels = {
 
 const NAVIGATION_OVERRIDES = {
   "2027-01-26": {
-    0: { stop: "Madrid-Barajas Airport（入境节点）", mode: "transit" },
-    1: { stop: "Madrid-Barajas Airport（入境节点）", mode: "transit" },
+    0: { stop: "Madrid-Barajas Airport（入境机场）", mode: "transit" },
+    1: { stop: "Madrid-Barajas Airport（入境机场）", mode: "transit" },
     2: { label: "Madrid Puerta de Atocha 火车站", query: "Madrid Puerta de Atocha railway station, Madrid, Spain", mode: "transit" },
     5: { label: "圣家堂", query: "Basílica de la Sagrada Família, Barcelona, Spain", mode: "walking" }
   },
@@ -128,7 +128,7 @@ const TRAVEL_MODES = [
 
 const DAILY_MAPS = {
   "2027-01-26": {
-    description: "先看 Madrid 机场、Atocha 车站和市中心的相对位置；今天只处理入境与转场，不把交通日硬塞成观光日。",
+    description: "先看 Madrid 机场、Atocha 车站和市中心的相对位置；今天只处理入境和交通，不安排额外观光。",
     panels: [{ src: "./assets/trip/daily-maps/d01-madrid-airport-1.jpg", title: "Madrid · 机场—车站定位", alt: "Madrid 机场到 Atocha 车站的城市定位图" }]
   },
   "2027-01-27": {
@@ -469,7 +469,7 @@ function safetyFooterMarkup(plan) {
   return `
     <section class="safety-footer-card" aria-label="安全与应急">
       <div class="safety-footer-heading">
-        <div><span class="section-kicker">SAFETY</span><h3>安全与应急</h3></div>
+        <div><span class="section-kicker">安全</span><h3>安全与应急</h3></div>
         <a class="emergency-link" href="tel:112">拨打 112</a>
       </div>
       <p>人多把包放身前，夜间走亮路，使用正规交通；遇到紧急情况拨打 112。</p>
@@ -496,7 +496,7 @@ function dailyMapMarkup(day) {
   return `
     <section class="daily-map-card" aria-label="今日城市街巷图">
       <div class="card-heading-row">
-        <div><span class="section-kicker">CITY STREET MAP</span><h3>今天在哪里走</h3></div>
+        <div><span class="section-kicker">街巷地图</span><h3>今天在哪里走</h3></div>
         <span class="muted-label">街区定位</span>
       </div>
       <p class="daily-map-intro">${escapeHtml(map.description)}</p>
@@ -523,7 +523,7 @@ function nextStepMarkup(day, index, allComplete) {
   return `
     <section class="next-step-card ${allComplete ? "is-complete" : ""}" aria-label="${escapeHtml(label)}">
       <div class="next-step-top">
-        <div><span class="section-kicker">START HERE</span><h3>${escapeHtml(label)}</h3></div>
+        <div><span class="section-kicker">从这里开始</span><h3>${escapeHtml(label)}</h3></div>
         <span class="next-step-count">${escapeHtml(count)}</span>
       </div>
       <div class="next-step-main">
@@ -733,7 +733,7 @@ function lodgingMarkup(day) {
   const isCityStart = state.plan?.days?.findIndex((candidate) => candidate.city_id === day.city_id) === currentDayIndex();
   return `
     <details class="lodging-card" ${isCityStart ? "open" : ""}>
-      <summary><span><span class="section-kicker">STAY</span><strong>住宿入口</strong><small>${escapeHtml(hotelStatusLabel(hotel.status))} · ${escapeHtml(hotel.area)}</small></span><b>＋</b></summary>
+      <summary><span><span class="section-kicker">住宿</span><strong>住宿入口</strong><small>${escapeHtml(hotelStatusLabel(hotel.status))} · ${escapeHtml(hotel.area)}</small></span><b>＋</b></summary>
       <div class="lodging-detail">
         <p class="lodging-base">${escapeHtml(hotel.base)}</p>
         <p class="lodging-why">${escapeHtml(hotel.why)}</p>
@@ -849,7 +849,7 @@ function stepPhotoMarkup(day, item, index, { compact = false } = {}) {
   const postButtons = reference.posts.slice(0, 3).map((post) => xhsButtonMarkup(post, "xhs-inline-button")).join("");
   return `
     <aside class="step-photo-reference ${compact ? "is-compact" : ""}">
-      <div class="step-photo-heading"><span class="photo-camera-mark">◎</span><div><span class="section-kicker">PHOTO SPOT</span><strong>这里可以拍照</strong></div><span class="photo-count">${reference.posts.length || 0} 篇</span></div>
+      <div class="step-photo-heading"><span class="photo-camera-mark">◎</span><div><span class="section-kicker">拍照</span><strong>这里可以拍照</strong></div><span class="photo-count">${reference.posts.length || 0} 篇</span></div>
       <p class="step-photo-prompt">${escapeHtml(reference.step.prompt || "按机位提示拍一组即可，不为单一角度反复折返。")}</p>
       <p class="step-photo-location"><b>机位</b>${escapeHtml(spotNames)}</p>
       ${reference.images.length ? `<div class="step-photo-images">${reference.images.map((image) => photoImageMarkup(image, true)).join("")}</div>` : ""}
@@ -873,7 +873,7 @@ function photoReferencesMarkup(day) {
   return `
     <details class="photo-reference-section photo-reference-details">
       <summary class="photo-reference-summary">
-        <div><span class="section-kicker">PHOTO REFERENCES · 可选</span><h3>拍照参考</h3></div>
+        <div><span class="section-kicker">拍照参考 · 可选</span><h3>拍照参考</h3></div>
         <span class="muted-label">${city.posts.length} 篇 · ${imageCount} 张图</span><b aria-hidden="true">＋</b>
       </summary>
       <div class="photo-reference-body">
@@ -978,7 +978,7 @@ function renderToday(day) {
 
     <section class="timeline-card">
       <div class="card-heading-row">
-        <div><span class="section-kicker">FOLLOW THE LINE</span><h3>今天按这个顺序走</h3></div>
+        <div><span class="section-kicker">今天路线</span><h3>今天按这个顺序走</h3></div>
         <button class="small-action" data-open-step="${firstOpenIndex}" type="button">${allComplete ? "回看最后一步" : "从这里开始"}</button>
       </div>
       <div class="timeline-list">
@@ -1013,8 +1013,8 @@ function renderToday(day) {
 
     ${isTravelDay(day) ? `
       <section class="route-card">
-        <div class="card-heading-row">
-          <div><span class="section-kicker">ROUTE</span><h3>转场确认</h3></div>
+          <div class="card-heading-row">
+          <div><span class="section-kicker">交通</span><h3>今天的交通</h3></div>
           <a class="text-link" href="${escapeHtml(dayRouteUrl(day))}" target="_blank" rel="noreferrer">打开当天串联路线 ↗</a>
         </div>
         <div class="route-map-wrap"><img src="./assets/trip/route-map.jpg" alt="西班牙三城路线示意" loading="lazy" /></div>
@@ -1056,7 +1056,7 @@ function renderStep(day) {
 
   elements.appContent.innerHTML = `
     <section class="step-focus-card">
-      <div class="step-focus-top"><span class="section-kicker">CURRENT STEP · ${String(index + 1).padStart(2, "0")} / ${String(day.timeline.length).padStart(2, "0")}</span><span class="focus-date">${escapeHtml(formatDate(day.date))}</span></div>
+      <div class="step-focus-top"><span class="section-kicker">当前步骤 · ${String(index + 1).padStart(2, "0")} / ${String(day.timeline.length).padStart(2, "0")}</span><span class="focus-date">${escapeHtml(formatDate(day.date))}</span></div>
       <div class="step-time">${escapeHtml(item.t)}</div>
       <h2>${escapeHtml(item.what)}</h2>
       <div class="step-badges"><span class="kind-label">${escapeHtml(kindLabel(item.kind))}</span>${tagMarkup(item.tag)}${item.verify ? `<span class="verify-label">${escapeHtml(item.verify)}</span>` : ""}</div>
@@ -1071,13 +1071,13 @@ function renderStep(day) {
 
     ${stepPhotoMarkup(day, item, index)}
 
-    ${isTransfer ? `<section class="step-image-card"><img src="./assets/trip/route-map.jpg" alt="三城路线示意" loading="lazy" /><div><span class="section-kicker">KEEP THE BUFFER</span><p>交通日不追景点。先核对车票、站台、行李和入住地址；晚到时按转场安排直接入住和用餐。</p></div></section>` : ""}
+    ${isTransfer ? `<section class="step-image-card"><img src="./assets/trip/route-map.jpg" alt="三城路线示意" loading="lazy" /><div><span class="section-kicker">留出交通时间</span><p>交通日不追景点。先核对车票、站台、行李和入住地址；晚到时按当天交通安排直接入住和用餐。</p></div></section>` : ""}
 
     ${lodgingMarkup(day)}
     ${photoReferencesMarkup(day)}
 
     <section class="navigation-card">
-      <div class="card-heading-row"><div><span class="section-kicker">NEXT MOVE</span><h3>只看前后两步</h3></div><span class="muted-label">${completedCount(day)}/${day.timeline.length} 完成</span></div>
+      <div class="card-heading-row"><div><span class="section-kicker">接下来</span><h3>只看前后两步</h3></div><span class="muted-label">${completedCount(day)}/${day.timeline.length} 完成</span></div>
       <div class="step-nav-buttons">
         <button class="nav-step-button" data-step-nav="${previous ?? ""}" ${previous === null ? "disabled" : ""} type="button"><span>← 上一步</span>${previous === null ? "已经是第一步" : escapeHtml(day.timeline[previous].what)}</button>
         <button class="nav-step-button next" data-step-nav="${next ?? ""}" ${next === null ? "disabled" : ""} type="button"><span>下一步 →</span>${next === null ? "今天已到最后" : escapeHtml(day.timeline[next].what)}</button>
@@ -1086,7 +1086,7 @@ function renderStep(day) {
 
     ${day.late_cut ? `
       <section class="step-safety-card">
-        <span class="section-kicker">IF PLANS CHANGE</span>
+        <span class="section-kicker">遇到变化</span>
         <h3>如果现场有变化怎么办？</h3>
         <p>${escapeHtml(day.late_cut)}</p>
         ${stepSafetyNavigationMarkup(day, item, index)}
