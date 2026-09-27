@@ -2,7 +2,7 @@
 
 这里是可以直接部署到 HTTPS 静态托管的真实手机网页，不依赖 React、Node 或数据库。它与上一级 `trip-guide-ui/` 的手机框预览共用同一份 `plan.geo.json` 数据，但本目录本身就是可发布目录。
 
-如果上一级 `public/plan.geo.json` 有更新，先在 `trip-guide-ui/` 目录执行 `npm run sync:site`（或等价的 `node scripts/sync-static-site.mjs`），再发布本目录，避免网页包仍显示旧行程。
+如果上一级 `public/plan.geo.json` 有更新，本地可以执行 `npm run sync:site` 预览；正式发布时不需要手动复制或上传。推送到仓库 `main` 后，GitHub Actions 会自动同步 `public/` 到 `site/`、运行检查并发布 Pages。
 
 公开验收地址：<https://fcdljh.github.io/2027-Espanol/>。页面调试和三位旅伴的日常使用都以此公开地址为准，不使用 `localhost`、`127.0.0.1` 或其他本地预览地址。
 
@@ -30,19 +30,15 @@
 
 ## 推荐使用方式
 
-统一在 vivo Chrome 打开[公开 GitHub Pages 地址](https://fcdljh.github.io/2027-Espanol/)。页面内容变更后，先同步 `public/` 到 `site/`、运行检查并提交；完成已授权的 GitHub Pages 发布后，重新加载公开地址确认新内容已经出现。公开地址没有更新，就不能视为本次页面修改完成。Service Worker 会缓存核心页面、每日街巷图、路线图和进度壳，断网时仍可查看已经载入的攻略；交通、营业时间、票价和天气仍要以出发前及当天官方信息为准。
+统一在 vivo Chrome 打开[公开 GitHub Pages 地址](https://fcdljh.github.io/2027-Espanol/)。页面内容变更后，运行本地检查并提交到 `main`；GitHub Actions 会自动同步数据、验证页面并发布，完成后重新加载公开地址确认新内容已经出现。公开地址没有更新，就不能视为本次页面修改完成。Service Worker 会缓存核心页面、每日街巷图、路线图和进度壳，断网时仍可查看已经载入的攻略；交通、营业时间、票价和天气仍要以出发前及当天官方信息为准。
 
 ## 三种托管选择
 
 ### A. GitHub Pages：默认推荐
 
-适合这份不含个人证件、支付信息的静态攻略。当前项目的固定公开地址是 `https://fcdljh.github.io/2027-Espanol/`；用 GitHub Actions 将 `trip-guide-ui/site/` 发布到 Pages。GitHub Pages 是静态 HTML/CSS/JS 托管，不需要保持 peilab 在线。
+适合这份不含个人证件、支付信息的静态攻略。当前项目的固定公开地址是 `https://fcdljh.github.io/2027-Espanol/`；仓库中的 `.github/workflows/pages.yml` 已配置为推送 `main` 后自动同步静态数据、运行页面检查、上传 `trip-guide-ui/site/` 并部署到 Pages。GitHub Pages 是静态 HTML/CSS/JS 托管，不需要保持 peilab 在线。
 
-GitHub Actions 的最小思路：
-
-1. 在仓库 Settings → Pages 选择 GitHub Actions。
-2. 工作流 checkout 仓库，把 `trip-guide-ui/site` 上传为 Pages artifact。
-3. 部署完成后，用 vivo Chrome 打开 Actions 输出的 HTTPS 地址。
+首次使用前只需在仓库 Settings → Pages 选择 GitHub Actions；以后不再手动上传。部署完成后，用 vivo Chrome 打开固定公开地址。
 
 如果以后给项目绑定自定义域名，`manifest.webmanifest` 和 Service Worker 的相对路径仍可工作，不要把 `start_url` 改成带仓库名的绝对路径。
 

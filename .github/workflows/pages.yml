@@ -33,9 +33,13 @@ jobs:
       - name: Synchronize published static data
         run: node trip-guide-ui/scripts/sync-static-site.mjs
 
-      - name: Validate the published app shell
+      - name: Validate the published guide
         run: |
           node --check trip-guide-ui/site/app.js
+          node trip-guide-ui/scripts/check-mobile-runtime.mjs
+          cmp --silent trip-guide-ui/public/plan.geo.json trip-guide-ui/site/plan.geo.json
+          cmp --silent trip-guide-ui/public/pre-departure.json trip-guide-ui/site/pre-departure.json
+          cmp --silent trip-guide-ui/public/photo-references.json trip-guide-ui/site/photo-references.json
           test -f trip-guide-ui/site/index.html
           test -f trip-guide-ui/site/.nojekyll
 
