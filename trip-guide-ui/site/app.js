@@ -31,19 +31,19 @@ const elements = {
 
 const kindLabels = {
   arrival: "到达",
-  check: "确认",
-  hop: "转场",
+  check: "检查",
+  hop: "交通",
   lodging: "入住",
   meal: "用餐",
-  anchor: "预约事项",
+  anchor: "预约 / 门票",
   photo: "拍照",
   rest: "休息",
-  free: "空档"
+  free: "自由安排"
 };
 
 const tagLabels = {
-  pinned: "固定节点",
-  opener: "优先开始"
+  pinned: "重要安排",
+  opener: "建议先做"
 };
 
 const NAVIGATION_OVERRIDES = {
@@ -341,7 +341,7 @@ function navigationOptionsMarkup(target, className = "") {
 function navigationRowMarkup(day, item, index) {
   const target = destinationForItem(day, item, index);
   const routeLink = plannedRouteUrl(item);
-  if (!target && !routeLink) return `<span class="nav-unavailable">地点未单独锁定</span>`;
+  if (!target && !routeLink) return `<span class="nav-unavailable">地址待确认</span>`;
   if (!target) return `<a class="route-detail-link" href="${escapeHtml(routeLink)}" target="_blank" rel="noreferrer">打开已排好的这段路线 ↗</a>`;
   return `
     <div class="row-navigation">
@@ -356,10 +356,10 @@ function stepNavigationMarkup(day, item, index) {
   const target = destinationForItem(day, item, index);
   const routeLink = plannedRouteUrl(item);
   if (!target && !routeLink) {
-    return `<div class="step-navigation-missing"><strong>这一步没有单一目的地</strong><span>住宿、早餐或候选餐厅仍需出发前确认具体地址，暂不生成模糊地图入口。</span></div>`;
+    return `<div class="step-navigation-missing"><strong>这一步暂时没有固定地址</strong><span>住宿、早餐或餐厅要到出发前再确认具体地址，确认后再打开导航。</span></div>`;
   }
   if (!target) {
-    return `<div class="step-navigation"><div class="step-navigation-heading"><span>已排好的路线</span><strong>按当前路线核对</strong></div><a class="step-navigation-route" href="${escapeHtml(routeLink)}" target="_blank" rel="noreferrer">打开这段路线 ↗</a></div>`;
+    return `<div class="step-navigation"><div class="step-navigation-heading"><span>这段路线</span><strong>查看路线</strong></div><a class="step-navigation-route" href="${escapeHtml(routeLink)}" target="_blank" rel="noreferrer">打开这段路线 ↗</a></div>`;
   }
   return `
     <div class="step-navigation">
@@ -376,7 +376,7 @@ function stepSafetyNavigationMarkup(day, item, index) {
   const routeLink = plannedRouteUrl(item);
   if (target) return `<a href="${escapeHtml(mapsDirectionsUrl(target.query, target.mode || "walking"))}" target="_blank" rel="noreferrer">从当前位置重新核对 → ${escapeHtml(target.label)} ↗</a>`;
   if (routeLink) return `<a href="${escapeHtml(routeLink)}" target="_blank" rel="noreferrer">重新核对这段已排路线 ↗</a>`;
-  return `<span class="nav-unavailable">这一步没有单一目的地，不生成模糊导航</span>`;
+  return `<span class="nav-unavailable">地址确认后再打开导航</span>`;
 }
 
 function dayRouteUrl(day) {
@@ -458,7 +458,7 @@ function changeGuardMarkup(day) {
   if (!plans.length) return "";
   return `
     <details class="guard-card change-card">
-      <summary><span class="guard-icon delay-icon">↗</span><span><strong>遇到变化怎么办</strong><small>只显示有明确替代的情况</small></span></summary>
+      <summary><span class="guard-icon delay-icon">↗</span><span><strong>遇到变化怎么办</strong><small>这里只列真正能用的备用安排</small></span></summary>
       <div class="guard-detail change-detail">${plans.join("")}</div>
     </details>
   `;
@@ -508,7 +508,7 @@ function dailyMapMarkup(day) {
           </figure>
         `).join("")}
       </div>
-      <p class="daily-map-note">底图保留真实街道、街区和地标关系；彩色线是今天的预排走法，圆点数字对应顺序。具体出发仍按每一步的导航入口核对，底图数据 © OpenStreetMap contributors。</p>
+      <p class="daily-map-note">底图保留真实街道、街区和地标关系；彩色线是今天建议的走法，圆点数字对应顺序。具体出发仍按每一步的导航入口核对，底图数据 © OpenStreetMap contributors。</p>
     </section>
   `;
 }
@@ -611,7 +611,7 @@ function renderPreDeparture(preparation) {
   if (!preparation) {
     elements.appContent.innerHTML = `
       <section class="error-card prep-load-error">
-        <span class="section-kicker">PRE-DEPARTURE</span>
+        <span class="section-kicker">行前准备</span>
         <h2>行前清单暂时没有载入</h2>
         <p>请保持网页在线打开一次，让签证与行李清单进入离线缓存。</p>
       </section>
@@ -624,25 +624,25 @@ function renderPreDeparture(preparation) {
   const baggage = preparation.baggage;
   elements.appContent.innerHTML = `
     <section class="prep-hero-card">
-      <div class="prep-hero-top"><span class="section-kicker">PRE-DEPARTURE · ${escapeHtml(preparation.updated_at)}</span><span class="prep-status">${progress.completed}/${progress.total} 已完成</span></div>
-      <h2>出发前，把路线和两件大事定下来</h2>
+      <div class="prep-hero-top"><span class="section-kicker">行前准备 · ${escapeHtml(preparation.updated_at)}</span><span class="prep-status">${progress.completed}/${progress.total} 已完成</span></div>
+      <h2>出发前，把路线、签证和行李准备好</h2>
       <p>${escapeHtml(preparation.basis)}</p>
       <div class="prep-progress-track" aria-label="行前清单完成度"><span style="width:${progress.percent}%"></span></div>
       <div class="prep-hero-meta"><span>签证：${escapeHtml(visa.status)}</span><span>行李：三人冬季转场</span></div>
     </section>
 
     <section class="prep-section plan-lock-section">
-      <div class="prep-section-heading"><div><span class="section-kicker">00 · ITINERARY</span><h3>先把行程定稿</h3></div><span class="prep-count">出发前完成</span></div>
-      <p class="prep-summary">出发前确认每天的主线、预约、交通、住宿和备用安排。需要删改的内容在这里处理；出发后只按已经定好的路线执行，不在当天临时改行程。</p>
+      <div class="prep-section-heading"><div><span class="section-kicker">00 · 路线</span><h3>先把每天怎么走看一遍</h3></div><span class="prep-count">出发前完成</span></div>
+      <p class="prep-summary">出发前把每天要去的地方、预约、交通、住宿和下雨备用方案看一遍。旅途中遇到延误或下雨，就按当天卡片里的备用安排处理。</p>
       <div class="prep-hard-rules">
         <p><span>✓</span>先核对车票、预约时段、住宿地址和机场衔接。</p>
         <p><span>✓</span>把天气、体力和晚到时的备用走法提前写进当天安排。</p>
-        <p><span>✓</span>出发后只记录完成情况；行程调整回到本页，在出发前处理。</p>
+        <p><span>✓</span>出发后按当天卡片走；有变化时打开“遇到变化怎么办”。</p>
       </div>
     </section>
 
     <section class="prep-section visa-prep-section">
-      <div class="prep-section-heading"><div><span class="section-kicker">01 · VISA</span><h3>${escapeHtml(visa.title)}</h3></div><span class="prep-count">${visa.steps.filter((step) => state.preparation[step.id]).length}/${visa.steps.length}</span></div>
+      <div class="prep-section-heading"><div><span class="section-kicker">01 · 签证</span><h3>${escapeHtml(visa.title)}</h3></div><span class="prep-count">${visa.steps.filter((step) => state.preparation[step.id]).length}/${visa.steps.length}</span></div>
       <p class="prep-summary">${escapeHtml(visa.summary)}</p>
       <div class="prep-window"><span class="prep-window-icon">!</span><p>${escapeHtml(visa.window)}</p></div>
       <div class="prep-timeline">
@@ -670,7 +670,7 @@ function renderPreDeparture(preparation) {
     </section>
 
     <section class="prep-section baggage-prep-section">
-      <div class="prep-section-heading"><div><span class="section-kicker">02 · PACKING</span><h3>${escapeHtml(baggage.title)}</h3></div><span class="prep-count">${baggage.groups.flatMap((group) => group.items).filter((item) => state.preparation[item.id]).length}/${baggage.groups.flatMap((group) => group.items).length}</span></div>
+      <div class="prep-section-heading"><div><span class="section-kicker">02 · 行李</span><h3>${escapeHtml(baggage.title)}</h3></div><span class="prep-count">${baggage.groups.flatMap((group) => group.items).filter((item) => state.preparation[item.id]).length}/${baggage.groups.flatMap((group) => group.items).length}</span></div>
       <p class="prep-summary">${escapeHtml(baggage.summary)}</p>
       <div class="prep-hard-rules">${baggage.hard_rules.map((rule) => `<p><span>✓</span>${escapeHtml(rule)}</p>`).join("")}</div>
       <div class="prep-baggage-groups">
@@ -684,7 +684,7 @@ function renderPreDeparture(preparation) {
       <div class="prep-sources"><div class="prep-subheading"><strong>官方入口 / 小红书参考</strong><span>机场 / 场馆规则</span></div>${preparationSourceMarkup(baggage.sources)}</div>
     </section>
 
-    <section class="prep-footer-note"><span class="section-kicker">KEEP IT LOCAL</span><p>勾选进度只保存在这台手机的浏览器本地。它不会保存护照号、申请号、保单号或支付资料；签证、航班、行李和安检规则仍以出发前官方页面为准。</p></section>
+    <section class="prep-footer-note"><span class="section-kicker">资料留在本机</span><p>勾选进度只保存在这台手机的浏览器本地。它不会保存护照号、申请号、保单号或支付资料；签证、航班、行李和安检规则仍以出发前官方页面为准。</p></section>
   `;
   bindPreparationEvents();
 }
@@ -711,11 +711,11 @@ function hotelForDay(day) {
 
 function hotelStatusLabel(status) {
   return {
-    selected_candidate: "优先候选",
-    candidate: "待确认候选",
-    conditional_candidate: "有条件候选",
+    selected_candidate: "目前优先",
+    candidate: "待确认",
+    conditional_candidate: "备用选项",
     to_select: "出发前选择"
-  }[status] || "候选入口";
+  }[status] || "参考选项";
 }
 
 function hotelSupplierLabel(option) {
@@ -866,7 +866,7 @@ function photoReferencesMarkup(day) {
   const featured = featuredIds.map((id) => city.posts.find((post) => post.source_id === id)).filter(Boolean).slice(0, 3);
   const rest = city.posts.filter((post) => !featured.some((item) => item.source_id === post.source_id));
   const dayMapSpots = (config.map_spot_ids || []).map(photoSpotById).filter(Boolean);
-  const mapSpotText = dayMapSpots.length ? `地图已标出：${dayMapSpots.map((spot) => spot.label).join("、")}` : "当天没有额外锁定的相机标记";
+  const mapSpotText = dayMapSpots.length ? `地图已标出：${dayMapSpots.map((spot) => spot.label).join("、")}` : "今天没有另外标出的拍照点";
   const postImages = city.images || [];
   const licensedImages = city.licensed_images || [];
   const imageCount = postImages.length + licensedImages.length;
@@ -965,7 +965,7 @@ function renderToday(day) {
       </div>
       <h2>${escapeHtml(day.label)}</h2>
       <p class="day-city">${escapeHtml(cityDisplay(day))}</p>
-      <p class="day-ribbon">${escapeHtml(day.ribbon || "按已经确定的顺序执行。")}</p>
+      <p class="day-ribbon">${escapeHtml(day.ribbon || "按今天这条路线走，累了就跳过可选部分。")}</p>
       <div class="day-metrics">
         <span class="metric-pill metric-${walking.tone}"><b>走动</b><strong>${escapeHtml(walking.km)}</strong><small>${escapeHtml(walking.label)}</small></span>
         <span class="metric-pill"><b>节奏</b><strong>${isTravelDay(day) ? "缓冲日" : "分段走"}</strong><small>${isTravelDay(day) ? "先交通入住" : "累了就折返"}</small></span>
@@ -1060,8 +1060,8 @@ function renderStep(day) {
       <div class="step-time">${escapeHtml(item.t)}</div>
       <h2>${escapeHtml(item.what)}</h2>
       <div class="step-badges"><span class="kind-label">${escapeHtml(kindLabel(item.kind))}</span>${tagMarkup(item.tag)}${item.verify ? `<span class="verify-label">${escapeHtml(item.verify)}</span>` : ""}</div>
-      <p class="step-note">${escapeHtml(item.note || "按现场情况执行；如果出现不确定性，先停下来核对官方信息。")}</p>
-      <div class="step-support-row"><span>今天走 ${escapeHtml(walking.km)}</span><span>${escapeHtml(walking.label)}</span><span>${isTravelDay(day) ? "交通缓冲优先" : "按既定路线执行"}</span></div>
+      <p class="step-note">${escapeHtml(item.note || "先按这一步做；不确定时先看官方信息。")}</p>
+      <div class="step-support-row"><span>今天走 ${escapeHtml(walking.km)}</span><span>${escapeHtml(walking.label)}</span><span>${isTravelDay(day) ? "先处理交通和入住" : "按今天这条路线走"}</span></div>
       <div class="step-actions">
         <button class="primary-button ${done ? "is-complete" : ""}" data-toggle-step="${index}" type="button">${done ? "已完成 · 点此取消" : "完成当前步骤"}</button>
         ${nonNavigationOfficialUrl(item) ? `<a class="secondary-button" href="${escapeHtml(nonNavigationOfficialUrl(item))}" target="_blank" rel="noreferrer">${officialLinkLabel(item)}</a>` : ""}
