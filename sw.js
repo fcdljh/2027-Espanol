@@ -1,4 +1,4 @@
-const CACHE_NAME = "spain-guide-static-v9";
+const CACHE_NAME = "spain-guide-static-v10";
 const PRECACHE = [
   "./",
   "./index.html",
@@ -13,6 +13,18 @@ const PRECACHE = [
   "./assets/trip/seville-pose.jpg",
   "./assets/trip/route-map.jpg",
   "./assets/trip/tapas.jpg",
+  "./assets/trip/daily-maps/d01-madrid-airport-1.jpg",
+  "./assets/trip/daily-maps/d02-barcelona-modernisme-1.jpg",
+  "./assets/trip/daily-maps/d03-barcelona-eixample-1.jpg",
+  "./assets/trip/daily-maps/d04-barcelona-granada-1.jpg",
+  "./assets/trip/daily-maps/d04-barcelona-granada-2.jpg",
+  "./assets/trip/daily-maps/d05-granada-alhambra-1.jpg",
+  "./assets/trip/daily-maps/d06-granada-seville-1.jpg",
+  "./assets/trip/daily-maps/d06-granada-seville-2.jpg",
+  "./assets/trip/daily-maps/d07-seville-old-town-1.jpg",
+  "./assets/trip/daily-maps/d08-seville-madrid-1.jpg",
+  "./assets/trip/daily-maps/d08-seville-madrid-2.jpg",
+  "./assets/trip/daily-maps/d09-madrid-airport-1.jpg",
   "./assets/trip/references/barcelona/barcelona-69035b8e0000000004012896-01.jpg",
   "./assets/trip/references/barcelona/barcelona-69679455000000002203ad5e-01.jpg",
   "./assets/trip/references/barcelona/barcelona-69f1c63c000000003601dcee-02.jpg",

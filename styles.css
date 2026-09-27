@@ -142,6 +142,15 @@ a { color: inherit; }
 .route-map-wrap { overflow: hidden; margin-top: 14px; border-radius: 16px; background: var(--paper-deep); }
 .route-map-wrap img { display: block; width: 100%; aspect-ratio: 2.1 / 1; object-fit: cover; }
 
+.daily-map-card { margin-top: 12px; padding: 17px; border: 1px solid rgba(185, 98, 70, 0.18); border-radius: 24px; background: #fffaf0; box-shadow: 0 8px 26px rgba(24, 57, 74, 0.06); }
+.daily-map-card h3 { margin: 4px 0 0; color: var(--navy); font-family: Georgia, "Songti SC", serif; font-size: 21px; letter-spacing: -0.03em; }
+.daily-map-intro { margin: 9px 0 0; color: var(--muted); font-size: 13px; line-height: 1.62; }
+.daily-map-panels { display: grid; gap: 11px; margin-top: 13px; }
+.daily-map-panel { overflow: hidden; margin: 0; border: 1px solid rgba(24, 57, 74, 0.12); border-radius: 17px; background: var(--paper-deep); }
+.daily-map-panel img { display: block; width: 100%; aspect-ratio: 1200 / 680; object-fit: cover; }
+.daily-map-panel figcaption { padding: 8px 10px 9px; color: var(--navy); background: rgba(255, 253, 248, 0.9); font-size: 11px; font-weight: 850; }
+.daily-map-note { margin: 10px 0 0; color: #8a7467; font-size: 11px; line-height: 1.58; }
+
 .lodging-card { margin-top: 12px; overflow: hidden; border: 1px solid rgba(24, 57, 74, 0.1); border-radius: 22px; background: var(--white); box-shadow: 0 8px 26px rgba(24, 57, 74, 0.05); }
 .lodging-card summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 72px; padding: 14px 17px; color: var(--navy); cursor: pointer; list-style: none; }
 .lodging-card summary::-webkit-details-marker { display: none; }
