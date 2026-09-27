@@ -426,6 +426,16 @@ function cityDisplay(day) {
   return day?.city || "西班牙";
 }
 
+function shortCityDisplay(day) {
+  const city = cityDisplay(day);
+  return city
+    .replaceAll("Madrid", "马德里")
+    .replaceAll("Barcelona", "巴塞")
+    .replaceAll("Granada", "格拉纳达")
+    .replaceAll("Seville", "塞维利亚")
+    .replaceAll("→", " → ");
+}
+
 function isTravelDay(day) {
   return Boolean(day?.travel_day || String(day?.city || "").includes("→"));
 }
@@ -503,13 +513,39 @@ function dailyMapMarkup(day) {
   `;
 }
 
+function nextStepMarkup(day, index, allComplete) {
+  const item = day?.timeline?.[index];
+  if (!item) return "";
+  const target = destinationForItem(day, item, index);
+  const label = allComplete ? "今天已经走完" : "现在先做这一步";
+  const count = allComplete ? "已完成" : `第 ${index + 1} 步 / 共 ${day.timeline.length} 步`;
+  const buttonLabel = allComplete ? "回看最后一步" : "开始这一步";
+  return `
+    <section class="next-step-card ${allComplete ? "is-complete" : ""}" aria-label="${escapeHtml(label)}">
+      <div class="next-step-top">
+        <div><span class="section-kicker">START HERE</span><h3>${escapeHtml(label)}</h3></div>
+        <span class="next-step-count">${escapeHtml(count)}</span>
+      </div>
+      <div class="next-step-main">
+        <div>
+          <strong>${escapeHtml(item.what)}</strong>
+          <p>${escapeHtml(allComplete ? "可以回看今天的路线，或切到「出发前」继续准备。" : item.note || "按这一步行动；到达后再标记完成。")}</p>
+        </div>
+        <button class="next-step-button" data-open-step="${index}" type="button">${escapeHtml(buttonLabel)} <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="next-step-meta"><span>${target ? `目的地 · ${escapeHtml(target.label)}` : "先按步骤说明行动"}</span>${allComplete ? "" : "到达后点「完成这步」"}</div>
+    </section>
+  `;
+}
+
 function renderDayPicker() {
   if (!state.plan?.days) return;
-  elements.dayCount.textContent = `${state.plan.days.length} 天 · 可随时切换`;
+  elements.dayCount.textContent = `${state.plan.days.length} 天 · 左右滑动选择`;
   elements.dayPicker.innerHTML = state.plan.days.map((day, index) => `
-    <button class="day-chip ${day.date === state.selectedDate ? "is-selected" : ""}" data-date="${escapeHtml(day.date)}" role="listitem" type="button">
+    <button class="day-chip ${day.date === state.selectedDate ? "is-selected" : ""}" data-date="${escapeHtml(day.date)}" role="listitem" type="button" title="选择 ${escapeHtml(formatDayNumber(index))} · ${escapeHtml(formatDate(day.date))} · ${escapeHtml(shortCityDisplay(day))}">
       <span class="day-chip-number">${formatDayNumber(index)}</span>
       <span class="day-chip-date">${escapeHtml(formatDate(day.date))}</span>
+      <span class="day-chip-city">${escapeHtml(shortCityDisplay(day))}</span>
     </button>
   `).join("");
 
@@ -835,37 +871,39 @@ function photoReferencesMarkup(day) {
   const licensedImages = city.licensed_images || [];
   const imageCount = postImages.length + licensedImages.length;
   return `
-    <section class="photo-reference-section">
-      <div class="card-heading-row">
-        <div><span class="section-kicker">PHOTO REFERENCES</span><h3>打卡参考图</h3></div>
-        <span class="muted-label">${city.posts.length} 篇 · ${imageCount} 张图</span>
-      </div>
-      <p class="photo-reference-intro">${escapeHtml(config.intro || city.intro || "先看机位提示，再决定是否拍摄。")}</p>
-      <p class="photo-reference-map-note"><span>◎</span>${escapeHtml(mapSpotText)}。地图上的相机点是参考位置，不代表可以占用通道或保证空场。</p>
-      ${postImages.length ? `
-        <div class="photo-image-group">
-          <div class="photo-image-heading"><strong>小红书动作与构图参考</strong><span>${postImages.length} 张已归档图片</span></div>
-          <div class="photo-static-strip">${postImages.map((image) => photoImageMarkup(image)).join("")}</div>
-        </div>
-      ` : ""}
-      ${licensedImages.length ? `
-        <div class="photo-image-group is-licensed-group">
-          <div class="photo-image-heading"><strong>公开授权景点图</strong><span>${licensedImages.length} 张 · 已记录作者与许可</span></div>
-          <div class="photo-static-strip">${licensedImages.map((image) => photoImageMarkup(image)).join("")}</div>
-        </div>
-      ` : ""}
-      <div class="photo-featured-heading"><strong>先看这 3 篇</strong><span>复制链接后唤起小红书 App</span></div>
-      <div class="photo-featured-links">${featured.map((post) => xhsButtonMarkup(post)).join("")}</div>
-      ${rest.length ? `
-        <details class="photo-post-library">
-          <summary><span>查看其余 ${rest.length} 篇参考帖</span><b>＋</b></summary>
-          <div class="photo-post-list">
-            ${rest.map((post) => `<article class="photo-post-row"><div><strong>${escapeHtml(post.title)}</strong><small>${escapeHtml(post.location || "已读拍照参考")}</small><em>${escapeHtml(post.hint || "只作构图灵感")}</em></div>${xhsButtonMarkup(post, "xhs-library-button")}</article>`).join("")}
+    <details class="photo-reference-section photo-reference-details">
+      <summary class="photo-reference-summary">
+        <div><span class="section-kicker">PHOTO REFERENCES · 可选</span><h3>拍照参考</h3></div>
+        <span class="muted-label">${city.posts.length} 篇 · ${imageCount} 张图</span><b aria-hidden="true">＋</b>
+      </summary>
+      <div class="photo-reference-body">
+        <p class="photo-reference-intro">${escapeHtml(config.intro || city.intro || "先看机位提示，再决定是否拍摄。")}</p>
+        <p class="photo-reference-map-note"><span>◎</span>${escapeHtml(mapSpotText)}。地图上的相机点是参考位置，不代表可以占用通道或保证空场。</p>
+        ${postImages.length ? `
+          <div class="photo-image-group">
+            <div class="photo-image-heading"><strong>小红书动作与构图参考</strong><span>${postImages.length} 张已归档图片</span></div>
+            <div class="photo-static-strip">${postImages.map((image) => photoImageMarkup(image)).join("")}</div>
           </div>
-        </details>
-      ` : ""}
-      <p class="photo-reference-note">小红书帖子只用于动作、构图和机位线索；公开授权景点图只帮助理解建筑、街巷和机位空间。开放时间、门票、拍摄许可和现场动线仍以官方页面与当日标识为准。点击帖子按钮会先复制分享链接，再尝试打开手机端小红书 App；没有 App 才回退到网页。</p>
-    </section>
+        ` : ""}
+        ${licensedImages.length ? `
+          <div class="photo-image-group is-licensed-group">
+            <div class="photo-image-heading"><strong>公开授权景点图</strong><span>${licensedImages.length} 张 · 已记录作者与许可</span></div>
+            <div class="photo-static-strip">${licensedImages.map((image) => photoImageMarkup(image)).join("")}</div>
+          </div>
+        ` : ""}
+        <div class="photo-featured-heading"><strong>先看这 3 篇</strong><span>复制链接后唤起小红书 App</span></div>
+        <div class="photo-featured-links">${featured.map((post) => xhsButtonMarkup(post)).join("")}</div>
+        ${rest.length ? `
+          <details class="photo-post-library">
+            <summary><span>查看其余 ${rest.length} 篇参考帖</span><b>＋</b></summary>
+            <div class="photo-post-list">
+              ${rest.map((post) => `<article class="photo-post-row"><div><strong>${escapeHtml(post.title)}</strong><small>${escapeHtml(post.location || "已读拍照参考")}</small><em>${escapeHtml(post.hint || "只作构图灵感")}</em></div>${xhsButtonMarkup(post, "xhs-library-button")}</article>`).join("")}
+            </div>
+          </details>
+        ` : ""}
+        <p class="photo-reference-note">小红书帖子只用于动作、构图和机位线索；公开授权景点图只帮助理解建筑、街巷和机位空间。开放时间、门票、拍摄许可和现场动线仍以官方页面与当日标识为准。点击帖子按钮会先复制分享链接，再尝试打开手机端小红书 App；没有 App 才回退到网页。</p>
+      </div>
+    </details>
   `;
 }
 
@@ -914,7 +952,9 @@ function renderToday(day) {
   const progress = Math.round((completedCount / Math.max(1, day.timeline.length)) * 100);
   const walking = walkingStatus(day);
   const hero = heroForDay(day);
-  const firstOpenIndex = Math.max(0, day.timeline.findIndex((_, index) => !isComplete(day, index)));
+  const firstUnfinishedIndex = day.timeline.findIndex((_, index) => !isComplete(day, index));
+  const allComplete = firstUnfinishedIndex < 0;
+  const firstOpenIndex = allComplete ? Math.max(0, day.timeline.length - 1) : firstUnfinishedIndex;
   const heroMarkup = hero ? `<img class="day-hero-image" src="${hero}" alt="西班牙旅途视觉" loading="lazy" />` : "";
 
   elements.appContent.innerHTML = `
@@ -934,33 +974,19 @@ function renderToday(day) {
       ${heroMarkup}
     </section>
 
-    ${dailyMapMarkup(day)}
-
-    ${lodgingMarkup(day)}
-
-    ${isTravelDay(day) ? `
-      <section class="route-card">
-        <div class="card-heading-row">
-          <div><span class="section-kicker">ROUTE</span><h3>转场确认</h3></div>
-          <a class="text-link" href="${escapeHtml(dayRouteUrl(day))}" target="_blank" rel="noreferrer">打开当天串联路线 ↗</a>
-        </div>
-        <div class="route-map-wrap"><img src="./assets/trip/route-map.jpg" alt="西班牙三城路线示意" loading="lazy" /></div>
-        <p>只按最终车票、航站楼和住宿地址行动；不要把不确定的换乘写成“肯定赶得上”。</p>
-      </section>
-    ` : ""}
-
-    ${photoReferencesMarkup(day)}
+    ${nextStepMarkup(day, firstOpenIndex, allComplete)}
 
     <section class="timeline-card">
       <div class="card-heading-row">
         <div><span class="section-kicker">FOLLOW THE LINE</span><h3>今天按这个顺序走</h3></div>
-        <button class="small-action" data-open-step="${firstOpenIndex}" type="button">从现在开始</button>
+        <button class="small-action" data-open-step="${firstOpenIndex}" type="button">${allComplete ? "回看最后一步" : "从这里开始"}</button>
       </div>
       <div class="timeline-list">
         ${day.timeline.map((item, index) => {
           const done = isComplete(day, index);
+          const isNext = !allComplete && index === firstOpenIndex;
           return `
-            <article class="timeline-row ${done ? "is-done" : ""}" data-step-index="${index}">
+            <article class="timeline-row ${done ? "is-done" : ""} ${isNext ? "is-next" : ""}" data-step-index="${index}">
               <div class="timeline-time">${escapeHtml(item.t)}</div>
               <div class="timeline-rail"><span class="timeline-dot ${done ? "is-done" : ""}">${done ? "✓" : iconForKind(item.kind)}</span></div>
               <div class="timeline-body">
@@ -980,6 +1006,23 @@ function renderToday(day) {
         }).join("")}
       </div>
     </section>
+
+    ${dailyMapMarkup(day)}
+
+    ${lodgingMarkup(day)}
+
+    ${isTravelDay(day) ? `
+      <section class="route-card">
+        <div class="card-heading-row">
+          <div><span class="section-kicker">ROUTE</span><h3>转场确认</h3></div>
+          <a class="text-link" href="${escapeHtml(dayRouteUrl(day))}" target="_blank" rel="noreferrer">打开当天串联路线 ↗</a>
+        </div>
+        <div class="route-map-wrap"><img src="./assets/trip/route-map.jpg" alt="西班牙三城路线示意" loading="lazy" /></div>
+        <p>只按最终车票、航站楼和住宿地址行动；不要把不确定的换乘写成“肯定赶得上”。</p>
+      </section>
+    ` : ""}
+
+    ${photoReferencesMarkup(day)}
 
     <section class="quick-grid" aria-label="旅行辅助">
       <button class="quick-card quick-food" data-quick-kind="meal" type="button">

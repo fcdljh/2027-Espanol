@@ -21,7 +21,7 @@
         <div class="topbar-row">
           <div>
             <h1>冬日西行</h1>
-            <p id="trip-subtitle">西班牙三城慢游 · 建筑、历史与城市漫步</p>
+            <p id="trip-subtitle">三城慢游 · 先走当天主线，再看地图和拍照参考</p>
           </div>
           <div class="topbar-actions">
             <button class="install-button" id="install-button" type="button" hidden>安装到手机</button>
@@ -29,7 +29,7 @@
         </div>
         <div class="status-line">
           <span id="connection-state" class="status-pill"><span class="status-dot"></span>正在检查网络</span>
-          <span class="status-copy">进度自动保存 · 每日地图可离线</span>
+          <span class="status-copy">先选日期 → 打开当前一步 → 到达后标完成</span>
         </div>
       </header>
 
@@ -40,17 +40,18 @@
               <span class="section-kicker">TRIP DAYS</span>
               <h2>选择今天</h2>
             </div>
-            <span id="day-count" class="muted-label">加载中</span>
+            <span id="day-count" class="muted-label">左右滑动选择</span>
           </div>
+          <p class="day-strip-tip">第一次打开先选日期；网页会记住你上次看到的天数和步骤。</p>
           <div id="day-picker" class="day-picker" role="list"></div>
         </section>
 
         <nav class="view-tabs" aria-label="攻略视图" role="tablist">
           <button class="view-tab is-active" data-tab="today" role="tab" aria-selected="true" type="button">
-            <span class="tab-symbol" aria-hidden="true">☷</span>今日安排
+            <span class="tab-symbol" aria-hidden="true">☷</span>今天总览
           </button>
           <button class="view-tab" data-tab="step" role="tab" aria-selected="false" type="button">
-            <span class="tab-symbol" aria-hidden="true">◎</span>当前步骤
+            <span class="tab-symbol" aria-hidden="true">◎</span>跟着走
           </button>
         </nav>
 
@@ -61,10 +62,10 @@
 
       <footer class="bottom-bar">
         <div class="bottom-bar-inner">
-          <button class="bottom-action is-active" data-tab="today" type="button"><span aria-hidden="true">☷</span><span>今日安排</span></button>
-          <button class="bottom-action" data-tab="step" type="button"><span aria-hidden="true">◎</span><span>当前步骤</span></button>
+          <button class="bottom-action is-active" data-tab="today" type="button"><span aria-hidden="true">☷</span><span>今天</span></button>
+          <button class="bottom-action" data-tab="step" type="button"><span aria-hidden="true">◎</span><span>当前一步</span></button>
           <button class="bottom-action" data-tab="prep" type="button"><span aria-hidden="true">✓</span><span>出发前</span></button>
-          <button class="bottom-action" id="copy-link-button" type="button"><span aria-hidden="true">↗</span><span>分享入口</span></button>
+          <button class="bottom-action" id="copy-link-button" type="button"><span aria-hidden="true">↗</span><span>分享</span></button>
         </div>
       </footer>
     </div>
