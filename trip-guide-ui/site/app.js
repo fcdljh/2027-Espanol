@@ -754,10 +754,13 @@ function lodgingMarkup(day) {
 
 function restaurantsForDay(day) {
   const restaurants = Array.isArray(state.plan?.restaurants) ? state.plan.restaurants : [];
+  const dayKey = String(day?.date || "").slice(0, 10);
   return restaurants.filter((restaurant) => {
-    if (Array.isArray(restaurant.day_ids) && restaurant.day_ids.length) {
-      return restaurant.day_ids.includes(day?.date);
-    }
+    const dayIds = Array.isArray(restaurant.day_ids) ? restaurant.day_ids.map((value) => String(value).slice(0, 10)) : [];
+    if (dayIds.includes(dayKey)) return true;
+    // Keep the card visible if an imported itinerary uses a date/time value
+    // instead of the plain ISO day key. Travel days still require an explicit
+    // day assignment so a restaurant never appears on the wrong transfer day.
     return restaurant.city_id === day?.city_id && !isTravelDay(day);
   });
 }
