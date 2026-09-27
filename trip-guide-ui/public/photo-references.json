@@ -1,0 +1,713 @@
+{
+  "version": 1,
+  "updated_at": "2026-09-27T00:00:00+08:00",
+  "purpose": "把已完整阅读的拍照类小红书笔记整理成城市与机位参考库；帖子只用于构图灵感，开放时间、门票、拍摄许可和现场动线仍以官方信息和现场标识为准。",
+  "asset_note": "图片分为两类：小红书原帖对应的动作/构图参考图，以及已记录作者、许可和来源页的公开授权景点图。两类素材不混称；公开图用于理解空间与机位，不代表当天现场状态。",
+  "cities": {
+    "barcelona": {
+      "label": "Barcelona",
+      "intro": "今天先看对应机位，再决定要不要拍。下面的 10 篇是已读参考库，顶部只放 3 篇最值得先打开的帖子。",
+      "featured": [
+        "69fc512a00000000230156e7",
+        "69f1c63c000000003601dcee",
+        "6aabad310000000026017400"
+      ],
+      "images": [
+        {
+          "image": "assets/trip/references/barcelona/barcelona-69f1c63c000000003601dcee-02.jpg",
+          "source_id": "69f1c63c000000003601dcee",
+          "title": "城市高机位与远望",
+          "caption": "同城构图参考：远望、侧身和城市层次",
+          "spot_ids": ["sagrada-pool", "city-overlook", "la-pedrera-corner"]
+        },
+        {
+          "image": "assets/trip/references/barcelona/barcelona-69035b8e0000000004012896-01.jpg",
+          "source_id": "69035b8e0000000004012896",
+          "title": "哥特区街巷比例",
+          "caption": "街巷纵深、走动和回头动作",
+          "spot_ids": ["gothic-lane", "cathedral-side"]
+        },
+        {
+          "image": "assets/trip/references/barcelona/barcelona-69679455000000002203ad5e-01.jpg",
+          "source_id": "69679455000000002203ad5e",
+          "title": "老城回头动作",
+          "caption": "侧肩、回头与建筑尺度",
+          "spot_ids": ["gothic-lane", "cathedral-side"]
+        },
+        {
+          "image": "assets/trip/references/barcelona/barcelona-69679455000000002203ad5e-02.jpg",
+          "source_id": "69679455000000002203ad5e",
+          "title": "窗边借光补充",
+          "caption": "同一篇笔记的第二张轮播图，补充借光动作",
+          "spot_ids": ["gothic-lane", "cathedral-side"]
+        }
+      ],
+      "licensed_images": [
+        {
+          "image": "assets/trip/references/licensed/barcelona/sagrada-nativity.jpg",
+          "kind": "public-license",
+          "title": "圣家堂诞生立面",
+          "caption": "从地面看立面尺度，适合对照水面、长椅和建筑的高低关系。",
+          "spot_ids": ["sagrada-pool"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Sagrada_Fam%C3%ADlia_Nativity_Fa%C3%A7ade_from_Ground,_Barcelona,_2023.jpg",
+          "author": "Julian Lupyan",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/barcelona/sant-pau.jpg",
+          "kind": "public-license",
+          "title": "Sant Pau 外立面",
+          "caption": "补看现代主义轴线的横向展开和建筑间距。",
+          "spot_ids": ["sant-pau-axis"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Hospital_de_Sant_Pau-Barcelona.jpg",
+          "author": "Tudoi61",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/barcelona/casa-batllo.jpg",
+          "kind": "public-license",
+          "title": "Casa Batlló 立面",
+          "caption": "对照街角、阳台和整栋立面的纵向比例。",
+          "spot_ids": ["casa-batllo-corner"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:CasaBatllo.jpg",
+          "author": "Massimo Catarinella",
+          "license": "CC BY 3.0",
+          "license_url": "https://creativecommons.org/licenses/by/3.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/barcelona/la-pedrera.jpg",
+          "kind": "public-license",
+          "title": "La Pedrera 外立面",
+          "caption": "看波浪立面和街角透视，不把室内照片误当成外部机位。",
+          "spot_ids": ["la-pedrera-corner"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:La_Pedrera_BCN.jpg",
+          "author": "Nat21",
+          "license": "CC BY-SA 3.0 ES",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/es/"
+        },
+        {
+          "image": "assets/trip/references/licensed/barcelona/arc-de-triomf.jpg",
+          "kind": "public-license",
+          "title": "Arc de Triomf 远景",
+          "caption": "作为老城分支的城市轴线参考，选择该分支时再单独导航。",
+          "spot_ids": ["gothic-lane", "cathedral-side"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Barcelona_arc_de_triomf.jpg",
+          "author": "Isiwal",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/barcelona/park-guell.jpg",
+          "kind": "public-license",
+          "title": "Park Güell 入口构图",
+          "caption": "仅作为城市高处和高迪建筑的远景构图补充，不加入当天路线。",
+          "spot_ids": ["city-overlook"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Park_G%C3%BCell_(8).jpg",
+          "author": "Fred Romero",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/"
+        }
+      ],
+      "posts": [
+        {
+          "source_id": "69d3f37b0000000023014645",
+          "title": "巴塞罗那 city walk｜小众拍照机位分享",
+          "location": "主教堂、Carrer del Bisbe、Sagrada Família、Arc de Triomf",
+          "hint": "分散机位要拆成短段；适合先看建筑关系，再决定拍人还是拍空镜。",
+          "spot_ids": ["gothic-lane", "sagrada-pool", "passeig-gracia-axis"]
+        },
+        {
+          "source_id": "69f1c63c000000003601dcee",
+          "title": "去巴塞罗那前刷到的 18 个机位",
+          "location": "圣家堂池塘、主教堂旁巷子、Casa Milà、城市高处",
+          "hint": "圣家堂诞生立面池塘/长椅适合倒影和人物层次；远景机位按天气决定。",
+          "spot_ids": ["sagrada-pool", "city-overlook", "la-pedrera-corner"]
+        },
+        {
+          "source_id": "6a07a6760000000035039f46",
+          "title": "巴塞罗那 Tibidabo 上山攻略",
+          "location": "Tibidabo 教堂、缆车沿线、山顶平台",
+          "hint": "日落前到、分段拍日间和蓝调；山顶风大，外套和末班交通要先核对。",
+          "spot_ids": ["city-overlook"]
+        },
+        {
+          "source_id": "69d3a075000000001a02c36f",
+          "title": "巴塞最出片的十个机位",
+          "location": "Tibidabo、Ciutadella、主教座堂后侧、Casa Milà",
+          "hint": "同一城市可以分成清晨海边、建筑细节和高处远景，不要把十个点硬塞一天。",
+          "spot_ids": ["city-overlook", "cathedral-side", "la-pedrera-corner"]
+        },
+        {
+          "source_id": "69679455000000002203ad5e",
+          "title": "Barcelona｜主教座堂街拍",
+          "location": "主教座堂周边街巷",
+          "hint": "图片更适合作为动作和穿搭参考；天气与场地规则不能从评论推断。",
+          "spot_ids": ["gothic-lane", "cathedral-side"]
+        },
+        {
+          "source_id": "69035b8e0000000004012896",
+          "title": "去巴塞罗那请留一天给哥特区",
+          "location": "Kiss wall、主教座堂、哥特区小巷",
+          "hint": "走动、回头和街巷比例最容易复刻；三人同行按天色决定收队时间。",
+          "spot_ids": ["gothic-lane", "cathedral-side"]
+        },
+        {
+          "source_id": "694d1d0a000000001e000a8e",
+          "title": "巴塞罗那 2 天 citywalk 攻略",
+          "location": "Santa Caterina、哥特区、Born、Casa Milà、圣家堂",
+          "hint": "适合用来比较老城与扩展区的镜头节奏；餐厅和酒吧只作线索。",
+          "spot_ids": ["gothic-lane", "la-pedrera-corner", "sagrada-pool"]
+        },
+        {
+          "source_id": "6aabad310000000026017400",
+          "title": "巴塞罗那旅行的一些 tips",
+          "location": "圣家堂、Sant Pau、焦糖山、蒙锥克",
+          "hint": "圣家堂下午彩窗与 Sant Pau 人像线索很适合当前路线；免费日、交通和开放范围另查。",
+          "spot_ids": ["sagrada-pool", "sant-pau-axis", "city-overlook"]
+        },
+        {
+          "source_id": "69fc512a00000000230156e7",
+          "title": "巴塞罗那圣家堂拍照机位分享",
+          "location": "诞生立面池塘、附近长椅、巴特罗之家顶楼取景",
+          "hint": "先拍池水倒影，再拍长椅和立面关系；站位以不挡入口、不占用通行空间为准。",
+          "spot_ids": ["sagrada-pool", "casa-batllo-corner"]
+        },
+        {
+          "source_id": "6a7bae6a000000003303339a",
+          "title": "巴塞罗那爱在日落黄昏时",
+          "location": "圣家堂、焦糖山回望城市的路线",
+          "hint": "日落前到、拍完再按末班交通离开；文中的站点和清场时间不当作固定结论。",
+          "spot_ids": ["sagrada-pool", "city-overlook"]
+        }
+      ]
+    },
+    "granada": {
+      "label": "Granada",
+      "intro": "Granada 的参考库分成宫殿纹样、Generalife 窗景和 Albaicín 远景三类；先按当天票面和体力选一类。",
+      "featured": [
+        "6a032e9c0000000038021d4b",
+        "68de4ccd0000000007009706",
+        "6a8a70f70000000033022bfd"
+      ],
+      "images": [
+        {
+          "image": "assets/trip/references/granada/granada-6a032e9c0000000038021d4b-01.jpg",
+          "source_id": "6a032e9c0000000038021d4b",
+          "title": "Alhambra 纹样墙",
+          "caption": "正面半身与几何背景",
+          "spot_ids": ["alhambra-pattern"]
+        },
+        {
+          "image": "assets/trip/references/granada/granada-68de4ccd0000000007009706-01.jpg",
+          "source_id": "68de4ccd0000000007009706",
+          "title": "Alhambra 柱廊",
+          "caption": "柱廊框景与人物比例",
+          "spot_ids": ["alhambra-pattern", "albaicin-view"]
+        },
+        {
+          "image": "assets/trip/references/granada/granada-6a8a70f70000000033022bfd-01.jpg",
+          "source_id": "6a8a70f70000000033022bfd",
+          "title": "Generalife 窗景",
+          "caption": "侧身借光与花园远景",
+          "spot_ids": ["generalife-window"]
+        },
+        {
+          "image": "assets/trip/references/granada/granada-6a032e9c0000000038021d4b-02.jpg",
+          "source_id": "6a032e9c0000000038021d4b",
+          "title": "步道走动补充",
+          "caption": "同一篇笔记的第二张轮播图，补充走动和回头",
+          "spot_ids": ["alhambra-pattern"]
+        }
+      ],
+      "licensed_images": [
+        {
+          "image": "assets/trip/references/licensed/granada/generalife-garden.jpg",
+          "kind": "public-license",
+          "title": "Generalife 花园",
+          "caption": "看花园层次、墙体比例和可以借景的位置。",
+          "spot_ids": ["generalife-window"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Generalife_Garden_Alhambra_2014.jpg",
+          "author": "Tuxyso",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/granada/generalife-interior.jpg",
+          "kind": "public-license",
+          "title": "Generalife 内庭",
+          "caption": "补看水渠、花园和室内外光线的连接方式。",
+          "spot_ids": ["generalife-window"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Jardines_interior_de_El_Generalife._La_Alhambra,_Granada._(1).JPG",
+          "author": "Lmbuga",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/granada/nasrid-charles-v.jpg",
+          "kind": "public-license",
+          "title": "Nasrid 宫与 Charles V 宫",
+          "caption": "用来理解 Alhambra 园区的外部关系和山景层次。",
+          "spot_ids": ["alhambra-pattern"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Nasrid_Palaces_and_Palace_of_Charles_V._Alhambra,_Granada._Spain.jpg",
+          "author": "Ввласенко",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/granada/generalife-view.jpg",
+          "kind": "public-license",
+          "title": "从 Generalife 看 Alhambra",
+          "caption": "对照窗景、红堡和远山的空间层次。",
+          "spot_ids": ["generalife-window", "albaicin-view"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Granada_-_Alhambra_-_View_from_Generalife.jpg",
+          "author": "Benjamin Smith",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/granada/alhambra-courtyard.jpg",
+          "kind": "public-license",
+          "title": "Alhambra 小庭院",
+          "caption": "看庭院小尺度和人物站位，不把静态图当作当天开放区域承诺。",
+          "spot_ids": ["alhambra-pattern"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Alhambra,_small_courtyard_garden_RI-51-0010966.JPG",
+          "author": "Mumina",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+        }
+      ],
+      "posts": [
+        {
+          "source_id": "69de31e4000000001e00d39c",
+          "title": "格拉纳达｜人生不过几个 Moment",
+          "location": "San Nicolás、San Miguel、Huerto del Carlos",
+          "hint": "经典远景、开阔高点和自然前景三种画面不要只选一个；夜间上坡按现场情况收队。",
+          "spot_ids": ["albaicin-view"]
+        },
+        {
+          "source_id": "6a032e9c0000000038021d4b",
+          "title": "阿尔罕布拉宫出片攻略",
+          "location": "Nasrid Palaces 室内纹样、柱廊和马赛克",
+          "hint": "提前看好几何背景和轮拍顺序；具体机位和拍摄限制以当天场馆规则为准。",
+          "spot_ids": ["alhambra-pattern"]
+        },
+        {
+          "source_id": "69ec8096000000002202696e",
+          "title": "格拉纳达景点从夯到拉",
+          "location": "Alhambra、Albaicín、San Nicolás、San Miguel",
+          "hint": "把宫殿、白墙老城、远景和室内细节拆开安排，不按个人排名硬改路线。",
+          "spot_ids": ["alhambra-pattern", "albaicin-view"]
+        },
+        {
+          "source_id": "68de4ccd0000000007009706",
+          "title": "纳宫所有人来给我狠狠拍照",
+          "location": "Alhambra 宫殿柱廊与室内光影",
+          "hint": "舒适鞋和提前购票比追求单一机位更重要；不要把宫殿参观后再硬接上坡。",
+          "spot_ids": ["alhambra-pattern", "albaicin-view"]
+        },
+        {
+          "source_id": "6a76c23800000000290324c4",
+          "title": "格拉纳达的阳光，我先拍了",
+          "location": "山城高点、Alhambra 红堡、庭院喷泉",
+          "hint": "午后暖光适合慢拍；雪山和黄金时刻都要按当天能见度判断。",
+          "spot_ids": ["alhambra-pattern", "albaicin-view"]
+        },
+        {
+          "source_id": "6987d767000000000e03f554",
+          "title": "Granada 圣尼古拉斯观景台攻略",
+          "location": "San Nicolás、San Miguel Alto、Albaicín",
+          "hint": "日落后留一点蓝调时间，San Nicolás 和 San Miguel 二选一即可。",
+          "spot_ids": ["albaicin-view"]
+        },
+        {
+          "source_id": "699d53f800000000090382c7",
+          "title": "HOLA 格拉纳达",
+          "location": "白墙街巷、San Nicolás、Alhambra 远景",
+          "hint": "半天街拍加晚餐和观景更松弛，适合抵达日或不追景点的下午。",
+          "spot_ids": ["albaicin-view"]
+        },
+        {
+          "source_id": "68e205b1000000000700f5b1",
+          "title": "阿尔罕布拉宫超详细攻略",
+          "location": "主入口、Generalife、城堡、Nasrid Palaces",
+          "hint": "把证件、票面时段、入口和拍摄顺序一次确认，减少在园区内来回找路。",
+          "spot_ids": ["alhambra-pattern", "generalife-window"]
+        },
+        {
+          "source_id": "6a8a70f70000000033022bfd",
+          "title": "阿宫！人类文明怎么能繁荣成这样",
+          "location": "Generalife 花园、夏宫到纳宫的路段",
+          "hint": "窗框、花园和远景适合做层次；停留位置以不堵通道为准。",
+          "spot_ids": ["generalife-window", "alhambra-pattern"]
+        },
+        {
+          "source_id": "6a6c75a60000000005028b85",
+          "title": "格拉纳达无法超越的 48 小时",
+          "location": "Albaicín、San Nicolás、Alhambra 与雪山",
+          "hint": "如果时间被压缩，优先保留老城上坡、日落和蓝调合影，室内景点另留完整日。",
+          "spot_ids": ["albaicin-view"]
+        }
+      ]
+    },
+    "seville": {
+      "label": "Seville",
+      "intro": "Seville 的帖子重点集中在西班牙广场、王宫花园、橙园与 Santa Cruz；先按光线和入场时段选机位。",
+      "featured": [
+        "6a031929000000000800056d",
+        "6a0861410000000038036572",
+        "6a59f6ab000000001f01c472"
+      ],
+      "images": [
+        {
+          "image": "assets/trip/references/seville/seville-6a0861410000000038036572-01.jpg",
+          "source_id": "6a0861410000000038036572",
+          "title": "拱廊走入光线",
+          "caption": "阴影、走动和回望",
+          "spot_ids": ["plaza-arcade"]
+        },
+        {
+          "image": "assets/trip/references/seville/seville-6a031929000000000800056d-01.jpg",
+          "source_id": "6a031929000000000800056d",
+          "title": "西班牙广场桥边",
+          "caption": "桥、砖墙与人物比例",
+          "spot_ids": ["plaza-arcade"]
+        },
+        {
+          "image": "assets/trip/references/seville/seville-6a689e71000000000f01da95-01.jpg",
+          "source_id": "6a689e71000000000f01da95",
+          "title": "二层平台暖色光线",
+          "caption": "清晨光线与暖色穿搭",
+          "spot_ids": ["plaza-arcade"]
+        },
+        {
+          "image": "assets/trip/references/seville/seville-6a0861410000000038036572-02.jpg",
+          "source_id": "6a0861410000000038036572",
+          "title": "桥边回望补充",
+          "caption": "同一篇笔记的第二张轮播图，补充桥边动作",
+          "spot_ids": ["plaza-arcade"]
+        }
+      ],
+      "licensed_images": [
+        {
+          "image": "assets/trip/references/licensed/seville/plaza-espana.jpg",
+          "kind": "public-license",
+          "title": "西班牙广场全景",
+          "caption": "先看拱廊、桥和中央空间的整体关系，再决定当天只拍哪一段。",
+          "spot_ids": ["plaza-arcade"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Plaza_de_Espana_de_Sevilla.jpg",
+          "author": "Gica-cobra",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/seville/real-alcazar.jpg",
+          "kind": "public-license",
+          "title": "Real Alcázar 花园",
+          "caption": "补看回廊、花园和水景之间的拍摄层次。",
+          "spot_ids": ["alcazar-garden"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Real_Alcazar_de_Sevilla.jpg",
+          "author": "Adriantngc",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/seville/giralda.jpg",
+          "kind": "public-license",
+          "title": "Giralda 塔楼仰角",
+          "caption": "用来找橙园或街口的塔楼仰角，现场再按行人和宗教场所标识调整。",
+          "spot_ids": ["orange-court"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Giralda_Seville_Cathedral.jpg",
+          "author": "Melrskin",
+          "license": "CC0 1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+          "image": "assets/trip/references/licensed/seville/cathedral-giralda.jpg",
+          "kind": "public-license",
+          "title": "主教座堂与 Giralda",
+          "caption": "看塔楼与教堂立面的同框关系，作为橙园外部取景补充。",
+          "spot_ids": ["orange-court"],
+          "source_page": "https://commons.wikimedia.org/wiki/File:Catedral_y_Giralda_de_Sevilla.jpg",
+          "author": "Jnov",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+        }
+      ],
+      "posts": [
+        {
+          "source_id": "699d43b9000000001503a4a7",
+          "title": "塞维利亚 Citywalk 推荐",
+          "location": "Plaza de Magdalena、Plaza del Duque、Plaza de Salvador",
+          "hint": "喷泉、橙树、报刊亭和户外桌适合拍生活感；广场入口和光线现场确认。",
+          "spot_ids": ["santa-cruz-lane"]
+        },
+        {
+          "source_id": "6a031929000000000800056d",
+          "title": "西班牙广场大出片落日机位",
+          "location": "西侧拱廊、中央喷泉、东侧桥与廊下",
+          "hint": "先拍建筑全貌，再按西侧拱廊→中央喷泉→东侧桥的顺序轮拍人物。",
+          "spot_ids": ["plaza-arcade"]
+        },
+        {
+          "source_id": "6a0861410000000038036572",
+          "title": "西班牙广场出片不需要攻略",
+          "location": "桥、彩色瓷砖栏杆、拱廊和塔楼",
+          "hint": "走路、转圈、回头和侧身动作比追一个唯一机位更稳；傍晚避开正午顶光。",
+          "spot_ids": ["plaza-arcade"]
+        },
+        {
+          "source_id": "6a455f73000000000803d358",
+          "title": "去塞维利亚前刷到的攻略",
+          "location": "王宫、主教座堂、Santa Cruz、西班牙广场",
+          "hint": "王宫和主教座堂按入场时段拍建筑细节，Santa Cruz 做中间的松弛街拍段。",
+          "spot_ids": ["alcazar-garden", "orange-court", "santa-cruz-lane", "plaza-arcade"]
+        },
+        {
+          "source_id": "68e6063c0000000007023234",
+          "title": "塞维利亚拍照机位大全",
+          "location": "西班牙广场 P1–P4、王宫花园、主教座堂",
+          "hint": "二层外侧、内侧瓷砖和拱廊纵深可以分三组拍；王宫花园按开放区域执行。",
+          "spot_ids": ["plaza-arcade", "alcazar-garden", "orange-court"]
+        },
+        {
+          "source_id": "6ab251f700000000380362ff",
+          "title": "西班牙广场有彩虹",
+          "location": "西班牙广场、Itálica",
+          "hint": "只把喷泉光线当作可等待的弹性，不把彩虹或 Itálica 交通当成固定安排。",
+          "spot_ids": ["plaza-arcade"]
+        },
+        {
+          "source_id": "6a59f6ab000000001f01c472",
+          "title": "深度打卡橘子味塞维利亚",
+          "location": "王宫、橙园、Giralda、Santa Cruz、西班牙广场",
+          "hint": "上午拍王宫回廊和橙园，傍晚留给西班牙广场与河岸；适合三人轮流拍。",
+          "spot_ids": ["alcazar-garden", "orange-court", "santa-cruz-lane", "plaza-arcade"]
+        },
+        {
+          "source_id": "6a689e71000000000f01da95",
+          "title": "逃跑去塞维利亚｜爱的热烈",
+          "location": "西班牙广场二层平台与拱廊",
+          "hint": "早到、先拍顺光建筑，再拍暖色穿搭；平台开放范围以现场标识为准。",
+          "spot_ids": ["plaza-arcade"]
+        },
+        {
+          "source_id": "68e4f5090000000007037713",
+          "title": "西班牙 18 天游记中的塞维利亚",
+          "location": "王宫花园、西班牙广场、老城咖啡馆",
+          "hint": "适合参考“建筑＋日常”组合，不把跨城图片或咖啡馆营业当成当前结论。",
+          "spot_ids": ["alcazar-garden", "plaza-arcade", "santa-cruz-lane"]
+        },
+        {
+          "source_id": "6a1ffd8c00000000070257ab",
+          "title": "西班牙景点从夯到拉",
+          "location": "王宫、西班牙广场、都市阳伞、黄金塔",
+          "hint": "黄昏橙色调可以作为统一拍摄方向；景点开放与登塔规则另按官方核对。",
+          "spot_ids": ["alcazar-garden", "plaza-arcade"]
+        }
+      ]
+    }
+  },
+  "spots": {
+    "sagrada-pool": {
+      "label": "诞生立面水面 / 长椅",
+      "stop_name": "Sagrada Família",
+      "hint": "先拍水面倒影和立面关系，再换到长椅侧面的半身；不要挡入口或占通道。",
+      "post_ids": ["69f1c63c000000003601dcee", "69fc512a00000000230156e7", "6a7bae6a000000003303339a"]
+    },
+    "sant-pau-axis": {
+      "label": "Avinguda Gaudí 现代主义轴线",
+      "stop_name": "Sant Pau",
+      "hint": "站到街道两侧拍建筑串联，不要只拍单栋立面；先确认门票和允许拍摄区域。",
+      "post_ids": ["6aabad310000000026017400", "69d3f37b0000000023014645"]
+    },
+    "casa-batllo-corner": {
+      "label": "Casa Batlló 街角透视",
+      "stop_name": "Casa Batlló",
+      "hint": "优先拍对街立面、阳台和街角透视；人像站位给行人留出连续通道。",
+      "post_ids": ["69fc512a00000000230156e7", "694d1d0a000000001e000a8e"]
+    },
+    "la-pedrera-corner": {
+      "label": "La Pedrera 外立面街角",
+      "stop_name": "La Pedrera",
+      "hint": "用波浪立面和街口线条做背景；没有预约就拍外观，不在入口排未知时长的队。",
+      "post_ids": ["69f1c63c000000003601dcee", "69d3a075000000001a02c36f", "694d1d0a000000001e000a8e"]
+    },
+    "passeig-gracia-axis": {
+      "label": "Passeig de Gràcia 街区透视",
+      "stop_name": "Passeig de Gràcia",
+      "hint": "先看阳光和人流，再决定现代主义线还是老城分支；不要求当天两条线都走完。",
+      "post_ids": ["69d3f37b0000000023014645", "69d3a075000000001a02c36f"]
+    },
+    "gothic-lane": {
+      "label": "哥特区侧巷 / 叹息桥方向",
+      "stop_name": "Passeig de Gràcia",
+      "hint": "这是 D03 的可选分支提示，实际导航按当天选择的老城入口重新核对。",
+      "post_ids": ["69035b8e0000000004012896", "69679455000000002203ad5e", "69ef59a9000000001a036e77"]
+    },
+    "cathedral-side": {
+      "label": "主教座堂侧巷",
+      "stop_name": "Passeig de Gràcia",
+      "hint": "静态图只作构图参考；哥特区实际位置不在本张 Eixample 地图范围内，选择该分支时重新打开 Google Maps。",
+      "post_ids": ["69d3f37b0000000023014645", "69679455000000002203ad5e"]
+    },
+    "city-overlook": {
+      "label": "城市高处 / 远望构图",
+      "stop_name": "Passeig de Gràcia",
+      "hint": "仅作同城远景参考，不把 Tibidabo 或焦糖山临时加进今天路线。",
+      "post_ids": ["69f1c63c000000003601dcee", "6a07a6760000000035039f46", "6a7bae6a000000003303339a"]
+    },
+    "alhambra-pattern": {
+      "label": "Nasrid 宫纹样 / 柱廊",
+      "stop_name": "Nasrid Palaces",
+      "hint": "先确认票面时段；只用无闪光、无三脚架的轻量拍摄，轮拍时不堵门洞和通道。",
+      "post_ids": ["6a032e9c0000000038021d4b", "68de4ccd0000000007009706", "68e205b1000000000700f5b1"]
+    },
+    "generalife-window": {
+      "label": "Generalife 窗框 / 花园远景",
+      "stop_name": "Alhambra",
+      "hint": "从 Partal 到 Generalife 的路段留出短暂停留，先观察游客动线再拍，不为单一角度逆行。",
+      "post_ids": ["6a8a70f70000000033022bfd", "68e205b1000000000700f5b1"]
+    },
+    "albaicin-view": {
+      "label": "Albaicín 远望 Alhambra",
+      "stop_name": "Granada Cathedral",
+      "hint": "本次 D05 不把观景台临时加进 Alhambra 日；只保留为后续可复核的远景参考。",
+      "post_ids": ["69de31e4000000001e00d39c", "6987d767000000000e03f554", "6a6c75a60000000005028b85"]
+    },
+    "plaza-arcade": {
+      "label": "西班牙广场拱廊 / 桥 / 瓷砖",
+      "stop_name": "Plaza de España",
+      "hint": "按西侧拱廊、中央喷泉、东侧桥的顺序试拍；光线和现场围栏以当天为准。",
+      "post_ids": ["6a031929000000000800056d", "6a0861410000000038036572", "6a689e71000000000f01da95"]
+    },
+    "alcazar-garden": {
+      "label": "王宫庭院 / 花园回廊",
+      "stop_name": "Real Alcázar",
+      "hint": "按预约和开放范围拍回廊、庭院与花园；不要把帖子中的二层或浴室当成必然开放。",
+      "post_ids": ["6a455f73000000000803d358", "68e6063c0000000007023234", "6a59f6ab000000001f01c472"]
+    },
+    "orange-court": {
+      "label": "橙园水渠 / Giralda 仰角",
+      "stop_name": "Cathedral and Giralda",
+      "hint": "先拍水渠和橙树细节，再拍塔楼仰角；宗教场所内按着装与拍摄规则执行。",
+      "post_ids": ["6a59f6ab000000001f01c472", "68e6063c0000000007023234", "6a455f73000000000803d358"]
+    },
+    "santa-cruz-lane": {
+      "label": "Santa Cruz 白墙 / 橙树街巷",
+      "stop_name": "Santa Cruz",
+      "hint": "把街巷当作建筑之间的缓冲段，拍一组生活感就收，不为人少照片反复折返。",
+      "post_ids": ["699d43b9000000001503a4a7", "6a59f6ab000000001f01c472", "68e4f5090000000007037713"]
+    }
+  },
+  "days": {
+    "2027-01-27": {
+      "pool_city_id": "barcelona",
+      "intro": "今天的拍照提示跟着现代主义轴线走；先拍圣家堂外围，再决定是否在 Sant Pau 外部补一组。",
+      "map_spot_ids": ["sagrada-pool", "sant-pau-axis"],
+      "step_refs": {
+        "2": {
+          "spot_ids": ["sagrada-pool"],
+          "post_ids": ["69fc512a00000000230156e7", "69f1c63c000000003601dcee", "69d3f37b0000000023014645"],
+          "prompt": "这里可以拍照：先找诞生立面水面/长椅的倒影关系，再轮流拍半身和建筑全景。"
+        },
+        "4": {
+          "spot_ids": ["sant-pau-axis"],
+          "post_ids": ["6aabad310000000026017400", "69d3f37b0000000023014645"],
+          "prompt": "沿 Avinguda Gaudí 走时可以补拍现代主义轴线；不要在入口或人行道中央停留。"
+        },
+        "8": {
+          "spot_ids": ["sagrada-pool"],
+          "post_ids": ["69fc512a00000000230156e7", "6a7bae6a000000003303339a"],
+          "prompt": "下午回到外围只补一组即可；如果光线或体力不合适，直接休息，不为机位折返。"
+        }
+      }
+    },
+    "2027-01-28": {
+      "pool_city_id": "barcelona",
+      "intro": "今天的主线是 Eixample 街区；地图上的三个相机标记对应 Casa Batlló、La Pedrera 和格拉西亚大道。",
+      "map_spot_ids": ["casa-batllo-corner", "la-pedrera-corner", "passeig-gracia-axis"],
+      "step_refs": {
+        "2": {
+          "spot_ids": ["casa-batllo-corner"],
+          "post_ids": ["69fc512a00000000230156e7", "694d1d0a000000001e000a8e"],
+          "prompt": "这里可以拍照：优先拍对街立面、阳台和街角透视，先让行人通行再轮拍。"
+        },
+        "3": {
+          "spot_ids": ["la-pedrera-corner", "passeig-gracia-axis"],
+          "post_ids": ["69f1c63c000000003601dcee", "69d3a075000000001a02c36f", "694d1d0a000000001e000a8e"],
+          "prompt": "Casa Batlló→La Pedrera 的街段适合拍立面同框和街区透视；不把室内票务当成拍摄许可。"
+        },
+        "8": {
+          "spot_ids": ["passeig-gracia-axis"],
+          "post_ids": ["69d3f37b0000000023014645", "69d3a075000000001a02c36f"],
+          "prompt": "Arc / Gothic 是当天可选分支；如果选择老城，打开对应地点导航后再拍，不把两条路线硬并成一条。"
+        }
+      }
+    },
+    "2027-01-30": {
+      "pool_city_id": "granada",
+      "intro": "今天只围绕 Alhambra 的票面和园区动线拍摄；地图上的相机标记是宫殿纹样和 Generalife 窗景。",
+      "map_spot_ids": ["alhambra-pattern", "generalife-window"],
+      "step_refs": {
+        "4": {
+          "spot_ids": ["alhambra-pattern"],
+          "post_ids": ["6a032e9c0000000038021d4b", "68de4ccd0000000007009706", "68e205b1000000000700f5b1"],
+          "prompt": "Nasrid 票面时段内可以拍照：先看几何纹样和柱廊的空隙，再用手机轻量轮拍。"
+        },
+        "7": {
+          "spot_ids": ["generalife-window"],
+          "post_ids": ["6a8a70f70000000033022bfd", "68e205b1000000000700f5b1", "6a032e9c0000000038021d4b"],
+          "prompt": "Partal→Generalife 可以找窗框、水面和花园远景；不逆行、不堵通道，现场不允许就跳过。"
+        }
+      }
+    },
+    "2027-01-31": {
+      "pool_city_id": "seville",
+      "intro": "抵达 Seville 后只保留西班牙广场一组轻量拍摄；不把转场日变成完整景点日。",
+      "map_spot_ids": ["plaza-arcade"],
+      "step_refs": {
+        "6": {
+          "spot_ids": ["plaza-arcade"],
+          "post_ids": ["6a031929000000000800056d", "6a0861410000000038036572", "6a689e71000000000f01da95"],
+          "prompt": "这里只拍一轮：拱廊、桥或中央喷泉三选一；风雨或到达晚就直接折返。"
+        }
+      }
+    },
+    "2027-02-01": {
+      "pool_city_id": "seville",
+      "intro": "今天的拍摄跟着入场时段走：王宫内看回廊与花园，主教座堂外看橙园与塔楼，最后在 Santa Cruz 放慢。",
+      "map_spot_ids": ["alcazar-garden", "orange-court", "santa-cruz-lane"],
+      "step_refs": {
+        "2": {
+          "spot_ids": ["alcazar-garden"],
+          "post_ids": ["6a455f73000000000803d358", "68e6063c0000000007023234", "6a59f6ab000000001f01c472"],
+          "prompt": "王宫可以拍庭院、回廊和花园，但以当天开放区域为准；先观察动线，再轮流拍。"
+        },
+        "6": {
+          "spot_ids": ["orange-court"],
+          "post_ids": ["6a59f6ab000000001f01c472", "68e6063c0000000007023234", "6a455f73000000000803d358"],
+          "prompt": "这里可以拍橙园水渠、Giralda 仰角和橙树细节；宗教场所内按现场标识执行。"
+        },
+        "8": {
+          "spot_ids": ["santa-cruz-lane"],
+          "post_ids": ["699d43b9000000001503a4a7", "6a59f6ab000000001f01c472", "68e4f5090000000007037713"],
+          "prompt": "Santa Cruz 适合补一组白墙、花窗或橙树生活感，不为人少角度反复折返。"
+        }
+      }
+    },
+    "2027-02-02": {
+      "pool_city_id": "seville",
+      "intro": "离开 Seville 前只留西班牙广场的短拍；车站和行李优先，拍完立即回酒店取行李。",
+      "map_spot_ids": ["plaza-arcade"],
+      "step_refs": {
+        "1": {
+          "spot_ids": ["plaza-arcade"],
+          "post_ids": ["6a031929000000000800056d", "6a0861410000000038036572", "6a689e71000000000f01da95"],
+          "prompt": "只拍拱廊、中央喷泉和一张三人合照；若车票或退房时间提前，直接取消拍摄。"
+        }
+      }
+    }
+  }
+}

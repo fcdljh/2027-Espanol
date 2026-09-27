@@ -17,6 +17,7 @@ try {
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectDirectory = path.resolve(scriptDirectory, "..");
 const planPath = path.join(projectDirectory, "public", "plan.geo.json");
+const photoReferencesPath = path.join(projectDirectory, "public", "photo-references.json");
 const outputDirectories = [
   path.join(projectDirectory, "public", "assets", "trip", "daily-maps"),
   path.join(projectDirectory, "site", "assets", "trip", "daily-maps")
@@ -56,6 +57,7 @@ const MAP_SPECS = [
         title: "Barcelona · 现代主义轴线",
         zoom: 15,
         points: ["Sagrada Família", "Sant Pau"],
+        photo_spot_ids: ["sagrada-pool", "sant-pau-axis"],
         labels: { "Sagrada Família": "圣家堂", "Sant Pau": "Sant Pau" }
       }
     ]
@@ -69,6 +71,7 @@ const MAP_SPECS = [
         title: "Barcelona · Eixample 街区",
         zoom: 15,
         points: ["Casa Batlló", "La Pedrera", "Passeig de Gràcia"],
+        photo_spot_ids: ["casa-batllo-corner", "la-pedrera-corner", "passeig-gracia-axis"],
         labels: { "Casa Batlló": "巴特罗之家", "La Pedrera": "米拉之家", "Passeig de Gràcia": "格拉西亚大道" }
       }
     ]
@@ -101,6 +104,7 @@ const MAP_SPECS = [
         title: "Granada · Alhambra 山坡",
         zoom: 15,
         points: ["Granada base", "Alhambra", "Nasrid Palaces"],
+        photo_spot_ids: ["generalife-window", "alhambra-pattern"],
         labels: { "Granada base": "住处 / 城区", Alhambra: "Alhambra", "Nasrid Palaces": "Nasrid 宫" }
       }
     ]
@@ -120,6 +124,7 @@ const MAP_SPECS = [
         title: "Seville · 入住后短线",
         zoom: 15,
         points: ["Seville base", "Plaza de España"],
+        photo_spot_ids: ["plaza-arcade"],
         labels: { "Seville base": "住处", "Plaza de España": "西班牙广场" }
       }
     ]
@@ -133,6 +138,7 @@ const MAP_SPECS = [
         title: "Seville · 老城核心",
         zoom: 15,
         points: ["Real Alcázar", "Cathedral and Giralda", "Santa Cruz"],
+        photo_spot_ids: ["alcazar-garden", "orange-court", "santa-cruz-lane"],
         labels: { "Real Alcázar": "王宫", "Cathedral and Giralda": "主教座堂", "Santa Cruz": "Santa Cruz" }
       }
     ]
@@ -146,6 +152,7 @@ const MAP_SPECS = [
         title: "Seville · 车站出发",
         zoom: 14,
         points: ["Plaza de España", "Sevilla Santa Justa"],
+        photo_spot_ids: ["plaza-arcade"],
         labels: { "Plaza de España": "西班牙广场", "Sevilla Santa Justa": "Santa Justa 车站" }
       },
       {
@@ -366,8 +373,24 @@ function marker(point, label, index) {
   `;
 }
 
-function mapOverlay({ panel, viewport, mapPoints, routes }) {
+function photoMarker(point, label, index) {
+  const width = Math.max(106, label.length * 14 + 30);
+  const x = Math.min(OUTPUT_WIDTH - width - 14, Math.max(14, point.x - width / 2));
+  const y = Math.min(OUTPUT_HEIGHT - 58, Math.max(82, point.y + (index % 2 ? 31 : -55)));
+  return `
+    <g class="photo-marker">
+      <circle cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="13" class="photo-marker-ring" />
+      <circle cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="8" class="photo-marker-dot" />
+      <text x="${point.x.toFixed(1)}" y="${(point.y + 4).toFixed(1)}" class="photo-marker-icon">◎</text>
+      <rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${width.toFixed(1)}" height="27" rx="9" class="photo-label-box" />
+      <text x="${(x + 11).toFixed(1)}" y="${(y + 18).toFixed(1)}" class="photo-label-text">${escapeXml(label)}</text>
+    </g>
+  `;
+}
+
+function mapOverlay({ panel, viewport, mapPoints, routes, photoPoints }) {
   const markerPoints = mapPoints.map((point) => imagePoint(point.lon, point.lat, viewport));
+  const photoMarkerPoints = photoPoints.map((point) => imagePoint(point.lon, point.lat, viewport));
   const paths = routes.map((coordinates) => routePath(coordinates, viewport)).join(" ");
   const routeClass = panel.routeMode === "transfer" ? "route-line transfer-line" : "route-line";
   const labels = mapPoints.map((point, index) => {
@@ -378,7 +401,7 @@ function mapOverlay({ panel, viewport, mapPoints, routes }) {
   return Buffer.from(`
     <svg xmlns="http://www.w3.org/2000/svg" width="${OUTPUT_WIDTH}" height="${OUTPUT_HEIGHT}" viewBox="0 0 ${OUTPUT_WIDTH} ${OUTPUT_HEIGHT}">
       <style>
-        .wash{fill:#fff8e8;opacity:.32}.route-under{fill:none;stroke:#fff8e8;stroke-width:13;stroke-linecap:round;stroke-linejoin:round;opacity:.9}.route-line{fill:none;stroke:#b85f47;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1 0}.transfer-line{stroke-dasharray:16 11;opacity:.9}.map-label rect{fill:#fffaf0;fill-opacity:.94;stroke:#d8c5a6;stroke-width:1}.map-label text{fill:#284b42;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:15px;font-weight:700}.marker-halo{fill:#fffaf0;fill-opacity:.85;stroke:#b85f47;stroke-width:2}.marker-dot{fill:#b85f47;stroke:#fffaf0;stroke-width:3}.marker-number{fill:#fffaf0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:9px;font-weight:800;text-anchor:middle}.map-title{fill:#284b42;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:15px;font-weight:800;letter-spacing:.04em}.map-note{fill:#5c6d65;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:11px}.north{fill:#b85f47;font-family:Georgia,serif;font-size:17px;font-weight:700}.attribution{fill:#5c6d65;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:10px}
+        .wash{fill:#fff8e8;opacity:.32}.route-under{fill:none;stroke:#fff8e8;stroke-width:13;stroke-linecap:round;stroke-linejoin:round;opacity:.9}.route-line{fill:none;stroke:#b85f47;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1 0}.transfer-line{stroke-dasharray:16 11;opacity:.9}.map-label rect{fill:#fffaf0;fill-opacity:.94;stroke:#d8c5a6;stroke-width:1}.map-label text{fill:#284b42;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:15px;font-weight:700}.marker-halo{fill:#fffaf0;fill-opacity:.85;stroke:#b85f47;stroke-width:2}.marker-dot{fill:#b85f47;stroke:#fffaf0;stroke-width:3}.marker-number{fill:#fffaf0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:9px;font-weight:800;text-anchor:middle}.photo-marker-ring{fill:#fffaf0;fill-opacity:.88;stroke:#2b7774;stroke-width:2}.photo-marker-dot{fill:#f3c965;stroke:#fffaf0;stroke-width:2}.photo-marker-icon{fill:#284b42;font-family:Georgia,serif;font-size:12px;font-weight:800;text-anchor:middle}.photo-label-box{fill:#eef7ef;fill-opacity:.96;stroke:#6ca69a;stroke-width:1}.photo-label-text{fill:#245d59;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:12px;font-weight:800}.map-title{fill:#284b42;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:15px;font-weight:800;letter-spacing:.04em}.map-note{fill:#5c6d65;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:11px}.north{fill:#b85f47;font-family:Georgia,serif;font-size:17px;font-weight:700}.attribution{fill:#5c6d65;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:10px}
       </style>
       <rect width="${OUTPUT_WIDTH}" height="${OUTPUT_HEIGHT}" class="wash" />
       ${paths ? `<path d="${paths}" class="route-under" /><path d="${paths}" class="${routeClass}" />` : ""}
@@ -386,7 +409,8 @@ function mapOverlay({ panel, viewport, mapPoints, routes }) {
       <g transform="translate(${OUTPUT_WIDTH - 48} 28)"><text class="north" text-anchor="middle">N</text><path d="M0 7 L-5 18 L0 15 L5 18 Z" fill="#b85f47" /></g>
       ${arrowPoint ? `<circle cx="${arrowPoint.x.toFixed(1)}" cy="${arrowPoint.y.toFixed(1)}" r="23" fill="none" stroke="#b85f47" stroke-width="2" stroke-dasharray="4 7" opacity=".7" />` : ""}
       ${mapPoints.map((point, index) => marker(markerPoints[index], panel.labels?.[point.sourceNames[0]] || point.label || point.name, index)).join("")}
-      <g transform="translate(24 ${OUTPUT_HEIGHT - 28})"><text class="map-note">${panel.routeMode === "transfer" ? "交通日 · 彩色虚线为定位方向" : "彩色路线为今日预排街巷线"}</text></g>
+      ${photoPoints.map((point, index) => photoMarker(photoMarkerPoints[index], point.label, index)).join("")}
+      <g transform="translate(24 ${OUTPUT_HEIGHT - 28})"><text class="map-note">${panel.routeMode === "transfer" ? "交通日 · 彩色虚线为定位方向" : "彩色路线为今日预排街巷线"}${photoPoints.length ? " · ◎ 为参考机位" : ""}</text></g>
       <text x="${OUTPUT_WIDTH - 20}" y="${OUTPUT_HEIGHT - 20}" text-anchor="end" class="attribution">© OpenStreetMap contributors</text>
     </svg>
   `);
@@ -396,7 +420,7 @@ function findAllStops(plan) {
   return plan.days.flatMap((day) => day.stops || []);
 }
 
-async function renderPanel(plan, panel) {
+async function renderPanel(plan, photoData, panel) {
   const allStops = findAllStops(plan);
   const rawPoints = panel.points.map((name) => {
     const point = allStops.find((stop) => stop.name === name);
@@ -404,25 +428,33 @@ async function renderPanel(plan, panel) {
     return point;
   });
   const mapPoints = uniqueStops(rawPoints);
+  const photoPoints = (panel.photo_spot_ids || []).map((spotId) => {
+    const spot = photoData?.spots?.[spotId];
+    if (!spot) throw new Error(`Missing photo spot: ${spotId}`);
+    const stop = allStops.find((candidate) => candidate.name === spot.stop_name);
+    if (!stop) throw new Error(`Missing photo spot stop: ${spot.stop_name}`);
+    return { ...stop, label: spot.label, photoSpotId: spotId };
+  });
   const routes = [];
   for (let index = 0; index < mapPoints.length - 1; index += 1) {
     routes.push(panel.routeMode === "transfer" ? [[mapPoints[index].lon, mapPoints[index].lat], [mapPoints[index + 1].lon, mapPoints[index + 1].lat]] : await walkingRoute(mapPoints[index], mapPoints[index + 1]));
   }
   const routePoints = routes.flat().map(([lon, lat]) => ({ lon, lat }));
-  const viewport = viewportFor([...mapPoints, ...routePoints], panel.zoom);
+  const viewport = viewportFor([...mapPoints, ...photoPoints, ...routePoints], panel.zoom);
   const base = await buildTileBase(viewport);
-  const overlay = mapOverlay({ panel, viewport, mapPoints, routes });
+  const overlay = mapOverlay({ panel, viewport, mapPoints, routes, photoPoints });
   const baseBuffer = await base.jpeg({ quality: 90, chromaSubsampling: "4:4:4" }).toBuffer();
   return sharp(baseBuffer).composite([{ input: overlay }]).jpeg({ quality: 88, chromaSubsampling: "4:4:4" }).toBuffer();
 }
 
 async function main() {
   const plan = JSON.parse(await readFile(planPath, "utf8"));
+  const photoData = JSON.parse(await readFile(photoReferencesPath, "utf8"));
   await Promise.all(outputDirectories.map((directory) => mkdir(directory, { recursive: true })));
   for (const spec of MAP_SPECS) {
     for (let index = 0; index < spec.panels.length; index += 1) {
       const filename = `${spec.slug}-${index + 1}.jpg`;
-      const buffer = await renderPanel(plan, spec.panels[index]);
+      const buffer = await renderPanel(plan, photoData, spec.panels[index]);
       await Promise.all(outputDirectories.map((directory) => require("node:fs/promises").writeFile(path.join(directory, filename), buffer)));
       console.log(`Generated ${filename}`);
     }

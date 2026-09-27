@@ -1,10 +1,11 @@
-const CACHE_NAME = "spain-guide-static-v10";
+const CACHE_NAME = "spain-guide-static-v11";
 const PRECACHE = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
   "./plan.geo.json",
+  "./photo-references.json",
   "./pre-departure.json",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
@@ -27,13 +28,31 @@ const PRECACHE = [
   "./assets/trip/daily-maps/d09-madrid-airport-1.jpg",
   "./assets/trip/references/barcelona/barcelona-69035b8e0000000004012896-01.jpg",
   "./assets/trip/references/barcelona/barcelona-69679455000000002203ad5e-01.jpg",
+  "./assets/trip/references/barcelona/barcelona-69679455000000002203ad5e-02.jpg",
   "./assets/trip/references/barcelona/barcelona-69f1c63c000000003601dcee-02.jpg",
   "./assets/trip/references/granada/granada-6a032e9c0000000038021d4b-01.jpg",
+  "./assets/trip/references/granada/granada-6a032e9c0000000038021d4b-02.jpg",
   "./assets/trip/references/granada/granada-68de4ccd0000000007009706-01.jpg",
   "./assets/trip/references/granada/granada-6a8a70f70000000033022bfd-01.jpg",
   "./assets/trip/references/seville/seville-6a0861410000000038036572-01.jpg",
+  "./assets/trip/references/seville/seville-6a0861410000000038036572-02.jpg",
   "./assets/trip/references/seville/seville-6a031929000000000800056d-01.jpg",
-  "./assets/trip/references/seville/seville-6a689e71000000000f01da95-01.jpg"
+  "./assets/trip/references/seville/seville-6a689e71000000000f01da95-01.jpg",
+  "./assets/trip/references/licensed/barcelona/sagrada-nativity.jpg",
+  "./assets/trip/references/licensed/barcelona/sant-pau.jpg",
+  "./assets/trip/references/licensed/barcelona/casa-batllo.jpg",
+  "./assets/trip/references/licensed/barcelona/la-pedrera.jpg",
+  "./assets/trip/references/licensed/barcelona/arc-de-triomf.jpg",
+  "./assets/trip/references/licensed/barcelona/park-guell.jpg",
+  "./assets/trip/references/licensed/granada/generalife-garden.jpg",
+  "./assets/trip/references/licensed/granada/generalife-interior.jpg",
+  "./assets/trip/references/licensed/granada/nasrid-charles-v.jpg",
+  "./assets/trip/references/licensed/granada/generalife-view.jpg",
+  "./assets/trip/references/licensed/granada/alhambra-courtyard.jpg",
+  "./assets/trip/references/licensed/seville/plaza-espana.jpg",
+  "./assets/trip/references/licensed/seville/real-alcazar.jpg",
+  "./assets/trip/references/licensed/seville/giralda.jpg",
+  "./assets/trip/references/licensed/seville/cathedral-giralda.jpg"
 ];
 
 self.addEventListener("install", (event) => {
