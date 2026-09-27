@@ -6,6 +6,7 @@ const savedNavigation = loadNavigation();
 
 const state = {
   plan: null,
+  photoReferences: null,
   selectedDate: savedNavigation.date || DEFAULT_DATE,
   selectedTab: ["today", "step", "prep"].includes(savedNavigation.tab) ? savedNavigation.tab : "today",
   currentIndex: Number.isInteger(savedNavigation.index) ? savedNavigation.index : 0,
@@ -715,32 +716,155 @@ function lodgingMarkup(day) {
   `;
 }
 
-function photoReferenceGroupForDay(day) {
-  if (!day || isTravelDay(day)) return null;
-  return state.plan?.photo_references?.find((group) => group.city_id === day.city_id) || null;
+function photoReferenceForDay(day) {
+  if (!day) return null;
+  const config = state.photoReferences?.days?.[day.date];
+  const cityId = config?.pool_city_id || day.city_id;
+  const city = state.photoReferences?.cities?.[cityId];
+  if (config && city) return { config, city };
+
+  // Keep the already-published three-card version usable if the optional
+  // expanded library is unavailable for a moment during a static deploy.
+  const legacy = state.plan?.photo_references?.find((group) => group.city_id === day.city_id);
+  if (!legacy?.items?.length || isTravelDay(day)) return null;
+  return {
+    config: {
+      pool_city_id: day.city_id,
+      intro: legacy.note,
+      step_refs: {}
+    },
+    city: {
+      label: legacy.title,
+      intro: legacy.note,
+      featured: legacy.items.map((item) => item.source_id),
+      images: legacy.items.map((item) => ({
+        image: item.image,
+        source_id: item.source_id,
+        title: item.title,
+        caption: item.caption,
+        spot_ids: []
+      })),
+      posts: legacy.items.map((item) => ({
+        source_id: item.source_id,
+        title: item.title,
+        location: item.caption,
+        hint: item.caption,
+        spot_ids: [],
+        source_url: item.source_url
+      }))
+    }
+  };
+}
+
+function photoPostUrl(post) {
+  return post?.source_url || `https://www.xiaohongshu.com/explore/${encodeURIComponent(post?.source_id || "")}`;
+}
+
+function photoSpotById(spotId) {
+  return state.photoReferences?.spots?.[spotId] || null;
+}
+
+function photoPostsForIds(city, postIds = [], fallbackSpotIds = []) {
+  const ids = postIds.length
+    ? postIds
+    : fallbackSpotIds.flatMap((spotId) => photoSpotById(spotId)?.post_ids || []);
+  const byId = new Map((city?.posts || []).map((post) => [post.source_id, post]));
+  return [...new Set(ids)].map((id) => byId.get(id)).filter(Boolean);
+}
+
+function photoImagesForSpots(city, spotIds = [], minimum = 3) {
+  const images = [...(city?.images || []), ...(city?.licensed_images || [])];
+  const matching = images.filter((image) => spotIds.some((spotId) => image.spot_ids?.includes(spotId)));
+  const remaining = images.filter((image) => !matching.includes(image));
+  return [...matching, ...remaining].slice(0, Math.min(Math.max(minimum, matching.length), images.length));
+}
+
+function photoImageMarkup(image, compact = false) {
+  const isLicensed = image.kind === "public-license";
+  const credit = isLicensed && image.source_page
+    ? `<a class="photo-credit" href="${escapeHtml(image.source_page)}" target="_blank" rel="noreferrer">公开授权 · ${escapeHtml(image.author || "来源页")} · ${escapeHtml(image.license || "许可信息")} ↗</a>`
+    : `<small class="photo-image-note">小红书原帖图 · 只作动作和构图参考</small>`;
+  return `
+    <figure class="photo-static-item ${isLicensed ? "is-licensed" : "is-post-image"} ${compact ? "is-compact" : ""}">
+      <img src="${escapeHtml(assetUrl(image.image))}" alt="${escapeHtml(image.title)}" loading="lazy" />
+      <figcaption><strong>${escapeHtml(image.title)}</strong><small>${escapeHtml(image.caption || "")}</small>${credit}</figcaption>
+    </figure>
+  `;
+}
+
+function xhsButtonMarkup(post, className = "xhs-copy-button") {
+  return `<button class="${className}" type="button" data-xhs-url="${escapeHtml(photoPostUrl(post))}" data-xhs-app-url="${escapeHtml(xhsAppUrl(post.source_id))}">${escapeHtml(post.title)} · 打开 App ↗</button>`;
+}
+
+function photoStepReference(day, index) {
+  const reference = photoReferenceForDay(day);
+  const step = reference?.config?.step_refs?.[String(index)];
+  if (!reference || !step) return null;
+  const spots = (step.spot_ids || []).map(photoSpotById).filter(Boolean);
+  const posts = photoPostsForIds(reference.city, step.post_ids || [], step.spot_ids || []);
+  const images = photoImagesForSpots(reference.city, step.spot_ids || [], 3);
+  return { ...reference, step, spots, posts, images };
+}
+
+function stepPhotoMarkup(day, item, index, { compact = false } = {}) {
+  const reference = photoStepReference(day, index);
+  if (!reference) return "";
+  const spotNames = reference.spots.map((spot) => spot.label).join("、") || "按当天标记的拍摄点";
+  const postButtons = reference.posts.slice(0, 3).map((post) => xhsButtonMarkup(post, "xhs-inline-button")).join("");
+  return `
+    <aside class="step-photo-reference ${compact ? "is-compact" : ""}">
+      <div class="step-photo-heading"><span class="photo-camera-mark">◎</span><div><span class="section-kicker">PHOTO SPOT</span><strong>这里可以拍照</strong></div><span class="photo-count">${reference.posts.length || 0} 篇</span></div>
+      <p class="step-photo-prompt">${escapeHtml(reference.step.prompt || "按机位提示拍一组即可，不为单一角度反复折返。")}</p>
+      <p class="step-photo-location"><b>机位</b>${escapeHtml(spotNames)}</p>
+      ${reference.images.length ? `<div class="step-photo-images">${reference.images.map((image) => photoImageMarkup(image, true)).join("")}</div>` : ""}
+      ${postButtons ? `<div class="step-photo-links"><span>相关帖子</span>${postButtons}</div>` : ""}
+    </aside>
+  `;
 }
 
 function photoReferencesMarkup(day) {
-  const group = photoReferenceGroupForDay(day);
-  if (!group || !group.items?.length) return "";
+  const reference = photoReferenceForDay(day);
+  if (!reference || !reference.city?.posts?.length) return "";
+  const { config, city } = reference;
+  const featuredIds = city.featured || city.posts.slice(0, 3).map((post) => post.source_id);
+  const featured = featuredIds.map((id) => city.posts.find((post) => post.source_id === id)).filter(Boolean).slice(0, 3);
+  const rest = city.posts.filter((post) => !featured.some((item) => item.source_id === post.source_id));
+  const dayMapSpots = (config.map_spot_ids || []).map(photoSpotById).filter(Boolean);
+  const mapSpotText = dayMapSpots.length ? `地图已标出：${dayMapSpots.map((spot) => spot.label).join("、")}` : "当天没有额外锁定的相机标记";
+  const postImages = city.images || [];
+  const licensedImages = city.licensed_images || [];
+  const imageCount = postImages.length + licensedImages.length;
   return `
     <section class="photo-reference-section">
       <div class="card-heading-row">
         <div><span class="section-kicker">PHOTO REFERENCES</span><h3>打卡参考图</h3></div>
-        <span class="muted-label">${group.items.length} 篇原帖</span>
+        <span class="muted-label">${city.posts.length} 篇 · ${imageCount} 张图</span>
       </div>
-      <p class="photo-reference-intro">${escapeHtml(group.title)}。${escapeHtml(group.note)}</p>
-      <div class="photo-reference-strip">
-        ${group.items.map((item) => `
-          <article class="photo-reference-item">
-            <img src="${escapeHtml(assetUrl(item.image))}" alt="${escapeHtml(item.title)}" loading="lazy" />
-            <div class="photo-reference-copy"><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.caption)}</small></div>
-            <button class="xhs-copy-button" type="button" data-xhs-url="${escapeHtml(item.source_url)}" data-xhs-app-url="${escapeHtml(xhsAppUrl(item.source_id))}">复制链接并打开 App ↗</button>
-            <span class="photo-source-id">笔记 ${escapeHtml(item.source_id)}</span>
-          </article>
-        `).join("")}
-      </div>
-      <p class="photo-reference-note">点击按钮会先复制分享链接，再唤起小红书 App 打开对应笔记；若手机未安装 App，才回退到网页。帖子只用于动作和构图灵感，不代替官方开放时间或现场规则。</p>
+      <p class="photo-reference-intro">${escapeHtml(config.intro || city.intro || "先看机位提示，再决定是否拍摄。")}</p>
+      <p class="photo-reference-map-note"><span>◎</span>${escapeHtml(mapSpotText)}。地图上的相机点是参考位置，不代表可以占用通道或保证空场。</p>
+      ${postImages.length ? `
+        <div class="photo-image-group">
+          <div class="photo-image-heading"><strong>小红书动作与构图参考</strong><span>${postImages.length} 张已归档图片</span></div>
+          <div class="photo-static-strip">${postImages.map((image) => photoImageMarkup(image)).join("")}</div>
+        </div>
+      ` : ""}
+      ${licensedImages.length ? `
+        <div class="photo-image-group is-licensed-group">
+          <div class="photo-image-heading"><strong>公开授权景点图</strong><span>${licensedImages.length} 张 · 已记录作者与许可</span></div>
+          <div class="photo-static-strip">${licensedImages.map((image) => photoImageMarkup(image)).join("")}</div>
+        </div>
+      ` : ""}
+      <div class="photo-featured-heading"><strong>先看这 3 篇</strong><span>复制链接后唤起小红书 App</span></div>
+      <div class="photo-featured-links">${featured.map((post) => xhsButtonMarkup(post)).join("")}</div>
+      ${rest.length ? `
+        <details class="photo-post-library">
+          <summary><span>查看其余 ${rest.length} 篇参考帖</span><b>＋</b></summary>
+          <div class="photo-post-list">
+            ${rest.map((post) => `<article class="photo-post-row"><div><strong>${escapeHtml(post.title)}</strong><small>${escapeHtml(post.location || "已读拍照参考")}</small><em>${escapeHtml(post.hint || "只作构图灵感")}</em></div>${xhsButtonMarkup(post, "xhs-library-button")}</article>`).join("")}
+          </div>
+        </details>
+      ` : ""}
+      <p class="photo-reference-note">小红书帖子只用于动作、构图和机位线索；公开授权景点图只帮助理解建筑、街巷和机位空间。开放时间、门票、拍摄许可和现场动线仍以官方页面与当日标识为准。点击帖子按钮会先复制分享链接，再尝试打开手机端小红书 App；没有 App 才回退到网页。</p>
     </section>
   `;
 }
@@ -844,6 +968,7 @@ function renderToday(day) {
                 <button class="timeline-title" data-open-step="${index}" type="button">${escapeHtml(item.what)}</button>
                 ${item.note ? `<p>${escapeHtml(item.note)}</p>` : ""}
                 ${ticketPriceMarkup(item)}
+                ${stepPhotoMarkup(day, item, index, { compact: true })}
                 <div class="row-actions">
                   <button class="check-button ${done ? "is-done" : ""}" data-toggle-step="${index}" type="button" aria-label="${done ? "取消完成" : "标记完成"}">${done ? "完成" : "完成这步"}</button>
                   ${navigationRowMarkup(day, item, index)}
@@ -900,6 +1025,8 @@ function renderStep(day) {
       </div>
       ${stepNavigationMarkup(day, item, index)}
     </section>
+
+    ${stepPhotoMarkup(day, item, index)}
 
     ${isTransfer ? `<section class="step-image-card"><img src="./assets/trip/route-map.jpg" alt="三城路线示意" loading="lazy" /><div><span class="section-kicker">KEEP THE BUFFER</span><p>交通日不追景点。先核对车票、站台、行李和入住地址；晚到时按转场安排直接入住和用餐。</p></div></section>` : ""}
 
@@ -1093,6 +1220,12 @@ async function loadPlan() {
       if (preparationResponse.ok) state.plan.pre_departure = await preparationResponse.json();
     } catch {
       // The itinerary remains usable if the optional preparation payload is unavailable.
+    }
+    try {
+      const photoReferencesResponse = await fetch("./photo-references.json", { cache: "no-cache" });
+      if (photoReferencesResponse.ok) state.photoReferences = await photoReferencesResponse.json();
+    } catch {
+      // The three legacy cards embedded in plan.geo.json remain available as a fallback.
     }
     readHash();
     render();

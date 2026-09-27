@@ -13,24 +13,25 @@
   ],
   "pace": 2,
   "budget": "机票每人目标不超过 RMB 4500 或 HKD 5000；住宿硬约束优先",
-  "notes": "基准方案按 2027-01-26 抵达西班牙、2027-02-03 从 Madrid 离境演示；去程可为 1/25–1/27 任一天。国航去程香港/北京经北京抵达 Madrid，返程 Madrid/北京/香港，行李直挂以最终行李条为准。Madrid 不观光；2/2 住机场附近。国际机票单独监测，不计入本阶段旅行预算。"
+  "notes": "基准方案按 2027-01-26 抵达西班牙、2027-02-03 从 Madrid 离境演示；去程可为 1/25–1/27 任一天。国航去程香港/北京经北京抵达 Madrid，返程 Madrid/北京/香港，行李直挂以最终行李条为准。Madrid 不观光；2/2 住机场—市区交通走廊，当前候选为 Hotel Maydrit Airport。按慢游规则，8 晚 3+2+2+1 仅作 fallback，9 晚 3+2+3+1 为当前推荐，10 晚 3+3+3+1 为理想；新夜数必须重新查询住宿、车票和门票，不能按旧快照机械相乘。国际机票单独监测，不计入本阶段旅行预算。"
  },
  "meta": {
   "dates": "2027-01-25 → 2027-02-03",
   "party": "3 adults: HKG 1, PEK 2",
-  "route": "Madrid入境 → Barcelona → Granada → Seville → Madrid机场附近过夜 → Madrid离境",
-  "budget_total": "当前质量优先组合：Barcelona Airbnb 1659522 + Granada Sercotel Palacio de Los Gamboa + Seville Hotel Giralda Center，三城代表性页面价约 CNY 9092/8晚；另加 2/2 Madrid机场附近住宿和城际交通；国际机票明确不计入本阶段预算。Barcelona旅游税、Giralda床型和Madrid机场酒店仍需复核。",
+  "route": "Madrid入境 → Barcelona → Granada → Seville → Madrid机场—市区交通走廊过夜 → Madrid离境",
+  "budget_total": "当前住宿候选：Barcelona Airbnb 1659522（3晚）+ Granada Sercotel Palacio de Los Gamboa（2晚）+ Seville Hotel Giralda Center（2晚）+ Madrid Hotel Maydrit Airport（1晚）；旧 CNY 9092/8晚快照已退休，需按新夜数与最终结算页重算；国际机票明确不计入本阶段预算。Barcelona旅游税、Giralda最终取消政策和Maydrit接驳仍需复核。",
   "fx": "不把 CNY、HKD、EUR 强行换算；各记录保留原币并带查询日期",
-  "generated": "2026-09-26",
+  "generated": "2026-09-27",
   "self_check": "self-checked: 4 issues found and fixed: safety advisory prefix, clinic row, stock-art file, and art metadata"
  },
  "decisions": [
   "已确认城市顺序为 Madrid入境 → Barcelona → Granada → Seville；代表性日历按当地 2027-01-26 抵达、2027-02-03 从Madrid离境排演，实际航班到达日确定后整体平移。",
+  "天数优化：到达日不算完整游玩、跨城日只留一个酒店周边轻量模块、离境日零观光；9晚 Barcelona 3 + Granada 2 + Seville 3 + Madrid 1 为当前推荐，10晚 3+3+3+1 为理想，当前 days[] 的8晚3+2+2+1 仅作 fallback。",
   "Madrid→Barcelona 默认选择市中心高铁；只有航班把二次机场操作、行李规则和门到门时间都证明更优时才切换。落地太晚则Madrid机场附近过夜，次日再走。",
-  "返程从 Madrid：2027-02-02 完成 Seville→Madrid，住 Madrid 机场附近；2027-02-03 不安排任何跨城交通，只做机场值机和国航联程返程。",
+  "返程从 Madrid：2027-02-02 完成 Seville→Madrid，住机场—市区交通走廊，当前候选为 Hotel Maydrit Airport；2027-02-03 不安排任何跨城交通，只做机场值机和国航联程返程。",
   "Renfe动态价格按日期、车次、余票和票种形成阶梯；T-14至T-7为三人购票决策窗，优先官方直接购买、可改签/可退票种和相邻座位，不把当前快照当作2027报价。",
   "Alhambra 是第一预约锚点；Sagrada Família 按当前约提前两个月放票的规则监测，Alcázar/Cathedral按官方页面复核，其他景点作为可替换模块。",
-  "住宿质量优先组合为 Barcelona Airbnb 1659522（selected candidate）+ Granada Gamboa + Seville Giralda Center（条件候选）；必须保留免费取消、至少两张独立床与 CNY 1500/晚硬上限，所有候选仍未预订。",
+  "住宿质量优先组合为 Barcelona Airbnb 1659522（selected candidate）+ Granada Gamboa + Seville Giralda Center（用户已确认可行）+ Madrid Maydrit Airport（当前性价比候选）；必须保留免费取消、至少两张独立床与 CNY 1500/晚硬上限，所有候选仍未预订。",
   "国际机票单独监测，本阶段预算不计入机票；现有价格快照仍保留在 trip/flights.md，不与住宿、境内交通合并。",
   "self-checked: 4 issues found and fixed: safety advisory prefix, clinic row, stock-art file, and art metadata"
  ],
@@ -164,13 +165,13 @@
    "date": "2027-02-02",
    "carrier": "Renfe AVE/长途铁路 + Atocha→MAD机场接驳",
    "from": "Seville",
-   "to": "Madrid Puerta de Atocha → Madrid机场附近酒店（2/2入住）",
+   "to": "Madrid Puerta de Atocha → Madrid机场—市区交通走廊酒店（2/2入住，当前候选Maydrit）",
    "dep": "选择白天车次；不压最后一班；具体时间按2/3国航起飞时刻倒推",
    "arr": "2/2完成机场定位并确认2/3航站楼，国际航班前约3小时到机场",
    "price": "2027具体票价未锁定；境内交通另计，国际机票不计入预算",
    "bags": "按Renfe和机场接驳当期规则；三人带箱优先短程出租车或可少走路的接驳",
    "link": "https://www.renfe.com/es/en/inspirate/rutas/sevilla-madrid",
-   "note": "返程机场已按用户补充固定为 Madrid。2/2 上午只保留Plaza de España短线，随后去Santa Justa乘车；到Madrid后住机场附近，不再把夜晚安排成市中心观光。",
+   "note": "返程机场已按用户补充固定为 Madrid。2/2 上午只保留Plaza de España短线，随后去Santa Justa乘车；到Madrid后住机场—市区交通走廊，当前候选Hotel Maydrit Airport，最终按航站楼核对地铁换乘或酒店接驳，不再把夜晚安排成市中心观光。",
    "backup": "若Seville→Madrid车次严重延误，先联系车票/酒店供应方并保留出租车或更早车次；不把2/3早晨从Seville跨城接国航作为备选"
   },
   {
@@ -972,8 +973,8 @@
   {
    "date": "2027-02-02",
    "city": "Seville→Madrid",
-   "label": "Seville短线、跨城定位与机场酒店",
-   "ribbon": "Plaza de España短线 → Santa Justa → Renfe → Madrid机场附近酒店",
+   "label": "Seville短线、跨城定位与机场—市区交通走廊酒店",
+   "ribbon": "Plaza de España短线 → Santa Justa → Renfe → Madrid机场—市区交通走廊酒店",
    "rain_alt": "雨天不安排户外线；早餐后直接退房、午餐和Santa Justa，不为拍照淋雨或赶车。",
    "late_cut": "2/2以跨城和机场酒店为硬任务；若车票在13:00前，直接执行退房和车站接驳，不安排Plaza de España。",
    "walking_km": {
@@ -985,7 +986,7 @@
    "timeline": [
     {
      "t": "08:00–08:45",
-     "what": "早餐并检查2/3国航航班、Madrid航站楼、已购Renfe车票和机场酒店地址",
+     "what": "早餐并检查2/3国航航班、Madrid航站楼、已购Renfe车票和Maydrit/备用酒店地址",
      "kind": "check",
      "tag": "pinned"
     },
@@ -1032,7 +1033,7 @@
     },
     {
      "t": "抵达Madrid后 60–90分钟",
-     "what": "Atocha到机场附近酒店；三人带箱优先少走路的正规出租车，入住后确认2/3去哪个航站楼",
+     "what": "Atocha到机场—市区交通走廊酒店；当前候选Hotel Maydrit Airport，三人带箱优先少走路的正规出租车或已核对的地铁/酒店接驳，入住后确认2/3去哪个航站楼",
      "kind": "hop",
      "map": false,
      "tag": "pinned"
@@ -1045,7 +1046,7 @@
     },
     {
      "t": "18:00–19:30",
-     "what": "机场酒店附近晚餐或酒店简餐；按2/3起飞时间倒推，不饮酒过量",
+     "what": "Maydrit/最终住宿附近晚餐或酒店简餐；按2/3起飞时间倒推，不饮酒过量",
      "kind": "meal",
      "tag": "pinned"
     },
@@ -1085,9 +1086,9 @@
   {
    "date": "2027-02-03",
    "city": "Madrid",
-   "label": "机场酒店→Madrid离境",
+   "label": "机场—市区交通走廊酒店→Madrid离境",
    "travel_day": true,
-   "ribbon": "机场附近酒店 → MAD对应航站楼 → 国航联程返程",
+   "ribbon": "机场—市区交通走廊酒店 → MAD对应航站楼 → 国航联程返程",
    "rain_alt": "不安排户外项目；预留值机、行李、航站楼和安检缓冲。",
    "late_cut": "只执行机场转移；不安排任何城市景点，也不在当天临时跨城。",
    "walking_km": {
@@ -1105,7 +1106,7 @@
     },
     {
      "t": "起飞前约5小时",
-     "what": "在MAD机场附近酒店退房；按国航航班、航站楼和是否托运行李倒推离开时间",
+     "what": "在机场—市区交通走廊酒店退房；当前候选Maydrit，按国航航班、航站楼和是否托运行李倒推离开时间",
      "kind": "check",
      "tag": "pinned"
     },
@@ -1183,39 +1184,49 @@
   },
   {
    "city_id": "seville",
-   "status": "conditional_candidate",
-   "base": "Seville 2027-01-31 → 2027-02-03（代表性日期）",
+   "status": "selected_candidate",
+   "base": "Seville 2027-01-31 → 2027-02-02（代表性日期）",
    "area": "Plaza de España / Prado",
-   "why": "Hotel Giralda Center为酒店优先条件候选；Trip.com页面价约CNY3705/3晚，含早餐且在硬上限内，但“1张特大床或2张单人床”仍需在最终房型页确认至少两张独立床。确认失败才切换Airbnb例外。",
+   "why": "Hotel Giralda Center已由旅客明确确认可行；本轮TourMind两晚live仍有可入住产品，但全部显示不可退款，因此最终供应方页面仍需复核早餐、实际房型、取消政策和含税总价。",
    "options": [
     {
-     "name": "Hotel Giralda Center · Trip.com（条件候选，未预订）",
-     "band": "约CNY3705 / 3晚含税费（约CNY1235/晚）；高级加床房；含3份早餐；免费取消；床型为1张特大床或2张单人床，需确认",
-     "link": "https://us.trip.com/hotels/detail/?cityEnName=Seville&cityId=1350&hotelId=94971922&checkIn=2027-01-31&checkOut=2027-02-03&adult=3&children=0&crn=1&curr=CNY"
+     "name": "Hotel Giralda Center · 用户确认可行，未预订",
+     "band": "TourMind两晚live约CNY2102.84（标准三床）或CNY2188.70（1 king+1 twin高级房）；本快照均不可退款；旧Trip/携程三晚页面价已退休",
+     "link": "https://us.trip.com/hotels/detail/?cityEnName=Seville&cityId=1350&hotelId=94971922&checkIn=2027-01-31&checkOut=2027-02-02&adult=3&children=0&crn=1&curr=CNY"
     },
     {
      "name": "历史街区公寓 4563863 · Airbnb床位明确备选",
-     "band": "CNY2088 / 3晚（约CNY696/晚）；2张单人床+沙发床；整套1卧、厨房、洗衣机、空调；无早餐；未预订",
-     "link": "https://zh.airbnb.com/rooms/4563863?adults=3&check_in=2027-01-31&check_out=2027-02-03"
+     "band": "两晚真实日期需重查；结构化线索为2张单人床+沙发床，整套1卧、厨房、洗衣机、空调；无早餐；未预订",
+     "link": "https://zh.airbnb.com/rooms/4563863?adults=3&check_in=2027-01-31&check_out=2027-02-02"
     },
     {
      "name": "历史中心两卧公寓 679472… · Airbnb两卫/露台备选",
-     "band": "CNY2100 / 3晚（约CNY700/晚）；2卧2卫、2张单人床+1张双人床、露台、厨房和洗衣机；无早餐；税项待复核",
-     "link": "https://zh.airbnb.com/rooms/679472671924054054?adults=3&check_in=2027-01-31&check_out=2027-02-03"
+     "band": "两晚真实日期需重查；结构化线索为2卧2卫、2张单人床+1张双人床、露台、厨房和洗衣机；无早餐；未预订",
+     "link": "https://zh.airbnb.com/rooms/679472671924054054?adults=3&check_in=2027-01-31&check_out=2027-02-02"
     }
    ]
   },
   {
    "city_id": "madrid",
-   "status": "to_select",
-   "base": "Madrid机场附近 2027-02-02 → 2027-02-03（返程定位夜，未预订）",
-   "area": "MAD机场对应航站楼附近；优先可取消、含机场接驳或短程出租车可达",
-   "why": "用户已确认2月3日从Madrid搭乘国航联程返程；2月2日先到Madrid并住机场附近，避免从Seville在返程日跨城。具体酒店必须等国航航班号/航站楼和实际日期后再按含税总价比较。",
+   "status": "candidate",
+   "base": "Madrid机场—市区交通走廊 2027-02-02 → 2027-02-03（返程定位夜，未预订）",
+   "area": "IFEMA / El Capricho / MAD机场方向；优先可取消、含早餐、三人床型和接驳清楚",
+   "why": "用户要求性价比优先，不强求机场正旁。本轮按3位成人、1间房的live快照，Hotel Maydrit Airport在IFEMA与机场之间、靠近El Capricho地铁站，含早餐可取消约CNY1460.50/晚；最终按国航航站楼确认地铁换乘或酒店接驳。",
    "options": [
     {
-     "name": "MAD机场附近可取消酒店（待选择）",
-     "band": "价格未检索；不纳入当前三城住宿合计，按真实返程日期重新比价",
-     "link": "https://www.aena.es/en/madrid-barajas.html"
+     "name": "Hotel Maydrit Airport · 当前首选，未预订",
+     "band": "1晚CNY1460.50；2张单人床+1张Murphy床；含早餐；可免费取消至TourMind返回的2027-02-01T18:00+08:00；is_on_request=false",
+     "link": "https://www.hotelmadridmaydrit.com/en/location/"
+    },
+    {
+     "name": "Sercotel Gran Hotel Conde Duque · 市区侧备选",
+     "band": "1晚CNY1388.21；3张单人床；含早餐；可免费取消至TourMind返回的2027-01-19T10:00+08:00；需要另核算到机场换乘",
+     "link": "https://www.google.com/maps/search/?api=1&query=Sercotel+Gran+Hotel+Conde+Duque+Madrid"
+    },
+    {
+     "name": "Hotel Nuevo Boston · 机场侧备选",
+     "band": "1晚CNY1440.79；含早餐；可取消；本次live未返回明确床位组合，最终页复核三人床型和接驳",
+     "link": "https://www.esmadrid.com/mcb/sede-servicio/nuevo-boston/"
     }
    ]
   }
@@ -1315,9 +1326,9 @@
   },
   {
    "cat": "lodging snapshot",
-   "per_person": "三城住宿代表性页面价合计约 CNY 9092/8晚（房间总价，不按人头预算），另加Madrid机场定位夜；仅作压力测试",
-   "total": "约CNY 9092 + 2/2 Madrid机场住宿（未检索）",
-   "note": "质量优先组合为Barcelona Airbnb 1659522 + Granada Gamboa + Seville Giralda；checked 2026-09-26。Barcelona旅游税、Giralda床型和Madrid机场酒店最终含税价仍需重查。"
+   "per_person": "当前候选为Barcelona 3晚 + Granada 2晚 + Seville 2晚 + Madrid走廊1晚；旧CNY 9092/8晚快照已退休，不按人头预算",
+   "total": "待按最终供应方结算页重算；当前Maydrit一晚live约CNY1460.50、Giralda两晚live约CNY2102.84起",
+   "note": "质量优先组合为Barcelona Airbnb 1659522 + Granada Gamboa + Seville Giralda（用户已确认可行）+ Madrid Maydrit Airport；checked 2026-09-27。Barcelona旅游税、Giralda取消政策/早餐和Maydrit航站楼接驳仍需重查。"
   },
   {
    "cat": "intercity transport",
@@ -1347,8 +1358,9 @@
  "unverified": [
   "国航最终去回航班号、当地起飞/到达时间、航站楼、三位旅客出票状态和行李条终点；这决定Madrid→Barcelona是否当天走。",
   "2027具体Renfe/ALSA/其他运营方车次、票价、退改、座位和开售状态；特别是Madrid→Barcelona与2/2 Seville→Madrid。",
-  "Madrid机场附近2027-02-02→02-03可取消酒店的航站楼接驳、含税总价和早餐/床型。",
-  "按实际入住日期在Trip.com与携程同条件复核Barcelona、Granada、Seville住宿；重查含税总价、早餐、免费取消、床位、Giralda加床是否保证和Barcelona Airbnb旅游税。",
+  "若采用9晚或10晚慢游版，四段住宿、城际车票、门票和每日日期必须按新入住日重新查询；当前 days[] 仍是8晚 fallback，不代表最终已选日期。",
+  "Madrid机场—市区交通走廊2027-02-02→02-03可取消酒店的航站楼接驳、含税总价和早餐/床型；当前候选Maydrit Airport。",
+  "按实际入住日期在Trip.com与携程同条件复核Barcelona、Granada、Seville和Madrid住宿；重查含税总价、早餐、免费取消、床位、Giralda实际房型和Barcelona Airbnb旅游税。",
   "香港旅客能否在香港领区递交；三本护照具体有效期和空白页。",
   "Alhambra、Sagrada Família、Alcázar及其他景点的2027库存、最终价格、礼拜/活动冲突。",
   "餐厅实时营业、菜单、价格、排队和任何饮食禁忌要求。",
