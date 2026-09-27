@@ -125,6 +125,54 @@ const TRAVEL_MODES = [
   { id: "driving", label: "驾车 / 打车" }
 ];
 
+const DAILY_MAPS = {
+  "2027-01-26": {
+    description: "先看 Madrid 机场、Atocha 车站和市中心的相对位置；今天只处理入境与转场，不把交通日硬塞成观光日。",
+    panels: [{ src: "./assets/trip/daily-maps/d01-madrid-airport-1.jpg", title: "Madrid · 机场—车站定位", alt: "Madrid 机场到 Atocha 车站的城市定位图" }]
+  },
+  "2027-01-27": {
+    description: "今天在 Barcelona 北侧的现代主义轴线上走：圣家堂向北到 Sant Pau，Avinguda Gaudí 是中间的街巷关系。",
+    panels: [{ src: "./assets/trip/daily-maps/d02-barcelona-modernisme-1.jpg", title: "Barcelona · 现代主义轴线", alt: "Barcelona 圣家堂到 Sant Pau 的街巷路线图" }]
+  },
+  "2027-01-28": {
+    description: "今天集中在 Eixample：巴特罗之家、米拉之家和格拉西亚大道彼此很近，按街区顺序走，不需要来回穿城。",
+    panels: [{ src: "./assets/trip/daily-maps/d03-barcelona-eixample-1.jpg", title: "Barcelona · Eixample 街区", alt: "Barcelona Eixample 巴特罗之家、米拉之家与格拉西亚大道路线图" }]
+  },
+  "2027-01-29": {
+    description: "跨城日分成两张局部图：左边确认 Barcelona Sants 出发位置，右边看 Granada 住处到大教堂的入住后短线。",
+    panels: [
+      { src: "./assets/trip/daily-maps/d04-barcelona-granada-1.jpg", title: "Barcelona · Sants 出发", alt: "Barcelona Sants 车站城市定位图" },
+      { src: "./assets/trip/daily-maps/d04-barcelona-granada-2.jpg", title: "Granada · 中心短线", alt: "Granada 住处到大教堂的街巷路线图" }
+    ]
+  },
+  "2027-01-30": {
+    description: "Granada 的 Alhambra 在老城东南侧、山坡上；先用这张图理解城区与景区的相对位置，再按预约入口行动。",
+    panels: [{ src: "./assets/trip/daily-maps/d05-granada-alhambra-1.jpg", title: "Granada · Alhambra 山坡", alt: "Granada 城区到 Alhambra 的街巷定位路线图" }]
+  },
+  "2027-01-31": {
+    description: "跨城日分成两张局部图：左边是 Granada 车站，右边是入住 Seville 后从住处到西班牙广场的短线。",
+    panels: [
+      { src: "./assets/trip/daily-maps/d06-granada-seville-1.jpg", title: "Granada · 车站出发", alt: "Granada 车站城市定位图" },
+      { src: "./assets/trip/daily-maps/d06-granada-seville-2.jpg", title: "Seville · 入住后短线", alt: "Seville 住处到西班牙广场的街巷路线图" }
+    ]
+  },
+  "2027-02-01": {
+    description: "今天把 Seville 老城南侧看成一个连续街区：王宫、主教座堂和 Santa Cruz 之间适合步行串联。",
+    panels: [{ src: "./assets/trip/daily-maps/d07-seville-old-town-1.jpg", title: "Seville · 老城核心", alt: "Seville 王宫、主教座堂与 Santa Cruz 的街巷路线图" }]
+  },
+  "2027-02-02": {
+    description: "跨城日分成两张出发定位图：左边看 Seville 西班牙广场到 Santa Justa 的方向，右边看 Madrid Atocha 所在城区。",
+    panels: [
+      { src: "./assets/trip/daily-maps/d08-seville-madrid-1.jpg", title: "Seville · 车站出发", alt: "Seville 西班牙广场到 Santa Justa 车站的定位路线图" },
+      { src: "./assets/trip/daily-maps/d08-seville-madrid-2.jpg", title: "Madrid · Atocha 定位", alt: "Madrid Atocha 车站城区定位图" }
+    ]
+  },
+  "2027-02-03": {
+    description: "离境日只确认 Madrid 机场在城市东北侧的位置和前往航站楼的方向，不临时安排观光。",
+    panels: [{ src: "./assets/trip/daily-maps/d09-madrid-airport-1.jpg", title: "Madrid · 离境机场定位", alt: "Madrid 市区到机场的离境定位图" }]
+  }
+};
+
 function loadCompleted() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -429,6 +477,29 @@ function heroForDay(day) {
   if (day.city.includes("Seville") || day.city.includes("塞维利亚")) return "./assets/trip/seville-hero.jpg";
   if (isTravelDay(day)) return "./assets/trip/route-map.jpg";
   return null;
+}
+
+function dailyMapMarkup(day) {
+  const map = DAILY_MAPS[day?.date];
+  if (!map) return "";
+  return `
+    <section class="daily-map-card" aria-label="今日城市街巷图">
+      <div class="card-heading-row">
+        <div><span class="section-kicker">CITY STREET MAP</span><h3>今天在哪里走</h3></div>
+        <span class="muted-label">街区定位</span>
+      </div>
+      <p class="daily-map-intro">${escapeHtml(map.description)}</p>
+      <div class="daily-map-panels">
+        ${map.panels.map((panel, index) => `
+          <figure class="daily-map-panel">
+            <img src="${escapeHtml(panel.src)}" alt="${escapeHtml(panel.alt)}" loading="${index === 0 ? "eager" : "lazy"}" />
+            <figcaption>${escapeHtml(panel.title)}</figcaption>
+          </figure>
+        `).join("")}
+      </div>
+      <p class="daily-map-note">底图保留真实街道、街区和地标关系；彩色线是今天的预排走法，圆点数字对应顺序。具体出发仍按每一步的导航入口核对，底图数据 © OpenStreetMap contributors。</p>
+    </section>
+  `;
 }
 
 function renderDayPicker() {
@@ -738,6 +809,8 @@ function renderToday(day) {
       <div class="progress-track" aria-label="今日完成度"><span style="width:${progress}%"></span></div>
       ${heroMarkup}
     </section>
+
+    ${dailyMapMarkup(day)}
 
     ${lodgingMarkup(day)}
 
