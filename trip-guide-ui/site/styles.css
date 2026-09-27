@@ -119,24 +119,14 @@ a { color: inherit; }
 .navigation-card h3, .step-safety-card h3 { font-size: 18px; }
 .step-safety-card p, .route-card p, .step-image-card p { margin: 7px 0 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
 
-.simple-guide-card { display: grid; grid-template-columns: 30px 1fr auto; gap: 10px; align-items: center; margin-top: 12px; padding: 14px; border: 1px solid rgba(61, 129, 126, 0.18); border-radius: 20px; background: #e6f2ec; }
-.guide-number { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; color: var(--white); background: var(--teal-dark); font-size: 14px; font-weight: 900; }
-.guide-copy h3 { margin: 3px 0 0; color: var(--navy); font-family: Georgia, "Songti SC", serif; font-size: 18px; }
-.guide-copy p { margin: 4px 0 0; color: var(--muted); font-size: 11px; line-height: 1.5; }
-.guide-start-button { border: 0; border-radius: 999px; padding: 9px 11px; color: var(--white); background: var(--navy); font-size: 11px; font-weight: 900; }
-
-.guard-panel { margin-top: 12px; padding: 17px; border: 1px solid rgba(24, 57, 74, 0.08); border-radius: 24px; background: #f0f6f1; box-shadow: 0 8px 26px rgba(24, 57, 74, 0.05); }
-.guard-panel .card-heading-row h3 { max-width: 230px; }
-.guard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 13px; }
-.guard-grid.is-single { grid-template-columns: 1fr; }
 .guard-card { min-width: 0; border: 1px solid rgba(24, 57, 74, 0.1); border-radius: 16px; background: rgba(255, 253, 248, 0.82); }
+.change-card { margin-top: 12px; }
 .guard-card summary { display: flex; align-items: center; gap: 8px; min-height: 66px; padding: 10px; color: var(--navy); cursor: pointer; list-style: none; }
 .guard-card summary::-webkit-details-marker { display: none; }
 .guard-card summary::after { align-self: flex-start; margin-left: auto; color: var(--teal-dark); content: "+"; font-size: 18px; line-height: 1; }
 .guard-card[open] summary::after { content: "−"; }
 .guard-icon { display: grid; flex: 0 0 28px; place-items: center; width: 28px; height: 28px; border-radius: 10px; color: var(--navy); font-size: 14px; font-weight: 900; }
 .delay-icon { background: #bdded2; }
-.walk-icon { background: #c8d1ea; }
 .guard-card strong, .guard-card small { display: block; }
 .guard-card strong { font-size: 14px; line-height: 1.25; }
 .guard-card small { max-width: 110px; margin-top: 4px; color: var(--muted); font-size: 12px; line-height: 1.3; }
@@ -239,12 +229,6 @@ a { color: inherit; }
 .xhs-copy-button { width: calc(100% - 18px); margin: 9px; border: 0; border-radius: 10px; padding: 8px 7px; color: var(--white); background: var(--terracotta); font-size: 10px; font-weight: 850; line-height: 1.3; }
 .photo-source-id { display: block; padding: 0 9px 9px; color: #9a8174; font-size: 9px; line-height: 1.3; }
 .photo-reference-note { margin: 11px 0 0; color: #8a7467; font-size: 11px; line-height: 1.55; }
-
-.predeparture-promo { display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; align-items: center; gap: 10px; margin-top: 12px; padding: 13px; border: 1px solid rgba(185, 98, 70, 0.22); border-radius: 20px; background: linear-gradient(135deg, #fff8e5, #f7e8da); }
-.predeparture-promo-icon { display: grid; place-items: center; width: 29px; height: 29px; border-radius: 10px; color: var(--white); background: var(--terracotta); font-size: 16px; font-weight: 900; }
-.predeparture-promo h3 { margin: 3px 0 0; color: var(--navy); font-family: Georgia, "Songti SC", serif; font-size: 17px; }
-.predeparture-promo p { margin: 4px 0 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
-.predeparture-promo-button { border: 0; border-radius: 999px; padding: 9px 10px; color: var(--white); background: var(--navy); font-size: 10px; font-weight: 850; white-space: nowrap; }
 
 .prep-hero-card { padding: 19px; border-radius: 24px; color: var(--white); background: radial-gradient(circle at 95% 8%, rgba(241, 196, 93, 0.32), transparent 26%), linear-gradient(145deg, #18394a, #2b7077); box-shadow: 0 10px 28px rgba(24, 57, 74, 0.14); }
 .prep-hero-top, .prep-section-heading, .prep-hero-meta, .prep-subheading { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
