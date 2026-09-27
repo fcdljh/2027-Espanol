@@ -4,6 +4,8 @@
 
 如果上一级 `public/plan.geo.json` 有更新，先在 `trip-guide-ui/` 目录执行 `npm run sync:site`（或等价的 `node scripts/sync-static-site.mjs`），再发布本目录，避免网页包仍显示旧行程。
 
+公开验收地址：<https://fcdljh.github.io/2027-Espanol/>。页面调试和三位旅伴的日常使用都以此公开地址为准，不使用 `localhost`、`127.0.0.1` 或其他本地预览地址。
+
 ## 给三位旅伴的使用方式
 
 1. 打开网页后先选当天的 `D01–D09`。
@@ -27,19 +29,13 @@
 
 ## 推荐使用方式
 
-优先用 HTTPS 地址打开，而不是双击 `index.html`：
-
-```bash
-python3 -m http.server 8080 --directory trip-guide-ui/site
-```
-
-然后在 vivo Chrome 打开同一局域网可访问的地址。正式旅行建议使用 GitHub Pages 或 Cloudflare Pages；打开一次后，Service Worker 会缓存核心页面、路线图和进度壳，断网时仍可查看已经载入的攻略。交通、营业时间、票价和天气仍要以出发前及当天官方信息为准。
+统一在 vivo Chrome 打开[公开 GitHub Pages 地址](https://fcdljh.github.io/2027-Espanol/)。页面内容变更后，先同步 `public/` 到 `site/`、运行检查并提交；完成已授权的 GitHub Pages 发布后，重新加载公开地址确认新内容已经出现。公开地址没有更新，就不能视为本次页面修改完成。Service Worker 会缓存核心页面、路线图和进度壳，断网时仍可查看已经载入的攻略；交通、营业时间、票价和天气仍要以出发前及当天官方信息为准。
 
 ## 三种托管选择
 
 ### A. GitHub Pages：默认推荐
 
-适合这份不含个人证件、支付信息的静态攻略。将仓库推到 GitHub 后，用 GitHub Actions 将 `trip-guide-ui/site/` 发布到 Pages；生成地址通常是 `https://<账号>.github.io/<仓库名>/trip-guide-ui/site/` 或者将该目录作为发布根目录。GitHub Pages 是静态 HTML/CSS/JS 托管，不需要保持 peilab 在线。
+适合这份不含个人证件、支付信息的静态攻略。当前项目的固定公开地址是 `https://fcdljh.github.io/2027-Espanol/`；用 GitHub Actions 将 `trip-guide-ui/site/` 发布到 Pages。GitHub Pages 是静态 HTML/CSS/JS 托管，不需要保持 peilab 在线。
 
 GitHub Actions 的最小思路：
 

@@ -2,7 +2,7 @@
 
 ## Prototype Instructions
 
-In ChatGPT Work Mode, run `sites-preview start "$PWD"`, open `http://terminal.local:4173/` in the cloud browser, and verify the rendered app and its primary interactions. Keep that preview open and tell the user to inspect it in the cloud browser; do not present the local URL as a user-facing chat link. In Codex Desktop, run the local server yourself, open the preview in the in-app browser, and provide the clickable local URL. Do not deploy to Sites unless the user explicitly asks to share, publish, or deploy. Do not give the user server-start instructions when you can run it.
+In ChatGPT Work Mode, run `sites-preview start "$PWD"`, open `http://terminal.local:4173/` in the cloud browser, and verify the rendered app and its primary interactions. Keep that preview open and tell the user to inspect it in the cloud browser; do not present the local URL as a user-facing chat link. For this Spain project in Codex Desktop, the canonical visual-debug and acceptance URL is `https://fcdljh.github.io/2027-Espanol/`; do not open `localhost`, `127.0.0.1`, or another local preview. After the authorized GitHub Pages publish/sync step, reload that public URL and verify the changed content. If it is stale, report the synchronization problem instead of treating local output as live.
 
 Before planning or implementing any mobile-app change, read this `AGENTS.md` in full. It is the source of truth for the template's runtime and component guidance.
 
@@ -23,7 +23,7 @@ When implementing from a selected generated mock, treat that image as the source
 ## Page-change commit rule
 
 - Any change that can alter `site/`, `public/` data copied into `site/`, published assets, or page-linked UI documentation is a page-impacting change.
-- Before handoff, run the relevant checks: `node --check site/app.js`, `node scripts/check-mobile-runtime.mjs`, `node --test tests/sites-worker.test.mjs`, and verify that synchronized `public/` and `site/` data match. For visual changes, inspect the local preview as well.
+- Before handoff, run the relevant checks: `node --check site/app.js`, `node scripts/check-mobile-runtime.mjs`, `node --test tests/sites-worker.test.mjs`, and verify that synchronized `public/` and `site/` data match. For visual changes, inspect the canonical public GitHub Pages URL after publishing; do not use a local preview for acceptance.
 - After the checks pass, stage only the files changed for the task and create a clear local Git commit. Do not leave a page-impacting task uncommitted, and do not include unrelated user changes.
 - Do not push, publish, or deploy automatically; those remain separate actions that require an explicit user request.
 
