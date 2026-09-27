@@ -1,21 +1,29 @@
 # 城市间与市内交通
 
-最后整理：2026-09-26T15:50:00+08:00（HKT）。以下班次、线路、票价规则和运营页面是当前快照，不是 2027 年承诺；购票前要按实际日期、行李和航班重新核对。Madrid 不作为旅游城市，但本轮已按用户确认在 2 月 2 日完成 Seville→Madrid 定位，并在 Madrid 机场附近住一晚。
+最后整理：2026-09-27T15:18:50+08:00（HKT）。以下班次、线路、票价规则和运营页面是当前快照，不是 2027 年承诺；购票前要按实际日期、行李和航班重新核对。当前主方案是 1/26 到达 Madrid 后条件性去 Barcelona，2/2 完成 Seville→Madrid 定位，2/3 12:20 从 Madrid 返程；Madrid 不作为旅游城市，机场—市区交通走廊住宿候选仍为 Hotel Maydrit Airport。当前国航候选约 07:25 到达；若最终为中午到达，优先改晚车次或机场过夜。
 
 需要一步一步照着走时，打开[小时级执行版](hourly-guide.md)；本页保留交通比较、官方入口和换乘原则。
+
+## 转场日的休息规则
+
+- Madrid→Barcelona、Barcelona→Granada、Granada→Seville、Seville→Madrid 都按交通日计算，不把车上时间折算成完整景点游玩时间，但通勤日不等于零游览。
+- 火车到达后先处理行李、入住/寄存、吃饭、补水和充电；确认安全和剩余日光后，安排一个酒店周边平地 60–120 分钟 citywalk/日落模块。不排预约景点、长坡、跨区拍摄或第二顿必须赶时间的正餐。
+- Sagrada Família、Alhambra、Alcázar/Cathedral 等预约锚点统一放在完整日；如果前段晚点，优先删除转场日轻量模块，不挪动返程缓冲。
+- 计划日期日落与一月底气候参考见[四城日落与一月底天气参考](../research/city-weather-sun.md)：Barcelona 1/26 约 18:00、Granada 1/29 约 18:36、Seville 1/31 约 18:48、Madrid 2/2 约 18:35；具体天气在 T-14/T-1 重查。
+- 提前一天后当前留 8 晚，先执行 `Barcelona 3 + Granada 2 + Seville 2 + Madrid 1`；若以后再增加一晚，优先恢复 `3+2+3+1`，再增加一晚才给 Granada 形成 `3+3+3+1`。
 
 ## 结论先行
 
 - **城市间默认选高速铁路**：三人同行、行李较多且希望节奏不赶时，铁路通常比“机场安检 + 航班 + 往返市区”更容易控制；价格差距明显时再比较长途巴士。
 - **Madrid 落地去 Barcelona 默认坐高铁**：国航联程只保护国际出票结构，不保护另买的火车/国内航班；入境、取行李、机场到 Atocha 都要单独算。只有在实际航班很早、二次机场的门到门时间和带行李价格明显优于铁路时，才切换飞机。
-- **返程固定提前一晚定位**：2/2 Seville→Madrid，住 MAD 机场附近；2/3 不从 Seville、Granada 或 Barcelona 临时跨城接国航国际段。
+- **返程固定提前一晚定位**：2/2 Seville→Madrid，住 MAD 机场—市区交通走廊；2/3 不从 Seville、Granada 或 Barcelona 临时跨城接国航国际段。
 - **Madrid→Seville、Madrid→Granada、Madrid→Barcelona** 都可以从机场转到市区车站后乘高铁；Madrid→Granada 另保留 ALSA 作为低价/深夜备选。
 - **Seville↔Granada** 是安达卢西亚内部最适合铁路与巴士二选一的一段；**Barcelona↔Seville** 有直达长途铁路，适合把两座远端城市连起来；**Granada↔Barcelona** 虽有铁路线路，但时间较长，应以实际时刻表决定是否改飞。
 - 不把“到达当天从机场赶去城市、晚上再赶下一段”当作默认方案；分开购票、需要重新托运行李或跨航站楼时尤其要留出余量。
 
 ## 本轮执行结论：两位中年旅伴的首选路径
 
-### 1. Madrid 落地后去 Barcelona：火车优先，晚到就住机场
+### 1. 1 月 26 日 Madrid 落地后去 Barcelona：火车优先，晚到就住机场
 
 国航联程行李直挂只能按最终行李条确认；它不会让后续另买的 Renfe 或国内航班获得联程保护。因此落地后的顺序固定为：
 
@@ -30,7 +38,7 @@ Renfe 当前路线页说明 Madrid–Barcelona 是 AVE/长途铁路线路，Barc
 
 ### 2. 2 月 2 日：Seville→Madrid 不是可选分支，而是返程安全节点
 
-上午只保留 Plaza de España 约 60–90 分钟的短线；如果实际车票在 13:00 前，连这段也删掉。退房后用少走路的正规出租车或已核对的公共交通到 Santa Justa，乘白天直达车去 Madrid，再住机场附近。机场酒店以“航站楼对应、可取消、接驳清楚、含税价可见”为排序，不默认住 Atocha 市中心。
+上午只保留 Plaza de España 约 60–90 分钟的短线；如果实际车票在 13:00 前，连这段也删掉。退房后用少走路的正规出租车或已核对的公共交通到 Santa Justa，乘白天直达车去 Madrid，再住机场—市区交通走廊。当前 Hotel Maydrit Airport 靠近 El Capricho 地铁站，最终按航站楼核对地铁换乘或酒店接驳；住宿以“可取消、接驳清楚、含税价可见、三人床型明确”为排序，不默认住 Atocha 市中心。
 
 Renfe 当前 Seville–Madrid 路线页显示 Santa Justa 与 Madrid Puerta de Atocha 的长途铁路连接；当前首班/票价仅为页面快照，不能替代 2027 车票。[Renfe Seville–Madrid](https://www.renfe.com/es/en/inspirate/rutas/sevilla-madrid)
 
@@ -51,10 +59,10 @@ Renfe 的价格更像“库存阶梯”：日期、车次、剩余低价席位�
 
 | 日期 | 方向 | 当前安排 | 购票底线 |
 |---|---|---|---|
-| 1/26 | Madrid→Barcelona | 入境后只接留足缓冲的白天 AVE/长途铁路；晚到则 1/27 早上走 | 不买早于“计划落地 + 约5小时”的独立车票；不安排同日景点 |
+| 1/26 | Madrid→Barcelona | 当前国航候选约 07:25 到 Madrid；入境后只接留足缓冲的白天 AVE/长途铁路；若实际中午到达或晚到则改晚车次/机场过夜；正常入住后保留 Sants/住处附近 citywalk | 不买早于“实际落地 + 约5小时”的独立车票；不安排同日预约景点 |
 | 1/29 | Barcelona Sants→Granada | 长距离交通日，优先直达 Renfe；抵达后只做中心平地短线 | 不能只按车票标价比飞机；把车站、行李、接驳和晚点写入总耗时 |
 | 1/31 | Granada→Seville Santa Justa | Renfe 优先，ALSA 仅在价格/时间/到站位置明显更优时选 | 选白天、可休息和不影响 Seville 预约的班次 |
-| 2/2 | Seville Santa Justa→Madrid Atocha | 返程前定位段，优先白天直达；到 Madrid 后机场附近过夜 | 不买最后一班；2/3 不从 Seville 跨城接国航 |
+| 2/2 | Seville Santa Justa→Madrid Atocha | 返程前定位段，优先白天直达；到 Madrid 后机场—市区交通走廊过夜，当前候选 Maydrit | 不买最后一班；2/3 不从 Seville 跨城接国航 |
 
 ### 小红书只做体验交叉验证
 
@@ -92,8 +100,8 @@ Renfe 的价格更像“库存阶梯”：日期、车次、剩余低价席位�
 
 ## 返程与跨城的连接原则
 
-- 本轮已确认的城市骨架是 **Madrid入境 → Barcelona → Granada → Seville → Madrid机场附近过夜**；Madrid→Barcelona 与 Seville→Madrid 都是定位交通，不安排同日密集景点。
-- 国际返程固定从 Madrid 起飞；2/2 完成 Seville→Madrid，住机场附近。分开买的“火车 + 国航国际航班”不视为受保护衔接。
+- 本轮已确认的城市骨架是 **Madrid入境 → Barcelona → Granada → Seville → Madrid机场—市区交通走廊过夜**；Madrid→Barcelona 与 Seville→Madrid 都是定位交通，不安排同日密集景点。
+- 国际返程固定从 Madrid 起飞；2/2 完成 Seville→Madrid，住机场—市区交通走廊。分开买的“火车 + 国航国际航班”不视为受保护衔接。
 - Barcelona→Granada 选择长途铁路时，应把这天当作交通日；如果希望多拍照、少疲劳，则查同日 BCN→GRX/AGP 航班，但不能只比较机票标价。Granada→Seville 是较短的安达卢西亚内部转场，优先比较铁路与 ALSA 到站位置。
 - 不安排 Seville/Granada/Barcelona 当天早上出发、下午才到 Madrid、晚上立刻接长途国际航班的紧凑方案；这与轻松节奏和三人行李条件冲突。
 
@@ -156,12 +164,12 @@ Barcelona、Granada、Seville 的机场接驳、城市公交/地铁、步行坡�
 
 ## 本基准行程的交通落地
 
-按“当地 1/26 抵达、Barcelona → Granada → Seville”的代表性日期，执行顺序如下；精确车次和票价不写死，避免把当前页面误当作 2027 年库存：
+按“当地 1/26 抵达、Barcelona → Granada → Seville”的当前航班版，执行顺序如下；精确车次和票价不写死，避免把当前页面误当作 2027 年库存：
 
-1. **Madrid→Barcelona（1/26）：**国航联程落地、入境、取行李后，默认去 Atocha 乘高铁；只有满足约5小时地面缓冲才接当天车次。国际航班晚到就改为MAD机场附近可取消住宿或次日定位，不硬接。Madrid 不安排观光。
-2. **Barcelona → Granada（1/29）：**这是全程较长的国内转场日，优先选择能保留上午休息和下午入住的 Renfe 组合；抵达 Granada 只做平地中心短线，不叠加长坡 Citywalk。
-3. **Granada → Seville（1/31）：**查 Renfe 直达与 ALSA，三人带行李时把车站到酒店的短程接驳单列；抵达后优先入住和休息，再安排一个傍晚轴线。
-4. **返程定位（2/2）：**Seville只保留Plaza de España短线，随后Santa Justa→Madrid Atocha→机场附近酒店；2/3 不安排任何跨城交通后再接国航国际航班。
+1. **Madrid→Barcelona（1/26）：**当前国航候选约 07:25 到 Madrid；入境、取行李后，默认去 Atocha 乘高铁；只有满足约5小时地面缓冲才接当天车次。若实际为中午到达、国际航班晚到或行李异常，就改为 MAD 机场附近可取消住宿或 1/27 早上定位，不硬接。Madrid 不安排观光；若正常抵达 Barcelona 并入住，按 18:00 左右日落安排 Sants/住处附近短走。
+2. **Barcelona → Granada（1/29）：**这是全程较长的国内转场日，优先选择能保留上午休息和下午入住的 Renfe 组合；抵达 Granada 先入住，再做 Cathedral/Gran Vía 等平地中心短线，约 18:36 日落前后收尾，不叠加长坡 Citywalk。
+3. **Granada → Seville（1/31）：**查 Renfe 直达与 ALSA，三人带行李时把车站到酒店的短程接驳单列；抵达后优先入住和休息，再安排一个 60–90 分钟的 Plaza de España/玛丽亚·路易莎公园傍晚轴线，约 18:48 日落。
+4. **返程定位（2/2）：**Seville只保留Plaza de España短线，随后Santa Justa→Madrid Atocha→机场—市区交通走廊酒店；当前候选为 Hotel Maydrit Airport，2/3 不安排任何跨城交通后再接国航国际航班。到 Madrid 后先入住，若仍早只在机场走廊附近短走，不进入市中心追日落。
 
 ### 小红书线索如何落地
 

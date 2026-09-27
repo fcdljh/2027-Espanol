@@ -1,32 +1,32 @@
 # 餐厅现场抄作业卡
 
-最后整理：2026-09-26（Asia/Hong_Kong）。这是给三人现场使用的候选卡，不是预订、付款或“必吃保证”。餐厅不采用“必须 3 篇小红书”的硬门槛：一篇小红书线索只有在 Google 评分/评价数与当地餐厅评价页或官方页能够交叉支持时，才进入主卡。价格、营业时间、菜单和排队都可能在 2027 年改变；出发前仍按 T-14、T-1 复核。
+最后整理：2026-09-27（Asia/Hong_Kong）。这是给三人现场使用的候选卡，不是预订、付款或“必吃保证”。本轮严格采用“至少 3 篇独立小红书 + 当前菜单/菜图 + 营业/价位复核”的餐厅主推门槛；当前没有任何一家餐厅完成这三项，因此下面所有餐厅都只能作为候选，不能写成首选或必吃。价格、营业时间、菜单和排队都可能在 2027 年改变；出发前仍按 T-14、T-1 复核。
 
 本页的动态信息统一记录本轮网页与 Safari 核对结束时间：checked_at_hkt: 2026-09-26T23:22:29+08:00。Google 的 €10–20、€20–30 是商户价位档，不等于三人最终账单；本轮 Google 评分/评价数来自当地聚合页所显示的商户快照，第三方菜单摘录和小红书菜品体验只作为点单方向。
 
-## 一眼选店
+## 一眼选候选
 
-| 城市 | 现场首选 | 适合放进路线 | 价格快照 | 营业快照 |
+| 城市 | 现场候选 | 适合放进路线 | 价格快照 | 营业快照 |
 |---|---|---|---|---|
-| Barcelona | [Anxoita Bodega](https://www.google.com/maps/search/?api=1&query=Anxoita+Bodega+Barcelona) | Eixample 晚餐、tapas | Google €20–30/人档 | 每日 12:00–00:00 |
+| Barcelona | [Anxoita Bodega](https://www.google.com/maps/search/?api=1&query=Anxoita+Bodega+Barcelona) | Eixample 晚餐、tapas候选 | Google €20–30/人档 | 每日 12:00–00:00 |
 | Barcelona | [El Racó d’Urgell](https://www.google.com/maps/search/?api=1&query=El+Raco+d%27Urgell+Bar+Restaurant+Barcelona) | Eixample 午/晚餐、海鲜饭方向 | Google €10–20/人档 | 周一至六早晚两段；周日休息 |
 | Granada | [Los Manueles · Reyes Católicos 61](https://www.google.com/maps/search/?api=1&query=Los+Manueles+Reyes+Catolicos+61+Granada) | Cathedral/Gran Vía 平地中心 | Google €10–20/人档 | 官网/商户摘要：每日 12:00–00:00；分店需复核 |
 | Granada | [Bar Los Diamantes · Plaza Nueva 13](https://www.google.com/maps/search/?api=1&query=Bar+Los+Diamantes+Plaza+Nueva+13+Granada) | 小食、炸鱼、酒水停留 | Google €10–20/人档；media ración 约 €12–16 仅作线索 | 约每日 12:00–23:30 |
 | Seville | [San Marco Santa Cruz](https://www.google.com/maps/search/?api=1&query=San+Marco+Santa+Cruz+Seville) | Santa Cruz 晚餐 | Google €20–30/人档 | 午晚两段；周末与工作日略有差异 |
 | Seville | [Bendala Brasería](https://www.google.com/maps/search/?api=1&query=Bendala+Braseria+Seville) | 王宫/圣十字区慢餐 | Google €20–30/人档；TheFork 平均约 €25 | 周六/日 13:00–00:00；周一至四 13:00–23:30；周五 13:00–00:00 |
 
-## 餐厅例外的外部交叉判断
+## 餐厅候选的外部交叉（不等于三帖通过）
 
-餐厅可以只有一篇小红书线索，但不能只有一篇小红书就直接写成首选。本轮把小红书中的菜品/路线体验，与 Google 评分和评价数快照，再加当地餐厅评价页或官方页做了交叉。以下判断只说明“值得保留为现场候选”，不等于预约成功、当前仍有座位或味道一定符合三人。
+本轮把现有小红书线索中的菜品/路线体验，与 Google 评分和评价数快照，再加当地餐厅评价页或官方页做了交叉；但每家都没有完成至少 3 篇独立小红书的餐厅级交叉，所以全部降级为“值得现场查看的候选”。这不等于预约成功、当前仍有座位、菜单仍有图、味道一定符合三人。
 
 | 主卡 | Google/当地评价快照 | 本轮判断 |
 |---|---|---|
-| Anxoita Bodega | [Wanderlog](https://wanderlog.com/place/details/6724968/anxoita-bodega) 显示 Google 4.7/约 1,586、Tripadvisor 4.7/83；[RestaurantGuru](https://restaurantguru.com/Anxoita-Bodega-Spain) 显示 Google 4.7/约 1,632、Tripadvisor 4.6/116 | 外部交叉通过；保留 tapas、章鱼、鳕鱼方向，排队可能较长 |
-| El Racó d’Urgell | [RestaurantGuru](https://restaurantguru.com/El-Raco-Durgell-Barcelona) 显示 Google 约 4.4–4.5、约 200 条量级、€10–20；[Postcard](https://www.postcard.inc/places/el-raco-durgell-bar-restaurant-barcelona-YIbSnQu-0LG) 显示 4.5/193、份量评价 | 外部交叉通过；作为预算/就近备选，不作为跨区目的地 |
-| Los Manueles | [RestaurantGuru](https://es.restaurantguru.com/Los-Manueles-Granada) 显示 Google 4.3/约 21,155；[Tripadvisor](https://www.tripadvisor.es/Restaurant_Review-g187441-d1004437-Reviews-Los_Manueles_Reyes_Catolicos-Granada_Province_of_Granada_Andalucia.html) 约 3.8/4,376 | 外部交叉通过但评价有分歧；适合平地中心，不能写成必吃 |
-| Los Diamantes Plaza Nueva | [Wanderlog](https://wanderlog.com/es/place/details/1232046/los-diamantes-plaza-nueva) 显示 Google 4.3/约 13,865、Tripadvisor 4.5/5,620；[RestaurantGuru](https://es.restaurantguru.com/Los-Diamantes-Granada-2) 显示 Google 4.3/约 13,916 | 外部交叉通过；保留为炸鱼/酒水短停，不把排队和拼桌当例外 |
-| San Marco Santa Cruz | [官方站](https://restaurantesanmarcosantacruz.es/) 显示 Google 约 4.5/5,386；[Wanderlog](https://wanderlog.com/es/place/details/1163616/san-marco-santa-cruz) 显示 Google 4.5/5,395、Tripadvisor 4.2/3,118 | 外部交叉通过；可保留海鲜饭/海鲜意面/甜点方向，建议预订或接受慢餐 |
-| Bendala Brasería | [POS.do](https://pos.do/en/sevilla/restaurant/bendala-braseria-sevilla) 显示 Google 4.8/约 2,965、Tripadvisor 4.7/225；[Yanubo](https://www.yanubo.com/lugar/restaurante/andalucia/sevilla/sevilla/bendala-arroces-y-brasas-2) 显示 Google 4.8/约 3,134 | 外部交叉通过；牛排/烤鱼/海鲜饭方向保留，结账前核对账单 |
+| Anxoita Bodega | [Wanderlog](https://wanderlog.com/place/details/6724968/anxoita-bodega) 显示 Google 4.7/约 1,586、Tripadvisor 4.7/83；[RestaurantGuru](https://restaurantguru.com/Anxoita-Bodega-Spain) 显示 Google 4.7/约 1,632、Tripadvisor 4.6/116 | **候选，未通过三帖餐厅门槛**；保留 tapas、章鱼、鳕鱼方向，排队可能较长 |
+| El Racó d’Urgell | [RestaurantGuru](https://restaurantguru.com/El-Raco-Durgell-Barcelona) 显示 Google 约 4.4–4.5、约 200 条量级、€10–20；[Postcard](https://www.postcard.inc/places/el-raco-durgell-bar-restaurant-barcelona-YIbSnQu-0LG) 显示 4.5/193、份量评价 | **候选，未通过三帖餐厅门槛**；作为预算/就近备选，不作为跨区目的地 |
+| Los Manueles | [RestaurantGuru](https://es.restaurantguru.com/Los-Manueles-Granada) 显示 Google 4.3/约 21,155；[Tripadvisor](https://www.tripadvisor.es/Restaurant_Review-g187441-d1004437-Reviews-Los_Manueles_Reyes_Catolicos-Granada_Province_of_Granada_Andalucia.html) 约 3.8/4,376 | **候选，未通过三帖餐厅门槛且评价有分歧**；适合平地中心，不能写成必吃 |
+| Los Diamantes Plaza Nueva | [Wanderlog](https://wanderlog.com/es/place/details/1232046/los-diamantes-plaza-nueva) 显示 Google 4.3/约 13,865、Tripadvisor 4.5/5,620；[RestaurantGuru](https://es.restaurantguru.com/Los-Diamantes-Granada-2) 显示 Google 4.3/约 13,916 | **候选，未通过三帖餐厅门槛**；保留为炸鱼/酒水短停，不把排队和拼桌当例外 |
+| San Marco Santa Cruz | [官方站](https://restaurantesanmarcosantacruz.es/) 显示 Google 约 4.5/5,386；[Wanderlog](https://wanderlog.com/es/place/details/1163616/san-marco-santa-cruz) 显示 Google 4.5/5,395、Tripadvisor 4.2/3,118 | **候选，未通过三帖餐厅门槛**；可保留海鲜饭/海鲜意面/甜点方向，建议先看菜单和等位 |
+| Bendala Brasería | [POS.do](https://pos.do/en/sevilla/restaurant/bendala-braseria-sevilla) 显示 Google 4.8/约 2,965、Tripadvisor 4.7/225；[Yanubo](https://www.yanubo.com/lugar/restaurante/andalucia/sevilla/sevilla/bendala-arroces-y-brasas-2) 显示 Google 4.8/约 3,134 | **候选，未通过三帖餐厅门槛**；牛排/烤鱼/海鲜饭方向保留，结账前核对账单 |
 
 ## 现场共用点单规则
 
@@ -36,9 +36,26 @@
 4. 结账前看清桌费、面包费、服务费、饮料和每道菜数量；尤其是 Bendala，研究记录中存在个人对收费/服务的不同反馈。
 5. 排队超过 30 分钟、没有三人座位、菜单价格明显超出预期或服务不舒服，就使用本城备用，不为小红书种草沉没时间。
 
+## 菜品外观先看：现场三步
+
+本卡没有把旧小红书照片当作 2027 菜单证据；如果三人需要“先看长什么样再决定”，到店按下面顺序执行：
+
+1. 先打开本卡对应的官方菜单、Google 商户照片或当前菜单照片；没有当前菜图就把该菜当未知，不要按旧帖直接点。
+2. 先点一份共享试吃，再决定第二轮：三人通常先点 2–3 道小份/一锅共享菜，不按三人各点一份。
+3. 看见下面的外观才按喜好选择：
+
+| 菜类关键词 | 现场应看到的样子 | 不想吃时怎么换 |
+|---|---|---|
+| `paella` / `arroz` | 浅锅里的米饭和海鲜/肉，通常不是汤；先问最少几人份和等待时间 | 换烤鱼、炸鱼或小份 tapas |
+| `tapas` / `ración` | 小盘共享菜，份量不固定；先确认是 `tapa`、`media ración` 还是整份 | 先点一盘看份量，再加第二盘 |
+| `pescado frito` / `boquerones` | 一盘炸小鱼或鱼块，外层金黄；通常适合快速共享 | 换烤鱼、海鲜拼盘或蔬菜 |
+| `brasa` / `steak` | 炭火烤肉/鱼，常配薯条或蔬菜；先问部位和熟度 | 换烤鱼、烤蔬菜或 tapas |
+| `huevos rotos` / `habas con jamón` | 薯条/碎蛋/火腿，或蚕豆与火腿的家常盘；不吃猪肉先问 | 换蔬菜、鱼或不含猪肉的当天菜 |
+| `torrija` / `cheesecake` / `suizo` | 甜点、芝士蛋糕或热巧克力甜品；先问是否当天有 | 不为甜点跨区，改附近咖啡/超市 |
+
 ## Barcelona
 
-### 1. Anxoita Bodega｜晚餐 tapas 首选
+### 1. Anxoita Bodega｜晚餐 tapas 候选
 
 - **record_id：** DIN-BCN-ANXOITA-20260926
 - **地址：** Rambla de Catalunya, 20, Eixample, 08007 Barcelona
@@ -136,7 +153,7 @@
 
 ## 扩充备用卡：让每天至少有一顿正餐可落地
 
-下面 8 张卡是本轮为每日现场卡补齐的候选，不与前面的 6 张“主卡”混淆。它们仍遵守用户指定的餐厅例外：不强制 3 篇小红书，但至少有小红书线索，再补官方页面、Google/Tripadvisor 或当地餐厅评价。价格为官方菜单快照、商户价位档或明确标注的规划带；没有抓到当前精确价格的地方不伪造数字。
+下面 8 张卡是本轮为每日现场卡补齐的候选，不与前面的 6 张候选混淆。它们同样没有完成“至少 3 篇独立小红书 + 当前菜单/菜图 + 营业/价位复核”的主推门槛；官方页面、Google/Tripadvisor 只用于降低踩空风险，不把它们升级成推荐。价格为官方菜单快照、商户价位档或明确标注的规划带；没有抓到当前精确价格的地方不伪造数字。
 
 ### 7. Granja Viader｜早餐甜品卡
 

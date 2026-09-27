@@ -21,7 +21,7 @@
 
 - **路线：通过三帖交叉。** Barcelona、Granada、Seville 各自的主路线骨架都至少由 3 个不同的小红书笔记支持；共同内容只提取街区顺序、城市分区和节奏，不把单篇笔记的票价、步数、末班车或“必去”当成事实。
 - **人像打卡点：通过三帖交叉。** 当前只把 Barcelona B1、Granada G1、Seville S1 写成主推人像组；每组有 3 个不同笔记 ID 和 3 张本地带人像图片。图片中没有建筑空镜。
-- **餐厅：采用用户指定例外。** 餐厅不强制 3 篇小红书；一篇小红书线索可以在同时具备 Google 评分/评价数快照、当地餐厅评价页或官方页面后进入候选卡。本轮 6 家主卡满足这一条件，但评分、菜单和营业时间仍是动态快照。
+- **餐厅：严格降级。** 餐厅主推必须同时满足至少 3 篇独立小红书、当前菜单/菜图和营业/价位复核；本轮没有一家完成全部条件。6 家原主卡保留为现场候选，Google/Tripadvisor/官方页面只能降低踩空风险，不能推出必吃、当前有座或菜品仍供应。
 - **景观/食物素材：保留但单独分层。** 落日、晚霞、天际线和食物图可以留在攻略视觉位；未通过三帖人像门槛的建筑景点不再当作人像机位推荐。
 
 ## 判定规则
@@ -29,7 +29,7 @@
 1. 计数单位是独立小红书笔记 ID，不是图片张数；同帖多张图只能算 1 帖。
 2. 路线要有至少 3 个不同笔记在街区顺序、主节点或节奏上出现交集，且保留冲突和官方复核项。
 3. 人像机位组要有至少 3 个不同笔记，并且每个用于计数的本地图片都能看见人物主体；同景区不同角度可以通过“景区/风格组”，不能伪装成同一精确站位。
-4. 餐厅可用 1 篇小红书，但必须补 Google 评分/评价数以及官方或当地餐厅评价页；外部评分只能判断“值得保留/适合备用”，不能直接推出必点、无排队或 2027 仍营业。
+4. 餐厅主推要有至少 3 个不同小红书笔记，并且还要看到当前菜单/菜图、分店、营业和价位复核；本轮没有餐厅达到主推门槛，外部评分只能判断“值得现场查看”，不能直接推出必点、无排队或 2027 仍营业。
 5. 营业时间、价格、预约、票务、交通和拍摄许可永远回到官方/运营方/当前商户页面；本页不替代 T-14、T-1 复核。
 
 ## 路线交叉结果
@@ -85,18 +85,18 @@
 - D2 的 Sagrada/Sant Pau、D3 的 Passeig/Arc/Ciutadella、D4 的 Granada 平地中心、D5 的观景台、D7 的 Alcázar/Cathedral/Santa Cruz，以及全部车站/列车点，当前在现场卡中被明确标成路线/风景或交通记录，不能误读为已有 3 个不同帖子的本地点位模特图。
 - 如果后续在 Safari 找到并下载这些精确点位的三帖模特图，应新增独立素材文件、记录帖子 ID、更新 `pose-references/README.md` 与本表；不能用建筑空镜补数。
 
-## 餐厅例外的外部交叉判断
+## 餐厅候选的外部交叉判断（不等于三帖通过）
 
-以下评分和评价数量是 2026-09-26 的当前网页快照；Google 数值来自当地聚合页所展示的 Google 商户信息，不是对 2027 的保证。每家主卡均有小红书线索，再结合 Google 评分/评价数、Tripadvisor 或当地餐厅评价页/官方页作判断。
+以下评分和评价数量是 2026-09-26 的当前网页快照；Google 数值来自当地聚合页所展示的 Google 商户信息，不是对 2027 的保证。每家原主卡只有现有小红书线索，再结合 Google 评分/评价数、Tripadvisor 或当地餐厅评价页/官方页作候选判断；没有一家达到餐厅主推所需的三帖、当前菜图和动态复核闭环。
 
 | 餐厅主卡 | 小红书线索 | 外部交叉证据 | 判断 |
 |---|---|---|---|
-| Anxoita Bodega，Barcelona | [69d7650e0000000023005945](https://www.xiaohongshu.com/explore/69d7650e0000000023005945) | [Wanderlog](https://wanderlog.com/place/details/6724968/anxoita-bodega)：Google 4.7/约 1,586、Tripadvisor 4.7/83；[RestaurantGuru](https://restaurantguru.com/Anxoita-Bodega-Spain)：Google 4.7/约 1,632、Tripadvisor 4.6/116 | **外部交叉通过**；保留 tapas/章鱼/鳕鱼方向，排队和菜单现价现场确认 |
-| El Racó d’Urgell，Barcelona | [69d7650e0000000023005945](https://www.xiaohongshu.com/explore/69d7650e0000000023005945) | [RestaurantGuru](https://restaurantguru.com/El-Raco-Durgell-Barcelona)：Google 约 4.4–4.5、约 200 条量级、€10–20；[Postcard](https://www.postcard.inc/places/el-raco-durgell-bar-restaurant-barcelona-YIbSnQu-0LG)：4.5/193、份量与本地化评价 | **外部交叉通过**；作为预算/就近备选，周日休息与分段营业必须复核 |
-| Los Manueles，Granada | [69f4fd1d0000000022024b3e](https://www.xiaohongshu.com/explore/69f4fd1d0000000022024b3e)、[69fe38680000000022024fe1](https://www.xiaohongshu.com/explore/69fe38680000000022024fe1) | [RestaurantGuru](https://es.restaurantguru.com/Los-Manueles-Granada)：Google 4.3/约 21,155；[Tripadvisor](https://www.tripadvisor.es/Restaurant_Review-g187441-d1004437-Reviews-Los_Manueles_Reyes_Catolicos-Granada_Province_of_Granada_Andalucia.html)：约 3.8/4,376，传统菜评价有分歧 | **外部交叉通过**；适合作为平地中心稳妥选项，不写成必吃 |
-| Los Diamantes Plaza Nueva，Granada | [69fe38680000000022024fe1](https://www.xiaohongshu.com/explore/69fe38680000000022024fe1) | [Wanderlog](https://wanderlog.com/es/place/details/1232046/los-diamantes-plaza-nueva)：Google 4.3/约 13,865、Tripadvisor 4.5/5,620；[RestaurantGuru](https://es.restaurantguru.com/Los-Diamantes-Granada-2)：Google 4.3/约 13,916、€10–20 | **外部交叉通过**；保留为炸鱼/酒水短停，不把排队、拼桌和服务体验写成稳定保证 |
-| San Marco Santa Cruz，Seville | [69de64ed000000002003baec](https://www.xiaohongshu.com/explore/69de64ed000000002003baec) | [官方站](https://restaurantesanmarcosantacruz.es/)：Google 约 4.5/5,386、Traveler’s Choice 2026；[Wanderlog](https://wanderlog.com/es/place/details/1163616/san-marco-santa-cruz)：Google 4.5/5,395、Tripadvisor 4.2/3,118 | **外部交叉通过**；海鲜饭/海鲜意面/甜点可先问，建议预订或接受慢餐 |
-| Bendala Brasería，Seville | [697be57b000000000c03447f](https://www.xiaohongshu.com/explore/697be57b000000000c03447f)、[6a72ec460000000033031273](https://www.xiaohongshu.com/explore/6a72ec460000000033031273) | [POS.do](https://pos.do/en/sevilla/restaurant/bendala-braseria-sevilla)：Google 4.8/约 2,965、Tripadvisor 4.7/225；[Yanubo](https://www.yanubo.com/lugar/restaurante/andalucia/sevilla/sevilla/bendala-arroces-y-brasas-2)：Google 4.8/约 3,134 | **外部交叉通过**；牛排/烤鱼/海鲜饭方向保留，但结账前核对账单 |
+| Anxoita Bodega，Barcelona | [69d7650e0000000023005945](https://www.xiaohongshu.com/explore/69d7650e0000000023005945) | [Wanderlog](https://wanderlog.com/place/details/6724968/anxoita-bodega)：Google 4.7/约 1,586、Tripadvisor 4.7/83；[RestaurantGuru](https://restaurantguru.com/Anxoita-Bodega-Spain)：Google 4.7/约 1,632、Tripadvisor 4.6/116 | **候选，未通过三帖主推门槛**；保留 tapas/章鱼/鳕鱼方向，排队和菜单现价现场确认 |
+| El Racó d’Urgell，Barcelona | [69d7650e0000000023005945](https://www.xiaohongshu.com/explore/69d7650e0000000023005945) | [RestaurantGuru](https://restaurantguru.com/El-Raco-Durgell-Barcelona)：Google 约 4.4–4.5、约 200 条量级、€10–20；[Postcard](https://www.postcard.inc/places/el-raco-durgell-bar-restaurant-barcelona-YIbSnQu-0LG)：4.5/193、份量与本地化评价 | **候选，未通过三帖主推门槛**；作为预算/就近备选，周日休息与分段营业必须复核 |
+| Los Manueles，Granada | [69f4fd1d0000000022024b3e](https://www.xiaohongshu.com/explore/69f4fd1d0000000022024b3e)、[69fe38680000000022024fe1](https://www.xiaohongshu.com/explore/69fe38680000000022024fe1) | [RestaurantGuru](https://es.restaurantguru.com/Los-Manueles-Granada)：Google 4.3/约 21,155；[Tripadvisor](https://www.tripadvisor.es/Restaurant_Review-g187441-d1004437-Reviews-Los_Manueles_Reyes_Catolicos-Granada_Province_of_Granada_Andalucia.html)：约 3.8/4,376，传统菜评价有分歧 | **候选，未通过三帖主推门槛**；适合作为平地中心选项，不写成必吃 |
+| Los Diamantes Plaza Nueva，Granada | [69fe38680000000022024fe1](https://www.xiaohongshu.com/explore/69fe38680000000022024fe1) | [Wanderlog](https://wanderlog.com/es/place/details/1232046/los-diamantes-plaza-nueva)：Google 4.3/约 13,865、Tripadvisor 4.5/5,620；[RestaurantGuru](https://es.restaurantguru.com/Los-Diamantes-Granada-2)：Google 4.3/约 13,916、€10–20 | **候选，未通过三帖主推门槛**；保留为炸鱼/酒水短停，不把排队、拼桌和服务体验写成稳定保证 |
+| San Marco Santa Cruz，Seville | [69de64ed000000002003baec](https://www.xiaohongshu.com/explore/69de64ed000000002003baec) | [官方站](https://restaurantesanmarcosantacruz.es/)：Google 约 4.5/5,386、Traveler’s Choice 2026；[Wanderlog](https://wanderlog.com/es/place/details/1163616/san-marco-santa-cruz)：Google 4.5/5,395、Tripadvisor 4.2/3,118 | **候选，未通过三帖主推门槛**；海鲜饭/海鲜意面/甜点可先看当前菜图和菜单 |
+| Bendala Brasería，Seville | [697be57b000000000c03447f](https://www.xiaohongshu.com/explore/697be57b000000000c03447f)、[6a72ec460000000033031273](https://www.xiaohongshu.com/explore/6a72ec460000000033031273) | [POS.do](https://pos.do/en/sevilla/restaurant/bendala-braseria-sevilla)：Google 4.8/约 2,965、Tripadvisor 4.7/225；[Yanubo](https://www.yanubo.com/lugar/restaurante/andalucia/sevilla/sevilla/bendala-arroces-y-brasas-2)：Google 4.8/约 3,134 | **候选，未通过三帖主推门槛**；牛排/烤鱼/海鲜饭方向保留，但结账前核对账单 |
 
 ### 尚未提升为主卡的餐厅线索
 
@@ -108,5 +108,5 @@ La Bartola、La Goleta、Triana Market、Gran Vía 9 和 Floresta 仍是较弱�
 |---|---|---|
 | 路线 | 三个不同小红书笔记在路线结构上交叉，且不把个人交通/价格当事实 | 官方开放、票务、交通、天气、实时施工 |
 | 人像机位 | 三个不同小红书笔记 + 三张本地带人物图片 | 是否开放、现场站位、游客动线、拍摄限制 |
-| 餐厅 | 一篇或多篇小红书线索 + Google 评分/评价数 + 当地评价页或官方页 | 分店、菜单、价格、厨房收单、排队、预约、过敏原 |
+| 餐厅主推 | 至少 3 篇不同小红书 + 当前菜单/菜图 + 官方/商户营业和价位复核 | 分店、菜单、价格、厨房收单、排队、预约、过敏原；当前没有通过项 |
 | 景观/食物 | 可以保留为独立视觉素材，不冒充人像三帖证据 | 天气、光线、开放和当天供应 |
