@@ -424,34 +424,6 @@ function ticketPriceMarkup(item) {
   return price ? `<p class="timeline-price"><strong>门票</strong>${escapeHtml(price)}</p>` : "";
 }
 
-function walkingGuardMarkup(day) {
-  const walking = walkingStatus(day);
-  return `
-    <details class="guard-card">
-      <summary><span class="guard-icon walk-icon">↝</span><span><strong>今天走多少</strong><small>${escapeHtml(walking.km)} · ${escapeHtml(walking.label)}</small></span></summary>
-      <div class="guard-detail">
-        <p>${escapeHtml(day.walking_km?.how || "按三位旅伴的体力分段，累了就坐车或提前回住处。")}</p>
-      </div>
-    </details>
-  `;
-}
-
-function guardPanelMarkup(day) {
-  const changeMarkup = changeGuardMarkup(day);
-  return `
-    <section class="guard-panel">
-      <div class="card-heading-row">
-        <div><span class="section-kicker">EASY MODE</span><h3>三人同行，今天只看重点</h3></div>
-        <span class="muted-label">只放有用信息</span>
-      </div>
-      <div class="guard-grid ${changeMarkup ? "" : "is-single"}">
-        ${walkingGuardMarkup(day)}
-        ${changeMarkup}
-      </div>
-    </section>
-  `;
-}
-
 function heroForDay(day) {
   if (!day) return null;
   if (day.city.includes("Seville") || day.city.includes("塞维利亚")) return "./assets/trip/seville-hero.jpg";
@@ -767,20 +739,6 @@ function renderToday(day) {
       ${heroMarkup}
     </section>
 
-    <section class="simple-guide-card">
-      <div class="guide-number">1</div>
-      <div class="guide-copy"><span class="section-kicker">START HERE</span><h3>今天按这三步走</h3><p>看当前步骤 → 打开导航 → 到达后点“完成”。行程已经提前确定，按顺序执行即可。</p></div>
-      <button class="guide-start-button" data-open-step="${firstOpenIndex}" type="button">开始</button>
-    </section>
-
-    <section class="predeparture-promo">
-      <div class="predeparture-promo-icon" aria-hidden="true">✓</div>
-      <div><span class="section-kicker">BEFORE YOU GO</span><h3>签证和行李还没做完？</h3><p>打开出发前清单，按时间线办理签证，再逐项勾选随身包和托运行李。</p></div>
-      <button class="predeparture-promo-button" data-open-prep type="button">打开清单 ↗</button>
-    </section>
-
-    ${guardPanelMarkup(day)}
-
     ${lodgingMarkup(day)}
 
     ${isTravelDay(day) ? `
@@ -837,6 +795,7 @@ function renderToday(day) {
     </section>
 
 
+    ${changeGuardMarkup(day)}
     ${safetyFooterMarkup(state.plan)}
  `;
 
