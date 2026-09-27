@@ -214,7 +214,7 @@
      "t": "H+1:30–H+2:00",
      "what": "先看实际到达情况：延误、入境排队、行李异常或换航站楼时，不赶同日城际交通",
      "kind": "check",
-     "note": "晚到就执行MAD机场附近可取消住宿/次日定位；Madrid只作机场节点，不临时观光",
+     "note": "晚到就执行MAD机场附近可取消住宿/次日定位；Madrid只作为机场中转，不临时观光",
      "tag": "pinned"
     },
     {
@@ -253,7 +253,7 @@
    ],
    "stops": [
     {
-     "name": "Madrid-Barajas Airport（入境节点）",
+     "name": "Madrid-Barajas Airport（入境机场）",
      "query": "Adolfo Suárez Madrid–Barajas Airport, Spain",
      "mode": "transit",
      "lat": 40.4952269,
@@ -529,7 +529,7 @@
     },
     {
      "t": "07:45–08:15",
-     "what": "前往 Barcelona Sants 或最终确认的机场节点",
+     "what": "前往 Barcelona Sants 或最终确认的机场",
      "kind": "hop",
      "map": false,
      "note": "带箱不临时换站；按已购车票上的出发地执行",
