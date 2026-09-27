@@ -1,4 +1,4 @@
-const CACHE_NAME = "spain-guide-static-v8";
+const CACHE_NAME = "spain-guide-static-v9";
 const PRECACHE = [
   "./",
   "./index.html",
@@ -64,7 +64,7 @@ self.addEventListener("fetch", (event) => {
   // Keep the shell fresh whenever the phone is online. This lets a published
   // copy update its typography and interaction code without asking users to
   // clear Chrome storage. Offline, the last shell remains available.
-  const shellAsset = /\.(?:html|css|js|webmanifest)$/.test(requestUrl.pathname);
+  const shellAsset = requestUrl.pathname.endsWith("/") || /\.(?:html|css|js|webmanifest)$/.test(requestUrl.pathname);
   if (shellAsset) {
     event.respondWith(
       fetch(event.request, { cache: "no-store" })
