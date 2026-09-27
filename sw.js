@@ -1,17 +1,27 @@
-const CACHE_NAME = "spain-guide-static-v3";
+const CACHE_NAME = "spain-guide-static-v8";
 const PRECACHE = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
   "./plan.geo.json",
+  "./pre-departure.json",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./assets/trip/seville-hero.jpg",
   "./assets/trip/seville-pose.jpg",
   "./assets/trip/route-map.jpg",
-  "./assets/trip/tapas.jpg"
+  "./assets/trip/tapas.jpg",
+  "./assets/trip/references/barcelona/barcelona-69035b8e0000000004012896-01.jpg",
+  "./assets/trip/references/barcelona/barcelona-69679455000000002203ad5e-01.jpg",
+  "./assets/trip/references/barcelona/barcelona-69f1c63c000000003601dcee-02.jpg",
+  "./assets/trip/references/granada/granada-6a032e9c0000000038021d4b-01.jpg",
+  "./assets/trip/references/granada/granada-68de4ccd0000000007009706-01.jpg",
+  "./assets/trip/references/granada/granada-6a8a70f70000000033022bfd-01.jpg",
+  "./assets/trip/references/seville/seville-6a0861410000000038036572-01.jpg",
+  "./assets/trip/references/seville/seville-6a031929000000000800056d-01.jpg",
+  "./assets/trip/references/seville/seville-6a689e71000000000f01da95-01.jpg"
 ];
 
 self.addEventListener("install", (event) => {
