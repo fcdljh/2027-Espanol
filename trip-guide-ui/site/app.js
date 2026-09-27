@@ -752,6 +752,77 @@ function lodgingMarkup(day) {
   `;
 }
 
+function restaurantsForDay(day) {
+  const restaurants = Array.isArray(state.plan?.restaurants) ? state.plan.restaurants : [];
+  return restaurants.filter((restaurant) => {
+    if (Array.isArray(restaurant.day_ids) && restaurant.day_ids.length) {
+      return restaurant.day_ids.includes(day?.date);
+    }
+    return restaurant.city_id === day?.city_id && !isTravelDay(day);
+  });
+}
+
+function restaurantSourceMarkup(post) {
+  const url = post?.url || `https://www.xiaohongshu.com/explore/${encodeURIComponent(post?.source_id || "")}`;
+  return `
+    <a class="restaurant-source" href="${escapeHtml(url)}" target="_blank" rel="noreferrer">
+      <span><strong>${escapeHtml(post?.title || "打开小红书帖子")}</strong><small>${escapeHtml(post?.date_display || "近一年内页面") } · ${escapeHtml(post?.note || "先看菜品照片和实际体验")}</small></span>
+      <span aria-hidden="true">打开 ↗</span>
+    </a>
+  `;
+}
+
+function restaurantMarkup(day) {
+  const restaurants = restaurantsForDay(day);
+  if (!restaurants.length) return "";
+  return `
+    <section class="restaurant-section" aria-label="餐厅推荐">
+      <div class="card-heading-row">
+        <div><span class="section-kicker">附近吃什么</span><h3>先看菜品，再决定去哪家</h3></div>
+        <span class="muted-label">三人共享</span>
+      </div>
+      <p class="restaurant-intro">下面的餐厅都顺着当天路线安排；小红书帖子只用于看菜品长相、口味和排队体验，营业时间、菜单、价格和座位要到当天再查。</p>
+      <div class="restaurant-list">
+        ${restaurants.map((restaurant) => `
+          <article class="restaurant-card">
+            <div class="restaurant-card-heading">
+              <img src="${escapeHtml(assetUrl(restaurant.image || "assets/trip/tapas.jpg"))}" alt="${escapeHtml(restaurant.name)} 菜品外观参考" loading="lazy" />
+              <div>
+                <span class="restaurant-role">${escapeHtml(restaurant.city_label || "当天附近")} · ${escapeHtml(restaurant.role || "顺路用餐")}</span>
+                <h4>${escapeHtml(restaurant.name)}</h4>
+                <p>${escapeHtml(restaurant.area || "按地图当天确认具体地址")}</p>
+              </div>
+            </div>
+            <div class="restaurant-copy-block"><strong>为什么适合今天</strong><p>${escapeHtml(restaurant.fit)}</p></div>
+            <div class="restaurant-copy-block"><strong>三个人这样点</strong><p>${escapeHtml(restaurant.order_for_three)}</p></div>
+            <div class="restaurant-copy-block">
+              <strong>推荐菜长什么样</strong>
+              <div class="restaurant-dishes">
+                ${(restaurant.dishes || []).map((dish) => `<div class="restaurant-dish"><b>${escapeHtml(dish.zh || dish.name)}</b><small>${escapeHtml(dish.name || "")} · ${escapeHtml(dish.look || "先看当前菜单照片")}</small></div>`).join("")}
+              </div>
+            </div>
+            <div class="restaurant-facts">
+              <p><b>预算样本</b>${escapeHtml(restaurant.budget || "当前价格待查")}</p>
+              <p><b>排队和备用</b>${escapeHtml(restaurant.queue || "当天看排队，久等就换附近店")}</p>
+            </div>
+            <div class="restaurant-actions">
+              <a href="${escapeHtml(restaurant.map_url || "https://www.google.com/maps")}" target="_blank" rel="noreferrer">打开地图/商户页 ↗</a>
+              ${restaurant.menu_url ? `<a href="${escapeHtml(restaurant.menu_url)}" target="_blank" rel="noreferrer">看当前菜单 ↗</a>` : ""}
+            </div>
+            <details class="restaurant-sources">
+              <summary><span>打开近一年小红书图片</span><b>${(restaurant.xhs_posts || []).length} 篇＋</b></summary>
+              <div class="restaurant-source-list">
+                ${(restaurant.xhs_posts || []).map(restaurantSourceMarkup).join("")}
+              </div>
+            </details>
+            <p class="restaurant-note">${escapeHtml(restaurant.source_note || "小红书是体验参考，不是当前营业或价格保证。")}</p>
+          </article>
+        `).join("")}
+      </div>
+    </section>
+  `;
+}
+
 function photoReferenceForDay(day) {
   if (!day) return null;
   const config = state.photoReferences?.days?.[day.date];
@@ -1022,6 +1093,8 @@ function renderToday(day) {
       </section>
     ` : ""}
 
+    ${restaurantMarkup(day)}
+
     ${photoReferencesMarkup(day)}
 
     <section class="quick-grid" aria-label="旅行辅助">
@@ -1074,6 +1147,7 @@ function renderStep(day) {
     ${isTransfer ? `<section class="step-image-card"><img src="./assets/trip/route-map.jpg" alt="三城路线示意" loading="lazy" /><div><span class="section-kicker">留出交通时间</span><p>交通日不追景点。先核对车票、站台、行李和入住地址；晚到时按当天交通安排直接入住和用餐。</p></div></section>` : ""}
 
     ${lodgingMarkup(day)}
+    ${restaurantMarkup(day)}
     ${photoReferencesMarkup(day)}
 
     <section class="navigation-card">

@@ -1235,6 +1235,86 @@
    ]
   }
  ],
+ "restaurants": [
+  {
+   "id": "restaurant-barcelona-sagradas-tapas",
+   "city_id": "barcelona",
+   "city_label": "巴塞罗那",
+   "day_ids": ["2027-01-27", "2027-01-28"],
+   "name": "Sagradas Tapas",
+   "role": "圣家堂后顺路",
+   "area": "圣家堂周边；适合参观后就近解决一顿",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "不用为了吃饭穿城，三个人可以共享几道小盘；父母如果不想一次吃太多，可以先点海鲜和炸物，儿子再加火腿可乐饼。",
+   "order_for_three": "先点 1 份蒜香虾、1 份炸鱿鱼、1 份火腿可乐饼共享；再问海鲜饭最低几人份和等待时间，三人够吃再加，不先点大壶 Sangria。",
+   "budget": "小红书近一年体验样本约 €30/人；不是 2027 年报价，当前价格以菜单为准。",
+   "queue": "帖子记录 walk-in 约等 10 分钟；当天若超过约 30 分钟，直接改吃 Avinguda Gaudí 附近顺路店。",
+   "dishes": [
+    {"name": "Gambas al ajillo", "zh": "蒜香虾", "look": "小盘虾浸在红橙色蒜香橄榄油里，适合三人先分食 1 份。"},
+    {"name": "Paella", "zh": "海鲜饭", "look": "浅锅米饭配海鲜，通常不是汤；看清最低份量和等待时间再点。"},
+    {"name": "Calamari", "zh": "炸鱿鱼", "look": "金黄色鱿鱼圈或鱿鱼块，外层有炸衣，口感比文字更容易判断。"},
+    {"name": "Croquetas de jamón", "zh": "火腿可乐饼", "look": "外层金黄、里面是奶油火腿馅；口味偏厚，三人共享 1 份即可。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=Sagradas+Tapas+Barcelona",
+   "source_note": "小红书只用于看菜品照片、排队和个人口味；营业、菜单、预约和价格仍要打开当天商户页。",
+   "xhs_posts": [
+    {"record_id": "xhs-barcelona-69f624530000000022024a77", "title": "巴塞罗那·如果只能吃一家tapas", "url": "https://www.xiaohongshu.com/explore/69f624530000000022024a77", "date_display": "05-03（页面显示）", "checked_at": "2026-09-26", "note": "看海鲜饭、蒜香虾、鱿鱼、可乐饼和等位照片"},
+    {"record_id": "xhs-barcelona-6a00493a000000000603248b", "title": "巴萨罗那｜用Google Maps干饭的六天", "url": "https://www.xiaohongshu.com/explore/6a00493a000000000603248b", "date_display": "05-10（页面显示）", "checked_at": "2026-09-26", "note": "交叉看 Sagradas Tapas 的虾、鱿鱼和米饭体验"}
+   ]
+  },
+  {
+   "id": "restaurant-granada-los-diamantes",
+   "city_id": "granada",
+   "city_label": "格拉纳达",
+   "day_ids": ["2027-01-29", "2027-01-30"],
+   "name": "Bar Los Diamantes · Plaza Nueva",
+   "role": "老城小食",
+   "area": "Plaza Nueva 13；把它当作 45–75 分钟的小食停留，不当作唯一正餐",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "位置在平地老城线附近，父母可以坐下吃一小份炸鱼，吃完不需要再爬坡；如果三人胃口较大，再转去有座位的正餐店。",
+   "order_for_three": "先按三个人点饮料或无酒精饮料，观察当次附送的 tapa；不够再加 1 份炸鱼/海鲜共享。不要把“点饮料送 tapa”当成每桌必有的规则。",
+   "budget": "近一年小红书体验样本约 €10–20/人；不是当前账单，海鲜拼盘和饮料按当天菜单另算。",
+   "queue": "帖子提到门口等候、服务节奏会波动；没有三人座位或排队明显变长，就换 Los Manueles，不为一顿小食耗掉景点时间。",
+   "dishes": [
+    {"name": "Pescado frito", "zh": "炸鱼/炸海鲜", "look": "一盘金黄色炸鱼或海鲜，通常配柠檬；先点小份看油盐和份量。"},
+    {"name": "Boquerones", "zh": "炸凤尾鱼", "look": "细小的整条炸鱼，外皮酥脆；不喜欢带骨小鱼就不要先点大份。"},
+    {"name": "Tapa", "zh": "随饮料的小食", "look": "每次可能是一小盘不同的下酒菜，实际内容和数量以这次桌上的为准。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=Bar+Los+Diamantes+Plaza+Nueva+13+Granada",
+   "menu_url": "https://losdiamantes.es/carta",
+   "source_note": "小红书照片和体验用来判断炸鱼、下酒菜和排队感受；分店、营业、免费 tapa 规则、菜单和价格仍要当天核对。",
+   "xhs_posts": [
+    {"record_id": "xhs-granada-69fe38680000000022024fe1", "title": "格拉纳达餐厅锐评", "url": "https://www.xiaohongshu.com/explore/69fe38680000000022024fe1", "date_display": "05-12（页面显示）", "checked_at": "2026-09-26", "note": "看 Los Diamantes 的炸鱼拼盘与“适合下酒、不当唯一正餐”的体验"},
+    {"record_id": "xhs-granada-6968b62f0000000000b00931a", "title": "点杯酒 你将收获世上最好吃的下酒菜", "url": "https://www.xiaohongshu.com/explore/6968b62f0000000000b00931a", "date_display": "01-15（页面显示）", "checked_at": "2026-09-27", "note": "看 Los Diamantes 炸海鲜、饮料和附送 tapa 的照片"}
+   ]
+  },
+  {
+   "id": "restaurant-seville-san-marco",
+   "city_id": "seville",
+   "city_label": "塞维利亚",
+   "day_ids": ["2027-01-31", "2027-02-01"],
+   "name": "San Marco Santa Cruz",
+   "role": "老城晚餐",
+   "area": "Santa Cruz 老城；适合王宫、主教座堂和小巷路线结束后就近吃",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "不需要为了餐厅跨区，三个人可以把海鲜饭、海鲜意面和甜点拆开共享；父母如果怕咸，先说明少盐，盐和黑胡椒后加。",
+   "order_for_three": "先问海鲜饭最低几人份和等待时间；三人优先共享 1 份海鲜饭，再加 1 份海鲜意面或烤蔬菜，最后决定是否要 1 份提拉米苏。",
+   "budget": "小红书近一年体验样本记录三人分食海鲜饭、海鲜意面和甜点总额不到 500 元人民币；只是当日样本，不是当前或 2027 年报价。",
+   "queue": "先打开官方菜单/预订入口看是否需要预约；没有座位或等待会压缩父母休息时间时，改选 Santa Cruz 同街区餐厅。",
+   "dishes": [
+    {"name": "Paella de marisco", "zh": "海鲜饭", "look": "浅锅米饭配虾、贝类等海鲜，表面较干、有锅巴感；先问最少几人份。"},
+    {"name": "Pasta de marisco", "zh": "海鲜意面", "look": "盘中意面拌海鲜和酱汁，份量比一锅海鲜饭更容易控制。"},
+    {"name": "Tiramisú", "zh": "提拉米苏", "look": "分层奶油和可可粉甜点，适合三人饭后共享，不必每人各点一份。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=San+Marco+Santa+Cruz+Seville",
+   "menu_url": "https://restaurantesanmarcosantacruz.es/carta/",
+   "source_note": "小红书用来核对菜品照片、口味和三人分食方式；官方页面负责当前菜单、营业、预约和价格。海鲜饭咸淡存在不同体验，现场不要照抄“最好吃”的结论。",
+   "xhs_posts": [
+    {"record_id": "xhs-seville-69de64ed000000002003baec", "title": "我宣布西班牙最好吃的海鲜饭在塞维利亚！", "url": "https://www.xiaohongshu.com/explore/69de64ed000000002003baec", "date_display": "04-15（页面显示）", "checked_at": "2026-09-25", "note": "看海鲜饭、海鲜意面、提拉米苏和老城餐厅环境照片"},
+    {"record_id": "xhs-seville-69d57612000000001a020039", "title": "塞维利亚二刷三刷的餐厅", "url": "https://www.xiaohongshu.com/explore/69d57612000000001a020039", "date_display": "04-08（页面显示）", "checked_at": "2026-09-25", "note": "作为同城海鲜饭偏咸体验的对照，提醒现场按口味点"}
+   ]
+  }
+ ],
  "budget": [
   {
    "cat": "international flights — excluded",

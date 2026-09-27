@@ -1,6 +1,6 @@
 # 餐饮策略
 
-最后整理：2026-09-27。餐饮是本次行程的次要目标，采用“每天一个可调整的正餐主题 + 其余时间就近解决”的方式；小红书只提供口味、氛围和街区线索，任何具体店铺的营业、价格、排队和预约都要临近日期再核验。严格门槛为“至少 3 篇独立小红书 + 当前菜单/菜图 + 营业/价位动态复核”；当前没有餐厅达到主推门槛，全部保留为现场候选。
+最后整理：2026-09-27。餐饮是本次行程的次要目标，采用“每天一个可调整的正餐主题 + 其余时间就近解决”的方式；小红书只提供口味、氛围和街区线索，任何具体店铺的营业、价格、排队和预约都要临近日期再核验。页面收录门槛为“至少 1 篇、且在核对日往前 1 年内的 Safari 小红书详情帖”；有多篇时交叉，没有多篇也可以收录。当前菜单、菜图、营业和价位仍在出发前复核，餐厅不写成必吃保证。
 
 完整的时间、路线、拍照机位、早餐采购和“排队超过多久就换店”规则见[每日现场执行卡](daily-field-cards.md)与[小时级执行版](hourly-guide.md)。本页维护候选池和证据边界，不把候选写成必吃。需要现场直接照抄的价格、菜品、营业时段和分店地址见[餐厅现场抄作业卡](restaurant-cards.md)。
 
@@ -36,34 +36,34 @@
 
 - 2/1 王宫—主教座堂—Santa Cruz：午餐放在老城/Alfalfa，选择 tapas、salmorejo、烤肉或当地小吃组合；王宫与主教座堂之间不为网红店长距离折返。
 - 2/2 Plaza de España—Arenal—Triana：把一顿慢餐放在河岸或 Triana 市场周边，市场海鲜和“无盐/调味”都要现场询问；雨天改为老城室内餐饮；若返程从 Madrid，则优先完成机场节点与行李整理。
-- 小红书餐饮线索（例如 La Sacristía、La Bartola、Triana Market、San Marco Santa Cruz、Ratatouille Cheesecake 等）只保留为候选池；本轮没有任何餐厅达到“至少 3 篇独立小红书 + 当前菜单/菜图 + 营业/价格动态复核”的主推门槛。
-- 对应逐条记录见 research/xhs/seville.md；Google/当地评价只能补充线索，不能替代三帖交叉，也不能锁定 2027 营业、价格、厨房收单或排队。
+- 小红书餐饮线索（例如 La Sacristía、La Bartola、Triana Market、San Marco Santa Cruz、Ratatouille Cheesecake 等）按“近一年至少一篇可用帖子”收进候选池；多篇帖子用于交叉，不把任何一家写成必吃。
+- 对应逐条记录见 research/xhs/seville.md；Google/当地评价只能补充线索，不能锁定 2027 营业、价格、厨房收单或排队。
 
 ### 可直接套用的候选顺序
 
 | 日期/路线 | 第一候选 | 备用 | 现场规则 |
 |---|---|---|---|
-| 1/31 抵达后 Plaza de España | San Marco Santa Cruz（候选，未通过三帖门槛） | 酒店附近 tapas | 只在抵达早且有座位时用；海鲜饭、海鲜意面、甜点先确认份量和盐度 |
-| 2/1 王宫—主教座堂 | Aba de Sevilla 早餐；Bendala 午餐（候选，未通过三帖门槛） | La Sacristía / La Goleta | 不为了早餐错过预约；Bendala 先核对熟度、海鲜饭最少份量和账单 |
-| 2/1 晚餐/甜点 | La Bartola（候选，未通过三帖门槛）；Ratatouille Cheesecake Sevilla | 附近短线店 | La Bartola 排队超过约 30 分钟就换店；甜品先看是否售罄 |
-| 2/2 Plaza—Triana | La Escalona（候选，未通过三帖门槛）；Triana Market 咖啡/小食 | 酒店附近 | 雨风时删河岸；市场摊位当日营业和座位现场判断 |
+| 1/31 抵达后 Plaza de España | San Marco Santa Cruz（近一年帖子参考） | 酒店附近 tapas | 只在抵达早且有座位时用；海鲜饭、海鲜意面、甜点先确认份量和盐度 |
+| 2/1 王宫—主教座堂 | Aba de Sevilla 早餐；Bendala 午餐（近一年帖子参考） | La Sacristía / La Goleta | 不为了早餐错过预约；Bendala 先核对熟度、海鲜饭最少份量和账单 |
+| 2/1 晚餐/甜点 | La Bartola（近一年帖子参考）；Ratatouille Cheesecake Sevilla | 附近短线店 | La Bartola 排队超过约 30 分钟就换店；甜品先看是否售罄 |
+| 2/2 Plaza—Triana | La Escalona（近一年帖子参考）；Triana Market 咖啡/小食 | 酒店附近 | 雨风时删河岸；市场摊位当日营业和座位现场判断 |
 
 候选记录：`xhs-seville-69de64ed000000002003baec`、`xhs-seville-69fb2daf0000000022024f46`、`xhs-seville-6a72ec460000000033031273`、`xhs-seville-698bb8b9000000000a0318db`。La Bodega de la Alfalfa 的服务反馈存在冲突，不能作为固定主线。
 
-补充：San Marco、Bendala 仍是候选，不是三帖通过或已验证主推；不因此锁定 2027 营业、价格、厨房收单或座位。
+补充：San Marco、Bendala 仍是现场候选，不因此锁定 2027 营业、价格、厨房收单或座位。
 
 ## Granada：平地中心优先，Alhambra日不塞餐厅
 
 - 1/29 抵达日：在 Cathedral/Royal Chapel/San Jerónimo 之间按体力选点，午餐/晚餐就近于平地中心，避免把上坡与长餐叠加。
 - 1/30 Alhambra：携带轻便水和小食；预约结束回中心用餐，不把园区内未核验餐饮写进固定预算。
 - 晴天若加 Albaicín/Sacromonte，选观景路线沿线的简单餐饮；雨天回 Gran Vía/Cathedral 一带解决，不为观景餐厅增加转场。
-- 本轮不把任何餐厅写成永久“官方已核验”；Los Manueles 与 Los Diamantes 仍只是“1–2 篇小红书线索 + Google/当地评价”的候选，未达到三帖门槛。动态菜单、分店、营业和排队仍是出发前复核项。
+- 本轮不把任何餐厅写成永久“官方已核验”；Los Manueles 与 Los Diamantes 以近一年小红书体验帖加 Google/当地评价收录为现场候选。动态菜单、分店、营业和排队仍是出发前复核项。
 
 ### 可直接套用的候选顺序
 
 | 日期/路线 | 第一候选 | 备用 | 现场规则 |
 |---|---|---|---|
-| 1/29 抵达平地中心 | Los Manueles（候选，未通过三帖门槛） | Bar Los Diamantes（候选，未通过三帖门槛） / El Pescaito de Carmela | 先看队伍和菜单；三人少量共享，不把作者账单当当前报价 |
+| 1/29 抵达平地中心 | Los Manueles（近一年帖子参考） | Bar Los Diamantes（近一年帖子参考） / El Pescaito de Carmela | 先看队伍和菜单；三人少量共享，不把作者账单当当前报价 |
 | 1/30 Alhambra后 | Perromedio | Restaurante Árabe Ambar | 地址、营业、是否预约和菜单出发前核对；猪排、米饭先少点 |
 | 任一早餐 | Gran Vía 9 / Floresta Coffee Shop | 酒店早餐 | 不为早午餐穿城；以开门时间和路线为准 |
 | 甜点 | La tarta de la madre de Cris | 住宿附近甜点 | 只在顺路且开门时买 |
@@ -81,7 +81,7 @@
 | 日期/路线 | 第一候选 | 备用 | 现场规则 |
 |---|---|---|---|
 | 1/27 Sagrada—Sant Pau早餐 | 365 Roger de Llúria / ONIS COFFEE | 住宿早餐 | 先确认开门；不为咖啡延误 Sagrada |
-| 1/27 Eixample晚餐 | Anxoita Bodega（候选，未通过三帖门槛） | El Racó d’Urgell（候选，未通过三帖门槛） / 住宿附近 | tapas先少点；看排队、菜单和地址 |
+| 1/27 Eixample晚餐 | Anxoita Bodega（近一年帖子参考） | El Racó d’Urgell（近一年帖子参考） / 住宿附近 | tapas先少点；看排队、菜单和地址 |
 | 1/28 Gothic/Born | Granja Viader早餐；Ciutat Comtal午餐 | Santa Caterina/街区当日开门店 | Ciutat Comtal 等位过长直接换，不穿城追餐厅 |
 | 晴天海边替换 | Baluard Barceloneta | 不做海边专程早餐 | 仅当行程已经到 Barceloneta 时使用 |
 

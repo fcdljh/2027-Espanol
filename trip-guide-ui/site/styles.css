@@ -192,6 +192,42 @@ a { color: inherit; }
 .lodging-option small { margin-top: 5px; color: var(--muted); font-size: 11px; line-height: 1.5; }
 .lodging-note { margin: 12px 0 0; font-size: 11px; }
 
+.restaurant-section { margin-top: 12px; padding: 17px; border: 1px solid rgba(185, 98, 70, 0.18); border-radius: 24px; background: #fff8ee; box-shadow: 0 8px 26px rgba(24, 57, 74, 0.06); }
+.restaurant-section h3 { margin: 4px 0 0; color: var(--navy); font-family: Georgia, "Songti SC", serif; font-size: 21px; letter-spacing: -0.03em; }
+.restaurant-intro { margin: 9px 0 0; color: var(--muted); font-size: 13px; line-height: 1.62; }
+.restaurant-list { display: grid; gap: 11px; margin-top: 13px; }
+.restaurant-card { overflow: hidden; padding: 13px; border: 1px solid rgba(185, 98, 70, 0.17); border-radius: 19px; background: rgba(255, 253, 248, 0.9); }
+.restaurant-card-heading { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 11px; align-items: center; }
+.restaurant-card-heading > img { display: block; width: 84px; height: 84px; border-radius: 15px; object-fit: cover; background: var(--paper-deep); }
+.restaurant-role { display: block; color: var(--terracotta-dark); font-size: 10px; font-weight: 850; line-height: 1.35; }
+.restaurant-card-heading h4 { margin: 4px 0 0; color: var(--navy); font-family: Georgia, "Songti SC", serif; font-size: 20px; line-height: 1.12; letter-spacing: -0.03em; }
+.restaurant-card-heading p { margin: 5px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
+.restaurant-copy-block { margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(24, 57, 74, 0.09); }
+.restaurant-copy-block > strong { color: var(--navy); font-size: 12px; }
+.restaurant-copy-block > p { margin: 5px 0 0; color: var(--muted); font-size: 12px; line-height: 1.58; }
+.restaurant-dishes { display: grid; gap: 7px; margin-top: 7px; }
+.restaurant-dish { padding: 8px 9px; border-radius: 11px; background: #fffdf8; }
+.restaurant-dish b, .restaurant-dish small { display: block; }
+.restaurant-dish b { color: var(--teal-dark); font-size: 12px; line-height: 1.35; }
+.restaurant-dish small { margin-top: 3px; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.restaurant-facts { display: grid; gap: 6px; margin-top: 12px; padding: 10px; border-radius: 13px; background: #fff3d2; }
+.restaurant-facts p { margin: 0; color: #775d34; font-size: 11px; line-height: 1.5; }
+.restaurant-facts b { display: block; margin-bottom: 2px; color: var(--terracotta-dark); font-size: 10px; }
+.restaurant-actions { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 11px; }
+.restaurant-actions a { display: inline-flex; align-items: center; min-height: 30px; border: 1px solid rgba(61, 129, 126, 0.2); border-radius: 999px; padding: 6px 9px; color: var(--teal-dark); background: #f1f8f3; font-size: 10px; font-weight: 850; text-decoration: none; }
+.restaurant-sources { margin-top: 11px; border-top: 1px solid rgba(24, 57, 74, 0.09); }
+.restaurant-sources summary { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 11px 0 4px; color: var(--teal-dark); font-size: 11px; font-weight: 850; cursor: pointer; list-style: none; }
+.restaurant-sources summary::-webkit-details-marker { display: none; }
+.restaurant-sources summary b { font-size: 10px; font-weight: 800; }
+.restaurant-source-list { display: grid; gap: 7px; padding-top: 6px; }
+.restaurant-source { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 9px; border: 1px solid rgba(24, 57, 74, 0.08); border-radius: 12px; color: var(--teal-dark); background: #fffdf8; text-decoration: none; }
+.restaurant-source span:first-child { min-width: 0; }
+.restaurant-source strong, .restaurant-source small { display: block; }
+.restaurant-source strong { overflow: hidden; color: var(--navy); font-size: 11px; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; }
+.restaurant-source small { margin-top: 3px; color: var(--muted); font-size: 9px; line-height: 1.4; }
+.restaurant-source > span:last-child { flex: 0 0 auto; font-size: 9px; font-weight: 850; }
+.restaurant-note { margin: 11px 0 0; color: #8a7467; font-size: 10px; line-height: 1.55; }
+
 .small-action { border: 0; border-radius: 999px; padding: 7px 10px; color: var(--navy); background: #e3f0e9; font-size: 11px; font-weight: 800; white-space: nowrap; }
 .timeline-list { margin-top: 13px; }
 .timeline-row { display: grid; grid-template-columns: 66px 24px 1fr; gap: 8px; padding: 13px 0; border-top: 1px solid var(--line); cursor: pointer; }

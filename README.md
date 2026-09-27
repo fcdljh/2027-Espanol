@@ -6,7 +6,7 @@
 
 ## 当前进度
 
-> 2026-09-27 复核补充：路线结构与主推人像机位均按至少 3 个不同小红书笔记交叉；旧版餐厅曾采用“1 篇小红书线索 + Google/当地评价或官方页”的例外规则，但本次严格审查已将其降级为候选门槛，不再视为三帖通过。新增[每日机位·车站·餐厅·超市现场执行卡](trip/daily-field-cards.md)，把 D0–D9 拆成每日多点拍摄、车站/列车记录、至少一顿正餐、备用正餐和住宿附近早餐采购；本轮再用小红书补充[超市伴手礼、特色零食与面包清单](research/xhs/supermarket-snacks.md)，区分可装箱干货、当天吃的冷藏食品，以及喷雾油/酒/肉类携带风险。建筑空镜从人像参考中排除，落日/晚霞/天际线/食物保留为独立视觉素材；圣家堂穿着、摄影器材、食物饮料和静默时段已与官方规则对齐。详见[推荐交叉审计](research/xhs/recommendation-cross-check.md)和[本次全面审查](research/trip-audit-2026-09-27.md)。
+> 2026-09-27 复核补充：路线结构与主推人像机位均按至少 3 个不同小红书笔记交叉；餐厅按“核对日前 1 年内至少 1 篇可用的 Safari 详情帖”即可进入现场卡，有多篇时再交叉，仍不把体验帖当作当前营业、价格或必吃保证。新增[每日机位·车站·餐厅·超市现场执行卡](trip/daily-field-cards.md)，把 D0–D9 拆成每日多点拍摄、车站/列车记录、至少一顿正餐、备用正餐和住宿附近早餐采购；本轮再用小红书补充[超市伴手礼、特色零食与面包清单](research/xhs/supermarket-snacks.md)，区分可装箱干货、当天吃的冷藏食品，以及喷雾油/酒/肉类携带风险。建筑空镜从人像参考中排除，落日/晚霞/天际线/食物保留为独立视觉素材；圣家堂穿着、摄影器材、食物饮料和静默时段已与官方规则对齐。详见[推荐交叉审计](research/xhs/recommendation-cross-check.md)和[本次全面审查](research/trip-audit-2026-09-27.md)。
 
 > **天数与航班基准（2026-09-27）：**往返日期已锁定：1/25 20:20 HKG→PEK→MAD，Trip.com 当前国航候选在 1/26 07:25 到达 Madrid；2/3 12:20 MAD→PEK，香港旅客再乘次日 09:25 PEK→HKG 13:05；三人统一往返票当前公开价 HKD 7,130/人、去回程各 23 kg，继续等降价。该日期对应西班牙当地固定 8 晚 `Barcelona 3 + Granada 2 + Seville 2 + Madrid 1`；若最终到达时刻变化，只重新判断固定日期内的衔接和可删模块，不自动顺延城市。住宿、车票和门票按这组日期重查，任何加夜数需另行确认。
 
@@ -18,7 +18,7 @@
 
 | 领域 | 当前状态 | 主记录 |
 |---|---|---|
-| 行程 | 已确认“Madrid入境 → Barcelona → Granada → Seville → 2/2 Madrid机场—市区交通走廊过夜 → 2/3国航返程”；往返日期固定、8晚 `3+2+2+1`，覆盖不足按核心景点优先级删减，不自动平移或增加夜数；小时级攻略已把转场日改为先行李/入住/休息再 citywalk，修正 D5 下山和 D7 冬季开门顺序；Barcelona D3 改为 Gothic/Born＋Passeig外观，Casa Batlló仅作为含音频的单一付费分支，La Pedrera/Park Güell不叠加；餐厅不再使用一篇小红书例外，全部降为需现场看菜单/菜图的候选；移动端数据已同步并通过运行检查 | [共享事实](CONTEXT.md)、[每日现场执行卡](trip/daily-field-cards.md)、[小时级执行版](trip/hourly-guide.md)、[餐厅现场卡](trip/restaurant-cards.md)、[人像机位卡](trip/photo-pose-cards.md)、[路线框架](trip/itinerary.md)、[手机 UI 预览](trip-guide-ui/)、[vivo Chrome 网页版](trip-guide-ui/site/)、[行前清单数据](trip-guide-ui/public/pre-departure.json)、[托管说明](trip-guide-ui/site/README.md)、[预算与冲突](trip/budget-and-conflicts.md) |
+| 行程 | 已确认“Madrid入境 → Barcelona → Granada → Seville → 2/2 Madrid机场—市区交通走廊过夜 → 2/3国航返程”；往返日期固定、8晚 `3+2+2+1`，覆盖不足按核心景点优先级删减，不自动平移或增加夜数；小时级攻略已把转场日改为先行李/入住/休息再 citywalk，修正 D5 下山和 D7 冬季开门顺序；Barcelona D3 改为 Gothic/Born＋Passeig外观，Casa Batlló仅作为含音频的单一付费分支，La Pedrera/Park Güell不叠加；网页新增三城餐厅卡，至少保留一家近一年帖子可用的顺路餐厅，显示菜品外观、三人点法、预算样本、小红书图片和当天复核入口；移动端数据已同步并通过运行检查 | [共享事实](CONTEXT.md)、[每日现场执行卡](trip/daily-field-cards.md)、[小时级执行版](trip/hourly-guide.md)、[餐厅现场卡](trip/restaurant-cards.md)、[人像机位卡](trip/photo-pose-cards.md)、[路线框架](trip/itinerary.md)、[手机 UI 预览](trip-guide-ui/)、[vivo Chrome 网页版](trip-guide-ui/site/)、[行前清单数据](trip-guide-ui/public/pre-departure.json)、[托管说明](trip-guide-ui/site/README.md)、[预算与冲突](trip/budget-and-conflicts.md) |
 | 机票 | 2026-09-27 当前首选监测票为三人统一 HKG–PEK–MAD / MAD–PEK–HKG：Trip.com 总计 HKD 21,390（每人 HKD 7,130），去回程各显示 23 kg；北京两位返程计划 PEK 甩尾，当前仍比 HKD 5,000/人上限高 HKD 2,130，等降价，不是已出票 | [机票比较](trip/flights.md)、[特价结构研究](research/flights/fare-patterns.md)、[票价快照表](research/flights/fare-snapshots.csv)、[工具排序](research/tools-and-sources.md) |
 | 住宿 | 已完成每城 Top 3：酒店均在 Trip.com 与携程同条件核对并取较低价，民宿只用 Airbnb；超 CNY 1,500/晚全部排除。Barcelona 已基本锁定 Airbnb `1659522`（整套、露台、独立厨房/卫生间，尚未预订）；Granada 优先 Gamboa 等含早餐酒店；Seville Hotel Giralda Center 已由旅客确认可行；Madrid 返程前一晚当前以 Hotel Maydrit Airport 作为机场—市区交通走廊的性价比候选，尚未预订。 | [住宿比较](trip/accommodation.md)、[房价快照表](research/accommodation/rate-snapshots.csv) |
 | 签证 | 申请地点计划为北京两人、香港一人；香港领区资格待核实 | [签证与入境](trip/visa-and-entry.md) |
