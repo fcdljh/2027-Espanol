@@ -9,6 +9,7 @@
   --teal: #8bc1b4;
   --teal-dark: #3d817e;
   --terracotta: #b96246;
+  --terracotta-dark: #91552d;
   --yellow: #f1c45d;
   --white: #fffdf8;
   --shadow: 0 16px 44px rgba(24, 57, 74, 0.12);
@@ -77,6 +78,7 @@ a { color: inherit; }
 
 .main-content { padding: 0 16px 100px; }
 .day-strip { padding: 23px 4px 13px; }
+.day-strip-tip { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.5; }
 .section-heading, .card-heading-row, .day-intro-top, .step-focus-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
 .compact-heading { align-items: end; }
 .section-heading h2, .card-heading-row h3, .navigation-card h3, .step-safety-card h3 { margin: 4px 0 0; color: var(--navy); font-family: Georgia, "Songti SC", serif; font-weight: 700; letter-spacing: -0.03em; }
@@ -87,10 +89,11 @@ a { color: inherit; }
 
 .day-picker { display: flex; gap: 8px; overflow-x: auto; margin-top: 13px; padding: 1px 1px 6px; scrollbar-width: none; }
 .day-picker::-webkit-scrollbar { display: none; }
-.day-chip { flex: 0 0 auto; min-width: 62px; border: 1px solid var(--line); border-radius: 13px; padding: 9px 9px 8px; color: var(--muted); background: rgba(255, 253, 248, 0.5); text-align: left; }
+.day-chip { flex: 0 0 auto; min-width: 78px; border: 1px solid var(--line); border-radius: 13px; padding: 9px 9px 8px; color: var(--muted); background: rgba(255, 253, 248, 0.5); text-align: left; }
 .day-chip.is-selected { border-color: var(--navy); color: var(--white); background: var(--navy); box-shadow: 0 6px 16px rgba(24, 57, 74, 0.2); }
 .day-chip-number { display: block; font-size: 12px; font-weight: 850; }
 .day-chip-date { display: block; margin-top: 2px; font-size: 10px; opacity: 0.76; }
+.day-chip-city { display: block; overflow: hidden; margin-top: 4px; font-size: 10px; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
 
 .view-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 0 0 15px; padding: 5px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255, 253, 248, 0.58); }
 .view-tab, .bottom-action { border: 0; color: var(--muted); background: transparent; font-weight: 800; }
@@ -115,6 +118,21 @@ a { color: inherit; }
 .progress-track { position: relative; z-index: 1; height: 7px; overflow: hidden; border-radius: 9px; background: rgba(255, 253, 248, 0.19); }
 .progress-track span { display: block; height: 100%; border-radius: inherit; background: var(--yellow); transition: width 220ms ease; }
 .day-hero-image { display: block; width: 100%; height: 126px; margin: 20px -0px -20px; width: calc(100% + 0px); object-fit: cover; opacity: 0.88; mix-blend-mode: screen; mask-image: linear-gradient(to bottom, transparent, black 22%); }
+
+.next-step-card { margin-top: 12px; padding: 16px; border: 1px solid rgba(185, 98, 70, 0.24); border-left: 5px solid var(--terracotta); border-radius: 21px; background: #fff6df; box-shadow: 0 8px 22px rgba(185, 98, 70, 0.08); }
+.next-step-card.is-complete { border-left-color: var(--teal-dark); background: #edf6ef; }
+.next-step-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.next-step-card .section-kicker { color: var(--terracotta-dark); }
+.next-step-card.is-complete .section-kicker { color: var(--teal-dark); }
+.next-step-card h3 { margin: 4px 0 0; color: var(--navy); font-family: Georgia, "Songti SC", serif; font-size: 21px; letter-spacing: -0.03em; }
+.next-step-count { flex: 0 0 auto; color: var(--muted); font-size: 11px; font-weight: 850; white-space: nowrap; }
+.next-step-main { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 13px; margin-top: 12px; }
+.next-step-main strong { display: block; color: var(--navy); font-size: 16px; line-height: 1.42; }
+.next-step-main p { margin: 5px 0 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.next-step-button { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; border: 0; border-radius: 13px; padding: 10px 12px; color: var(--white); background: var(--navy); font-size: 12px; font-weight: 850; white-space: nowrap; }
+.next-step-button span { color: var(--yellow); font-size: 16px; }
+.next-step-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 12px; color: var(--muted); font-size: 11px; line-height: 1.4; }
+.next-step-target { color: var(--teal-dark); font-weight: 850; }
 
 .navigation-card h3, .step-safety-card h3 { font-size: 18px; }
 .step-safety-card p, .route-card p, .step-image-card p { margin: 7px 0 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
@@ -179,6 +197,7 @@ a { color: inherit; }
 .timeline-row { display: grid; grid-template-columns: 66px 24px 1fr; gap: 8px; padding: 13px 0; border-top: 1px solid var(--line); cursor: pointer; }
 .timeline-row:first-child { border-top: 0; }
 .timeline-row.is-done { opacity: 0.58; }
+.timeline-row.is-next { margin: 0 -9px; padding-right: 9px; padding-left: 9px; border-radius: 13px; background: #fff8e9; box-shadow: inset 4px 0 0 var(--terracotta); }
 .timeline-time { padding-top: 2px; color: var(--muted); font-size: 12px; line-height: 1.35; text-align: right; }
 .timeline-rail { position: relative; display: flex; justify-content: center; }
 .timeline-rail::after { position: absolute; top: 22px; bottom: -21px; width: 1px; content: ""; background: var(--line); }
@@ -226,6 +245,13 @@ a { color: inherit; }
 
 .photo-reference-section { margin-top: 12px; padding: 17px; border: 1px solid rgba(185, 98, 70, 0.16); border-radius: 24px; background: #fff8ee; box-shadow: 0 8px 26px rgba(24, 57, 74, 0.05); }
 .photo-reference-section h3 { margin: 4px 0 0; color: var(--navy); font-family: Georgia, "Songti SC", serif; font-size: 21px; letter-spacing: -0.03em; }
+.photo-reference-details { padding: 0; overflow: hidden; }
+.photo-reference-summary { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 17px; color: var(--navy); cursor: pointer; list-style: none; }
+.photo-reference-summary::-webkit-details-marker { display: none; }
+.photo-reference-summary > div { min-width: 0; }
+.photo-reference-summary > b { flex: 0 0 auto; color: var(--terracotta); font-size: 20px; font-weight: 500; }
+.photo-reference-details[open] .photo-reference-summary > b { transform: rotate(45deg); }
+.photo-reference-body { padding: 0 17px 17px; border-top: 1px solid rgba(185, 98, 70, 0.14); }
 .photo-reference-intro { margin: 9px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
 .photo-reference-strip { display: flex; gap: 10px; overflow-x: auto; margin-top: 13px; padding-bottom: 3px; scrollbar-width: none; }
 .photo-reference-strip::-webkit-scrollbar { display: none; }
@@ -427,4 +453,7 @@ a { color: inherit; }
   .timeline-title { font-size: 15px; }
   .quick-grid { grid-template-columns: 1fr; }
   .topbar-actions { align-items: flex-end; flex-direction: column; }
+  .next-step-main { grid-template-columns: 1fr; }
+  .next-step-button { width: 100%; justify-content: center; }
+  .next-step-count { font-size: 10px; }
 }
