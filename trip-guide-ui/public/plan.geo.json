@@ -235,6 +235,7 @@
      "t": "H+5:00–H+6:00",
      "what": "住宿附近买水、早餐和简单晚餐；不为第一顿饭跨城",
      "kind": "meal",
+     "meal_period": "dinner",
      "tag": "skippable"
     },
     {
@@ -281,6 +282,7 @@
      "t": "07:30–08:15",
      "what": "早餐；住宿附近或365 Roger de Llúria/ONIS COFFEE候选先查开门",
      "kind": "meal",
+     "meal_period": "breakfast",
      "tag": "skippable"
     },
     {
@@ -324,6 +326,7 @@
      "t": "12:30–13:45",
      "what": "Avinguda Gaudí附近午餐；先点少量共享，不为网红店穿城",
      "kind": "meal",
+     "meal_period": "lunch",
      "tag": "pinned"
     },
     {
@@ -348,6 +351,7 @@
      "t": "18:00–19:30",
      "what": "Anxoita Bodega或El Racó d’Urgell候选晚餐；先查营业、地址、排队和菜单",
      "kind": "meal",
+     "meal_period": "dinner",
      "note": "小红书候选，不把当前营业和口味当已确认",
      "tag": "pinned"
     },
@@ -394,6 +398,7 @@
      "t": "08:00–08:45",
      "what": "早餐；365 Roger de Llúria或住宿附近候选先查开门",
      "kind": "meal",
+     "meal_period": "breakfast",
      "tag": "skippable"
     },
     {
@@ -437,6 +442,7 @@
      "t": "13:00–14:15",
      "what": "Born或老城附近坐下午餐；先点2–3道共享，排队超过约30分钟换同街区店",
      "kind": "meal",
+     "meal_period": "lunch",
      "tag": "pinned"
     },
     {
@@ -467,6 +473,7 @@
      "t": "18:00–19:30",
      "what": "El Racó d’Urgell或住宿附近晚餐；海鲜/猪肉先少点后加",
      "kind": "meal",
+     "meal_period": "dinner",
      "tag": "pinned"
     },
     {
@@ -582,13 +589,15 @@
      "t": "18:00–19:15",
      "what": "Los Manueles、El Pescaito de Carmela或Bar Los Diamantes候选晚餐",
      "kind": "meal",
+     "meal_period": "dinner",
      "note": "先看队伍和菜单；三人少量共享，不把个人账单当当前报价",
      "tag": "pinned"
     },
     {
      "t": "19:15–20:00",
      "what": "La tarta de la madre de Cris甜点候选或住宿附近收尾",
-     "kind": "meal",
+     "kind": "free",
+     "meal_period": "dessert",
      "tag": "skippable"
     },
     {
@@ -683,6 +692,7 @@
      "t": "12:30–13:15",
      "what": "园区内/随身小食和补水；不把未核验园区餐饮写死",
      "kind": "meal",
+     "meal_period": "lunch",
      "tag": "skippable"
     },
     {
@@ -708,6 +718,7 @@
      "t": "17:00–18:30",
      "what": "Perromedio或Restaurante Árabe Ambar候选晚餐；先看地址、开门和菜单",
      "kind": "meal",
+     "meal_period": "dinner",
      "note": "猪排、米饭、甜点和评分均是小红书线索，不是官方已核验",
      "tag": "pinned"
     },
@@ -809,6 +820,7 @@
      "t": "18:00–19:30",
      "what": "San Marco Santa Cruz候选晚餐；先确认座位、份量和盐度",
      "kind": "meal",
+     "meal_period": "dinner",
      "note": "海鲜饭/海鲜意面/甜点来自小红书体验，价格和营业待复核",
      "tag": "pinned"
     },
@@ -868,6 +880,7 @@
      "t": "07:45–08:30",
      "what": "早餐；酒店早餐或Aba de Sevilla候选先查开门，不迟到早场",
      "kind": "meal",
+     "meal_period": "breakfast",
      "tag": "skippable"
     },
     {
@@ -925,6 +938,7 @@
      "t": "14:30–15:45",
      "what": "Bendala、La Sacristía或La Goleta候选午餐；三人先少量分点",
      "kind": "meal",
+     "meal_period": "lunch",
      "note": "先确认牛排熟度、海鲜饭份量、价格和账单",
      "tag": "pinned"
     },
@@ -950,6 +964,7 @@
      "t": "18:30–20:00",
      "what": "La Bartola候选晚餐；Ratatouille Cheesecake Sevilla作为甜点候选",
      "kind": "meal",
+     "meal_period": "dinner",
      "note": "排队超过约30分钟换店；甜点先确认地址和是否售罄",
      "tag": "pinned"
     },
@@ -1021,6 +1036,7 @@
      "t": "11:00–12:00",
      "what": "酒店附近午餐或打包餐；不为餐厅跨区，不把午餐压到上车前最后15分钟",
      "kind": "meal",
+     "meal_period": "lunch",
      "tag": "pinned"
     },
     {
@@ -1062,6 +1078,7 @@
      "t": "18:00–19:30",
      "what": "机场酒店附近晚餐或酒店简餐；按2/3起飞时间倒推，不饮酒过量",
      "kind": "meal",
+     "meal_period": "dinner",
      "tag": "pinned"
     },
     {
@@ -1237,10 +1254,204 @@
  ],
  "restaurants": [
   {
+   "id": "restaurant-barcelona-anxoita",
+   "city_id": "barcelona",
+   "city_label": "巴塞罗那",
+   "day_ids": ["2027-01-26", "2027-01-27"],
+   "meal_period": "dinner",
+   "priority": 1,
+   "name": "Anxoita Bodega",
+   "role": "晚餐 · Eixample顺路",
+   "area": "Rambla de Catalunya 20；只有当天路线顺路且开门才去",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "适合抵达后或圣家堂日结束时坐下吃一顿；如果排队或离当晚住宿太远，就留在住宿附近解决，不为它折返。",
+   "order_for_three": "先点 2–3 份小食共享，先问章鱼、鳕鱼和当日热菜是否还有；确认份量后再加，不先点第二轮酒水。",
+   "budget": "Google价位档约€20–30/人；不是2027年报价，现场看当前菜单。",
+   "queue": "可能排队；没有三人座位或等待超过约30分钟，就换El Racó或住宿附近开门店。",
+   "dishes": [
+    {"name": "Pulpo a la gallega", "zh": "加利西亚章鱼", "look": "切片章鱼配土豆和红椒粉，先看当前菜单是否供应。"},
+    {"name": "Bacalao", "zh": "鳕鱼", "look": "白色鱼肉配酱汁或蒜泥；先问咸度和份量。"},
+    {"name": "Ensaladilla rusa", "zh": "俄式土豆沙拉", "look": "奶油土豆沙拉小盘，适合和炸物一起共享。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=Anxoita+Bodega+Rambla+de+Catalunya+20+Barcelona",
+   "source_note": "餐厅地址、价位和菜品方向来自餐厅现场卡与小红书路线/餐饮记录；营业、厨房收单、菜单和排队出发前重查。",
+   "xhs_posts": [
+    {"record_id": "xhs-barcelona-69d7650e0000000023005945", "title": "巴塞罗那旅行攻略与餐饮线索", "url": "https://www.xiaohongshu.com/explore/69d7650e0000000023005945", "date_display": "页面记录", "checked_at": "2026-09-26", "note": "看Anxoita与El Racó的路线位置线索"},
+    {"record_id": "xhs-barcelona-6a00493a000000000603248b", "title": "巴塞罗那用Google Maps干饭的六天", "url": "https://www.xiaohongshu.com/explore/6a00493a000000000603248b", "date_display": "05-10（页面显示）", "checked_at": "2026-09-26", "note": "交叉看巴塞罗那餐厅的现场体验方法"}
+   ]
+  },
+  {
+   "id": "restaurant-barcelona-santa-caterina",
+   "city_id": "barcelona",
+   "city_label": "巴塞罗那",
+   "day_ids": ["2027-01-28"],
+   "meal_period": "lunch",
+   "priority": 1,
+   "name": "Santa Caterina Market",
+   "role": "午餐 · 老城路线内",
+   "area": "Av. Francesc Cambó 16；市场摊位和座位当天现场看",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "正好在Gothic/Born路线里，不需要为了午餐穿城；三人可以各看一小份，再决定是否坐下吃完整一顿。",
+   "order_for_three": "先看当天鱼海鲜、熟食、面包和Cuines de Santa Caterina；先买 2–3 份共享，确认口味和份量后再加。",
+   "budget": "市场简餐先按€10–20/人规划；摊位、份量和座位不固定。",
+   "queue": "摊位或座位排队明显就换Born同街区开门店，不为市场耗掉下午休息时间。",
+   "dishes": [
+    {"name": "Pescado y marisco", "zh": "鱼和海鲜", "look": "当天摊位展示的鱼、虾或海鲜熟食，先看实物再决定。"},
+    {"name": "Tortilla", "zh": "西班牙土豆蛋饼", "look": "厚切蛋饼，中心可能偏软；适合三人分切共享。"},
+    {"name": "Pan y bollería", "zh": "面包和烘焙", "look": "柜台现成面包或甜点，适合不想吃太多时少量补充。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=Mercat+de+Santa+Caterina+Barcelona",
+   "menu_url": "https://mercatdesantacaterina.com/",
+   "source_note": "市场营业和摊位信息以官方页面及当天现场为准；小红书只用于判断路线和菜品外观，不代表固定摊位或价格。",
+   "xhs_posts": [
+    {"record_id": "xhs-barcelona-6a6765510000000008009c01", "title": "第一次来巴塞罗那建议复制这条City Walk路", "url": "https://www.xiaohongshu.com/explore/6a6765510000000008009c01", "date_display": "页面记录", "checked_at": "2026-09-26", "note": "交叉看Santa Caterina与哥特区路线、咖啡和tortilla线索"},
+    {"record_id": "xhs-barcelona-694d1d0a000000001e000a8e", "title": "巴塞罗那2天citywalk攻略", "url": "https://www.xiaohongshu.com/explore/694d1d0a000000001e000a8e", "date_display": "页面记录", "checked_at": "2026-09-26", "note": "看市场、老城和Born的顺路餐饮安排"}
+   ]
+  },
+  {
+   "id": "restaurant-barcelona-raco",
+   "city_id": "barcelona",
+   "city_label": "巴塞罗那",
+   "day_ids": ["2027-01-28"],
+   "meal_period": "dinner",
+   "priority": 1,
+   "name": "El Racó d’Urgell",
+   "role": "晚餐 · 预算友好备用",
+   "area": "Carrer de la Diputació 131；先确认当天营业，不当作跨区目的地",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "适合D3晚餐的预算型选择；如果当天路线或营业时间不合适，就在住宿附近找开门店。",
+   "order_for_three": "先问当天是否有paella、最少几人份和等待时间；三人共享一锅，再补沙拉或小菜，不要一开始每人各点一锅。",
+   "budget": "Google价位档约€10–20/人；不是2027年报价。",
+   "queue": "周日或分段营业可能踩空；出发前确认，现场等待过长就换同街区店。",
+   "dishes": [
+    {"name": "Paella", "zh": "海鲜饭", "look": "浅锅米饭配海鲜，通常不是汤；先问最少几人份和等待时间。"},
+    {"name": "Ensalada", "zh": "沙拉", "look": "一盘蔬菜或配料沙拉，适合和海鲜饭共享。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=El+Raco+d%27Urgell+Bar+Restaurant+Barcelona",
+   "source_note": "地址、价位和分段营业来自餐厅现场卡；第三方营业信息有差异，出发前按商户页面复核。",
+   "xhs_posts": [
+    {"record_id": "xhs-barcelona-69d7650e0000000023005945", "title": "巴塞罗那旅行攻略与餐饮线索", "url": "https://www.xiaohongshu.com/explore/69d7650e0000000023005945", "date_display": "页面记录", "checked_at": "2026-09-26", "note": "看El Racó的路线位置线索"},
+    {"record_id": "xhs-barcelona-6a00493a000000000603248b", "title": "巴塞罗那用Google Maps干饭的六天", "url": "https://www.xiaohongshu.com/explore/6a00493a000000000603248b", "date_display": "05-10（页面显示）", "checked_at": "2026-09-26", "note": "交叉看海鲜饭与就近找店的方法"}
+   ]
+  },
+  {
+   "id": "restaurant-granada-manueles",
+   "city_id": "granada",
+   "city_label": "格拉纳达",
+   "day_ids": ["2027-01-29"],
+   "meal_period": "dinner",
+   "priority": 1,
+   "name": "Los Manueles · Reyes Católicos",
+   "role": "晚餐 · 平地老城",
+   "area": "Reyes Católicos 61；分店和座位当天确认",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "抵达日从车站到主教座堂/Gran Vía的平地路线顺手，父母可以先坐下，不需要为晚餐再爬坡。",
+   "order_for_three": "先共享一份huevos rotos、一份沙拉，再在当天炖菜或habas con jamón中选一份；甜点只在还有胃口时加。",
+   "budget": "Google价位档约€10–20/人；不是2027年报价。",
+   "queue": "没有三人座位或等位过长就换Los Diamantes/El Pescaito，不为第一晚硬等。",
+   "dishes": [
+    {"name": "Huevos rotos con jamón", "zh": "火腿薯条碎蛋", "look": "薯条上铺半熟蛋和火腿，适合三人分食；不吃猪肉先问。"},
+    {"name": "Habas con jamón", "zh": "火腿蚕豆", "look": "蚕豆和火腿的家常热菜，先看当天是否供应。"},
+    {"name": "Torrija", "zh": "西班牙甜面包", "look": "浸泡后煎/烤的厚片甜点，先问是否当天有。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=Los+Manueles+Reyes+Catolicos+61+Granada",
+   "menu_url": "https://losmanueles.es/",
+   "source_note": "官方入口、分店和价位仅作出发前复核入口；小红书个人账单和口味只作为点单方向。",
+   "xhs_posts": [
+    {"record_id": "xhs-granada-69f4fd1d0000000022024b3e", "title": "格拉纳达漫步攻略", "url": "https://www.xiaohongshu.com/explore/69f4fd1d0000000022024b3e", "date_display": "05-02（页面显示）", "checked_at": "2026-09-26", "note": "看抵达日平地路线与Los Manueles点单线索"},
+    {"record_id": "xhs-granada-69fe38680000000022024fe1", "title": "格拉纳达餐厅锐评", "url": "https://www.xiaohongshu.com/explore/69fe38680000000022024fe1", "date_display": "05-12（页面显示）", "checked_at": "2026-09-26", "note": "交叉看海鲜、炸物和账单体验"}
+   ]
+  },
+  {
+   "id": "restaurant-granada-perromedio",
+   "city_id": "granada",
+   "city_label": "格拉纳达",
+   "day_ids": ["2027-01-30"],
+   "meal_period": "dinner",
+   "priority": 1,
+   "name": "Perromedio",
+   "role": "晚餐 · Alhambra后创意菜",
+   "area": "地址以当天地图结果为准；部分页面对门牌有差异",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "Alhambra结束、回中心休息后再吃；适合不想继续爬坡的一顿坐下正餐。",
+   "order_for_three": "先看当天菜单，三人可共享金枪鱼类或当日蔬菜，再决定是否加主菜和芝士蛋糕；先问过敏原。",
+   "budget": "按€20–35/人规划；菜单可能变化，不是固定报价。",
+   "queue": "地址、营业和厨房收单出发前确认；如果偏离回住宿方向，就改选Ambar或附近餐厅。",
+   "dishes": [
+    {"name": "Tuna tartare", "zh": "金枪鱼塔塔", "look": "切丁生金枪鱼配酱汁和配菜；不吃生食先不要点。"},
+    {"name": "Iberian pork", "zh": "伊比利亚猪肉", "look": "烤/煎猪肉主菜，先问部位和熟度。"},
+    {"name": "Cheesecake", "zh": "芝士蛋糕", "look": "切块奶油甜点，三人饭后共享一份即可。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=Perromedio+Granada",
+   "menu_url": "https://restaurantesgranadatop.es/comer-en-granada/perromedio/",
+   "source_note": "地址存在不同页面写法，必须以当天地图/商户页为准；小红书对猪排软硬评价有分歧，不写成必点。",
+   "xhs_posts": [
+    {"record_id": "xhs-granada-6a3e8103000000002003b35d", "title": "格拉纳达超级推荐餐厅", "url": "https://www.xiaohongshu.com/explore/6a3e8103000000002003b35d", "date_display": "06-26（页面显示）", "checked_at": "2026-09-26", "note": "看猪排、芝士蛋糕和评分线索"},
+    {"record_id": "xhs-granada-6a8a8da7000000001801abff", "title": "谁能替我去格拉纳达再吃点吗", "url": "https://www.xiaohongshu.com/explore/6a8a8da7000000001801abff", "date_display": "页面显示昨日", "checked_at": "2026-09-26", "note": "交叉看Perromedio地址与甜点线索"}
+   ]
+  },
+  {
+   "id": "restaurant-seville-bendala",
+   "city_id": "seville",
+   "city_label": "塞维利亚",
+   "day_ids": ["2027-02-01"],
+   "meal_period": "lunch",
+   "priority": 1,
+   "name": "Bendala Brasería",
+   "role": "午餐 · 王宫附近",
+   "area": "P.º de Catalina de Ribera 4；先确认是否需要预约",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "就在王宫/圣十字区附近，适合景点后坐下吃，不需要为午餐跨城；当天服务或价格不合适就直接换老城备用。",
+   "order_for_three": "先问牛排部位和熟度，再点一份烤肉或烤鱼、一道蔬菜/沙拉；海鲜饭先问最少份量和等待时间，结账前逐项核对。",
+   "budget": "Google价位档约€20–30/人；个人样本曾约€30–35/人，不是当前报价。",
+   "queue": "没有三人座位、菜单超预算或服务不舒服就换La Sacristía/La Escaloná，不为评分硬等。",
+   "dishes": [
+    {"name": "Steak", "zh": "炭火牛排", "look": "炭火烤肉，先选部位和熟度；三人共享一份即可。"},
+    {"name": "Paella", "zh": "海鲜饭", "look": "米饭偏湿或带汤汁的海鲜饭，先问最少几人份。"},
+    {"name": "Ensaladilla de gambas", "zh": "虾肉土豆沙拉", "look": "奶油土豆沙拉配虾肉，适合少量共享。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=Bendala+Braseria+Paseo+de+Catalina+de+Ribera+4+Seville",
+   "menu_url": "https://bendalarestaurantes.com/",
+   "source_note": "官方地址与营业入口、Google价位和小红书体验均为候选证据；存在收费/服务差异，现场保留菜单和账单核对。",
+   "xhs_posts": [
+    {"record_id": "xhs-seville-6a72ec460000000033031273", "title": "我在塞维利亚吃很好", "url": "https://www.xiaohongshu.com/explore/6a72ec460000000033031273", "date_display": "08-05（页面显示）", "checked_at": "2026-09-25", "note": "看Bendala海鲜饭、虾肉沙拉和咸度体验"},
+    {"record_id": "xhs-seville-697be57b000000000c03447f", "title": "在西班牙塞维利亚最好吃的一顿饭", "url": "https://www.xiaohongshu.com/explore/697be57b000000000c03447f", "date_display": "01-30（页面显示）", "checked_at": "2026-09-25", "note": "交叉看牛排、熟度、海鲜饭和账单提醒"}
+   ]
+  },
+  {
+   "id": "restaurant-seville-la-bartola",
+   "city_id": "seville",
+   "city_label": "塞维利亚",
+   "day_ids": ["2027-02-01"],
+   "meal_period": "dinner",
+   "priority": 1,
+   "name": "La Bartola",
+   "role": "晚餐 · 小份Tapas",
+   "area": "老城候选；先确认当天地址、开门和等位",
+   "image": "assets/trip/tapas.jpg",
+   "fit": "晚上适合三人少量多点，吃完直接回酒店；排队过长就换附近店，不为网红店压缩休息。",
+   "order_for_three": "先点 3 道小份：一份牛肉或猪脸肉、一份鱿鱼/海鲜和一份蔬菜，再按份量决定是否加甜点；不吃猪肉先问。",
+   "budget": "小红书个人样本约€25/人上下；仅作点单预算方向，当前价格看菜单。",
+   "queue": "热门时段可能排队；超过约30分钟、没有三人座位或菜价不合适就换La Sacristía/La Escaloná。",
+   "dishes": [
+    {"name": "Carrillada", "zh": "猪脸肉", "look": "炖煮至软的肉类小份，先确认是否含猪肉。"},
+    {"name": "Calamares", "zh": "鱿鱼", "look": "炸鱿鱼或鱿鱼小盘，适合三人先分食一份。"},
+    {"name": "Mito", "zh": "冰淇淋甜点", "look": "冷甜点或冰淇淋，先问当天是否供应。"}
+   ],
+   "map_url": "https://www.google.com/maps/search/?api=1&query=La+Bartola+Seville",
+   "source_note": "小红书多篇体验对小份、排队和菜品有交叉，但评价仍属个人口味；地址、营业、菜单和价格出发前重查。",
+   "xhs_posts": [
+    {"record_id": "xhs-seville-6a35318f000000000702fdd5", "title": "塞维利亚餐厅锐评", "url": "https://www.xiaohongshu.com/explore/6a35318f000000000702fdd5", "date_display": "06-19（页面显示）", "checked_at": "2026-09-25", "note": "看La Bartola小份Tapas、肉类和鱿鱼体验"},
+    {"record_id": "xhs-seville-6a72ec460000000033031273", "title": "我在塞维利亚吃很好", "url": "https://www.xiaohongshu.com/explore/6a72ec460000000033031273", "date_display": "08-05（页面显示）", "checked_at": "2026-09-25", "note": "交叉看猪脸肉、炸鱿鱼和饮品体验"}
+   ]
+  },
+  {
    "id": "restaurant-barcelona-sagradas-tapas",
    "city_id": "barcelona",
    "city_label": "巴塞罗那",
-   "day_ids": ["2027-01-27", "2027-01-28"],
+   "day_ids": ["2027-01-27"],
+   "meal_period": "lunch",
+   "priority": 1,
    "name": "Sagradas Tapas",
    "role": "圣家堂后顺路",
    "area": "圣家堂周边；适合参观后就近解决一顿",
@@ -1266,7 +1477,9 @@
    "id": "restaurant-granada-los-diamantes",
    "city_id": "granada",
    "city_label": "格拉纳达",
-   "day_ids": ["2027-01-29", "2027-01-30"],
+   "day_ids": ["2027-01-29"],
+   "meal_period": "dinner",
+   "priority": 2,
    "name": "Bar Los Diamantes · Plaza Nueva",
    "role": "老城小食",
    "area": "Plaza Nueva 13；把它当作 45–75 分钟的小食停留，不当作唯一正餐",
@@ -1292,7 +1505,9 @@
    "id": "restaurant-seville-san-marco",
    "city_id": "seville",
    "city_label": "塞维利亚",
-   "day_ids": ["2027-01-31", "2027-02-01"],
+   "day_ids": ["2027-01-31"],
+   "meal_period": "dinner",
+   "priority": 1,
    "name": "San Marco Santa Cruz",
    "role": "老城晚餐",
    "area": "Santa Cruz 老城；适合王宫、主教座堂和小巷路线结束后就近吃",

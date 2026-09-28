@@ -41,6 +41,16 @@ const kindLabels = {
   free: "自由安排"
 };
 
+const mealPeriodLabels = {
+  breakfast: "早餐",
+  lunch: "午餐",
+  dinner: "晚餐",
+  tea: "下午茶",
+  dessert: "甜点"
+};
+
+const restaurantMealPeriods = new Set(["lunch", "dinner", "tea"]);
+
 const tagLabels = {
   pinned: "重要安排",
   opener: "建议先做"
@@ -752,16 +762,38 @@ function lodgingMarkup(day) {
   `;
 }
 
-function restaurantsForDay(day) {
+function mealPeriodForItem(item) {
+  const explicit = String(item?.meal_period || "").trim().toLowerCase();
+  if (explicit) return explicit;
+  const text = `${item?.what || ""} ${item?.note || ""}`;
+  if (/早餐/.test(text)) return "breakfast";
+  if (/下午茶|茶歇/.test(text)) return "tea";
+  if (/甜点|甜品/.test(text)) return "dessert";
+  if (/午餐|午饭|午间/.test(text)) return "lunch";
+  if (/晚餐|晚饭/.test(text)) return "dinner";
+  return "";
+}
+
+function restaurantsForDay(day, mealPeriod = "") {
   const restaurants = Array.isArray(state.plan?.restaurants) ? state.plan.restaurants : [];
   const dayKey = String(day?.date || "").slice(0, 10);
-  return restaurants.filter((restaurant) => {
+  const matches = restaurants.filter((restaurant) => {
     const dayIds = Array.isArray(restaurant.day_ids) ? restaurant.day_ids.map((value) => String(value).slice(0, 10)) : [];
-    if (dayIds.includes(dayKey)) return true;
-    // Keep the card visible if an imported itinerary uses a date/time value
-    // instead of the plain ISO day key. Travel days still require an explicit
-    // day assignment so a restaurant never appears on the wrong transfer day.
-    return restaurant.city_id === day?.city_id && !isTravelDay(day);
+    if (!dayIds.includes(dayKey)) return false;
+    return !mealPeriod || restaurant.meal_period === mealPeriod;
+  });
+  matches.sort((a, b) => Number(a.priority || 1) - Number(b.priority || 1));
+  if (mealPeriod) return matches.slice(0, 1);
+
+  // The overview may show the day's meal plan, but still keeps one primary
+  // restaurant per meal period. There is no city-wide fallback: a restaurant
+  // must be assigned to this exact date before it appears.
+  const seenPeriods = new Set();
+  return matches.filter((restaurant) => {
+    const period = restaurant.meal_period || restaurant.role || restaurant.id;
+    if (seenPeriods.has(period)) return false;
+    seenPeriods.add(period);
+    return true;
   });
 }
 
@@ -775,16 +807,20 @@ function restaurantSourceMarkup(post) {
   `;
 }
 
-function restaurantMarkup(day) {
-  const restaurants = restaurantsForDay(day);
+function restaurantMarkup(day, item = null) {
+  const mealPeriod = item ? mealPeriodForItem(item) : "";
+  if (item && !restaurantMealPeriods.has(mealPeriod)) return "";
+  const restaurants = restaurantsForDay(day, mealPeriod);
   if (!restaurants.length) return "";
+  const isMealStep = Boolean(item);
+  const periodLabel = mealPeriodLabels[mealPeriod] || "用餐";
   return `
     <section class="restaurant-section" aria-label="餐厅推荐">
       <div class="card-heading-row">
-        <div><span class="section-kicker">附近吃什么</span><h3>先看菜品，再决定去哪家</h3></div>
+        <div><span class="section-kicker">${isMealStep ? periodLabel : "今天吃什么"}</span><h3>${isMealStep ? `${periodLabel}只看这一家` : "午餐、晚餐各留一家"}</h3></div>
         <span class="muted-label">三人共享</span>
       </div>
-      <p class="restaurant-intro">下面的餐厅都顺着当天路线安排；小红书帖子只用于看菜品长相、口味和排队体验，营业时间、菜单、价格和座位要到当天再查。</p>
+      <p class="restaurant-intro">${isMealStep ? `这张卡只对应今天的${periodLabel}；先看菜品和点法，再按当天营业、排队和菜单决定。` : "这里只列当天午餐、晚餐或特别值得体验的下午茶，不会把餐厅塞进每一个步骤。小红书只用于看菜品长相和体验，动态信息出发前再查。"}</p>
       <div class="restaurant-list">
         ${restaurants.map((restaurant) => `
           <article class="restaurant-card">
@@ -1150,7 +1186,7 @@ function renderStep(day) {
     ${isTransfer ? `<section class="step-image-card"><img src="./assets/trip/route-map.jpg" alt="三城路线示意" loading="lazy" /><div><span class="section-kicker">留出交通时间</span><p>交通日不追景点。先核对车票、站台、行李和入住地址；晚到时按当天交通安排直接入住和用餐。</p></div></section>` : ""}
 
     ${lodgingMarkup(day)}
-    ${restaurantMarkup(day)}
+    ${restaurantMarkup(day, item)}
     ${photoReferencesMarkup(day)}
 
     <section class="navigation-card">
@@ -1229,7 +1265,14 @@ function bindTodayEvents() {
 
   document.querySelectorAll("[data-quick-kind]").forEach((button) => {
     button.addEventListener("click", () => {
-      const targetIndex = currentDay().timeline.findIndex((item) => item.kind === button.dataset.quickKind);
+      const day = currentDay();
+      let targetIndex = day.timeline.findIndex((item) => {
+        if (item.kind !== button.dataset.quickKind) return false;
+        if (button.dataset.quickKind !== "meal") return true;
+        const period = mealPeriodForItem(item);
+        return restaurantMealPeriods.has(period) && restaurantsForDay(day, period).length > 0;
+      });
+      if (targetIndex < 0) targetIndex = day.timeline.findIndex((item) => item.kind === button.dataset.quickKind);
       if (targetIndex < 0) {
         showToast("今天没有单独安排这一类步骤");
         return;

@@ -1,4 +1,4 @@
-const CACHE_NAME = "spain-guide-static-v14";
+const CACHE_NAME = "spain-guide-static-v15";
 const PRECACHE = [
   "./",
   "./index.html",

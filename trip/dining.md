@@ -6,6 +6,8 @@
 
 本轮新增六个主卡快照和八个扩充备用卡：`DIN-BCN-ANXOITA-20260926`、`DIN-BCN-RACO-20260926`、`DIN-GRD-MANUELES-20260926`、`DIN-GRD-DIAMANTES-20260926`、`DIN-SVQ-SANMARCO-20260926`、`DIN-SVQ-BENDALA-20260926`，以及 Granja Viader、Santa Caterina、El Pescaíto、Perromedio、Ambar、Aba、La Escaloná、La Sacristía。动态信息均为 2026-09-26 网页/Safari/商户页快照，出发前复核；小红书菜品体验仍标为保留线索。完整的分数、评价数与判断见[小红书推荐交叉审计](../research/xhs/recommendation-cross-check.md)。
 
+网页显示规则：早餐、车上便携餐、零食和转场日临时用餐保留在时间线里，但不强行挂一家餐厅；当天总览最多列午餐和晚餐各一家，进入时间线后只在对应餐段显示该餐厅，其他景点、交通、休息步骤不重复显示。只有确实值得专程体验且不破坏路线的下午茶，才增加 `tea` 餐段。
+
 ## 每日正餐与早餐执行表
 
 这里的“正餐”是可坐下吃的一顿，或转场日提前买好的完整便携餐；不是把一杯咖啡当午餐。每天保留第一候选和备用，排队、闭店、晚点或路线变化时就近切换。
