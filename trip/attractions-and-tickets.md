@@ -43,7 +43,7 @@
 | 城市 | 模块 | 当前核验要点 | 规划用法 |
 |---|---|---|---|
 | Barcelona | Park Güell | 当前页面列出的 2026 年冬季游客时段约 09:30–17:30，容量按半小时管理；2027 日历未确认 | 晴天可替换 Bunkers/Montjuïc，不与 Sagrada 同天塞满 |
-| Barcelona | Casa Batlló / La Pedrera | 当前均为分时入场；La Pedrera 信息页与票种页的最后入场时间存在差异 | 2/2 二选一，购买前按票种保守排程 |
+| Barcelona | Casa Batlló / La Pedrera | 当前均为分时入场；La Pedrera 信息页与票种页的最后入场时间存在差异 | D3（1/28）只保留一个付费分支，购买前按票种保守排程 |
 | Barcelona | Sant Pau / Palau | Sant Pau 当前冬季约 09:30–17:00，Palau 参观约50分钟且受活动影响 | 作为 Sagrada 后同轴或雨天模块 |
 | Seville | Plaza de España | 官方页面与旧版官方冬季 PDF 对闭馆时间存在 24:00/22:00 冲突 | 只依赖白天至傍晚，不安排深夜 |
 | Seville | Setas | 当前普通体验约 EUR 16 起；主页与详细计划页的冬季闭馆时间存在冲突 | 作为可删半日，不影响核心建筑日 |

@@ -37,8 +37,8 @@ Casco Antiguo 集中 Setas、Salvador、大教堂和 Alcázar；Plaza de España
 
 ### 推荐的两日骨架
 
-- **核心建筑日：**Alcázar → Cathedral/Giralda → Santa Cruz。按小红书多篇经验，先拍庭院、拱门、橙树和建筑细节，再在街巷中休息；官方当前冬季时段和周日规则见[景点与门票](../trip/attractions-and-tickets.md)。
-- **户外生活日：**Plaza de España → María Luisa → Arenal/黄金塔外观 → Triana/河岸。西班牙广场安排在午后至日落，拍拱廊、彩瓷长椅、桥和三人轮拍；雨风时删除河岸与屋顶。
+- **参考核心建筑日：**Alcázar → Cathedral；Giralda 登塔和 Santa Cruz 视排队、体力和时间可删。按小红书多篇经验，先拍庭院、拱门、橙树和建筑细节，再在街巷中休息；官方当前冬季时段和周日规则见[景点与门票](../trip/attractions-and-tickets.md)。
+- **参考户外生活线：**Plaza de España → María Luisa → Arenal/黄金塔外观 → Triana/河岸。西班牙广场安排在午后至日落，拍拱廊、彩瓷长椅、桥和三人轮拍；但当前 8 晚版只把 Plaza 作为 D6/D8 的可选短线，Arenal、Triana 和河岸不进入固定主线，雨风时删除。
 - **餐饮/伴手礼：**老城、Alfalfa、Triana Market、河岸分别作为就近主题；小红书提到的 La Sacristía、La Bartola、San Marco、Ratatouille Cheesecake、Orange Tree 等只进候选池，先核对当前营业和价格。
 
 ### 冬季与交通落地

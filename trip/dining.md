@@ -1,6 +1,6 @@
 # 餐饮策略
 
-最后整理：2026-09-27。餐饮是本次行程的次要目标，采用“每天一个可调整的正餐主题 + 其余时间就近解决”的方式；小红书只提供口味、氛围和街区线索，任何具体店铺的营业、价格、排队和预约都要临近日期再核验。页面收录门槛为“至少 1 篇、且在核对日往前 1 年内的 Safari 小红书详情帖”；有多篇时交叉，没有多篇也可以收录。当前菜单、菜图、营业和价位仍在出发前复核，餐厅不写成必吃保证。
+最后整理：2026-09-29。餐饮是本次行程的次要目标，采用“每天一个可调整的正餐主题 + 其余时间就近解决”的方式；小红书只提供口味、氛围和街区线索，任何具体店铺的营业、价格、排队和预约都要临近日期再核验。页面收录门槛为“至少 1 篇、且在核对日往前 1 年内的 Safari 小红书详情帖”；有多篇时交叉，没有多篇也可以收录。当前菜单、菜图、营业和价位仍在出发前复核，餐厅不写成必吃保证。
 
 完整的时间、路线、拍照机位、早餐采购和“排队超过多久就换店”规则见[每日现场执行卡](daily-field-cards.md)与[小时级执行版](hourly-guide.md)。本页维护候选池和证据边界，不把候选写成必吃。需要现场直接照抄的价格、菜品、营业时段和分店地址见[餐厅现场抄作业卡](restaurant-cards.md)。
 
@@ -37,7 +37,7 @@
 ## Seville：建筑日后吃老城，生活日吃河岸/市场
 
 - 2/1 王宫—主教座堂—Santa Cruz：午餐放在老城/Alfalfa，选择 tapas、salmorejo、烤肉或当地小吃组合；王宫与主教座堂之间不为网红店长距离折返。
-- 2/2 Plaza de España—Arenal—Triana：把一顿慢餐放在河岸或 Triana 市场周边，市场海鲜和“无盐/调味”都要现场询问；雨天改为老城室内餐饮；若返程从 Madrid，则优先完成机场节点与行李整理。
+- 2/2 Seville→Madrid：先完成退房、Santa Justa 和白天城际交通；只有车票不早于 13:00、天气稳定且退房不被压缩时才走 Plaza de España短线。午餐就近在酒店或车站解决，雨风、排队或体力不足时直接删除户外线；不安排 Arenal、Triana 或河岸慢餐。
 - 小红书餐饮线索（例如 La Sacristía、La Bartola、Triana Market、San Marco Santa Cruz、Ratatouille Cheesecake 等）按“近一年至少一篇可用帖子”收进候选池；多篇帖子用于交叉，不把任何一家写成必吃。
 - 对应逐条记录见 research/xhs/seville.md；Google/当地评价只能补充线索，不能锁定 2027 营业、价格、厨房收单或排队。
 
@@ -48,7 +48,7 @@
 | 1/31 抵达后 Plaza de España | San Marco Santa Cruz（近一年帖子参考） | 酒店附近 tapas | 只在抵达早且有座位时用；海鲜饭、海鲜意面、甜点先确认份量和盐度 |
 | 2/1 王宫—主教座堂 | Aba de Sevilla 早餐；Bendala 午餐（近一年帖子参考） | La Sacristía / La Goleta | 不为了早餐错过预约；Bendala 先核对熟度、海鲜饭最少份量和账单 |
 | 2/1 晚餐/甜点 | La Bartola（近一年帖子参考）；Ratatouille Cheesecake Sevilla | 附近短线店 | La Bartola 排队超过约 30 分钟就换店；甜品先看是否售罄 |
-| 2/2 Plaza—Triana | La Escalona（近一年帖子参考）；Triana Market 咖啡/小食 | 酒店附近 | 雨风时删河岸；市场摊位当日营业和座位现场判断 |
+| 2/2 Seville→Madrid | 酒店附近或 Santa Justa 站内热食 | Madrid 机场酒店/航站楼附近 | 先完成车站和机场定位；不为餐厅绕去 Plaza、Arenal 或 Triana |
 
 候选记录：`xhs-seville-69de64ed000000002003baec`、`xhs-seville-69fb2daf0000000022024f46`、`xhs-seville-6a72ec460000000033031273`、`xhs-seville-698bb8b9000000000a0318db`。La Bodega de la Alfalfa 的服务反馈存在冲突，不能作为固定主线。
 

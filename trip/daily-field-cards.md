@@ -1,6 +1,6 @@
 # 每日机位·车站·餐厅·超市现场执行卡
 
-最后整理：2026-09-27（Asia/Hong_Kong）。本页把[小时级执行攻略](hourly-guide.md)拆成可以在手机上直接照着执行的现场卡：每天先买早餐，再按主线拍摄，至少保留一顿正餐和一顿可替换的正餐；城际日把车站、车厢和到站后的第一组照片也列出来。往返日期已锁定为 2027-01-25 亚洲出发、2027-02-03 从 Madrid 离境，共 8 晚；当前国航候选约 07:25 到达，最终时刻只影响当天衔接，不自动平移后续城市日期。当前执行以[行程框架的 8 晚具体表](itinerary.md#当前航班的-8-晚具体日期表)和[小时级执行攻略的 8 晚总卡](hourly-guide.md#当前航班版8-晚执行总卡)为准。
+最后整理：2026-09-29（Asia/Hong_Kong）。本页把[小时级执行攻略](hourly-guide.md)拆成可以在手机上直接照着执行的现场卡：每天先买早餐，再按主线拍摄，至少保留一顿正餐和一顿可替换的正餐；城际日把车站、车厢和到站后的第一组照片也列出来。往返日期已锁定为 2027-01-25 亚洲出发、2027-02-03 从 Madrid 离境，共 8 晚；当前国航候选约 07:25 到达，最终时刻只影响当天衔接，不自动平移后续城市日期。D1 只有在预计落地到列车发车至少约 5 小时、车票可变更且行李/航站楼衔接已确认时才去 Barcelona；否则机场过夜，次日再定位。当前执行以[行程框架的 8 晚具体表](itinerary.md#当前航班的-8-晚具体日期表)和[小时级执行攻略的 8 晚总卡](hourly-guide.md#当前航班版8-晚执行总卡)为准。
 
 > **现场减负：**每个转场日先入住/寄存、补给和休息，最多抄一组酒店周边人像或车站/列车记录；不要为了完成每日点位配额而把长坡、远端景点和预约景点塞进到达日。
 
@@ -83,7 +83,7 @@
 
 ## D1｜1/26 抵达 Barcelona：Madrid 转乘、Barcelona Sants、住宿补给
 
-**当天路线：**Madrid 机场 →（安全衔接才去 Atocha）→ Barcelona Sants → 住宿候选基点。第一天不塞 Sagrada 预约；完成入住后，若仍有日光，安排住处/Sants 附近 60–90 分钟 citywalk 和晚霞，拍摄优先级仍低于入境、行李、车票和入住。
+**当天路线：**Madrid 机场 →（预计落地至发车至少约 5 小时、车票可变更、行李/航站楼衔接确认后才去 Atocha）→ Barcelona Sants → 住宿候选基点。任一条件不成立，就住 MAD 机场附近、次日再去 Barcelona，并删除当天所有城市观光。正常抵达后第一天不塞 Sagrada 预约；完成入住后，若仍有日光，才安排住处/Sants 附近 60–90 分钟 citywalk 和晚霞，拍摄优先级仍低于入境、行李、车票和入住。
 
 ### 车站/列车与到站机位
 
@@ -104,7 +104,7 @@
 
 ### 当天最少完成
 
-`站牌 1 张 + 车窗/票 2 张 + 到站 1 张 + 住宿附近 citywalk/晚霞生活照 2 张 + 正餐 1 顿 + 第二天早餐采购`。若延误或 18:00 后才入住，citywalk 只保留住处门口 30–45 分钟，必要时整段删除。
+`站牌 1 张 + 车窗/票 2 张 + 到站 1 张 + 正餐 1 顿 + 第二天早餐采购`；若正常入住且还有体力，再加住宿附近 citywalk/晚霞生活照 2 张。若延误、未满足 D1 硬门槛或 18:00 后才入住，不补拍城市点位，直接休息。
 
 ## D2｜1/27 Sagrada Família—Avinguda Gaudí—Sant Pau
 
@@ -195,9 +195,11 @@
 - **小食/备用：**[Bar Los Diamantes](restaurant-cards.md#4-bar-los-diamantes｜炸鱼小食停留)，Plaza Nueva 13；把它当 45–75 分钟小食，排队或拼桌不合适就换 Los Manueles。
 - **采购：**Gran Vía 11 Carrefour Express 或 Ancha de Gracia Covirán；买 D5 Alhambra 的午间便携食物。
 
-## D5｜1/30 Alhambra：预约优先，Generalife人像；坡地观景不进固定主线
+## D5｜1/30 Alhambra：Nasrid预约优先，余力只选一个区域
 
-**当天路线：**住宿 → Alhambra 园区 → Nasrid Palaces 指定时段 → Alcazaba/Charles V/Generalife → 出口/卫生间/座椅 → 实时公交或正规出租车回中心。Paseo de los Tristes、San Nicolás、San Miguel Alto 不属于固定主线；若当天临时替换，最多选一个并删除其他拍摄，不增加步行。
+**当天路线：**住宿 → Alhambra 园区 → Nasrid Palaces 指定时段 → 视体力在 Alcazaba/Charles V、Partal 或 Generalife 中只选一个 → 出口/卫生间/座椅 → 实时公交或正规出租车回中心。不是每个分区都要完成；Nasrid 未完成或三人明显疲劳时，直接离园。Paseo de los Tristes、San Nicolás、San Miguel Alto 不属于固定主线；若当天临时替换，最多选一个并删除其他拍摄，不增加步行。
+
+**执行边界：**机位清单第 5–8 项都是可选素材，不为“补齐清单”继续走坡、赶路或牺牲返程休息。
 
 ### Alhambra 机位清单
 
@@ -225,7 +227,7 @@
 
 ## D6｜1/31 Granada → Seville：车站、列车、入住后 Plaza 短线
 
-**当天路线：**按实际车票选择 Granada railway station 或 ALSA 车站 → Seville Santa Justa → Giralda Center前台 → 入住/寄存、卫生间、补水、坐下休息 → Plaza de España/玛丽亚·路易莎公园短线。只有约 17:30 前完成安置且三人状态稳定，才安排 60–90 分钟；抵达晚就只拍酒店周边，不添加 Triana。
+**当天路线：**按实际车票选择 Granada railway station 或 ALSA 车站 → Seville Santa Justa → Giralda Center前台 → 入住/寄存、卫生间、补水、坐下休息 → 可选的 Plaza de España/玛丽亚·路易莎公园短线。只有约 17:30 前完成安置且三人状态稳定，才安排 60–90 分钟；抵达晚就只拍酒店周边，不添加 Triana。
 
 ### 车站/列车与 Seville 到站机位
 
@@ -248,9 +250,9 @@
 - **备用：**[La Escaloná](restaurant-cards.md#13-la-escaloná｜Alfalfa tapas 备用)，每日约 12:00–23:30，官方菜单有 salmorejo、虾/海鲜、章鱼、伊比利亚肉和米饭方向；不为排队跨区。
 - **早餐采购：**若 Giralda Center 候选成立，优先 Carrefour Market Viapol；如果入住实际更靠老城，使用 Cardenal Cervantes Express。
 
-## D7｜2/1 Seville：Alcázar—Cathedral/Giralda—Santa Cruz
+## D7｜2/1 Seville：Alcázar—Cathedral核心；Giralda/Santa Cruz可选
 
-**当天路线：**预约锚点先完成 Alcázar（冬季当前参考09:30开门、成人约€15.50）→ Cathedral/Giralda（周一至周六当前参考10:45–19:00、网上约€13，音频APP另约€4）→ Santa Cruz/水巷 → Alfalfa。王宫与主教座堂内部拍摄遵守现场标识，不能把小红书室内图当作当前许可；2027日期、礼拜、容量和票价出发前重查。
+**当天路线：**先完成 Alcázar，再完成 Cathedral 核心；只有排队、体力和时间都允许时，才加 Giralda 登塔或 Santa Cruz/水巷。王宫与主教座堂内部拍摄遵守现场标识，不能把小红书室内图当作当前许可；2027日期、礼拜、容量和票价出发前重查。三人不拆队：登塔和远端街巷都是可删除项。
 
 ### 机位清单
 
@@ -274,16 +276,16 @@
 - **午餐/晚餐候选B：**[La Sacristía](restaurant-cards.md#14-la-sacristía｜传统 tapas 备用)，C/ Mateos Gago 18，每日约 12:00–00:00；先看当前菜单/菜图，再问 espinacas con garbanzos、carrillada、pavía de merluza、salmorejo、cola de toro。
 - **甜点/夜间备用：**La Escaloná；官方菜单快照有 salmorejo €4.90、虾沙拉 tapa €4.90/portion €11.90、烤章鱼约 €21.90，价格 T-1 复核。
 
-## D8｜2/2 Seville 短线 → Santa Justa → Madrid 机场—市区交通走廊
+## D8｜2/2 Seville（可选短线）→ Santa Justa → Madrid 机场—市区交通走廊
 
-**当天路线：**只保留 Plaza de España/玛丽亚·路易莎短线 → 取行李 → Santa Justa → Madrid → 机场—市区交通走廊住宿（当前候选 Hotel Maydrit Airport）。若车票在中午前，直接删除全部户外点；到 Madrid 后先入住，若仍早且体力足，只在机场—市区交通走廊附近短走；不要把 Triana/Arenal 塞回去。
+**当天路线：**先取行李、退房并完成 Santa Justa → Madrid → 机场—市区交通走廊住宿（当前候选 Hotel Maydrit Airport）。只有车票不早于 13:00、天气稳定、退房不被压缩且三人有余力时，才在出发前加 Plaza de España/玛丽亚·路易莎短线；否则整段删除。到 Madrid 后先入住，若仍早且体力足，只在机场—市区交通走廊附近短走；不要把 Triana/Arenal 塞回去。
 
 ### 机位清单
 
-1. 清晨 Plaza de España 拱廊：打开 [S1 三张本地模特图](photo-pose-cards.md#s1｜plaza-de-españa-人像组3-帖通过)，优先拍“从阴影走入光线、桥边回头、拱廊全身”。
-2. 广场瓷砖地图/长椅：拍手指、地图和同行者侧面；不坐在不允许的栏杆或雕饰上。
-3. 中央喷泉与天际线：拍风景/倒影，不追求空场；人多就改拍局部。
-4. María Luisa 公园树影：只走一小段，拍树下背影和鞋子；雨天删。
+1. 清晨 Plaza de España 拱廊（可选）：只有满足车票、天气和退房条件时，打开 [S1 三张本地模特图](photo-pose-cards.md#s1｜plaza-de-españa-人像组3-帖通过)，优先拍“从阴影走入光线、桥边回头、拱廊全身”。
+2. 广场瓷砖地图/长椅（可选）：拍手指、地图和同行者侧面；不坐在不允许的栏杆或雕饰上。
+3. 中央喷泉与天际线（可选）：拍风景/倒影，不追求空场；人多就改拍局部。
+4. María Luisa 公园树影（可选）：只走一小段，拍树下背影和鞋子；雨天删。
 5. 回酒店收拾：拍行李、超市袋、票夹和门口街景，不拍房号/住址细节。
 6. Santa Justa 外部钟与站名：提前到站后拍，拍完离开主通道。
 7. 站厅电子屏/站台安全线内：拍自己车次的屏幕和行李，不越过黄线；一旦开始检票先收手机。

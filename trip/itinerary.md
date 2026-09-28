@@ -1,6 +1,6 @@
 # 每日行程与路线框架
 
-最后整理：2026-09-27。下面是一套以你当前确认的国航 HKG–PEK–MAD 往返结构为锚点、吸收三城小红书路线与冬季专项研究后形成的可执行基准。国际机票暂不列入旅行预算，仍需等降价；往返日期已锁定为 2027-01-25 亚洲出发、2027-02-03 12:20 从 Madrid 离境，三城住宿和预约按这组日期复核。当前公开国航候选为 07:25 到达；如果最终时刻不同，只处理当天衔接，不自动平移后续城市日期。
+最后整理：2026-09-29。下面是一套以你当前确认的国航 HKG–PEK–MAD 往返结构为锚点、吸收三城小红书路线与冬季专项研究后形成的可执行基准。国际机票暂不列入旅行预算，仍需等降价；往返日期已锁定为 2027-01-25 亚洲出发、2027-02-03 12:20 从 Madrid 离境，三城住宿和预约按这组日期复核。当前公开国航候选为 07:25 到达；如果最终时刻不同，只处理当天衔接，不自动平移后续城市日期。
 
 > **当前执行层：**需要新人直接照着走时，以[小时级执行版](hourly-guide.md)为主；本页保留城市顺序、固定日期、住宿/票务锚点和删减原则。小时级攻略中的餐厅、拍照和交通均继续遵守本页的证据状态，不等同于已预订。
 
@@ -8,9 +8,9 @@
 
 已确认的城市顺序是：**Madrid 入境 → Barcelona → Granada → Seville → Madrid 机场—市区交通走廊过夜 → Madrid 离境**。
 
-- Barcelona 先行与当前已基本锁定的整套 Airbnb 房源日期一致；Granada 按用户确认优先含早餐酒店，Seville 的 Hotel Giralda Center 已确认可行。Madrid 返程前一晚当前以机场—市区交通走廊的 Hotel Maydrit Airport 为性价比候选。Madrid→Barcelona 默认高铁，必须和国航落地时间、入境取行李、Atocha换乘一起核算，不把长距离转移误写成完整游览时间；但通勤日不是零游览，正常抵达并入住后仍保留一个可删的 60–120 分钟 citywalk/日落模块。
+- Barcelona 先行与当前已基本锁定的整套 Airbnb 房源日期一致；Granada 按用户确认优先含早餐酒店，Seville 的 Hotel Giralda Center 已确认可行。Madrid 返程前一晚当前以机场—市区交通走廊的 Hotel Maydrit Airport 为性价比候选。Madrid→Barcelona 默认高铁，但**只有预计落地到计划发车至少约 5 小时、车票可改退、行李和航站楼已确认时才执行当天定位**；否则住 Madrid 机场附近，次日再走。通勤日不是零游览，正常抵达并入住后仍保留一个可删的 60–120 分钟 citywalk/日落模块。
 - 返程固定从 Madrid；2/2 提前完成 Seville→Madrid，住机场—市区交通走廊，当前候选为 Hotel Maydrit Airport；2/3 只办理国航国际返程，不从 Seville/Granada/Barcelona 临时跨城。
-- 三城各自的照片/建筑主线清楚：Seville 的王宫—主教座堂—西班牙广场，Granada 的 Alhambra—平地中心—晴天坡地，Barcelona 的 Gothic/Born—Sagrada/Sant Pau—Passeig de Gràcia。
+- 三城各自的照片/建筑主线清楚：Seville 的王宫—主教座堂—西班牙广场，Granada 的 Alhambra—平地中心—晴天坡地，Barcelona 的 Gothic/Born—Sagrada/Sant Pau—Passeig de Gràcia。执行上，Alhambra 以 Nasrid 为硬核心后只选一个区域；Seville 以 Alcázar 和 Cathedral 为硬核心，Giralda 登塔、Santa Cruz 和额外户外线均可删。
 - 当前主轴是三人一起买香港—马德里往返：1/25 20:20 HKG→PEK→MAD，当前国航候选于 1/26 07:25 抵达 Madrid；返程 2/3 12:20 MAD→PEK，再选次日 09:25 PEK→HKG 13:05。Trip.com 当前显示 HKD 7,130/人、去回程各 23 kg，但价格仍高，且北京两位旅客需在 1/25 晚前自行定位到香港，返程北京甩尾均需单独核实。若最终落地时刻不是 07:25，只在固定日期内重新安排 Madrid→Barcelona 衔接。
 
 ## 去程日期比较
@@ -37,17 +37,17 @@
 | 相对日 | 安排 | 强度 |
 |---|---|---|
 | D0｜1/25 | 香港出发；北京两位旅客先自行定位到 HKG，三人一起值机 | 出发+转机 |
-| D1｜1/26 | Madrid 入境→Barcelona；当前候选 07:25 到达，只有入境取行李后仍留足约 5 小时才接高铁；入住、补给，若在日落前后正常到达则做 Sants/住处周边 citywalk，不排票 | 到达+转场 |
+| D1｜1/26 | Madrid 入境→Barcelona；只有预计落地到计划发车至少约 5 小时、车票可改退且行李/航站楼已确认才接高铁；入住、补给，若在日落前后正常到达则做 Sants/住处周边 citywalk | 到达+转场 |
 | D2｜1/27 | Barcelona：Sagrada Família→Sant Pau；若票窗不合适则 Gothic/Born 室内线 | 完整日 |
 | D3｜1/28 | Barcelona：Gothic/Born主线＋Passeig de Gràcia外观；只有已购且想听音频才加 Casa Batlló | 完整日 |
 | D4｜1/29 | Barcelona→Granada；先入住，再做 Cathedral/Gran Vía 平地短线、日落和晚餐；不走长坡 | 转场+轻量 |
-| D5｜1/30 | Granada：Alhambra 专门日；晴天余力才加一处平地观景 | 完整日 |
+| D5｜1/30 | Granada：Alhambra 专门日；Nasrid 后只按体力选择一个园区区域，园外坡地不叠加 | 完整日 |
 | D6｜1/31 | Granada→Seville；先入住，再做 Plaza de España/玛丽亚·路易莎公园或酒店周边短线，顺看晚霞 | 转场+轻量 |
-| D7｜2/1 | Seville：Alcázar→Cathedral/Giralda→Santa Cruz；傍晚视体力补 Plaza de España | 完整日 |
-| D8｜2/2 | Seville→Madrid；上午不再安排付费景点，白天车到 Atocha 后住机场—市区交通走廊；若入住早，只在酒店/机场走廊附近短走 | 定位+休息 |
+| D7｜2/1 | Seville：Alcázar→Cathedral；Giralda 登塔、Santa Cruz 和 Plaza de España均为可删延伸 | 完整日 |
+| D8｜2/2 | Seville→Madrid；Plaza de España只在车票不早于13:00、天气和体力允许时保留，白天车到 Atocha 后住机场—市区交通走廊 | 定位+休息 |
 | D9｜2/3 | Madrid→机场返程；不安排 Madrid 观光 | 离境日 |
 
-如果最终国航卡片改为 1/26 中午抵达，先只考虑在固定 1/26 当天安全抵达 Barcelona 的晚车次；若做不到，不把“机场过夜后仍可无损执行”写成既定事实，需在出发前由用户单独决定票务/住宿处理，但不自动改后续城市日期。
+如果最终国航卡片改为 1/26 中午抵达，只有在仍能满足“预计落地到计划发车至少约 5 小时、车票可改退、行李与航站楼已确认”的硬门槛时才考虑当天晚车；做不到就执行 Madrid 机场过夜分支，删除 D1 citywalk，不自动改后续城市日期。
 
 ### 小红书攻略覆盖度审计（2026-09-27）
 
@@ -57,7 +57,7 @@
 |---|---|---|---|
 | Barcelona | 2 个完整日 + 到达日晚间 | 多篇攻略按 3 天或 3–4 天列高迪、老城、扩展区/海边、山上机位；有笔记明确提醒完整地图至少 4 天且会累 | Sagrada–Sant Pau、Gothic/Born、Passeig 外观可完成；Casa Batlló只作为含音频的单一付费替换，La Pedrera/Park Güell/Montjuïc/Tibidabo/海边放弃或另行替换 |
 | Granada | 1 个完整日 + 到达日晚间 | 共同结构是市中心/Albaicín 与 Alhambra 分开；两日攻略通常把 Alhambra 单独放一天 | Alhambra + 市中心核心够；San Nicolás/San Miguel、Sacromonte 和多个教堂不能全部稳妥完成 |
-| Seville | 1 个完整日 + 到达日晚间 | 冬季两日路线常把 Alcázar、主教座堂、老城、Plaza de España、河岸/Triana 分段 | Alcázar + Cathedral/Giralda + Santa Cruz + Plaza de España 的核心够；Triana、河岸、市场和弗拉门戈只能择一 |
+| Seville | 1 个完整日 + 到达日晚间 | 冬季两日路线常把 Alcázar、主教座堂、老城、Plaza de España、河岸/Triana 分段 | Alcázar + Cathedral 是核心；Giralda 登塔、Santa Cruz、Plaza de España、Triana、河岸、市场和弗拉门戈都按体力与车票删减 |
 | Madrid | 返程前 1 晚 | 本项目明确不把 Madrid 当观光城市 | 作为机场—市区交通走廊过夜足够，不应再塞景点 |
 
 官方季节性时间也说明当前安排需要精确预约：Alhambra 冬季开放时段为 08:30–18:00，纳宫必须按票面时间进入；Seville Alcázar 冬季为 09:30–17:00，Cathedral/Giralda 的普通访问约 75 分钟；Barcelona 的 Sagrada Família 冬季通常周一至周六 09:00–18:00。因此，当前版本可以完成核心主线，但不能把“所有小红书点位”写成全部完成。[Alhambra 官方](https://www.alhambra-patronato.es/en/visit/opening-hours-and-prices)、[Seville Alcázar 官方](https://alcazarsevilla.org/prepara-la-visita/)、[Seville Cathedral 官方](https://www.catedraldesevilla.es/en/cultural-visit/schedules-and-rates/)、[Sagrada Família 官方 FAQ](https://sagradafamilia.org/en/faqs)
@@ -84,13 +84,13 @@
 | 日期 | 城市/移动 | 上午 | 午后 | 傍晚与摄影 | 预约/风险 |
 |---|---|---|---|---|---|
 | 1/25 | 香港出发 | 北京两位旅客先自行定位到 HKG；三人一起值机，确认三张票的行李条是否打到 MAD | HKG 20:20→PEK；公开页面未显示完整航班号，最终以出票页为准 | 北京转机只休息，不把转机写成可自由进城时间 | 以最终行李条和航站楼为准 |
-| 1/26 | Madrid → Barcelona | 当前国航候选约 07:25 抵达；先入境、取行李、确认下一张高铁票；若最终较晚，只在固定日期内处理衔接 | 只有地面缓冲足够时去 Atocha→Barcelona Sants；建议发车距实际落地约5小时以上 | 到 Barcelona 后先入住、补给；若约 17:00 前后完成入住，安排 Sants/住处附近 60–90 分钟 citywalk 和晚霞（Barcelona 日落约 18:00，民用暮光至约 18:29）；不接 Sagrada 预约 | 入境/行李/延误任一超时，就删 D1 citywalk；若无法在1/26安全到 Barcelona，需用户单独决定票务/住宿处理，不自动顺延 |
+| 1/26 | Madrid → Barcelona | 当前国航候选约 07:25 抵达；先入境、取行李、确认下一张高铁票；只有预计落地到计划发车至少约5小时且车票可改退才执行 | 不满足硬门槛就住 MAD 机场附近，次日再去 Barcelona；不把独立车票当作国航受保护衔接 | 到 Barcelona 后先入住、补给；若约 17:00 前后完成入住，安排 Sants/住处附近 60–90 分钟 citywalk 和晚霞；不接 Sagrada 预约 | 入境/行李/航站楼/车票任一不确定，就删除 D1 citywalk 并执行机场过夜；不自动顺延 |
 | 1/27 | Barcelona：Sagrada Família—Sant Pau | Sagrada Família 预约时段 | Avinguda Gaudí → Sant Pau；午间回住处休息 | 建筑细节、人像和室内光线 | Sagrada 实名、按时段入场；最终以官方规则为准 |
 | 1/28 | Barcelona：Gothic/Born＋Passeig外观 | 老城短线为主，不追求全点打卡 | Casa Batlló只有已购且想听音频时进入；La Pedrera只拍外观 | 老城街拍或建筑细节 | 不同时买两座高迪；雨天优先已购室内/老城 |
 | 1/29 | Barcelona → Granada | 退房，乘白天长途铁路/合适替代交通并保留行李缓冲 | 抵达后先入住/寄存、补给 | 若约 18:00 前完成，走 Cathedral/Gran Vía 平地中心 60–90 分钟并看日落（约 18:36，民用暮光至约 19:02）；仍只把 San Jerónimo 等作可删模块 | 不在抵达日安排 Albaicín 长坡或付费预约；晚到就近酒店短走 |
-| 1/30 | Granada：Alhambra 专门日 | 按 Nasrid Palaces 票面时段入场 | Partal、Alcazaba、Generalife、Charles V Palace | 视体力在园区内拍光影，不再叠加 Sacromonte | 全程最高预约优先级；留出公交、找入口和证件检查缓冲 |
+| 1/30 | Granada：Alhambra 专门日 | 按 Nasrid Palaces 票面时段入场 | Nasrid 后只选 Alcazaba/Charles V、Partal、Generalife 中一个区域 | 其余区域、园外坡地和 Sacromonte全部可删 | 全程最高预约优先级；留出公交、找入口和证件检查缓冲 |
 | 1/31 | Granada → Seville | 退房，乘白天 Renfe/ALSA | 抵达后先入住、补水和休息 | 若约 17:30 前完成，走 Plaza de España/玛丽亚·路易莎公园 60–90 分钟（约 18:48 日落，民用暮光至约 19:14）；晚到改酒店周边 | 不把王宫和主教座堂硬塞到抵达日 |
-| 2/1 | Seville：王宫—主教座堂—Santa Cruz | Alcázar 早场或可用时段 | Cathedral/Giralda；中间在 Santa Cruz 休息 | 橙树小巷、Murillo 花园一带；余力再去 Plaza de España | Alcázar/Cathedral 的 2027 票窗和周日规则出发前重查 |
+| 2/1 | Seville：王宫—主教座堂 | Alcázar 早场或可用时段 | Cathedral 为第二核心；Giralda 登塔、Santa Cruz 和 Plaza de España可删 | 只有三人状态稳定才走橙树小巷/Murillo花园 | Alcázar/Cathedral 的 2027 票窗和周日规则出发前重查 |
 | 2/2 | Seville → Madrid | 上午不再安排付费景点；退房后 Santa Justa→白天 Renfe→Atocha | 到 Madrid 后去机场—市区交通走廊酒店（当前候选 Maydrit）并先入住 | 若约 18:00 前完成，可在酒店/机场走廊附近短走或看晚霞（Madrid 日落约 18:35）；随后晚餐、确认航站楼、整理行李和睡眠 | 不买最后一班，不把 Triana/Arenal 或 Madrid 市中心安排在返程定位日 |
 | 2/3 | Madrid机场 → 国航返程 | 走廊酒店退房；按起飞前约3小时到 MAD T1 | MAD 12:20→PEK；北京两位旅客只在承运人允许且行李条可行时甩尾 | 香港旅客继续 PEK 09:25→HKG 13:05；以出票页核对日期 | 离境日零观光；最终以出票页核对航班号和北京到达时间 |
 

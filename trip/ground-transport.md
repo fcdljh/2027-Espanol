@@ -1,6 +1,6 @@
 # 城市间与市内交通
 
-最后整理：2026-09-27T15:18:50+08:00（HKT）。以下班次、线路、票价规则和运营页面是当前快照，不是 2027 年承诺；购票前要按实际日期、行李和航班重新核对。当前主方案是 1/26 到达 Madrid 后条件性去 Barcelona，2/2 完成 Seville→Madrid 定位，2/3 12:20 从 Madrid 返程；Madrid 不作为旅游城市，机场—市区交通走廊住宿候选仍为 Hotel Maydrit Airport。当前国航候选约 07:25 到达；若最终为中午到达，优先改晚车次或机场过夜。
+最后整理：2026-09-29（HKT）。以下班次、线路、票价规则和运营页面是当前快照，不是 2027 年承诺；购票前要按实际日期、行李和航班重新核对。当前主方案是 1/26 到达 Madrid 后条件性去 Barcelona，2/2 完成 Seville→Madrid 定位，2/3 12:20 从 Madrid 返程；Madrid 不作为旅游城市，机场—市区交通走廊住宿候选仍为 Hotel Maydrit Airport。当前国航候选约 07:25 到达；若最终为中午到达，优先改晚车次或机场过夜。
 
 需要一步一步照着走时，打开[小时级执行版](hourly-guide.md)；本页保留交通比较、官方入口和换乘原则。
 
@@ -15,7 +15,7 @@
 ## 结论先行
 
 - **城市间默认选高速铁路**：三人同行、行李较多且希望节奏不赶时，铁路通常比“机场安检 + 航班 + 往返市区”更容易控制；价格差距明显时再比较长途巴士。
-- **Madrid 落地去 Barcelona 默认坐高铁**：国航联程只保护国际出票结构，不保护另买的火车/国内航班；入境、取行李、机场到 Atocha 都要单独算。只有在实际航班很早、二次机场的门到门时间和带行李价格明显优于铁路时，才切换飞机。
+- **Madrid 落地去 Barcelona 默认坐高铁**：国航联程只保护国际出票结构，不保护另买的火车/国内航班；入境、取行李、机场到 Atocha 都要单独算。只有预计落地至列车发车至少约 5 小时、车票可变更且行李/航站楼衔接已确认时才执行；否则机场过夜，次日再定位。
 - **返程固定提前一晚定位**：2/2 Seville→Madrid，住 MAD 机场—市区交通走廊；2/3 不从 Seville、Granada 或 Barcelona 临时跨城接国航国际段。
 - **Madrid→Seville、Madrid→Granada、Madrid→Barcelona** 都可以从机场转到市区车站后乘高铁；Madrid→Granada 另保留 ALSA 作为低价/深夜备选。
 - **Seville↔Granada** 是安达卢西亚内部最适合铁路与巴士二选一的一段；**Barcelona↔Seville** 有直达长途铁路，适合把两座远端城市连起来；**Granada↔Barcelona** 虽有铁路线路，但时间较长，应以实际时刻表决定是否改飞。
@@ -38,7 +38,7 @@ Renfe 当前路线页说明 Madrid–Barcelona 是 AVE/长途铁路线路，Barc
 
 ### 2. 2 月 2 日：Seville→Madrid 不是可选分支，而是返程安全节点
 
-上午只保留 Plaza de España 约 60–90 分钟的短线；如果实际车票在 13:00 前，连这段也删掉。退房后用少走路的正规出租车或已核对的公共交通到 Santa Justa，乘白天直达车去 Madrid，再住机场—市区交通走廊。当前 Hotel Maydrit Airport 靠近 El Capricho 地铁站，最终按航站楼核对地铁换乘或酒店接驳；住宿以“可取消、接驳清楚、含税价可见、三人床型明确”为排序，不默认住 Atocha 市中心。
+Plaza de España 只作为可选的 60–90 分钟短线：只有车票不早于 13:00、天气稳定、退房不被压缩且三人有余力时才走；否则直接删掉。退房后用少走路的正规出租车或已核对的公共交通到 Santa Justa，乘白天直达车去 Madrid，再住机场—市区交通走廊。当前 Hotel Maydrit Airport 靠近 El Capricho 地铁站，最终按航站楼核对地铁换乘或酒店接驳；住宿以“可取消、接驳清楚、含税价可见、三人床型明确”为排序，不默认住 Atocha 市中心。
 
 Renfe 当前 Seville–Madrid 路线页显示 Santa Justa 与 Madrid Puerta de Atocha 的长途铁路连接；当前首班/票价仅为页面快照，不能替代 2027 车票。[Renfe Seville–Madrid](https://www.renfe.com/es/en/inspirate/rutas/sevilla-madrid)
 
@@ -54,6 +54,10 @@ Renfe 的价格更像“库存阶梯”：日期、车次、剩余低价席位�
 | T-1～当天 | 只核对实时延误、站台、施工和接驳，不临时为了省钱改成夜间长途 | 票务系统可能仍能售票，但这不等于适合父母，也不等于有足够衔接缓冲 |
 
 对本行程的票种偏好：若价格差可接受，优先 Elige/带明确改签或退款附加项，并买三人相邻座位；Básico 只适用于行程已经稳定且能承受“错过就重买”的情况。Renfe 当前规则显示 Básico 的退款限制更严，而 Elige 通常有更好的改签/取消条件；具体权益必须在付款前看本车次结算页。[Renfe Básico](https://www.renfe.com/es/en/travel/prepare-your-trip/billetes-ave-y-largadistancia/basico) · [Renfe Elige](https://www.renfe.com/es/en/travel/prepare-your-trip/billetes-ave-y-largadistancia/elige) · [改签](https://www.renfe.com/es/en/ayuda/change-ticket) · [退票](https://www.renfe.com/es/en/ayuda/cancel-ticket)
+
+### 行李规则也要单独核对
+
+当前 Renfe 长途铁路的官方行李参考上限为每位旅客最多 3 件、合计不超过 25 kg，最大单件约 85×55×35 cm；这不是所有运营方的统一规则。D1 另需分别核对实际 Renfe/Avlo/ALSA 车次的行李条款、车厢行李位置和独立票退改条件；T-14 把三人行李件数与车次页面逐项对上，不能只看总票价。[Renfe 行李](https://www.renfe.com/es/en/travel/in-the-train/luggage)
 
 ### 三段车次安排（先定结构，后填车次）
 
@@ -166,10 +170,10 @@ Barcelona、Granada、Seville 的机场接驳、城市公交/地铁、步行坡�
 
 按“当地 1/26 抵达、Barcelona → Granada → Seville”的当前航班版，执行顺序如下；精确车次和票价不写死，避免把当前页面误当作 2027 年库存：
 
-1. **Madrid→Barcelona（1/26）：**当前国航候选约 07:25 到 Madrid；入境、取行李后，默认去 Atocha 乘高铁；只有满足约5小时地面缓冲才接当天车次。若实际为中午到达、国际航班晚到或行李异常，就改为 MAD 机场附近可取消住宿或 1/27 早上定位，不硬接。Madrid 不安排观光；若正常抵达 Barcelona 并入住，按 18:00 左右日落安排 Sants/住处附近短走。
+1. **Madrid→Barcelona（1/26）：**当前国航候选约 07:25 到 Madrid；入境、取行李后，只有预计落地至发车至少约 5 小时、车票可变更且行李/航站楼衔接确认，才去 Atocha 乘高铁。若实际为中午到达、国际航班晚到、行李异常或只剩不可变更车票，就改为 MAD 机场附近可取消住宿或 1/27 早上定位，不硬接。Madrid 不安排观光；若正常抵达 Barcelona 并入住，按 18:00 左右日落安排 Sants/住处附近短走。
 2. **Barcelona → Granada（1/29）：**这是全程较长的国内转场日，优先选择能保留上午休息和下午入住的 Renfe 组合；抵达 Granada 先入住，再做 Cathedral/Gran Vía 等平地中心短线，约 18:36 日落前后收尾，不叠加长坡 Citywalk。
 3. **Granada → Seville（1/31）：**查 Renfe 直达与 ALSA，三人带行李时把车站到酒店的短程接驳单列；抵达后优先入住和休息，再安排一个 60–90 分钟的 Plaza de España/玛丽亚·路易莎公园傍晚轴线，约 18:48 日落。
-4. **返程定位（2/2）：**Seville只保留Plaza de España短线，随后Santa Justa→Madrid Atocha→机场—市区交通走廊酒店；当前候选为 Hotel Maydrit Airport，2/3 不安排任何跨城交通后再接国航国际航班。到 Madrid 后先入住，若仍早只在机场走廊附近短走，不进入市中心追日落。
+4. **返程定位（2/2）：**先完成 Santa Justa→Madrid Atocha→机场—市区交通走廊酒店；只有车票不早于 13:00、天气稳定、退房不被压缩且三人有余力时，才加 Plaza de España 短线。当前候选为 Hotel Maydrit Airport，2/3 不安排任何跨城交通后再接国航国际航班。到 Madrid 后先入住，若仍早只在机场走廊附近短走，不进入市中心追日落。
 
 ### 小红书线索如何落地
 

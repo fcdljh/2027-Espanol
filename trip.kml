@@ -3,46 +3,41 @@
 <name>西班牙三城慢游｜建筑、历史与城市漫步</name>
 <Folder><name>Day 1 2027-01-26 — Madrid入境、定位Barcelona与入住恢复日</name>
 <Placemark><name>1. Madrid-Barajas Airport（入境节点）</name><Point><coordinates>-3.573373,40.495227,0</coordinates></Point></Placemark>
+<Placemark><name>2. Barcelona Sants（当天抵达分支）</name><Point><coordinates>2.140543,41.378414,0</coordinates></Point></Placemark>
+<Placemark><name>Day 1 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>-3.573373,40.495227,0 2.140543,41.378414,0</coordinates></LineString></Placemark>
 </Folder>
 <Folder><name>Day 2 2027-01-27 — Sagrada Família—Sant Pau现代主义轴线</name>
 <Placemark><name>1. Sagrada Família</name><Point><coordinates>2.174428,41.403505,0</coordinates></Point></Placemark>
 <Placemark><name>2. Sant Pau</name><Point><coordinates>2.175547,41.413976,0</coordinates></Point></Placemark>
 <Placemark><name>Day 2 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>2.174428,41.403505,0 2.175547,41.413976,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 3 2027-01-28 — Gothic/Born或Passeig de Gràcia</name>
+<Folder><name>Day 3 2027-01-28 — Gothic/Born主线＋Passeig外观</name>
 <Placemark><name>1. Casa Batlló</name><Point><coordinates>2.164696,41.391545,0</coordinates></Point></Placemark>
-<Placemark><name>2. La Pedrera</name><Point><coordinates>2.161762,41.395400,0</coordinates></Point></Placemark>
-<Placemark><name>3. Passeig de Gràcia</name><Point><coordinates>2.167757,41.390104,0</coordinates></Point></Placemark>
-<Placemark><name>Day 3 route</name><Style><LineStyle><color>ff00aa00</color><width>3</width></LineStyle></Style><LineString><coordinates>2.164696,41.391545,0 2.161762,41.395400,0 2.167757,41.390104,0</coordinates></LineString></Placemark>
+<Placemark><name>2. Passeig de Gràcia</name><Point><coordinates>2.167757,41.390104,0</coordinates></Point></Placemark>
+<Placemark><name>Day 3 route</name><Style><LineStyle><color>ff00aa00</color><width>3</width></LineStyle></Style><LineString><coordinates>2.164696,41.391545,0 2.167757,41.390104,0</coordinates></LineString></Placemark>
 </Folder>
 <Folder><name>Day 4 2027-01-29 — 长距离转场与中心平地短线</name>
 <Placemark><name>1. Barcelona departure</name><Point><coordinates>2.140543,41.378414,0</coordinates></Point></Placemark>
 <Placemark><name>2. Granada base</name><Point><coordinates>-3.597812,37.174346,0</coordinates></Point></Placemark>
-<Placemark><name>3. Granada Cathedral</name><Point><coordinates>-3.599214,37.176460,0</coordinates></Point></Placemark>
-<Placemark><name>Day 4 route</name><Style><LineStyle><color>ff00aaff</color><width>3</width></LineStyle></Style><LineString><coordinates>2.140543,41.378414,0 -3.597812,37.174346,0 -3.599214,37.176460,0</coordinates></LineString></Placemark>
+<Placemark><name>Day 4 route</name><Style><LineStyle><color>ff00aaff</color><width>3</width></LineStyle></Style><LineString><coordinates>2.140543,41.378414,0 -3.597812,37.174346,0</coordinates></LineString></Placemark>
 </Folder>
 <Folder><name>Day 5 2027-01-30 — Alhambra预约日</name>
 <Placemark><name>1. Alhambra</name><Point><coordinates>-3.588110,37.176055,0</coordinates></Point></Placemark>
-<Placemark><name>2. Nasrid Palaces</name><Point><coordinates>-3.588110,37.176055,0</coordinates></Point></Placemark>
-<Placemark><name>Day 5 route</name><Style><LineStyle><color>ffaa00aa</color><width>3</width></LineStyle></Style><LineString><coordinates>-3.588110,37.176055,0 -3.588110,37.176055,0</coordinates></LineString></Placemark>
 </Folder>
 <Folder><name>Day 6 2027-01-31 — 转场与Seville入住缓冲</name>
 <Placemark><name>1. Granada departure</name><Point><coordinates>-3.608628,37.183694,0</coordinates></Point></Placemark>
 <Placemark><name>2. Seville base</name><Point><coordinates>-5.982991,37.381102,0</coordinates></Point></Placemark>
-<Placemark><name>3. Plaza de España</name><Point><coordinates>-5.985650,37.376903,0</coordinates></Point></Placemark>
-<Placemark><name>Day 6 route</name><Style><LineStyle><color>ff777777</color><width>3</width></LineStyle></Style><LineString><coordinates>-3.608628,37.183694,0 -5.982991,37.381102,0 -5.985650,37.376903,0</coordinates></LineString></Placemark>
+<Placemark><name>Day 6 route</name><Style><LineStyle><color>ff777777</color><width>3</width></LineStyle></Style><LineString><coordinates>-3.608628,37.183694,0 -5.982991,37.381102,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 7 2027-02-01 — 王宫、主教座堂与Santa Cruz</name>
+<Folder><name>Day 7 2027-02-01 — 王宫与主教座堂；Santa Cruz可选</name>
 <Placemark><name>1. Real Alcázar</name><Point><coordinates>-5.990183,37.383210,0</coordinates></Point></Placemark>
 <Placemark><name>2. Cathedral and Giralda</name><Point><coordinates>-5.993141,37.385915,0</coordinates></Point></Placemark>
-<Placemark><name>3. Santa Cruz</name><Point><coordinates>-5.991630,37.386230,0</coordinates></Point></Placemark>
-<Placemark><name>Day 7 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.990183,37.383210,0 -5.993141,37.385915,0 -5.991630,37.386230,0</coordinates></LineString></Placemark>
+<Placemark><name>Day 7 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.990183,37.383210,0 -5.993141,37.385915,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 8 2027-02-02 — Seville短线、跨城定位与机场酒店</name>
-<Placemark><name>1. Plaza de España</name><Point><coordinates>-5.985650,37.376903,0</coordinates></Point></Placemark>
-<Placemark><name>2. Sevilla Santa Justa</name><Point><coordinates>-5.975206,37.392092,0</coordinates></Point></Placemark>
-<Placemark><name>3. Madrid Puerta de Atocha</name><Point><coordinates>-3.690019,40.405684,0</coordinates></Point></Placemark>
-<Placemark><name>Day 8 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.985650,37.376903,0 -5.975206,37.392092,0 -3.690019,40.405684,0</coordinates></LineString></Placemark>
+<Folder><name>Day 8 2027-02-02 — Seville短线（可删）→ Madrid机场定位</name>
+<Placemark><name>1. Sevilla Santa Justa</name><Point><coordinates>-5.975206,37.392092,0</coordinates></Point></Placemark>
+<Placemark><name>2. Madrid Puerta de Atocha</name><Point><coordinates>-3.690019,40.405684,0</coordinates></Point></Placemark>
+<Placemark><name>Day 8 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.975206,37.392092,0 -3.690019,40.405684,0</coordinates></LineString></Placemark>
 </Folder>
 <Folder><name>Day 9 2027-02-03 — 机场酒店→Madrid离境</name>
 <Placemark><name>1. Adolfo Suárez Madrid–Barajas Airport</name><Point><coordinates>-3.566764,40.493556,0</coordinates></Point></Placemark>
