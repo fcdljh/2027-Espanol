@@ -1,6 +1,6 @@
 # 景点与门票
 
-最后整理：2026-09-26。当前没有购买任何门票；以下是官方页面在当前日期可确认的规则和参考价，不代表 2027 年目标日期已经放票、有库存或沿用当前价格。
+最后整理：2026-10-11。当前没有购买任何门票；以下是官方页面在对应核验日期可确认的规则和参考价，不代表 2027 年目标日期已有库存或沿用当前价格。
 
 ## 预约优先级
 
@@ -13,6 +13,17 @@
 - 这是本行程最高优先级的预约锚点；票面时段前至少留 30–45 分钟给公交、找入口和证件检查。不要把“下雨可以改期”当成已确认政策。
 - 来源：[官方 General Day Visit](https://www.alhambra-patronato.es/en/visita/alhambra-y-generalife-visita-diurna-general)、[官方票务页](https://tickets.alhambra-patronato.es/en/producto/alhambra-general/)、[参观时段说明](https://www.alhambra-patronato.es/en/visit/organize-your-visit/time-of-the-visit)
 - `checked_at_hkt`: 2026-09-26T04:10:23+08:00；`evidence_status`: officially_verified（当前季节模式）；`decision_status`: candidate
+
+#### 2026-10-11 官方售票复核
+
+- `record_id`: `official-granada-alhambra-visit-20261011-01`
+- 官方当前页面仍显示 `Alhambra General` 参考价 **EUR 22.27**；官方价格页说明网页购买还会另加服务费。冬季（10 月 15 日–3 月 31 日）整座遗址开放 08:30–18:00；General 票包含 Nasrid Palaces、Partal、Alcazaba、Generalife，纳宫另有票面时间，其他区域在当天开放时段内参观。
+- 官方当前规则允许个人通过网站、指定 ATM 或电话提前购票，最迟到参观日前一天 23:59；现场售票只面向当天、且受库存限制，并且距离纳宫票面时间不足约两小时后不再作为稳妥方案。门票实名、需携带护照/身份证原件；General 票购买后不接受普通改期或退款。
+- 官方 FAQ 没有给出一个固定的 2027 开售日期或每日放票时刻；它明确说明机构预留但未使用的配额可能后续重新放回官网，因此某天暂时无票不等于永远无票，应定期查看官方售票页。
+- 若采用“1/26 从北京出发、1/27 抵达 Barcelona”的候选版，Alhambra 仍可排在 **2027-01-30（周六）**。这是路线候选日期，不是已售票记录；本次网页检索未把动态日历库存写成已确认事实。
+- **本项目建议：**先确认阿联酋航空实际出票、Granada 住宿和 1/29 Barcelona→Granada 交通；若官方日历已开放 2027-01-30 且有 3 张票，立即购买，纳宫优先选约 10:00–11:30 的上午时段。若当前仍未开放，设置每日/隔日检查；不要晚于 2026 年 11 月中旬才开始持续抢票，12 月中旬以后才买风险明显上升。该时间表是基于本项目固定日期和不可退票风险的规划建议，不是官方放票承诺。
+- 来源：[官方常见问题](https://www.alhambra-patronato.es/visitar/preguntas-frecuentes)、[官方开放时间与价格](https://www.alhambra-patronato.es/visitar/horarios-y-tarifas)、[官方 Alhambra General 票页](https://tickets.alhambra-patronato.es/en/producto/alhambra-general/)、[官方动态购票入口](https://compratickets.alhambra-patronato.es/reservarEntradas.aspx?ca=0&gid=432&lg=en-GB&m=GENERAL&opc=142)
+- `checked_at_hkt`: 2026-10-11T02:48:51+08:00；`evidence_status`: officially_verified（当前售票规则/冬季时段/参考价）；`decision_status`: candidate；`availability`: unverified
 
 ### 2. Barcelona — Sagrada Família
 
@@ -59,7 +70,7 @@
 
 ## 购票与复核节奏
 
-1. 城市顺序和实际游览日确定后，先看 Alhambra 官方票务，再看 Sagrada Família 约两个月的放票窗口。
+1. 城市顺序和实际游览日确定后，先看 Alhambra 官方票务；当前候选日期为 2027-01-30，先锁定纳宫时段，再看 Sagrada Família 约两个月的放票窗口。
 2. T-30 复核 Alcázar、Cathedral、Sagrada、Park Güell、Casa Batlló、La Pedrera、Sant Pau 的日期、票价、最后入场和活动冲突。
 3. T-14 复核宗教活动、临时闭馆、冬季营业模式、雨天替代和景点容量。
 4. T-1/当天早晨只做官方运营与天气复核；本轮不购买门票。

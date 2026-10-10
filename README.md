@@ -24,7 +24,7 @@
 | 机票 | 用户已选阿联酋航空北京→Dubai→Barcelona往返；具体航班、时间、价格、北京机场、Dubai停留和行李未提供，未出票 | [机票比较](trip/flights.md)、[票价历史快照](research/flights/fare-snapshots.csv) |
 | 住宿 | 四段住宿按新日期重排：Barcelona首段3晚、Granada 2晚、Seville 2晚、Barcelona返程定位1晚；1659522/Gamboa/Giralda仍是候选，返程夜单独重查 | [住宿比较](trip/accommodation.md)、[房价快照表](research/accommodation/rate-snapshots.csv) |
 | 签证 | 申请地点计划为北京两人、香港一人；香港领区资格待核实 | [签证与入境](trip/visa-and-entry.md) |
-| 景点 | Alhambra、Sagrada Família、Seville Alcázar 需按日期复核预约；尚无已购门票记录 | [景点与门票](trip/attractions-and-tickets.md) |
+| 景点 | Alhambra 官方售票规则已于 2026-10-11 复核；若采用 1/26 北京出发候选版，目标游览日仍为 1/30，动态库存未核实；尚无已购门票记录 | [景点与门票](trip/attractions-and-tickets.md) |
 | 小红书研究 | 三城主配额已完整阅读 180/180 篇，另有 2 篇部分阅读；新增 1–2 月冬季专项 18 条城市记录（每城 6 条，不计入主配额）；另完成马德里中转补充 10 篇，并追加 1 条西班牙高铁价格/舒适度交叉验证；2026-09-27 用 Safari 补读圣家堂穿着/拍照合规、5 条超市/伴手礼和 3+3 条签证/行前准备笔记，已分别回写 D2、行李 UI、超市现场卡与签证/行李 checklist；又结合用户既有欧洲经验新增 T-30–T-7 提前采购、到货验收和替代方案时间线；交通、票务、住宿与路线冲突已写回逐篇记录，2027 具体班次/价格/房价/库存仍需定日期后复核；地图研究台现可浏览三城合计 201 条索引 | [研究总索引](research/xhs/README.md)、[签证与行前准备双查](research/xhs/pre-departure-cross-check.md)、[超市伴手礼补充](research/xhs/supermarket-snacks.md)、[马德里中转补充](research/xhs/madrid-transit.md)、[推荐交叉审计](research/xhs/recommendation-cross-check.md) |
 | 三城地图 | 在现有中文地图组件上扩展了 16 个本次行程规划点位/路线，并把研究台优化为“资料总览 → 资料工作台 → 详细记录”的工作区：默认先看按用途分组的日程、住宿、餐饮与灵感入口，再进入搜索/分类；当前城市范围会同步更新资料数量与下一步核对事项。每日攻略按“城市 → 日期”组织酒店、景点、交通、餐饮、雨天与晚到删减规则。住宿默认严格排除 CNY 1,500/晚以上和硬条件不合格记录，官方资料与规划候选分层显示 | [地图查看器](research/city-maps/city-atlas.html)、[地图说明](research/city-maps/README.md)、[可编辑计划](plan.geo.json)、[KML](trip.kml)、[日历](gates.ics) |
 | 预算与冲突 | 国际机票按用户要求暂不计入当前预算；住宿组合按 Barcelona `1659522`（3晚）+ Granada Gamboa（2晚）+ Seville Giralda（2晚）+ Barcelona返程定位（1晚）重排；真实日期价格、取消政策、床型和三段城际交通仍需复核 | [预算与冲突](trip/budget-and-conflicts.md)、[餐饮策略](trip/dining.md) |
