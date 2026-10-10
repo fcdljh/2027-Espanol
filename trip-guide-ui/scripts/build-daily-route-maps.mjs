@@ -33,17 +33,17 @@ const routeCache = new Map();
 const MAP_SPECS = [
   {
     date: "2027-01-26",
-    slug: "d01-madrid-airport",
-    description: "交通日：只定位 Madrid 机场到车站/住宿的方向，不虚构市内观光线。",
+    slug: "d01-barcelona-arrival",
+    description: "抵达日：只定位 Barcelona 机场到住宿的方向，不安排城市观光线。",
     panels: [
       {
-        title: "Madrid · 机场—车站定位",
+        title: "Barcelona · 机场—住宿定位",
         zoom: 12,
         routeMode: "transfer",
-        points: ["Madrid-Barajas Airport（入境节点）", "Madrid Puerta de Atocha"],
+        points: ["Barcelona–El Prat Airport（入境节点）", "Barcelona Sants（住宿交通节点）"],
         labels: {
-          "Madrid-Barajas Airport（入境节点）": "MAD 机场",
-          "Madrid Puerta de Atocha": "Atocha 车站"
+          "Barcelona–El Prat Airport（入境节点）": "BCN 机场",
+          "Barcelona Sants（住宿交通节点）": "Sants / 住宿方向"
         }
       }
     ]
@@ -70,9 +70,9 @@ const MAP_SPECS = [
       {
         title: "Barcelona · Eixample 街区",
         zoom: 15,
-        points: ["Casa Batlló", "La Pedrera", "Passeig de Gràcia"],
-        photo_spot_ids: ["casa-batllo-corner", "la-pedrera-corner", "passeig-gracia-axis"],
-        labels: { "Casa Batlló": "巴特罗之家", "La Pedrera": "米拉之家", "Passeig de Gràcia": "格拉西亚大道" }
+        points: ["Casa Batlló", "Passeig de Gràcia"],
+        photo_spot_ids: ["casa-batllo-corner", "passeig-gracia-axis"],
+        labels: { "Casa Batlló": "巴特罗之家", "Passeig de Gràcia": "格拉西亚大道" }
       }
     ]
   },
@@ -88,10 +88,10 @@ const MAP_SPECS = [
         labels: { "Barcelona departure": "Barcelona Sants" }
       },
       {
-        title: "Granada · 中心平地短线",
+        title: "Granada · 到站定位",
         zoom: 15,
-        points: ["Granada base", "Granada Cathedral"],
-        labels: { "Granada base": "住处", "Granada Cathedral": "大教堂" }
+        points: ["Granada base"],
+        labels: { "Granada base": "Granada 住宿方向" }
       }
     ]
   },
@@ -103,29 +103,23 @@ const MAP_SPECS = [
       {
         title: "Granada · Alhambra 山坡",
         zoom: 15,
-        points: ["Granada base", "Alhambra", "Nasrid Palaces"],
-        photo_spot_ids: ["generalife-window", "alhambra-pattern"],
-        labels: { "Granada base": "住处 / 城区", Alhambra: "Alhambra", "Nasrid Palaces": "Nasrid 宫" }
+        points: ["Alhambra"],
+        photo_spot_ids: ["generalife-window"],
+        labels: { Alhambra: "Alhambra" }
       }
     ]
   },
   {
     date: "2027-01-31",
     slug: "d06-granada-seville",
-    description: "跨城日：左图是 Granada 车站定位，右图是 Seville 住处到 Plaza de España 的入住后短线。",
+    description: "跨城日：Granada 车站到 Seville 住宿的定位方向；抵达后短线按现场时间决定。",
     panels: [
       {
-        title: "Granada · 车站出发",
-        zoom: 15,
-        points: ["Granada departure"],
-        labels: { "Granada departure": "Granada 车站" }
-      },
-      {
-        title: "Seville · 入住后短线",
-        zoom: 15,
-        points: ["Seville base", "Plaza de España"],
-        photo_spot_ids: ["plaza-arcade"],
-        labels: { "Seville base": "住处", "Plaza de España": "西班牙广场" }
+        title: "Granada → Seville · 跨城定位",
+        zoom: 9,
+        routeMode: "transfer",
+        points: ["Granada departure", "Seville base"],
+        labels: { "Granada departure": "Granada 车站", "Seville base": "Seville 住宿方向" }
       }
     ]
   },
@@ -137,42 +131,36 @@ const MAP_SPECS = [
       {
         title: "Seville · 老城核心",
         zoom: 15,
-        points: ["Real Alcázar", "Cathedral and Giralda", "Santa Cruz"],
-        photo_spot_ids: ["alcazar-garden", "orange-court", "santa-cruz-lane"],
-        labels: { "Real Alcázar": "王宫", "Cathedral and Giralda": "主教座堂", "Santa Cruz": "Santa Cruz" }
+        points: ["Real Alcázar", "Cathedral and Giralda"],
+        photo_spot_ids: ["alcazar-garden", "orange-court"],
+        labels: { "Real Alcázar": "王宫", "Cathedral and Giralda": "主教座堂" }
       }
     ]
   },
   {
     date: "2027-02-02",
-    slug: "d08-seville-madrid",
-    description: "跨城日：左图看 Seville 住处/西班牙广场到 Santa Justa 的出发方向，右图定位 Madrid Atocha 到机场走廊。",
+    slug: "d08-seville-barcelona",
+    description: "返程缓冲日：Sevilla Santa Justa → Barcelona Sants，抵达后只做住宿和机场路线确认。",
     panels: [
       {
         title: "Seville · 车站出发",
-        zoom: 14,
-        points: ["Plaza de España", "Sevilla Santa Justa"],
-        photo_spot_ids: ["plaza-arcade"],
-        labels: { "Plaza de España": "西班牙广场", "Sevilla Santa Justa": "Santa Justa 车站" }
+        zoom: 8,
+        points: ["Sevilla Santa Justa", "Barcelona Sants（返程定位）"],
+        labels: { "Sevilla Santa Justa": "Santa Justa 车站", "Barcelona Sants（返程定位）": "Barcelona Sants" }
       },
-      {
-        title: "Madrid · Atocha 到机场方向",
-        zoom: 14,
-        points: ["Madrid Puerta de Atocha"],
-        labels: { "Madrid Puerta de Atocha": "Atocha 车站" }
-      }
+
     ]
   },
   {
     date: "2027-02-03",
-    slug: "d09-madrid-airport",
-    description: "离境日：只看机场在 Madrid 东北侧的位置和前往航站楼的方向，不安排临时观光。",
+    slug: "d09-barcelona-airport",
+    description: "离境日：只定位 Barcelona 住宿到机场的方向，不安排临时观光。",
     panels: [
       {
-        title: "Madrid · 离境机场定位",
+        title: "Barcelona · 离境机场定位",
         zoom: 14,
-        points: ["Adolfo Suárez Madrid–Barajas Airport"],
-        labels: { "Adolfo Suárez Madrid–Barajas Airport": "MAD 机场" }
+        points: ["Barcelona–El Prat Airport（离境节点）"],
+        labels: { "Barcelona–El Prat Airport（离境节点）": "BCN 机场" }
       }
     ]
   }

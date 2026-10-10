@@ -115,7 +115,6 @@ const CITY_NAMES: Record<string, { zh: string; en: string }> = {
   Barcelona: { zh: "巴塞罗那", en: "Barcelona" },
   Granada: { zh: "格拉纳达", en: "Granada" },
   Seville: { zh: "塞维利亚", en: "Seville" },
-  Madrid: { zh: "马德里", en: "Madrid" },
 };
 
 const KIND_LABELS: Record<string, string> = {
@@ -136,7 +135,7 @@ const FALLBACK_DAYS: GuideDay[] = [
     city: "巴塞罗那",
     cityEn: "Barcelona",
     label: "抵达与入住缓冲",
-    ribbon: "入境取行李 → 定位至 Barcelona → 入住 → 附近补给",
+    ribbon: "BCN入境取行李 → 机场接驳 → 入住 → 附近补给",
     rainAlt: "大雨或晚到时只执行入住、买水和附近简餐。",
     lateCut: "延误时不硬接同日城际车，删除当天所有景点。",
     walking: "机场/车站与住宿附近短距离",
@@ -144,7 +143,7 @@ const FALLBACK_DAYS: GuideDay[] = [
     dayNumber: 1,
     items: [
       fallbackItem("落地–H+1:30", "入境、取行李、确认航站楼和三人行李", "arrival", "不要在到达层临时分散。"),
-      fallbackItem("H+1:30–H+2:00", "决定是否执行当天定位交通", "check", "晚到就顺延，不强接下一段。"),
+      fallbackItem("H+1:30–H+2:15", "从 BCN 机场前往 Barcelona 住宿", "hop", "晚到就删除散步和远距离用餐。"),
       fallbackItem("H+3:00–H+5:00", "入住或寄存行李，确认门禁和暖气", "lodging", ""),
     ],
   },
@@ -155,8 +154,8 @@ const FALLBACK_DAYS: GuideDay[] = [
     ["2027-01-30", "格拉纳达", "Granada", "Alhambra 纳斯里德宫", "08:15", "到 Alhambra 后找入口，票面时间前留缓冲", "check"],
     ["2027-01-31", "格拉纳达", "Granada", "Granada → Seville", "08:15", "去铁路站或 Bus Station，车票站名优先", "hop"],
     ["2027-02-01", "塞维利亚", "Seville", "阿尔卡萨宫 · 主教堂 · Santa Cruz", "08:30", "步行或按 T1 接近老城，找正确入口队列", "hop"],
-    ["2027-02-02", "塞维利亚", "Seville", "Plaza de España · Arenal · Triana", "09:15", "先看风雨和能见度，再决定户外线", "check"],
-    ["2027-02-03", "塞维利亚", "Seville", "返程机场 / Madrid 起飞", "起飞前约 5 小时", "退房并按机场和航站楼倒推离开时间", "check"],
+    ["2027-02-02", "塞维利亚→巴塞罗那", "Seville", "Santa Justa → Barcelona Sants返程定位", "白天车次", "先完成返程住宿和机场路线确认，不安排观光", "hop"],
+    ["2027-02-03", "巴塞罗那", "Barcelona", "BCN机场返程", "起飞前约 4–5 小时", "退房并按机场航站楼倒推离开时间", "check"],
   ].map(([date, city, cityEn, label, time, title, kind], index) => makeFallbackDay({
     date,
     city,
@@ -429,7 +428,7 @@ function TodayView({ day, doneSet, progress, onChooseItem, onToggleCompleted, on
   return (
     <>
       <section className="route-preview" aria-label="西班牙路线图">
-        <img src="./assets/trip/route-map.png" alt="Barcelona、Granada、Seville 与 Madrid 路线图" />
+        <img src="./assets/trip/route-map.png" alt="Barcelona、Granada、Seville 往返路线图" />
         <div className="route-preview-caption"><span><GlobeIcon aria-hidden="true" /> {day.cityEn}</span><button type="button" onClick={onOpenCurrent}>看当前路线 <ChevronRightIcon aria-hidden="true" /></button></div>
       </section>
       <section className="day-heading-block"><div><p className="eyebrow">DAY {day.dayNumber} · {day.cityEn.toUpperCase()}</p><h2>{formatDate(day.date).month}{formatDate(day.date).day} <small>{formatDate(day.date).weekday}</small></h2><p className="day-heading-subtitle">{day.label}</p></div><div className="day-heading-pin"><SewingPinFilledIcon aria-hidden="true" /><span>{day.city}</span></div></section>

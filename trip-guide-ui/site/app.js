@@ -58,75 +58,40 @@ const tagLabels = {
 
 const NAVIGATION_OVERRIDES = {
   "2027-01-26": {
-    0: { stop: "Madrid-Barajas Airport（入境机场）", mode: "transit" },
-    1: { stop: "Madrid-Barajas Airport（入境机场）", mode: "transit" },
-    2: { label: "Madrid Puerta de Atocha 火车站", query: "Madrid Puerta de Atocha railway station, Madrid, Spain", mode: "transit" },
-    5: { label: "圣家堂", query: "Basílica de la Sagrada Família, Barcelona, Spain", mode: "walking" }
+    0: { stop: "Barcelona–El Prat Airport（入境节点）", mode: "transit" },
+    1: { stop: "Barcelona Sants（住宿交通节点）", mode: "transit" },
+    2: { stop: "Barcelona Sants（住宿交通节点）", mode: "transit" }
   },
   "2027-01-27": {
     1: { stop: "Sagrada Família", mode: "walking" },
-    2: { stop: "Sagrada Família", mode: "walking" },
-    3: { stop: "Sagrada Família", mode: "walking" },
-    4: { stop: "Sant Pau", mode: "walking" },
-    5: { stop: "Sant Pau", mode: "walking" },
-    8: { stop: "Sagrada Família", mode: "walking" },
-    9: { label: "Eixample", query: "Eixample, Barcelona, Spain", mode: "walking" }
+    2: { stop: "Sant Pau", mode: "walking" }
   },
   "2027-01-28": {
     1: { stop: "Passeig de Gràcia", mode: "walking" },
-    2: { stop: "Casa Batlló", mode: "walking" },
-    3: { stop: "La Pedrera", mode: "walking" },
-    4: { stop: "La Pedrera", mode: "walking" },
-    7: { stop: "Passeig de Gràcia", mode: "walking" },
-    8: { label: "Arc de Triomf", query: "Arc de Triomf, Barcelona, Spain", mode: "walking" },
-    9: { label: "Parc de la Ciutadella", query: "Parc de la Ciutadella, Barcelona, Spain", mode: "walking" }
+    2: { stop: "Casa Batlló", mode: "walking" }
   },
   "2027-01-29": {
     1: { stop: "Barcelona departure", mode: "transit" },
-    2: { stop: "Barcelona departure", mode: "transit" },
-    4: { stop: "Granada Cathedral", mode: "walking" },
-    5: { stop: "Granada base", mode: "walking" },
-    6: { stop: "Granada Cathedral", mode: "walking" },
-    7: { label: "Gran Vía de Colón", query: "Gran Vía de Colón, Granada, Spain", mode: "walking" }
+    5: { stop: "Granada base", mode: "walking" }
   },
   "2027-01-30": {
     2: { stop: "Alhambra", mode: "transit" },
-    3: { stop: "Alhambra", mode: "walking" },
-    4: { stop: "Nasrid Palaces", mode: "walking" },
-    5: { stop: "Alhambra", mode: "walking" },
-    7: { label: "Generalife", query: "Generalife, Granada, Spain", mode: "walking" },
-    8: { stop: "Nasrid Palaces", mode: "walking" },
-    11: { label: "Gran Vía de Colón", query: "Gran Vía de Colón, Granada, Spain", mode: "walking" }
+    3: { stop: "Alhambra", mode: "walking" }
   },
   "2027-01-31": {
     1: { stop: "Granada departure", mode: "transit" },
-    2: { stop: "Granada departure", mode: "transit" },
-    3: { stop: "Seville base", mode: "walking" },
-    4: { stop: "Seville base", mode: "walking" },
-    5: { stop: "Plaza de España", mode: "walking" },
-    6: { stop: "Plaza de España", mode: "walking" }
+    3: { stop: "Seville base", mode: "walking" }
   },
   "2027-02-01": {
     1: { stop: "Real Alcázar", mode: "walking" },
-    2: { stop: "Real Alcázar", mode: "walking" },
-    3: { stop: "Cathedral and Giralda", mode: "walking" },
-    4: { stop: "Cathedral and Giralda", mode: "walking" },
-    5: { stop: "Santa Cruz", mode: "walking" },
-    6: { stop: "Cathedral and Giralda", mode: "walking" },
-    8: { stop: "Santa Cruz", mode: "walking" },
-    9: { stop: "Santa Cruz", mode: "walking" },
-    10: { stop: "Seville base", mode: "walking" },
-    12: { stop: "Seville base", mode: "walking" }
+    3: { stop: "Cathedral and Giralda", mode: "walking" }
   },
   "2027-02-02": {
-    1: { stop: "Plaza de España", mode: "walking" },
-    2: { stop: "Seville base", mode: "walking" },
-    4: { stop: "Sevilla Santa Justa", mode: "transit" },
-    5: { stop: "Sevilla Santa Justa", mode: "transit" },
-    6: { stop: "Madrid Puerta de Atocha", mode: "transit" }
+    1: { stop: "Sevilla Santa Justa", mode: "transit" },
+    2: { stop: "Barcelona Sants（返程定位）", mode: "train" }
   },
   "2027-02-03": {
-    2: { stop: "Adolfo Suárez Madrid–Barajas Airport", mode: "transit" }
+    1: { stop: "Barcelona–El Prat Airport（离境节点）", mode: "transit" }
   }
 };
 
@@ -138,49 +103,43 @@ const TRAVEL_MODES = [
 
 const DAILY_MAPS = {
   "2027-01-26": {
-    description: "先看 Madrid 机场、Atocha 车站和市中心的相对位置；今天只处理入境和交通，不安排额外观光。",
-    panels: [{ src: "./assets/trip/daily-maps/d01-madrid-airport-1.jpg", title: "Madrid · 机场—车站定位", alt: "Madrid 机场到 Atocha 车站的城市定位图" }]
+    description: "抵达日只定位 Barcelona 机场到住宿的方向；先入境、取行李和入住，不安排城市观光。",
+    panels: [{ src: "./assets/trip/daily-maps/d01-barcelona-arrival-1.jpg", title: "Barcelona · 机场—住宿定位", alt: "Barcelona 机场到 Sants/住宿方向的定位图" }]
   },
   "2027-01-27": {
-    description: "今天在 Barcelona 北侧的现代主义轴线上走：圣家堂向北到 Sant Pau，Avinguda Gaudí 是中间的街巷关系。",
+    description: "Barcelona 北侧现代主义轴线：圣家堂 → Avinguda Gaudí → Sant Pau。",
     panels: [{ src: "./assets/trip/daily-maps/d02-barcelona-modernisme-1.jpg", title: "Barcelona · 现代主义轴线", alt: "Barcelona 圣家堂到 Sant Pau 的街巷路线图" }]
   },
   "2027-01-28": {
-    description: "今天集中在 Eixample：巴特罗之家、米拉之家和格拉西亚大道彼此很近，按街区顺序走，不需要来回穿城。",
-    panels: [{ src: "./assets/trip/daily-maps/d03-barcelona-eixample-1.jpg", title: "Barcelona · Eixample 街区", alt: "Barcelona Eixample 巴特罗之家、米拉之家与格拉西亚大道路线图" }]
+    description: "Barcelona Eixample 与 Passeig de Gràcia；付费高迪建筑最多选择一座。",
+    panels: [{ src: "./assets/trip/daily-maps/d03-barcelona-eixample-1.jpg", title: "Barcelona · Eixample 街区", alt: "Barcelona 巴特罗之家与格拉西亚大道路线图" }]
   },
   "2027-01-29": {
-    description: "跨城日分成两张局部图：左边确认 Barcelona Sants 出发位置，右边看 Granada 住处到大教堂的入住后短线。",
+    description: "跨城日分成两张局部图：Barcelona Sants 出发定位，以及 Granada 住宿方向；抵达后只做平地短线。",
     panels: [
-      { src: "./assets/trip/daily-maps/d04-barcelona-granada-1.jpg", title: "Barcelona · Sants 出发", alt: "Barcelona Sants 车站城市定位图" },
-      { src: "./assets/trip/daily-maps/d04-barcelona-granada-2.jpg", title: "Granada · 中心短线", alt: "Granada 住处到大教堂的街巷路线图" }
+      { src: "./assets/trip/daily-maps/d04-barcelona-granada-1.jpg", title: "Barcelona · Sants 出发", alt: "Barcelona Sants 车站定位图" },
+      { src: "./assets/trip/daily-maps/d04-barcelona-granada-2.jpg", title: "Granada · 到站定位", alt: "Granada 住宿方向定位图" }
     ]
   },
   "2027-01-30": {
-    description: "Granada 的 Alhambra 在老城东南侧、山坡上；先用这张图理解城区与景区的相对位置，再按预约入口行动。",
-    panels: [{ src: "./assets/trip/daily-maps/d05-granada-alhambra-1.jpg", title: "Granada · Alhambra 山坡", alt: "Granada 城区到 Alhambra 的街巷定位路线图" }]
+    description: "Granada 的 Alhambra 山坡定位；按预约入口行动，Nasrid之后其余区域按体力取舍。",
+    panels: [{ src: "./assets/trip/daily-maps/d05-granada-alhambra-1.jpg", title: "Granada · Alhambra 山坡", alt: "Granada Alhambra 定位路线图" }]
   },
   "2027-01-31": {
-    description: "跨城日分成两张局部图：左边是 Granada 车站，右边是入住 Seville 后从住处到西班牙广场的短线。",
-    panels: [
-      { src: "./assets/trip/daily-maps/d06-granada-seville-1.jpg", title: "Granada · 车站出发", alt: "Granada 车站城市定位图" },
-      { src: "./assets/trip/daily-maps/d06-granada-seville-2.jpg", title: "Seville · 入住后短线", alt: "Seville 住处到西班牙广场的街巷路线图" }
-    ]
+    description: "跨城日只显示 Granada 车站到 Seville 住宿方向；入住后短线按现场时间决定。",
+    panels: [{ src: "./assets/trip/daily-maps/d06-granada-seville-1.jpg", title: "Granada → Seville · 跨城定位", alt: "Granada 到 Seville 的跨城定位图" }]
   },
   "2027-02-01": {
-    description: "今天把 Seville 老城南侧看成一个连续街区：王宫、主教座堂和 Santa Cruz 之间适合步行串联。",
-    panels: [{ src: "./assets/trip/daily-maps/d07-seville-old-town-1.jpg", title: "Seville · 老城核心", alt: "Seville 王宫、主教座堂与 Santa Cruz 的街巷路线图" }]
+    description: "Seville 老城核心：王宫 → 主教座堂；Santa Cruz为可删延伸。",
+    panels: [{ src: "./assets/trip/daily-maps/d07-seville-old-town-1.jpg", title: "Seville · 老城核心", alt: "Seville 王宫与主教座堂的街巷路线图" }]
   },
   "2027-02-02": {
-    description: "跨城日分成两张出发定位图：左边看 Seville 西班牙广场到 Santa Justa 的方向，右边看 Madrid Atocha 所在城区。",
-    panels: [
-      { src: "./assets/trip/daily-maps/d08-seville-madrid-1.jpg", title: "Seville · 车站出发", alt: "Seville 西班牙广场到 Santa Justa 车站的定位路线图" },
-      { src: "./assets/trip/daily-maps/d08-seville-madrid-2.jpg", title: "Madrid · Atocha 定位", alt: "Madrid Atocha 车站城区定位图" }
-    ]
+    description: "返程缓冲日：Sevilla Santa Justa → Barcelona Sants；抵达后只做住宿和机场路线确认。",
+    panels: [{ src: "./assets/trip/daily-maps/d08-seville-barcelona-1.jpg", title: "Seville → Barcelona · 返程定位", alt: "Sevilla Santa Justa 到 Barcelona Sants 的返程定位图" }]
   },
   "2027-02-03": {
-    description: "离境日只确认 Madrid 机场在城市东北侧的位置和前往航站楼的方向，不临时安排观光。",
-    panels: [{ src: "./assets/trip/daily-maps/d09-madrid-airport-1.jpg", title: "Madrid · 离境机场定位", alt: "Madrid 市区到机场的离境定位图" }]
+    description: "离境日只定位 Barcelona 住宿到 BCN 机场的方向，不安排临时观光。",
+    panels: [{ src: "./assets/trip/daily-maps/d09-barcelona-airport-1.jpg", title: "Barcelona · 离境机场定位", alt: "Barcelona 住宿到机场的离境定位图" }]
   }
 };
 
@@ -439,7 +398,6 @@ function cityDisplay(day) {
 function shortCityDisplay(day) {
   const city = cityDisplay(day);
   return city
-    .replaceAll("Madrid", "马德里")
     .replaceAll("Barcelona", "巴塞")
     .replaceAll("Granada", "格拉纳达")
     .replaceAll("Seville", "塞维利亚")

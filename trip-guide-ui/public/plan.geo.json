@@ -13,27 +13,27 @@
   ],
   "pace": 2,
   "budget": "机票每人目标不超过 RMB 4500 或 HKD 5000；住宿硬约束优先",
-  "notes": "往返日期已锁定：2027-01-25 亚洲出发、2027-02-03 从 Madrid 离境；不因景点覆盖不足自动改日期。国航去程香港/北京经北京抵达 Madrid，返程 Madrid/北京/香港，行李直挂以最终行李条为准。Madrid 不观光；2/2 住机场—市区交通走廊。固定8晚为 Barcelona 3 + Granada 2 + Seville 2 + Madrid 1；任何增加夜数或改变日期都需用户另行确认。国际机票单独监测，不计入本阶段旅行预算。"
+  "notes": "往返日期仍按 2027-01-25 亚洲出发、2027-02-03 从 Barcelona 离境排演；本轮用户确认统一采用阿联酋航空北京—Barcelona 往返结构，三人均从北京集合出发。具体北京机场、航班号、迪拜停留、当地时刻、票价和行李以出票页为准。全程不安排 Madrid；固定8晚为 Barcelona 3 + Granada 2 + Seville 2 + Barcelona返程定位1。香港旅客赴北京及返程后北京→香港的定位交通另行核实，不写入西班牙日程。"
  },
  "meta": {
   "dates": "2027-01-25 → 2027-02-03",
-  "party": "3 adults: parents around 50 + adult son; HKG 1, PEK 2",
-  "route": "Madrid入境 → Barcelona → Granada → Seville → Madrid机场—市区交通走廊过夜 → Madrid离境",
-  "budget_total": "当前住宿候选：Barcelona Airbnb 1659522（3晚）+ Granada Sercotel Palacio de Los Gamboa（2晚）+ Seville Hotel Giralda Center（2晚）+ Madrid Hotel Maydrit Airport（1晚）；旧 CNY 9092/8晚快照已退休，需按新夜数与最终结算页重算；国际机票明确不计入本阶段预算。Barcelona旅游税、Giralda最终取消政策和Maydrit接驳仍需复核。",
+  "party": "3 adults: parents around 50 + adult son; all Spain international sectors planned from Beijing; one traveller positions from Hong Kong",
+  "route": "Barcelona → Granada → Seville → Barcelona；全程不安排 Madrid",
+  "budget_total": "当前住宿候选：Barcelona Airbnb 1659522（首段3晚）+ Granada Sercotel Palacio de Los Gamboa（2晚）+ Seville Hotel Giralda Center（2晚）+ Barcelona返程定位住宿（2/2–2/3，待重查）；旧 CNY 9092/8晚快照不再适用，需按拆分后的真实日期与最终结算页重算；国际机票明确不计入本阶段预算。Barcelona两段住宿、旅游税、Giralda最终取消政策和三段城际交通仍需复核。",
   "fx": "不把 CNY、HKD、EUR 强行换算；各记录保留原币并带查询日期",
-  "generated": "2026-09-29",
-  "self_check": "self-checked: 7 issues found and fixed — added a hard D1 positioning cutoff and Barcelona arrival stop, made Alhambra and Seville days core-plus-optional, marked D8 as a travel day and removed its optional Plaza map stop, demoted unverified meal candidates, aligned rail baggage wording, and synchronized downstream plan data"
+  "generated": "2026-10-11",
+  "self_check": "self-checked: 9 issues found and fixed — replaced Madrid entry/exit with the user-selected Beijing–Barcelona Emirates structure, added a Barcelona return-buffer night, rebuilt D1/D8/D9, removed Madrid lodging and transfer dependencies, updated accommodation date splits, and synchronized downstream plan data"
  },
  "decisions": [
-  "往返日历已锁定：2027-01-25 出发、2027-02-03 从 Madrid 离境；不因景点覆盖不足改日期或夜数。若最终出票时刻不同，只调整当天交通、入住和可删模块，不自动平移城市日期；任何增加夜数都需另行确认。",
-  "当前固定分配为 8 晚 Barcelona 3 + Granada 2 + Seville 2 + Madrid 1；到达日不算完整游玩、跨城日先行李/入住/补给/休息、离境日零观光。覆盖不足时按景点优先级删减，不用加速暴走补点。",
-  "Madrid→Barcelona 默认选择市中心高铁；只有计划发车时间距预计落地至少约5小时、车票可改签/可退且行李与门到门衔接成立时才执行当天定位。任何一项不成立，就住Madrid机场附近，次日再走。",
-  "返程从 Madrid：2027-02-02 完成 Seville→Madrid，住机场—市区交通走廊，当前候选为 Hotel Maydrit Airport；2027-02-03 不安排任何跨城交通，只做机场值机和国航联程返程。",
+  "往返日历仍按 2027-01-25 北京出发、2027-02-03 从 Barcelona 离境排演；不因景点覆盖不足改日期或增加夜数。若阿联酋航空最终当地时刻不同，只调整当日入住、机场接驳和可删模块，不自动平移城市日期。",
+  "当前固定分配为 8 晚 Barcelona 3 + Granada 2 + Seville 2 + Barcelona返程定位1；到达日不算完整游玩，跨城日先行李/入住/补给/休息，离境日零观光。覆盖不足时按景点优先级删减，不用加速暴走补点。",
+  "国际段按用户确认采用阿联酋航空北京→迪拜→Barcelona往返；在具体出票页确认同票、北京机场、迪拜停留、当地时刻、票规和每段行李前，不把航班时间写成已核实事实。",
+  "返程安全节点改为 2027-02-02 完成 Seville→Barcelona，住 Barcelona 机场/Barcelona Sants 交通便利区域；2027-02-03 不安排任何城际交通，只做 Barcelona 机场值机和阿联酋航空返程。",
   "Renfe动态价格按日期、车次、余票和票种形成阶梯；T-14至T-7为三人购票决策窗，优先官方直接购买、可改签/可退票种和相邻座位，不把当前快照当作2027报价。",
   "Alhambra 是第一预约锚点，Sagrada Família 是 Barcelona 必看；Barcelona 基础版不购买第二座高迪室内建筑，若愿意付费且需要讲解只在 Casa Batlló 与 La Pedrera 中选一座，默认优先含音频的 Casa Batlló。Alhambra 以 Nasrid 为核心、其余区域按体力择一；Seville 以 Alcázar 和 Cathedral 为核心，Giralda 登塔、Santa Cruz 延伸和额外户外线均可删。",
-  "住宿质量优先组合为 Barcelona Airbnb 1659522（selected candidate）+ Granada Gamboa + Seville Giralda Center（用户已确认可行）+ Madrid Maydrit Airport（当前性价比候选）；必须保留免费取消、至少两张独立床与 CNY 1500/晚硬上限，所有候选仍未预订。",
-  "国际机票单独监测，本阶段预算不计入机票；现有价格快照仍保留在 trip/flights.md，不与住宿、境内交通合并。",
-  "self-checked: 7 issues found and fixed — added a hard D1 positioning cutoff and Barcelona arrival stop, made Alhambra and Seville days core-plus-optional, marked D8 as a travel day and removed its optional Plaza map stop, demoted unverified meal candidates, aligned rail baggage wording, and synchronized downstream plan data"
+  "住宿质量优先组合为 Barcelona Airbnb 1659522（首段3晚）+ Granada Gamboa + Seville Giralda Center（用户已确认可行）+ Barcelona返程定位夜住宿（待重查）；必须保留免费取消、至少两张独立床与 CNY 1500/晚硬上限，所有候选仍未预订。",
+  "国际机票按用户确认切换为阿联酋航空北京—Barcelona往返，机票单独管理，本阶段预算不计入；旧国航/Madrid价格快照保留为历史研究，不再作为当前路线锚点。",
+  "self-checked: 9 issues found and fixed — replaced Madrid entry/exit with the user-selected Beijing–Barcelona Emirates structure, added a Barcelona return-buffer night, rebuilt D1/D8/D9, removed Madrid lodging and transfer dependencies, updated accommodation date splits, and synchronized downstream plan data"
  ],
  "checklist": [
   {
@@ -52,9 +52,9 @@
    "note": "本计划不替代医疗建议；保留医生/保险方给出的个别化意见，不在项目文件写入健康隐私"
   },
   {
-   "item": "按已锁定 1/25 出发、2/3 离境日期复核 HKG 1人与 PEK 2人的完整往返票",
+   "item": "按已锁定 1/25 北京出发、2/3 Barcelona 离境日期复核三人阿联酋航空完整往返票",
    "deadline": "T-90",
-   "note": "逐条确认税费、实际承运人、去回各至少20kg行李、返程机场和原始链接；不再以改日期换价格"
+   "note": "逐条确认北京机场、迪拜停留、税费、实际承运人、去回各实际航段至少20kg行李、返程机场和原始链接；不再以改日期换价格；香港旅客的赴京/返港定位另计"
   },
   {
    "item": "检查 Alhambra 指定日期票务和 Nasrid Palaces 时段",
@@ -83,11 +83,11 @@
    "note": "特别检查 Alcázar、Cathedral、Sagrada、Park Güell、La Pedrera 和 Renfe/ALSA"
   },
   {
-   "item": "T-14 核对每段城际交通的行李规则与 D1 硬缓冲",
+   "item": "T-14 核对每段城际交通的行李规则与 D1/D8 返程定位缓冲",
    "deadline": "T-14",
    "link": "https://www.renfe.com/es/en/travel/informacion-util/luggage/politica-de-equipajes",
    "link_text": "Renfe 官方行李规则",
-   "note": "记录实际运营方、车次、每件行李尺寸/重量、退改条款和相邻座位；D1 只有预计落地到计划发车至少约5小时且车票可改退才执行，否则启用 Madrid 机场过夜分支。"
+   "note": "记录实际运营方、车次、每件行李尺寸/重量、退改条款和相邻座位；D1 Barcelona机场到住宿只做抵达恢复，D8 Seville→Barcelona必须保留次日国际航班的整夜缓冲，不把独立城际票当作受保护联程。"
   },
   {
    "item": "T-14 复核签证/安全/营业时间/票价/天气和临时闭馆",
@@ -114,170 +114,178 @@
   {
    "type": "international flight monitoring",
    "date": "2027-01-25",
-   "carrier": "Air China / 中国国际航空（联程，待最终出票）",
-   "from": "HKG → PEK；两位北京旅客从 PEK 加入",
-   "to": "MAD",
+   "carrier": "Emirates / 阿联酋航空（北京—Barcelona往返结构，待最终出票）",
+   "from": "北京（PEK/BJS，具体机场以出票页为准）",
+   "to": "Barcelona（经 Dubai/DXB，具体航段以出票页为准）",
    "dep": "以最终出票页为准",
-   "arr": "以最终出票页为准",
-   "price": "本阶段不计入旅行预算；继续监测完整联程价格",
-   "bags": "国航联程，值机时确认是否直挂到 Madrid；每个实际航段至少20kg为硬条件",
-   "link": "https://hk.trip.com/flights/showfarefirst?dcity=bjs&acity=mad&ddate=2027-01-26&rdate=2027-02-03&triptype=rt&class=y&quantity=2&locale=zh-HK&curr=HKD",
-   "note": "用户已确认去程为香港/北京经北京抵达 Madrid 的国航联程；返程为 Madrid→北京→香港。国际机票由用户继续关注降价，不能把当前搜索卡片写成已出票。",
-   "backup": "只比较已锁定日期下的不同航班/票种；不为降低票价改变已确认的 Madrid 返程机场安全方案"
+   "arr": "预计 2027-01-26 抵达 Barcelona；当地时刻以出票页为准",
+   "price": "本阶段不计入旅行预算；用户已确定采用该航空结构，金额未提供",
+   "bags": "每个实际搭乘航段至少20kg托运行李为硬条件；以阿联酋航空出票页和行李条为准",
+   "link": "https://www.emirates.com/",
+   "note": "三位旅客统一按北京出发、Dubai转机、Barcelona入境的结构排演；北京机场、航班号、是否同一张受保护联程票、Dubai停留、税费、票规和行李需在出票前逐项确认。香港旅客的赴京/返港定位交通不写入西班牙日程。",
+   "backup": "若最终当地到达日晚于1/26，只调整D1恢复模块，不自动挤压D2预约；若不是同票或转机风险明显增加，重新核对签证、行李和缓冲。"
   },
   {
-   "type": "Madrid airport → Barcelona positioning transfer",
+   "type": "Barcelona arrival transfer",
    "date": "2027-01-26",
-   "carrier": "Renfe AVE/长途铁路优先；iryo等仅作同条件比较；飞机为门到门明显占优时的备选",
-   "from": "Madrid-Barajas (MAD) → Madrid Puerta de Atocha",
-   "to": "Barcelona Sants → Barcelona住宿",
-   "dep": "只有计划发车时间距预计落地至少约5小时才执行当天定位；实际以入境、取行李、航站楼和车票为准",
-   "arr": "以最终车票/备用住宿为准",
-   "price": "按日期、车次、余票和票种动态；T-7仍可能有票但不保证低价；不计入国际机票预算",
-   "bags": "普通Renfe长途规则目前参考为最多3件、合计25kg、最大单件85×55×35cm；实际车次/Avlo/ALSA规则以出发前官方页为准；父母优先选择座位相邻、可改签/可退票种",
-   "link": "https://www.renfe.com/es/en/inspirate/rutas/madrid-barcelona",
-   "baggage_link": "https://www.renfe.com/es/en/travel/informacion-util/luggage/politica-de-equipajes",
-   "note": "三人从长途国际航班落地后，铁路避免再次机场安检、候机和独立航班行李限制，作为默认方案。不能把国航联程行李直挂误解为后续独立火车或航班受保护衔接。只有预计落地到计划发车至少约5小时、三人已确认入境/行李/航站楼可控且车票可改退时才执行；否则改住MAD机场附近，次日再去Barcelona。",
-   "backup": "只有完整比较二次机场转移、安检、行李、票价和延误风险后才改飞；任何独立票都不与国航国际段视为联程保障"
+   "carrier": "Aena/TMB机场交通或出租车；不安排当日城际交通",
+   "from": "Barcelona–El Prat Airport（BCN）",
+   "to": "Barcelona住宿（优先Sants/市内交通便利区域）",
+   "dep": "入境、取行李和三人集合完成后；按实际落地时间执行",
+   "arr": "入住时间以住宿方为准",
+   "price": "按当日机场交通方式和最终住宿位置核实",
+   "bags": "三人行李先确认机场到住宿的可少走路路线；不把国际段行李直挂理解为市内接驳保障",
+   "link": "https://www.aena.es/en/barcelona.html",
+   "note": "D1只做入境、接驳、入住、补给和恢复；若仍有体力，最多安排住宿附近短线，不叠加景点。",
+   "backup": "晚到、延误或行李异常时直接取消散步和晚餐远行，使用住宿附近可步行/外卖方案。"
   },
   {
    "type": "intercity rail or domestic flight",
    "date": "2027-01-29",
-   "carrier": "Renfe优先；时长/价格不合适再比较含20kg行李的国内航班",
-   "from": "Barcelona",
-   "to": "Granada",
-   "dep": "按实际日期查询",
-   "arr": "按实际日期查询",
-   "price": "2027具体票价未锁定",
-   "bags": "按最终运营方当期行李规则",
+   "carrier": "Renfe长途铁路优先；含20kg行李的Barcelona→Granada航班仅作总门到门时间明显占优时的备选",
+   "from": "Barcelona Sants",
+   "to": "Granada railway station / Granada市区",
+   "dep": "按实际日期查询；优先白天直达或少换乘车次",
+   "arr": "按最终车票查询",
+   "price": "2027具体票价、票种和余票未锁定",
+   "bags": "按最终运营方当期行李规则；三人优先相邻座位和可改签/可退票种",
    "link": "https://www.renfe.com/es/es/inspirate/rutas/barcelona-granada",
-   "note": "全程较长的交通日；优先直达铁路和相邻座位。抵达后只安排入住、补给与 Cathedral/Royal Chapel 平地短线，不叠加长坡。",
-   "backup": "比较同日铁路、GRX/AGP航班的总门到门时间、行李与退改；若一周前铁路价格高但航班需额外机场操作，不只看机票标价"
+   "note": "长距离转场日；抵达后只安排入住、补给和Cathedral/Royal Chapel平地短线。",
+   "backup": "比较铁路与GRX/AGP航班的机场往返、安检、行李、总门到门时间和退改，不只看机票标价。"
   },
   {
    "type": "intercity rail or coach",
    "date": "2027-01-31",
    "carrier": "Renfe优先，ALSA备选",
    "from": "Granada",
-   "to": "Seville",
-   "dep": "按实际日期查询",
-   "arr": "按实际日期查询",
-   "price": "2027具体票价未锁定",
-   "bags": "按最终运营方当期行李规则",
+   "to": "Seville Santa Justa / Seville市区",
+   "dep": "按实际日期查询；优先白天直达车次",
+   "arr": "按最终车票查询",
+   "price": "2027具体票价、票种和余票未锁定",
+   "bags": "按最终运营方当期行李规则；把车站到住宿接驳单列",
    "link": "https://www.renfe.com/es/es/inspirate/rutas/granada-sevilla",
-   "note": "三人带行李时把车站到酒店接驳单列；优先白天直达车次，抵达后先入住和休息，再选择一个傍晚轴线。",
-   "backup": "比较同日 ALSA 价格、到站位置与退改；不为便宜少量金额选择过早或不可退班次"
+   "note": "抵达后先入住和休息；若时间与体力允许，只执行Plaza de España/María Luisa短线。",
+   "backup": "比较ALSA到站位置、价格和退改；不为小额差价选择过早或不可退班次。"
   },
   {
-   "type": "return airport transfer",
+   "type": "return-buffer intercity transfer",
    "date": "2027-02-02",
-   "carrier": "Renfe AVE/长途铁路 + Atocha→MAD机场接驳",
-   "from": "Seville",
-   "to": "Madrid Puerta de Atocha → Madrid机场附近酒店（2/2入住）",
-   "dep": "选择白天车次；不压最后一班；具体时间按2/3国航起飞时刻倒推",
-   "arr": "2/2完成机场定位并确认2/3航站楼，国际航班前约3小时到机场",
-   "price": "2027具体票价未锁定；境内交通另计，国际机票不计入预算",
-   "bags": "按Renfe和机场接驳当期规则；三人带箱优先短程出租车或可少走路的接驳",
-   "link": "https://www.renfe.com/es/en/inspirate/rutas/sevilla-madrid",
-   "note": "返程机场已按用户补充固定为 Madrid。2/2 上午的Plaza de España只是可删短线；若车票在13:00前、下雨、退房有压力或三人体力不足，直接删除，随后去Santa Justa乘车；到Madrid后住机场附近，不再把夜晚安排成市中心观光。",
-   "backup": "若Seville→Madrid车次严重延误，先联系车票/酒店供应方并保留出租车或更早车次；不把2/3早晨从Seville跨城接国航作为备选"
+   "carrier": "Renfe长途铁路优先；SVQ→BCN直飞仅作铁路明显不可执行时的备选",
+   "from": "Sevilla Santa Justa",
+   "to": "Barcelona Sants / Barcelona返程定位住宿",
+   "dep": "选择白天车次并保留整夜缓冲；具体班次按2/3国际航班倒推",
+   "arr": "2/2完成Barcelona入住和机场路线确认",
+   "price": "2027具体票价、票种和余票未锁定；国际机票不计入本阶段预算",
+   "bags": "按Renfe或实际运营方当期规则；三人带箱优先少换乘、相邻座位和可改签/可退票种",
+   "link": "https://www.renfe.com/es/es/inspirate/rutas/sevilla-barcelona",
+   "note": "D8是安全返程定位日，不安排Barcelona观光；住Sants/机场交通便利区域，避免2/3早晨跨城。",
+   "backup": "若铁路时刻、余票或延误风险不合适，再比较SVQ→BCN直飞的机场往返、行李、价格和至少一整夜缓冲；任何独立票都不视为受保护联程。"
+  },
+  {
+   "type": "Barcelona airport transfer",
+   "date": "2027-02-03",
+   "carrier": "Aena/TMB机场交通或出租车",
+   "from": "Barcelona返程定位住宿",
+   "to": "Barcelona–El Prat Airport（BCN）",
+   "dep": "按阿联酋航空最终起飞时刻倒推，国际航班预留约3小时到机场",
+   "arr": "以最终值机、安检和登机流程为准",
+   "price": "按当日机场交通方式和最终住宿位置核实",
+   "bags": "确认三人护照、行李条和Dubai转机安排；每个实际航段至少20kg仍需以出票页为准",
+   "link": "https://www.aena.es/en/barcelona.html",
+   "note": "D9不安排城市观光和城际交通，只做退房、机场接驳、值机、托运、安检和登机。",
+   "backup": "若前一晚发生铁路延误，优先联系运营方/住宿方并保护机场节点；不把Seville作为2/3早晨的出发地。"
   },
   {
    "type": "international return through-flight",
    "date": "2027-02-03",
-   "carrier": "Air China / 中国国际航空（联程，待最终出票）",
-   "from": "MAD",
-   "to": "PEK → HKG",
-   "dep": "以最终出票页为准；2/2已完成机场定位",
-   "arr": "以最终出票页为准",
-   "price": "本阶段不计入旅行预算",
-   "bags": "值机时确认行李条终点和北京转机是否需要取行李",
-   "note": "2/3只执行机场流程：到对应航站楼、值机/托运、安检、登机；不得临时从其他城市跨城。"
+   "carrier": "Emirates / 阿联酋航空（Barcelona→Dubai→北京，待最终出票）",
+   "from": "Barcelona（BCN）",
+   "to": "北京（PEK/BJS，具体机场以出票页为准）",
+   "dep": "以最终出票页为准",
+   "arr": "以最终出票页为准；香港旅客返港定位另行核实",
+   "price": "本阶段不计入旅行预算；金额未提供",
+   "bags": "值机时确认行李条终点、Dubai转机是否需重新安检/取行李和每段行李额度",
+   "link": "https://www.emirates.com/",
+   "note": "返程国际段按用户选定的北京—Barcelona往返结构记录，未把任何航班号、时刻或出票状态写成已核实事实。"
   }
  ],
  "days": [
   {
    "date": "2027-01-26",
-   "city": "Madrid→Barcelona",
-   "label": "Madrid入境、定位Barcelona与入住恢复日",
+   "city": "Barcelona",
+   "label": "Barcelona入境、入住与恢复日",
    "travel_day": true,
-   "ribbon": "国航联程落地 Madrid → 5小时硬缓冲门 → Atocha → 长途铁路 → Barcelona入住；不满足则MAD机场过夜",
-   "rain_alt": "大雨或晚到时取消城市散步；只执行入住、买水/早餐和附近简餐。",
-   "late_cut": "如果预计落地到计划发车不足约5小时，或入境、行李、航站楼任一环节不确定，不赶同日城际车；执行MAD机场附近可取消住宿，次日再去Barcelona，当天所有景点和citywalk全部删除。",
+   "ribbon": "Emirates经Dubai抵达Barcelona → BCN机场接驳 → 入住恢复；不安排城际交通",
+   "rain_alt": "雨天取消所有散步；只执行机场接驳、入住、补给和住宿内休息。",
+   "late_cut": "航班晚到、入境/行李延误或住宿入住受阻时，删除全部可选散步和外出用餐，不影响D2 Sagrada Família主线。",
    "walking_km": {
-    "total": 3.5,
-    "how": "机场/车站换乘与住宿附近短距离；不安排城市观光。久坐和时差造成的疲劳高于公里数。",
-    "intensity": "低观光、长交通、落地疲劳高",
-    "optional_km": 0
+    "total": 3,
+    "how": "机场、住宿接驳和住宿附近短距离；不安排城市观光。",
+    "intensity": "低观光、长途落地、时差恢复",
+    "optional_km": 1.5
    },
    "timeline": [
     {
      "t": "落地–H+1:30",
-     "what": "入境、取行李、清点三人行李并确认航站楼与独立交通票的衔接条件",
+     "what": "入境、取行李、清点三人证件和行李；确认Dubai转机相关行李状态已结束",
      "kind": "arrival",
-     "note": "一人看航站楼，一人看车票，一人看住宿地址；不在到达层临时分散",
+     "note": "一人看机场指引，一人确认住宿地址，一人看当日交通；完成集合后再离开到达层",
      "tag": "pinned"
     },
     {
-     "t": "H+1:30–H+2:00",
-     "what": "5小时硬缓冲门：计划发车距预计落地不足约5小时，或入境、行李、航站楼任一环节不确定，就不赶同日城际交通",
-     "kind": "check",
-     "note": "不满足条件就执行MAD机场附近可取消住宿/次日定位；Madrid只作机场节点，不临时观光；不要用‘飞机准点’替代入境和取行李缓冲",
-     "tag": "pinned"
-    },
-    {
-     "t": "H+2:00–H+3:00",
-     "what": "只有硬缓冲门通过才按Aena当日指引去Atocha并乘已购长途铁路；否则立即去MAD机场附近可取消酒店",
+     "t": "H+1:30–H+2:15",
+     "what": "按Aena/TMB或出租车方案从BCN前往住宿；不购买临时跨城票",
      "kind": "hop",
      "verify": "source_checked",
-     "note": "这是Madrid机场→Barcelona定位段；不要把国航行李直挂当作独立铁路/航班的受保护衔接；车票不可改退或行李规则未确认时也启用机场过夜",
-     "tag": "pinned"
+     "note": "机场到住宿是唯一必要移动；三人带箱优先少走路、少换乘",
+     "tag": "pinned",
+     "link": "https://www.google.com/maps/dir/?api=1&origin=41.297445%2C2.083294&destination=41.378414%2C2.140543&travelmode=transit"
     },
     {
-     "t": "H+3:00–H+5:00",
-     "what": "Barcelona 入住或寄存行李；确认门禁、Wi‑Fi、暖气和退房条款",
+     "t": "H+2:15–H+4:00",
+     "what": "办理入住或寄存行李；确认门禁、Wi‑Fi、暖气、浴室和退房条款",
      "kind": "lodging",
      "tag": "pinned"
     },
     {
-     "t": "H+5:00–H+6:00",
-     "what": "住宿附近买水、早餐和简单晚餐；不为第一顿饭跨城",
+     "t": "H+4:00–H+5:00",
+     "what": "住宿附近买水、早餐/简餐和次日早餐；不为第一顿饭跨城",
      "kind": "meal",
      "meal_period": "dinner",
-     "tag": "skippable"
-    },
-    {
-     "t": "H+6:00–H+7:00",
-     "what": "打开 Sagrada Família 票券，确认入口、时段和三人姓名/票种",
-     "kind": "check",
-     "verify": "source_checked",
      "tag": "pinned"
     },
     {
+     "t": "H+5:00–H+6:30",
+     "what": "体力允许时，只在住宿附近短走；否则直接洗漱休息",
+     "kind": "walk",
+     "tag": "skippable"
+    },
+    {
      "t": "21:30后",
-     "what": "睡觉；删除所有额外夜游，给时差和第二天预约留缓冲",
+     "what": "睡觉；打开Sagrada Família票券，确认入口、时段和三人姓名/票种",
      "kind": "rest",
      "tag": "pinned"
     }
    ],
    "stops": [
     {
-     "name": "Madrid-Barajas Airport（入境节点）",
-     "query": "Adolfo Suárez Madrid–Barajas Airport, Spain",
+     "name": "Barcelona–El Prat Airport（入境节点）",
+     "query": "Barcelona–El Prat Airport, Spain",
      "mode": "transit",
-     "lat": 40.4952269,
-     "lon": -3.5733733
+     "lat": 41.297445,
+     "lon": 2.083294
     },
     {
-     "name": "Barcelona Sants（当天抵达分支）",
+     "name": "Barcelona Sants（住宿交通节点）",
      "query": "Barcelona Sants railway station, Barcelona, Spain",
-     "mode": "train",
+     "mode": "transit",
      "lat": 41.378414,
      "lon": 2.140543
     }
    ],
    "sun": "天亮 07:38 · ☀ 08:06 / 🌇 18:01 · CET · sunrise-sunset.org",
-   "city_id": "barcelona"
+   "city_id": "barcelona",
+   "day_map": "https://www.google.com/maps/dir/?api=1&origin=41.297445%2C2.083294&destination=41.378414%2C2.140543&travelmode=walking"
   },
   {
    "date": "2027-01-27",
@@ -648,7 +656,7 @@
     "total": 4.5,
     "how": "园区内慢走与拍照；不叠加Sacromonte；宫殿排队/坡地使体感高于里程",
     "intensity": "中高；必须穿防滑鞋并保留坐下休息",
-    "optional_km": 2.0
+    "optional_km": 2
    },
    "timeline": [
     {
@@ -995,91 +1003,55 @@
   },
   {
    "date": "2027-02-02",
-   "city": "Seville→Madrid",
+   "city": "Seville→Barcelona",
+   "label": "Seville退房、Barcelona返程定位缓冲",
    "travel_day": true,
-   "label": "Seville短线（可删）→ Madrid机场定位",
-   "ribbon": "只有车票与体力允许才走Plaza de España → Santa Justa → Renfe → Madrid机场附近酒店",
-   "rain_alt": "雨天完全删除户外线；早餐后直接退房、午餐和Santa Justa，不为拍照淋雨或赶车。",
-   "late_cut": "2/2以跨城和机场酒店为硬任务；若车票在13:00前，删除Plaza de España，只做退房和车站接驳。",
+   "ribbon": "Sevilla Santa Justa → 白天长途铁路 → Barcelona Sants → 返程定位住宿；不安排观光",
+   "rain_alt": "雨天不影响主计划；删除车站前后的所有拍摄和散步，优先准时抵达Barcelona。",
+   "late_cut": "若上午退房、车次或延误风险不稳，不安排Seville短线；优先乘更早可改签车次并保留2/3机场整夜缓冲。",
    "walking_km": {
     "total": 3.5,
-    "how": "Plaza de España只是可选短线；核心为酒店/车站短距离与返程交通，Triana、Arenal河岸全部删除。",
-    "intensity": "中低强度观光、长交通；返程安全优先",
-    "optional_km": 1.5
+    "how": "住宿—车站—Barcelona住宿接驳；不安排城市观光。",
+    "intensity": "长交通、低观光、返程缓冲",
+    "optional_km": 0
    },
    "timeline": [
     {
-     "t": "08:00–08:45",
-     "what": "早餐并检查2/3国航航班、Madrid航站楼、已购Renfe车票和机场酒店地址",
+     "t": "起床后",
+     "what": "检查床下、浴室、插座、保险箱和冰箱；确认三人护照、手机与充电设备",
      "kind": "check",
      "tag": "pinned"
     },
     {
-     "t": "08:45–10:15",
-     "what": "可选Plaza de España短线：拱廊、中央喷泉、省份瓷砖长椅和一张三人合照；车票在13:00前、下雨或退房有压力就删除",
-     "kind": "free",
-     "map": false,
+     "t": "退房前",
+     "what": "若车次、天气和体力都稳定，可在Seville住宿附近做30–45分钟短线；否则直接退房",
+     "kind": "walk",
      "tag": "skippable"
     },
     {
-     "t": "10:15–11:00",
-     "what": "回酒店取行李、检查床下/插座/保险箱，完成退房",
+     "t": "上午–中午",
+     "what": "前往Sevilla Santa Justa，按Renfe最终车次乘车；行李放在座位附近并保留车票/住宿地址离线副本",
+     "kind": "hop",
+     "verify": "source_checked",
+     "note": "白天出发、不压最后一班；独立铁路票不与国际航班视为联程保障",
+     "tag": "pinned"
+    },
+    {
+     "t": "抵达后",
+     "what": "Barcelona Sants → 返程定位住宿；办理入住/寄存并确认2/3前往BCN的路线、出发时间和备用出租车",
      "kind": "lodging",
      "tag": "pinned"
     },
     {
-     "t": "11:00–12:00",
-     "what": "酒店附近午餐或打包餐；不为餐厅跨区，不把午餐压到上车前最后15分钟",
-     "kind": "meal",
-     "meal_period": "lunch",
-     "tag": "pinned"
-    },
-    {
-     "t": "12:00–13:00",
-     "what": "正规出租车或已核对的公共交通前往Sevilla Santa Justa；带箱不穿整段石板老城",
-     "kind": "hop",
-     "map": false,
-     "verify": "pre_departure",
-     "tag": "pinned",
-     "link": "https://www.google.com/maps/dir/?api=1&origin=37.376903%2C-5.985650&destination=37.392092%2C-5.975206&travelmode=transit"
-    },
-    {
-     "t": "13:00–13:30",
-     "what": "到Santa Justa后先找检票屏、卫生间和电梯；三人一起进站，不在入口摊开行李",
-     "kind": "check",
-     "tag": "pinned"
-    },
-    {
-     "t": "车票时间",
-     "what": "乘Seville→Madrid直达Renfe；优先不晚于傍晚抵达的白天班次，车上补水和休息",
-     "kind": "hop",
-     "verify": "pre_departure",
-     "note": "具体车次未锁定；若实际车票早于13:00，执行late_cut，不压缩车站缓冲",
-     "tag": "pinned"
-    },
-    {
-     "t": "抵达Madrid后 60–90分钟",
-     "what": "Atocha到机场附近酒店；三人带箱优先少走路的正规出租车，入住后确认2/3去哪个航站楼",
-     "kind": "hop",
-     "map": false,
-     "tag": "pinned"
-    },
-    {
-     "t": "抵达酒店后",
-     "what": "办理入住、把护照/票券放固定位置、设两个闹钟；不再进市中心观光",
-     "kind": "lodging",
-     "tag": "pinned"
-    },
-    {
-     "t": "18:00–19:30",
-     "what": "机场酒店附近晚餐或酒店简餐；按2/3起飞时间倒推，不饮酒过量",
+     "t": "晚餐",
+     "what": "住宿或Sants附近快速用餐；不再进入市中心观光",
      "kind": "meal",
      "meal_period": "dinner",
      "tag": "pinned"
     },
     {
-     "t": "20:30–21:00",
-     "what": "整理D9返程文件、航站楼和机场接驳；把国航联程行李问题留到值机柜台确认",
+     "t": "睡前",
+     "what": "完成护照、票券、行李和机场路线三人交叉检查；设多个闹钟",
      "kind": "check",
      "tag": "pinned"
     }
@@ -1089,116 +1061,110 @@
      "name": "Sevilla Santa Justa",
      "query": "Sevilla Santa Justa railway station, Seville, Spain",
      "mode": "transit",
-     "lat": 37.3920924,
-     "lon": -5.9752061
+     "lat": 37.39245,
+     "lon": -5.97575
     },
     {
-     "name": "Madrid Puerta de Atocha",
-     "query": "Madrid Puerta de Atocha railway station, Madrid, Spain",
+     "name": "Barcelona Sants（返程定位）",
+     "query": "Barcelona Sants railway station, Barcelona, Spain",
      "mode": "train",
-     "lat": 40.4056837,
-     "lon": -3.6900187
+     "lat": 41.378414,
+     "lon": 2.140543
     }
    ],
-   "day_map": "https://www.google.com/maps/dir/?api=1&origin=Sevilla+Santa+Justa%2C+Seville%2C+Spain&destination=Madrid+Puerta+de+Atocha%2C+Madrid%2C+Spain&travelmode=transit",
-   "sun": "天亮 07:54 · ☀ 08:21 / 🌇 18:35 · CET · sunrise-sunset.org",
-   "city_id": "seville"
+   "sun": "天亮 07:32 · ☀ 08:00 / 🌇 18:09 · CET · sunrise-sunset.org",
+   "city_id": "barcelona"
   },
   {
    "date": "2027-02-03",
-   "city": "Madrid",
-   "label": "机场酒店→Madrid离境",
+   "city": "Barcelona",
+   "label": "Barcelona机场返程：只做离境流程",
    "travel_day": true,
-   "ribbon": "机场附近酒店 → MAD对应航站楼 → 国航联程返程",
-   "rain_alt": "不安排户外项目；预留值机、行李、航站楼和安检缓冲。",
-   "late_cut": "只执行机场转移；不安排任何城市景点，也不在当天临时跨城。",
+   "ribbon": "返程定位住宿 → BCN机场 → Emirates经Dubai返回北京",
+   "rain_alt": "不安排户外项目；预留机场接驳、值机、行李、安检和航站楼缓冲。",
+   "late_cut": "只执行机场转移；不安排任何城市景点、购物或临时跨城。",
    "walking_km": {
-    "total": 1.0,
-    "how": "机场酒店至接驳点/航站楼；不安排城市步行",
+    "total": 1,
+    "how": "住宿至接驳点/航站楼；不安排城市步行。",
     "intensity": "低步行、国际离境高注意力",
     "optional_km": 0
    },
    "timeline": [
     {
      "t": "起床后",
-     "what": "检查床下、浴室、插座、保险箱、冰箱；确认三人护照和手机",
+     "what": "检查床下、浴室、插座、保险箱、冰箱；确认三人护照、手机、充电设备和行李",
      "kind": "check",
      "tag": "pinned"
     },
     {
-     "t": "起飞前约5小时",
-     "what": "在MAD机场附近酒店退房；按国航航班、航站楼和是否托运行李倒推离开时间",
-     "kind": "check",
-     "tag": "pinned"
-    },
-    {
-     "t": "起飞前约3小时",
-     "what": "到Madrid机场对应航站楼；D8已完成Seville→Madrid，今天不再跨城",
+     "t": "起飞前约4–5小时",
+     "what": "从返程定位住宿退房，按阿联酋航空最终航班和BCN航站楼倒推前往机场",
      "kind": "hop",
      "verify": "source_checked",
+     "note": "国际航班预留约3小时到机场；具体时间以出票页、值机开放和Aena指引为准",
      "tag": "pinned"
     },
     {
-     "t": "值机后",
-     "what": "确认行李条终点、转机是否取行李、航站楼和安检方向",
+     "t": "到达机场后",
+     "what": "确认值机柜台、行李条终点、Dubai转机安排、航站楼和安检方向",
      "kind": "check",
      "tag": "pinned"
     },
     {
      "t": "登机前",
-     "what": "只按航司/机场当前指示行动；不在机场临时购买未核实服务",
+     "what": "只按阿联酋航空/Aena当前指示行动；不在机场临时购买未核实服务",
      "kind": "check",
      "tag": "pinned"
     }
    ],
    "stops": [
     {
-     "name": "Adolfo Suárez Madrid–Barajas Airport",
-     "query": "Adolfo Suárez Madrid–Barajas Airport, Madrid, Spain",
+     "name": "Barcelona–El Prat Airport（离境节点）",
+     "query": "Barcelona–El Prat Airport, Spain",
      "mode": "transit",
-     "lat": 40.493556,
-     "lon": -3.566764
+     "lat": 41.297445,
+     "lon": 2.083294
     }
    ],
-   "sun": "天亮 07:53 · ☀ 08:20 / 🌇 18:35 · CET · sunrise-sunset.org",
-   "city_id": "madrid"
+   "sun": "天亮 07:31 · ☀ 07:59 / 🌇 18:11 · CET · sunrise-sunset.org",
+   "city_id": "barcelona"
   }
  ],
  "hotels": [
   {
    "city_id": "barcelona",
    "status": "selected_candidate",
-   "base": "Barcelona 2027-01-26 → 2027-01-29（代表性日期）",
-   "area": "Plaça Espanya / Sants一带（准确地址以最终房源页为准）",
-   "why": "Airbnb整套房源 1659522“带露台的阁楼”为当前 selected candidate；2卧2卫、厨房、露台与独立床位条件较好，当前页面价在 CNY 1500/晚上限内，但旅游税与最终取消条款仍需重查。",
+   "base": "Barcelona 2027-01-26 → 2027-01-29（首段3晚）+ 2027-02-02 → 2027-02-03（返程定位1晚，需单独重查）",
+   "area": "首段优先Plaça Espanya / Sants；返程段优先Sants或机场交通便利区域",
+   "why": "Airbnb 1659522“带露台的阁楼”仍是首段3晚的selected candidate；返程定位夜不能默认沿用首段房源，需按2/2–2/3真实日期和次日机场路线另查。",
    "options": [
     {
-     "name": "Airbnb 1659522 · 带露台的阁楼（selected candidate，未预订）",
-     "band": "页面 CNY 3147 / 3晚（约 CNY 1049/晚）；整套2卧2卫；1张双人床+1张单人床；私人露台、完整厨房、洗衣机、空调；无早餐；旅游税待最终结算页复核",
+     "name": "Airbnb 1659522 · 带露台的阁楼（首段，selected candidate，未预订）",
+     "band": "旧页面 CNY 3147 / 3晚；整套2卧2卫；床位、厨房、露台和旅游税需按真实日期结算页复核",
      "link": "https://zh.airbnb.com/rooms/1659522?adults=3&check_in=2027-01-26&check_out=2027-01-29"
     },
     {
-     "name": "Casa Felipa · Airbnb预算内备选",
-     "band": "页面约 CNY 3182 / 3晚；整套公寓；具体房号/床型与税项需结算前确认；未预订",
-     "link": "https://zh.airbnb.com/rooms/26920348?adults=3&check_in=2027-01-26&check_out=2027-01-29"
+     "name": "Barcelona返程定位住宿（2/2–2/3，待搜索）",
+     "band": "不沿用首段价格；按3位成人、至少两张独立床、免费取消、含税总价和BCN接驳重新比较",
+     "link": "https://www.aena.es/en/barcelona.html"
     }
    ]
   },
   {
    "city_id": "granada",
    "status": "candidate",
-   "base": "Granada 2027-01-29 → 2027-01-31（代表性日期）",
+   "base": "Granada 2027-01-29 → 2027-01-31（2晚）",
    "area": "Cathedral / Gran Vía平地步行区",
-   "why": "Sercotel Palacio de Los Gamboa为酒店优先候选；Trip.com公开价较携程低约CNY164，三张单人床、早餐与免费取消条件明确，仍不是预订。",
+   "why": "Sercotel Palacio de Los Gamboa为酒店优先候选；3张单人床、早餐与免费取消条件仍需按真实日期结算页复核，尚未预订。",
    "options": [
     {
      "name": "Sercotel Palacio de Los Gamboa · Trip.com（当前优先候选）",
-     "band": "CNY 2240 / 2晚含税费（约CNY1120/晚）；Classic Triple；3张单人床；含3份早餐；免费取消至2027-01-21",
+     "band": "旧页面约CNY 2240 / 2晚含税费；真实日期、床型、早餐、取消截止和税费需重查",
      "link": "https://us.trip.com/hotels/granada-hotel-detail-1625246/hesperia-granada-hotel/"
     },
     {
      "name": "Sercotel Palacio de Los Gamboa · 携程对照",
-     "band": "经典三人房；3张0.8米单人床；含3份早餐；免费取消至2027-01-21；含税/费后约CNY2404/2晚（均价折算）",
+     "band": "旧日期对照页；只作候选入口，不视为2027库存或价格",
      "link": "https://hotels.ctrip.com/hotels/1625246.html?checkIn=2027-01-29&checkOut=2027-01-31&crn=1&adult=3"
     }
    ]
@@ -1206,38 +1172,24 @@
   {
    "city_id": "seville",
    "status": "conditional_candidate",
-   "base": "Seville 2027-01-31 → 2027-02-03（代表性日期）",
+   "base": "Seville 2027-01-31 → 2027-02-02（2晚）",
    "area": "Plaza de España / Prado",
-   "why": "Hotel Giralda Center为酒店优先条件候选；Trip.com页面价约CNY3705/3晚，含早餐且在硬上限内，但“1张特大床或2张单人床”仍需在最终房型页确认至少两张独立床。确认失败才切换Airbnb例外。",
+   "why": "Hotel Giralda Center仍是酒店优先候选，但旧3晚页面价不能沿用；按2晚真实日期重新核对含税总价、至少两张独立床和免费取消。",
    "options": [
     {
      "name": "Hotel Giralda Center · Trip.com（条件候选，未预订）",
-     "band": "约CNY3705 / 3晚含税费（约CNY1235/晚）；高级加床房；含3份早餐；免费取消；床型为1张特大床或2张单人床，需确认",
-     "link": "https://us.trip.com/hotels/detail/?cityEnName=Seville&cityId=1350&hotelId=94971922&checkIn=2027-01-31&checkOut=2027-02-03&adult=3&children=0&crn=1&curr=CNY"
+     "band": "旧页面约CNY3705/3晚；2晚真实日期价格、早餐、床型和取消条款均需重查",
+     "link": "https://us.trip.com/hotels/detail/?cityEnName=Seville&cityId=1350&hotelId=94971922&checkIn=2027-01-31&checkOut=2027-02-02&adult=3&children=0&crn=1&curr=CNY"
     },
     {
      "name": "历史街区公寓 4563863 · Airbnb床位明确备选",
-     "band": "CNY2088 / 3晚（约CNY696/晚）；2张单人床+沙发床；整套1卧、厨房、洗衣机、空调；无早餐；未预订",
-     "link": "https://zh.airbnb.com/rooms/4563863?adults=3&check_in=2027-01-31&check_out=2027-02-03"
+     "band": "旧3晚快照不可沿用；2晚房价、床位、税项和取消条款需重查",
+     "link": "https://zh.airbnb.com/rooms/4563863?adults=3&check_in=2027-01-31&check_out=2027-02-02"
     },
     {
      "name": "历史中心两卧公寓 679472… · Airbnb两卫/露台备选",
-     "band": "CNY2100 / 3晚（约CNY700/晚）；2卧2卫、2张单人床+1张双人床、露台、厨房和洗衣机；无早餐；税项待复核",
-     "link": "https://zh.airbnb.com/rooms/679472671924054054?adults=3&check_in=2027-01-31&check_out=2027-02-03"
-    }
-   ]
-  },
-  {
-   "city_id": "madrid",
-   "status": "to_select",
-   "base": "Madrid机场附近 2027-02-02 → 2027-02-03（返程定位夜，未预订）",
-   "area": "MAD机场对应航站楼附近；优先可取消、含机场接驳或短程出租车可达",
-   "why": "用户已确认2月3日从Madrid搭乘国航联程返程；2月2日先到Madrid并住机场附近，避免从Seville在返程日跨城。具体酒店必须等国航航班号/航站楼和实际日期后再按含税总价比较。",
-   "options": [
-    {
-     "name": "MAD机场附近可取消酒店（待选择）",
-     "band": "价格未检索；不纳入当前三城住宿合计，按真实返程日期重新比价",
-     "link": "https://www.aena.es/en/madrid-barajas.html"
+     "band": "旧3晚快照不可沿用；2晚房价、床位、税项和取消条款需重查",
+     "link": "https://zh.airbnb.com/rooms/679472671924054054?adults=3&check_in=2027-01-31&check_out=2027-02-02"
     }
    ]
   }
@@ -1245,27 +1197,27 @@
  "budget": [
   {
    "cat": "international flights — excluded",
-   "per_person": "本阶段不计入旅行预算；用户继续监测国航完整联程降价",
+   "per_person": "用户已选阿联酋航空北京—Barcelona往返结构；金额未提供，本阶段不计入旅行预算",
    "total": "不计入当前预算",
-   "note": "现有PEK/HKG价格快照继续保留在trip/flights.md；最终需核对香港/北京集合、Madrid往返、税费和每段至少20kg行李。"
+   "note": "需在出票页确认北京机场、Dubai停留、同票/票规、税费、返程机场和每个实际航段至少20kg行李；香港旅客赴京/返港定位另计。"
   },
   {
    "cat": "lodging snapshot",
-   "per_person": "三城住宿代表性页面价合计约 CNY 9092/8晚（房间总价，不按人头预算），另加Madrid机场定位夜；仅作压力测试",
-   "total": "约CNY 9092 + 2/2 Madrid机场住宿（未检索）",
-   "note": "质量优先组合为Barcelona Airbnb 1659522 + Granada Gamboa + Seville Giralda；checked 2026-09-26。Barcelona旅游税、Giralda床型和Madrid机场酒店最终含税价仍需重查。"
+   "per_person": "四段住宿：Barcelona首段3晚 + Granada 2晚 + Seville 2晚 + Barcelona返程定位1晚；价格未按新日期锁定",
+   "total": "待按真实日期重查",
+   "note": "首段Barcelona 1659522、Granada Gamboa和Seville Giralda仍是候选；返程定位夜需单独重查，旧CNY 9092/8晚快照不再适用。"
   },
   {
    "cat": "intercity transport",
    "per_person": "未锁定",
    "total": "未锁定",
-   "note": "Renfe/ALSA当前路线已核验；2027具体票价和退改尚未锁定"
+   "note": "当前三段城际为Barcelona→Granada、Granada→Seville、Seville→Barcelona；Renfe优先，ALSA/国内航班只作有条件备选。"
   },
   {
    "cat": "attractions",
    "per_person": "当前官方参考：Alhambra约€22.27；Sagrada含音频约€26；Casa Batlló可选约€29；Alcázar约€15.50；Seville Cathedral网上€13＋音频APP约€4",
    "total": "未锁定",
-   "note": "以上均为2026动态参考，不是2027报价；本固定版本不同时购买两座高迪室内建筑，Park Güell也不计入基础门票总额"
+   "note": "以上均为动态参考，不是2027报价；本固定版本不同时购买两座高迪室内建筑，Park Güell也不计入基础门票总额。"
   }
  ],
  "brief": {
@@ -1281,13 +1233,12 @@
   "baggage": "航班硬条件是每个实际航段至少20kg托运行李；平台仅写“含托运行李”而不显示公斤数时不算合格。住宿行李转场按三人行李量和车站/机场接驳重新核对。"
  },
  "unverified": [
-  "国航最终去回航班号、当地起飞/到达时间、航站楼、三位旅客出票状态和行李条终点；这决定Madrid→Barcelona是否当天走。",
-  "2027具体Renfe/ALSA/其他运营方车次、票价、退改、座位和开售状态；特别是Madrid→Barcelona与2/2 Seville→Madrid。",
-  "当前 days[] 是已锁定的8晚版本；若以后要加9晚或10晚，必须先得到用户另行确认，再重查四段住宿、城际车票、门票和每日日期。",
-  "Madrid机场附近2027-02-02→02-03可取消酒店的航站楼接驳、含税总价和早餐/床型。",
-  "按已锁定入住日期在Trip.com与携程同条件复核Barcelona、Granada、Seville住宿；重查含税总价、早餐、免费取消、床位、Giralda加床是否保证和Barcelona Airbnb旅游税。",
-  "香港旅客能否在香港领区递交；三本护照具体有效期和空白页。",
-  "Alhambra、Sagrada Família、Alcázar及其他景点的2027库存、最终价格、礼拜/活动冲突。",
+  "阿联酋航空最终去回航班号、北京具体机场、当地起飞/到达时间、Dubai停留、是否同一张受保护联程票、三位旅客出票状态、税费和每段至少20kg行李；这决定D1实际恢复窗口。",
+  "2027具体Renfe/ALSA/其他运营方车次、票价、退改、座位和开售状态；特别是Barcelona→Granada与2/2 Seville→Barcelona。",
+  "按真实入住日期在Trip.com与携程同条件复核Granada、Seville酒店，并在Airbnb官方页复核两段Barcelona住宿；重查含税总价、早餐、免费取消、床位和旅游税。",
+  "Barcelona返程定位住宿（2/2→2/3）的区域、机场接驳、含税总价、床型和免费取消；不可把首段Barcelona房源视为自动可续住。",
+  "香港旅客赴北京与返程后北京→香港的定位交通、行李和时间；这不改变西班牙境内日程。",
+  "中国普通护照申根签证、Alhambra、Sagrada Família、Alcázar及其他景点的2027库存、最终价格、礼拜/活动冲突。",
   "餐厅实时营业、菜单、价格、排队和任何饮食禁忌要求。",
   "两位父母的实际步行上限、是否需要电梯/座椅/无障碍路线；当前按每日约3.5–5.5km、可删模块和短程出租车设计。"
  ]

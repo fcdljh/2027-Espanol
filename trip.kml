@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2"><Document>
 <name>西班牙三城慢游｜建筑、历史与城市漫步</name>
-<Folder><name>Day 1 2027-01-26 — Madrid入境、定位Barcelona与入住恢复日</name>
-<Placemark><name>1. Madrid-Barajas Airport（入境节点）</name><Point><coordinates>-3.573373,40.495227,0</coordinates></Point></Placemark>
-<Placemark><name>2. Barcelona Sants（当天抵达分支）</name><Point><coordinates>2.140543,41.378414,0</coordinates></Point></Placemark>
-<Placemark><name>Day 1 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>-3.573373,40.495227,0 2.140543,41.378414,0</coordinates></LineString></Placemark>
+<Folder><name>Day 1 2027-01-26 — Barcelona入境、入住与恢复日</name>
+<Placemark><name>1. Barcelona–El Prat Airport（入境节点）</name><Point><coordinates>2.083294,41.297445,0</coordinates></Point></Placemark>
+<Placemark><name>2. Barcelona Sants（住宿交通节点）</name><Point><coordinates>2.140543,41.378414,0</coordinates></Point></Placemark>
+<Placemark><name>Day 1 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>2.083294,41.297445,0 2.140543,41.378414,0</coordinates></LineString></Placemark>
 </Folder>
 <Folder><name>Day 2 2027-01-27 — Sagrada Família—Sant Pau现代主义轴线</name>
 <Placemark><name>1. Sagrada Família</name><Point><coordinates>2.174428,41.403505,0</coordinates></Point></Placemark>
@@ -34,12 +34,12 @@
 <Placemark><name>2. Cathedral and Giralda</name><Point><coordinates>-5.993141,37.385915,0</coordinates></Point></Placemark>
 <Placemark><name>Day 7 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.990183,37.383210,0 -5.993141,37.385915,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 8 2027-02-02 — Seville短线（可删）→ Madrid机场定位</name>
-<Placemark><name>1. Sevilla Santa Justa</name><Point><coordinates>-5.975206,37.392092,0</coordinates></Point></Placemark>
-<Placemark><name>2. Madrid Puerta de Atocha</name><Point><coordinates>-3.690019,40.405684,0</coordinates></Point></Placemark>
-<Placemark><name>Day 8 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.975206,37.392092,0 -3.690019,40.405684,0</coordinates></LineString></Placemark>
+<Folder><name>Day 8 2027-02-02 — Seville退房、Barcelona返程定位缓冲</name>
+<Placemark><name>1. Sevilla Santa Justa</name><Point><coordinates>-5.975750,37.392450,0</coordinates></Point></Placemark>
+<Placemark><name>2. Barcelona Sants（返程定位）</name><Point><coordinates>2.140543,41.378414,0</coordinates></Point></Placemark>
+<Placemark><name>Day 8 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.975750,37.392450,0 2.140543,41.378414,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 9 2027-02-03 — 机场酒店→Madrid离境</name>
-<Placemark><name>1. Adolfo Suárez Madrid–Barajas Airport</name><Point><coordinates>-3.566764,40.493556,0</coordinates></Point></Placemark>
+<Folder><name>Day 9 2027-02-03 — Barcelona机场返程：只做离境流程</name>
+<Placemark><name>1. Barcelona–El Prat Airport（离境节点）</name><Point><coordinates>2.083294,41.297445,0</coordinates></Point></Placemark>
 </Folder>
 </Document></kml>
