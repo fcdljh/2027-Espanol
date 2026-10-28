@@ -22,6 +22,8 @@ P={
 '塞维利亚王宫':('Real Alcazar de Sevilla, Seville, Spain',37.3832,-5.9902),
 '塞维利亚主教堂':('Catedral de Sevilla, Seville, Spain',37.3859,-5.9931),
 '格拉纳达站':('Granada railway station, Granada, Spain',37.1837,-3.6086),
+'Plaza de Armas 汽车站':('Estacion de Autobuses Plaza de Armas, Sevilla, Spain',37.39192,-6.00385),
+'格拉纳达汽车站':('Estacion de Autobuses de Granada, Granada, Spain',37.19957,-3.61401),
 '格拉纳达大教堂':('Granada Cathedral, Granada, Spain',37.1766,-3.5991),
 '圣尼古拉斯观景台':('Mirador de San Nicolas, Granada, Spain',37.1812,-3.5927),
 '阿尔罕布拉宫':('Alhambra, Granada, Spain',37.1761,-3.5881)
@@ -66,13 +68,15 @@ D[5]['timeline'][3]['note'] = '1/3日落约18:09；建议提前到场，前提�
 D[6]['timeline'][1]['note'] += ' 冬季现行开放至18:00；庭院拍照留意场馆当日规则与参观秩序。'
 # 官网两人票价快照为比较线索，非预订；点链接须重新核对车次、价格及接续。
 D[2]['timeline'][0].update({'t':'06:35–13:41','what':'Renfe 候选：Barcelona Sants → Santa Justa（转乘）','note':'10/29查询 Básico 两人€174.80，不可改退；08:30直达当时暂不可售。未购票，票价与接续须重查；早班需提前准备早餐。','link':'https://www.renfe.com/es/en/buscador-billetes?origin=71801&destination=51003&departure-date=2026-12-31'})
-D[5]['timeline'][0].update({'t':'07:18–10:54','what':'Renfe 候选：Santa Justa → 格拉纳达站（转乘）','note':'10/29查询 Básico 两人€97.20，不可改退；未购票。也比较直达火车或 ALSA，巴士站与火车站不同；早班早餐需提前安排。','link':'https://www.renfe.com/es/en/buscador-billetes?origin=51003&destination=05000&departure-date=2027-01-03'})
+D[5]['timeline'][0].update({'t':'09:00–12:00','what':'ALSA 候选：Plaza de Armas → 格拉纳达汽车站（直达）','note':'10/29 官网两位青年 Básica 共€56.46，未订；每人一箱不超20kg。车站与火车站不同，装卸时照看行李；酒店早餐和接驳仍待核实。','link':'https://www.alsa.com/en/coach/seville-granada'})
+D[5]['ribbon']='Plaza de Armas 汽车站 → 格拉纳达汽车站 → 大教堂 → 观景台'
+D[5]['stops']=[s('Plaza de Armas 汽车站'),s('格拉纳达汽车站'),s('格拉纳达大教堂'),s('圣尼古拉斯观景台')]
 D[7]['timeline'][0].update({'t':'06:09–13:44','what':'Renfe 候选：格拉纳达站 → Barcelona Sants（转乘）','note':'10/29查询 Básico 两人€145.20，不可改退；08:05直达当时暂不可售。未购票；早于 Gamboa 常规早餐，前晚备餐或确认外带。','link':'https://www.renfe.com/es/en/buscador-billetes?origin=05000&destination=71801&departure-date=2027-01-05'})
 # Transport modes represent planning candidates, not purchased or date-verified services.
 D[0]['stops'][1]['mode']='bus'
 D[0].pop('day_map',None)
 D[2]['stops'][1]['mode']='train'
-D[5]['stops'][1]['mode']='train'
+D[5]['stops'][1]['mode']='bus'
 D[7]['stops'][1]['mode']='train'
 H=[{'city_id':'barcelona','start':'2026-12-29','end':'2026-12-31','status':'to_select','base':'12/29–12/31 · 2 晚 · 2 人','area':'Eixample / Sants 交通方便区域','why':'La Palmera 临近 Liceu，去 Sants 可考虑地铁 L3；老城需留意人流、噪音及共用厕所，实际税费待核实。','options':[{'name':'Airbnb · Hostal La Palmera 双床（待核实）','band':'4.77/5，852评价；市中心两张床、独立淋浴、共用厕所；¥1,781/2晚，旅游税另付','link':'https://zh.airbnb.com/rooms/52047182?check_in=2026-12-29&check_out=2026-12-31&adults=2&currency=CNY'},{'name':'Airbnb 巴塞罗那房源搜索','band':'目标日期 2 人；价格含税费和两张床须逐项核实','link':'https://zh.airbnb.com/s/Barcelona--Spain/homes?checkin=2026-12-29&checkout=2026-12-31&adults=2&currency=CNY'}]},
 {'city_id':'seville','start':'2026-12-31','end':'2027-01-03','status':'to_select','base':'12/31–1/3 · 3 晚 · 2 人','area':'Triana / 老城边缘 / Santa Justa','why':'Alameda 老城利于步行游览；准确地址、去 Santa Justa 的交通、夜间噪音与总价待核实。','options':[{'name':'Airbnb · Alameda 老城独卫双床（待核实）','band':'4.9/5，284评价；两张单人床；¥2,909/3晚，最终税费待查','link':'https://zh.airbnb.com/rooms/15877284?check_in=2026-12-31&check_out=2027-01-03&adults=2&currency=CNY'},{'name':'Airbnb · Casa Lasso Triana（待核实）','band':'4.88/5；双人床＋沙发床；页面税前 ¥2,590 / 3晚，税费待核实','link':'https://zh.airbnb.com/rooms/904483733325681919?check_in=2026-12-31&check_out=2027-01-03&adults=2&currency=CNY'}]},
@@ -92,6 +96,8 @@ for hotel in H:
 H[2]['options'][0]['band'] = '4.5分；两张单人床；旧价 ¥699/晚不含早餐，含双早及最终总价待核；携程早餐一般07:00–10:00，节日需复核'
 H[3]['options'][0]['band'] += '；早餐未确认'
 p={'trip':'西班牙跨年三城行｜两人','lang':'zh','tz':'Europe/Madrid','prefs':{'theme':'illustrated','pictures':'stock','travel_style':'public','lodging':'两人两张独立床、高评分、交通方便；携程至少三星；整间每晚含税不超过CNY1000','pace':3,'budget':'住宿每晚CNY1000以内','scenery':['city'],'notes':'两人大学生；12/28香港出发，1/7抵港；国航经北京。'},'meta':{'dates':'2026-12-28 → 2027-01-07','party':'2位大学生','route':'Barcelona → Seville → Granada → Barcelona','budget_total':'住宿实际总价、税费与床型待查','generated':'2026-10-28','self_check':'行程时刻为草案，酒店及车票未预订。'},'decisions':['城市顺序按旅客要求，1/5回巴塞罗那、1/6国际返程。','元旦王宫闭馆；三王巡游时间待官方公布。'],'checklist':[{'item':'核实国航订单与北京中转','deadline':'2026-11-15','note':'自定提醒；确认航班号、行李直挂、机场航站楼与休息室资格。'},{'item':'核实并决定两人双床住宿','deadline':'2026-11-20','note':'自定提醒；按四段日期比较含税总价与退改。'},{'item':'检查景点门票及城际交通','deadline':'2026-12-01','note':'自定提醒；以官方放票时间为准，尤其确认阿尔罕布拉宫及1月5日返巴塞罗那。'},{'item':'复核节日运营与机场交通','deadline':'2026-12-20','note':'自定提醒；核查1月1日与三王节官方公告。'}],'legs':[{'type':'flight','date':'2026-12-28','carrier':'Air China','from':'香港','to':'北京','dep':'13:40','arr':'17:05','note':'用户提供；航班号待订单核实'},{'type':'flight','date':'2026-12-29','carrier':'Air China','from':'北京','to':'巴塞罗那','dep':'03:05','arr':'08:05','note':'用户提供；北京中转10小时'},{'type':'bus','date':'2026-12-29','from':'BCN机场','to':'哥特区','note':'机场接驳方案及实际班次待核实'},{'type':'train','date':'2026-12-31','from':'Barcelona Sants','to':'Santa Justa','note':'候选铁路；具体班次待核实'},{'type':'train','date':'2027-01-03','from':'Santa Justa','to':'格拉纳达站','note':'候选铁路；具体班次待核实'},{'type':'train','date':'2027-01-05','from':'格拉纳达站','to':'Barcelona Sants','note':'候选铁路；与航班比较，班次待核实'},{'type':'flight','date':'2027-01-06','carrier':'Air China','from':'巴塞罗那','to':'北京','dep':'11:30','arr':'次日05:30','note':'用户提供；订单核实航班号'},{'type':'flight','date':'2027-01-07','carrier':'Air China','from':'北京','to':'香港','dep':'13:00','arr':'16:45','note':'用户提供；中转7.5小时'}], 'days':D,'hotels':H,'budget':[],'brief':{'insurance':'核对申根全程及保险援助渠道。'},'unverified':['航班号、北京机场航站楼、行李直挂、城际班次、酒店含税及双床、景点票务和2027三王巡游。']}
+p['prefs']['notes'] = '两位22岁大学生，持ISIC；各一箱约20公斤。铁路需将背包计入总重；廉航比较两人含托运行李总价。'
+p['legs'][4].update({'type':'bus','from':'Plaza de Armas 汽车站','to':'格拉纳达汽车站','note':'ALSA 候选 09:00–12:00，两名青年 €56.46，未订；火车站不同，行李需核重并看管。'})
 p['prefs']['lodging'] = '优先酒店及两人早餐，民宿仅考虑景观或拍照突出；两张独立床、高评分、交通方便；携程至少三星；每晚含早餐及必付税费不超过CNY1000'
 p['checklist'][1]['note'] = '按四段日期比较双床、两人早餐、含税总价与退改；确认1/6早餐供应时间。'
 (R/'plan.geo.json').write_text(json.dumps(p,ensure_ascii=False,indent=2)+'\n',encoding='utf8')

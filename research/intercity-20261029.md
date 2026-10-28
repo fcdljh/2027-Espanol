@@ -12,3 +12,13 @@
 - `rail-20261029-isic`｜[Renfe 青年卡与学生证规则](https://www.renfe.com/es/en/normativa)｜运营商｜source_checked：旅行日 14–25 岁且持列明合格证件（包括 ISIC 等）时，现行规则列 AVE/长途 5%，Avant 等按基础票价 20%；须携证核验，适用列车、优惠叠加及具体转乘订单以售票页面为准。不能把大学学生证自动等同 ISIC。
 
 相对常见“学生都打折”“一定提前 30 天买最低价”“免费改签”的说法，优惠要看证件、年龄、票种及当时页面；分开买两段是否能保障误点接续未核实，应优先比较同一搜索结果中完整转乘票。其他运营商及飞机的同日期两人含行李总价仍未取得，不把现有 Renfe 价格称为全市场最低。
+
+## 补充快照（2026-10-29T00:42:00+08:00）
+
+- `bus-20261029-svq-grx-0900`｜[ALSA 官网塞维利亚—格拉纳达查询入口](https://www.alsa.com/en/coach/seville-granada)｜运营商实时查询｜source_checked｜2027-01-03，单程，两位 12–25 岁乘客，09:00–12:00，Plaza de Armas → Granada Station，显示直达；选择 Básica 后汇总 €56.46（显示 10% VAT included）；Flexible €58.46、Superflexible €60.46。基础票显示提前 7 天免费更改，选座 €2.50 起；最终费用、退款条件及实际日行李条款须再查。未预订。日期从路线页选择时，结果页面误显示 3 月 1 日，重新在结果页选择后显示 Sun 03 Jan；不可把错误日期结果作为目标日价格。
+- `bus-20261029-luggage`｜[ALSA 路线行李 FAQ](https://www.alsa.com/en/coach/seville-granada)｜运营商规则｜source_checked：一人可免费携一件不超过 20 kg 的箱或背包；具体车次适用条款与超重需复核。
+- `air-20261029-vueling-grx-bcn-route`｜[Vueling 格拉纳达—巴塞罗那](https://www.vueling.com/en-us/flights-from-granada-to-barcelona)｜运营商航线页｜source_checked：官网介绍直飞飞行时间约 1.5 小时；1/5 班次与双人两件托运行李价格未确认。
+- `air-20261029-vueling-bags`｜[Vueling 托运行李规则](https://help.vueling.com/hc/es/articles/19798784049041-Equipaje-facturado)｜运营商规则｜source_checked：按票价/加购选择 20 或 25 kg；25 kg 包含于 Fly Grande，其他以具体票种及订单为准；票面价格与行李费随日期变化。
+- `bus-20261029-station-map`｜[Plaza de Armas 地图](https://mapcarta.com/W27757008)；[Granada 汽车站地图](https://mapcarta.com/W120715331)｜OpenStreetMap 数据聚合｜source_checked：坐标分别 37.39192,-6.00385 和 37.19957,-3.61401，作为地图位置线索；具体入口与站台以承运人通知为准。
+
+用户确认两人 22 岁、持 ISIC，各有一箱约 20 kg。ISIC 是否在每段售票页实际可选、两人折后最终票价仍待确认；不能直接把公开票价减 5% 当实时报价。

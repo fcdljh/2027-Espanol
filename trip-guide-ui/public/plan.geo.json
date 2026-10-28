@@ -12,7 +12,7 @@
     "scenery": [
       "city"
     ],
-    "notes": "两人大学生；12/28香港出发，1/7抵港；国航经北京。"
+    "notes": "两位22岁大学生，持ISIC；各一箱约20公斤。铁路需将背包计入总重；廉航比较两人含托运行李总价。"
   },
   "meta": {
     "dates": "2026-12-28 → 2027-01-07",
@@ -84,11 +84,11 @@
       "note": "候选铁路；具体班次待核实"
     },
     {
-      "type": "train",
+      "type": "bus",
       "date": "2027-01-03",
-      "from": "Santa Justa",
-      "to": "格拉纳达站",
-      "note": "候选铁路；具体班次待核实"
+      "from": "Plaza de Armas 汽车站",
+      "to": "格拉纳达汽车站",
+      "note": "ALSA 候选 09:00–12:00，两名青年 €56.46，未订；火车站不同，行李需核重并看管。"
     },
     {
       "type": "train",
@@ -481,22 +481,22 @@
       "city": "Seville → Granada",
       "city_id": "granada",
       "label": "抵达格拉纳达 · 山城街区",
-      "ribbon": "Santa Justa → 格拉纳达站 → 大教堂 → 观景台",
+      "ribbon": "Plaza de Armas 汽车站 → 格拉纳达汽车站 → 大教堂 → 观景台",
       "late_cut": "晚到则取消上坡，只走市中心。",
       "rain_alt": "改为市中心已确认开放的室内场所。",
       "stops": [
         {
-          "name": "Santa Justa",
-          "query": "Sevilla Santa Justa railway station, Seville, Spain",
-          "lat": 37.3925,
-          "lon": -5.9758
+          "name": "Plaza de Armas 汽车站",
+          "query": "Estacion de Autobuses Plaza de Armas, Sevilla, Spain",
+          "lat": 37.39192,
+          "lon": -6.00385
         },
         {
-          "name": "格拉纳达站",
-          "query": "Granada railway station, Granada, Spain",
-          "lat": 37.1837,
-          "lon": -3.6086,
-          "mode": "train"
+          "name": "格拉纳达汽车站",
+          "query": "Estacion de Autobuses de Granada, Granada, Spain",
+          "lat": 37.19957,
+          "lon": -3.61401,
+          "mode": "bus"
         },
         {
           "name": "格拉纳达大教堂",
@@ -513,12 +513,12 @@
       ],
       "timeline": [
         {
-          "t": "07:18–10:54",
-          "what": "Renfe 候选：Santa Justa → 格拉纳达站（转乘）",
+          "t": "09:00–12:00",
+          "what": "ALSA 候选：Plaza de Armas → 格拉纳达汽车站（直达）",
           "kind": "hop",
           "tag": "skippable",
-          "note": "10/29查询 Básico 两人€97.20，不可改退；未购票。也比较直达火车或 ALSA，巴士站与火车站不同；早班早餐需提前安排。",
-          "link": "https://www.renfe.com/es/en/buscador-billetes?origin=51003&destination=05000&departure-date=2027-01-03"
+          "note": "10/29 官网两位青年 Básica 共€56.46，未订；每人一箱不超20kg。车站与火车站不同，装卸时照看行李；酒店早餐和接驳仍待核实。",
+          "link": "https://www.alsa.com/en/coach/seville-granada"
         },
         {
           "t": "抵达后",
