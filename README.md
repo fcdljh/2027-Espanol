@@ -15,7 +15,7 @@
 | 领域 | 当前状态 | 主记录 |
 |---|---|---|
 | 行程 | 新城市顺序及人数已确认；1/5 转场班次与巡游待核实 | [共享事实](CONTEXT.md)、[新行程](trip/itinerary.md) |
-| 航班与交通 | 用户已提供国航四段时间；航班号、机场/航站楼、行李及城际班次待核实 | [航班](trip/flights.md)、[航班与节日研究](research/holiday-2026-2027.md) |
+| 航班与交通 | 三段 Renfe 官方两人车次及价格已查询，均未预订；国航航班号、机场/航站楼和行李仍待订单核实 | [城际交通](trip/ground-transport.md)、[查询证据](research/intercity-20261029.md)、[航班](trip/flights.md) |
 | 节日 | 1/1 两座宫殿关闭；12/31 塞维利亚跨年、1/5 巡游为条件活动 | [证据记录](research/holiday-2026-2027.md) |
 | 小红书 | 本次逐篇阅读三城笔记，运营事实另查官方 | [专项记录](research/holiday-2026-2027.md)、[历史索引](research/xhs/README.md) |
 | 天气 | 三城气候历史值已区分预报；手机页在日期进入未来 7 天后提供逐日预报和 AEMET 入口 | [天气研究](research/city-weather-sun.md) |

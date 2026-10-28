@@ -64,6 +64,10 @@ D[5]['timeline'][3]['t'] = '约17:15–18:15'
 D[5]['timeline'][3]['what'] = '圣尼古拉斯观景台：红宫与雪山方向'
 D[5]['timeline'][3]['note'] = '1/3日落约18:09；建议提前到场，前提是车次准时且天气允许。落日和积雪不保证；坡路防滑，天黑后结伴下山。'
 D[6]['timeline'][1]['note'] += ' 冬季现行开放至18:00；庭院拍照留意场馆当日规则与参观秩序。'
+# 官网两人票价快照为比较线索，非预订；点链接须重新核对车次、价格及接续。
+D[2]['timeline'][0].update({'t':'06:35–13:41','what':'Renfe 候选：Barcelona Sants → Santa Justa（转乘）','note':'10/29查询 Básico 两人€174.80，不可改退；08:30直达当时暂不可售。未购票，票价与接续须重查；早班需提前准备早餐。','link':'https://www.renfe.com/es/en/buscador-billetes?origin=71801&destination=51003&departure-date=2026-12-31'})
+D[5]['timeline'][0].update({'t':'07:18–10:54','what':'Renfe 候选：Santa Justa → 格拉纳达站（转乘）','note':'10/29查询 Básico 两人€97.20，不可改退；未购票。也比较直达火车或 ALSA，巴士站与火车站不同；早班早餐需提前安排。','link':'https://www.renfe.com/es/en/buscador-billetes?origin=51003&destination=05000&departure-date=2027-01-03'})
+D[7]['timeline'][0].update({'t':'06:09–13:44','what':'Renfe 候选：格拉纳达站 → Barcelona Sants（转乘）','note':'10/29查询 Básico 两人€145.20，不可改退；08:05直达当时暂不可售。未购票；早于 Gamboa 常规早餐，前晚备餐或确认外带。','link':'https://www.renfe.com/es/en/buscador-billetes?origin=05000&destination=71801&departure-date=2027-01-05'})
 # Transport modes represent planning candidates, not purchased or date-verified services.
 D[0]['stops'][1]['mode']='bus'
 D[0].pop('day_map',None)
