@@ -20,6 +20,16 @@
 
 TourMind 在本次真实日期的塞维利亚和格拉纳达区域查询返回 “no hotels found with available rates”；这不是所有平台无房的证明。巴塞罗那部分酒店报价查询出现上游超时。携程登录后取得格拉纳达双床含税均价，塞维利亚 Giralda Center 超预算；Airbnb 房源列价不代表最终含税总价，部分旅游税到店另付，仍没有四段均满足含税预算的完整核验组合。价格、评价、房态随时变化，均未预订。
 
+## 街区与交通复核（2026-10-29）
+
+- **Barcelona 首段 La Palmera：交通方便，住宿条件需权衡。** [旅馆官方](https://www.lapalmerabcn.com/es/pagina/como-llegar)确认 Carrer de Jerusalem 30、Liceu 附近，说明 Sants 可乘 L3 到 Liceu；机场可先乘 Aerobús 到 Plaça Catalunya。房源为 Raval 老城一侧，近步行景点但需看实际夜间动线、隔音、公共 WC 与旅游税。小红书旅客偏好扩展区或交通便利居民区（`xhs-stay-3city-6a6b0830000000003301da96`），不据此断言具体房源危险。不要沿用该旅馆页面关于机场 R2 直达 Plaça Catalunya 的表述，线路以 Renfe 当日线路图为准。
+- **Sevilla Alameda：适合逛老城，车站接驳待地址确认。** 房东描述 Alameda 市中心，独立房间带私用卫生间，住宅存在共用区域；具体街道未确认，无法给出精确车站时间。Santa Justa 出站出租车排队是旅客经验（`xhs-transit-seville-6abd4b27000000001b02045b`），跨年夜问清车辆停靠点与噪音。
+- **Granada Gamboa：位置最明确。** 酒店[官方](https://www.sercotelhoteles.com/en/hotel-palacio-de-los-gamboa)标示 Plaza de Gamboa 与大教堂约 450 米；TourMind 位置搜索返回 4 星。小红书住客提到独立双床（`xhs-stay-gamboa-6959ce31000000002202dda8`）。另一笔记反映 Albaicín 坡路拖箱困难（`xhs-granada-6921a98f000000001e0326e3`）；酒店在 Centro，不能把山坡体验直接套到它。
+- **Granada Airbnb Taubin：中央平地区域可作为备选。** [房源页面](https://zh.airbnb.com/rooms/1558015621284285662?check_in=2027-01-03&check_out=2027-01-05&adults=2&currency=CNY)此前显示靠近 Calle Navas / Plaza del Campillo、两张单人床；具体地址和最终含税总价仍需在预订前核对。
+- **Barcelona 返程夜 Occidental 1929：适合机场定位。** 携程列西班牙广场附近、距 Barcelona Sants 约 820 米；TourMind 返回 3 星。机场方向 Aerobús A1/A2 都经过广场附近，站点可能受施工调整（[运营商公告](https://aerobusbarcelona.es/estado-del-servicio/ubicacion-parada-plaza-espana/?lang=ca)）；1/6 假日班次及航站楼仍需复核。双床未保证，不能视为已符合硬条件。
+
+以上是区域和接驳适配判断，四段均未选定或预订；Airbnb 房源地址及最终费用仍以房源实际披露为准。
+
 > **历史版本提示：**以下为旧三人、旧日期及旧路线资料，不适用于当前行程。
 
 # 四段住宿与日期重查

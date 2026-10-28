@@ -1,9 +1,10 @@
-const CACHE_NAME = "spain-guide-static-v19";
+const CACHE_NAME = "spain-guide-static-v20";
 const PRECACHE = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./weather.mjs",
   "./plan.geo.json",
   "./photo-references.json",
   "./pre-departure.json",

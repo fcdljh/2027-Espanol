@@ -1,3 +1,5 @@
+import { WEATHER_CITIES, forecastWindow, fetchDayForecast } from "./weather.mjs";
+
 const STORAGE_KEY = "spain-guide-ui-progress-2026-v2";
 const NAVIGATION_KEY = "spain-guide-ui-navigation-2026-v2";
 const PREPARATION_KEY = "spain-guide-ui-preparation-2026-v2";
@@ -1048,6 +1050,29 @@ function bindXhsEvents() {
   });
 }
 
+function weatherMarkup(day) {
+  const city = WEATHER_CITIES[day.city_id];
+  if (!city) return "";
+  const climate = day.date.slice(5, 7) === "12" ? city.december : city.january;
+  const status = forecastWindow(day.date) ? "正在查询当天预报…" : "该日不在未来 7 天预报范围，暂无逐日预报。";
+  return `<section class="weather-card" aria-label="当天天气"><div class="card-heading-row"><div><span class="section-kicker">天气 · ${escapeHtml(city.name)}${day.travel_day ? "（抵达城市）" : ""}</span><h3>当天出行天气</h3></div><a class="text-link" href="${escapeHtml(city.forecast)}" target="_blank" rel="noreferrer">AEMET 官方预报 ↗</a></div><p class="weather-status" data-weather-date="${escapeHtml(day.date)}">${escapeHtml(status)}</p><p>历史气候参考：机场站${day.date.slice(5,7) === "12" ? "12月" : "1月"}平均日最高 / 最低 ${escapeHtml(climate)}°C（1981–2010），不是当日预报。</p><a href="${escapeHtml(city.climate)}" target="_blank" rel="noreferrer">查看 AEMET 气候资料 ↗</a></section>`;
+}
+
+async function updateWeather(day) {
+  const city = WEATHER_CITIES[day.city_id];
+  if (!city || !forecastWindow(day.date)) return;
+  try {
+    const value = await fetchDayForecast(city, day.date);
+    const target = document.querySelector(`[data-weather-date="${day.date}"]`);
+    if (!target || state.selectedDate !== day.date || state.selectedTab !== "today") return;
+    const rain = value.rain === null ? "降水概率暂无数据" : `最大降水概率 ${value.rain}%`;
+    target.textContent = `Open-Meteo 当日预报：最高 ${value.high}°C / 最低 ${value.low}°C；${rain}。更新于 ${new Date().toLocaleString("zh-CN", {timeZone:"Asia/Hong_Kong"})}（香港时间）；请同时查看 AEMET 官方预警。`;
+  } catch {
+    const target = document.querySelector(`[data-weather-date="${day.date}"]`);
+    if (target && state.selectedDate === day.date && state.selectedTab === "today") target.textContent = "当天预报暂时无法获取；请打开 AEMET 官方预报，离线时稍后重试。";
+  }
+}
+
 function renderToday(day) {
   const completedCount = day.timeline.filter((_, index) => isComplete(day, index)).length;
   const progress = Math.round((completedCount / Math.max(1, day.timeline.length)) * 100);
@@ -1074,6 +1099,8 @@ function renderToday(day) {
       <div class="progress-track" aria-label="今日完成度"><span style="width:${progress}%"></span></div>
       ${heroMarkup}
     </section>
+
+    ${weatherMarkup(day)}
 
     ${nextStepMarkup(day, firstOpenIndex, allComplete)}
 
@@ -1288,7 +1315,7 @@ function render() {
   renderTabs();
   if (isPreparation) renderPreDeparture(state.plan.pre_departure);
   else if (state.selectedTab === "step") renderStep(day);
-  else renderToday(day);
+  else { renderToday(day); updateWeather(day); }
 }
 
 function setTab(tab) {

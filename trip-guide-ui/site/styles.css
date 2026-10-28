@@ -495,3 +495,9 @@ a { color: inherit; }
   .next-step-button { width: 100%; justify-content: center; }
   .next-step-count { font-size: 10px; }
 }
+
+.weather-card { margin-top:12px; padding:17px; border:1px solid rgba(24,57,74,.1); border-radius:22px; background:#fffdf8; box-shadow:0 8px 26px rgba(24,57,74,.05); }
+.weather-card h3 { margin:4px 0 0; font-family:Georgia,"Songti SC",serif; color:var(--navy); font-size:20px; }
+.weather-card p { margin:10px 0; color:var(--muted); font-size:13px; line-height:1.6; }
+.weather-card .weather-status { color:var(--navy); font-weight:700; }
+.weather-card > a { color:var(--teal-dark); font-size:12px; font-weight:700; }

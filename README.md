@@ -2,7 +2,7 @@
 
 以本页作为入口。当前资料分为行程决策、分类研究、城市指南和原始研究记录；价格、开放时间、班次和政策均需按标注日期复核。
 
-更新时间：2026-10-28（Asia/Hong_Kong）
+更新时间：2026-10-29（Asia/Hong_Kong）
 
 ## 当前进度（2026-10-28）
 
@@ -18,6 +18,7 @@
 | 航班与交通 | 用户已提供国航四段时间；航班号、机场/航站楼、行李及城际班次待核实 | [航班](trip/flights.md)、[航班与节日研究](research/holiday-2026-2027.md) |
 | 节日 | 1/1 两座宫殿关闭；12/31 塞维利亚跨年、1/5 巡游为条件活动 | [证据记录](research/holiday-2026-2027.md) |
 | 小红书 | 本次逐篇阅读三城笔记，运营事实另查官方 | [专项记录](research/holiday-2026-2027.md)、[历史索引](research/xhs/README.md) |
+| 天气 | 三城气候历史值已区分预报；手机页在日期进入未来 7 天后提供逐日预报和 AEMET 入口 | [天气研究](research/city-weather-sun.md) |
 | 住宿及预算 | 按两人双床、高评分、交通便利与携程至少三星重查；格拉纳达双床候选、巴塞罗那及塞维利亚新线索的最终总价仍需核实 | [住宿调研](trip/accommodation.md) |
 
 ## 资料流
@@ -69,7 +70,7 @@ flowchart LR
 - [可视化产物规范](visualizations/README.md)
 - [小红书逐条研究总索引](research/xhs/README.md)，含 Barcelona、Granada、Seville 分页、历史转机补充、[超市伴手礼/零食/面包补充](research/xhs/supermarket-snacks.md)及[签证与行前准备双查](research/xhs/pre-departure-cross-check.md)
 - [路线、餐厅与人像点位交叉审计](research/xhs/recommendation-cross-check.md)
-- [三城日落与一月底天气参考](research/city-weather-sun.md)
+- [跨年三城气候与逐日预报](research/city-weather-sun.md)
 - [参考图素材清单](research/xhs/assets/pose-references/README.md)：人像机位清单；项目另保留落日/晚霞/天际线和食物，排除纯建筑空镜
 - [中文交互地图](research/city-maps/city-atlas.html)与[地图接口规范](research/city-maps/README.md)
 - [地图研究台生成脚本](research/city-maps/build-atlas-research-data.py)与[生成数据适配层](research/city-maps/atlas-research-data.js)

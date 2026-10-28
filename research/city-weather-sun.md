@@ -1,3 +1,21 @@
+# 跨年三城气候与天气预报
+
+核查时间：2026-10-29T00:07:32+08:00。距离 2026-12-29—2027-01-06 仍较远，当前不存在可信的逐日天气预报，不能把月平均写成当天温度。手机页面仅在目的地日期进入未来 7 天后向 [Open-Meteo](https://open-meteo.com/en/docs) 请求该日最高、最低和最大降水概率；数据缺失、断网或日期不符时显示无法获取，预报按西班牙本地日期和目的城市展示，不是沿途天气。出发前和当天优先查看 AEMET 官方预报和预警。
+
+| 参考站（机场） | 月份 | 平均日最高 / 平均日最低 | 资料 |
+|---|---|---|---|
+| Barcelona 机场 | 12月 | 14.3 / 5.7 °C | [AEMET](https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=0076) |
+| Barcelona 机场 | 1月 | 13.6 / 4.7 °C | 同上 |
+| Sevilla 机场 | 12月 | 16.6 / 7.3 °C | [AEMET](https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=5783) |
+| Sevilla 机场 | 1月 | 16.0 / 5.7 °C | 同上 |
+| Granada 机场 | 1月 | 13.0 / 0.0 °C | [AEMET](https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=5530E) |
+
+这些是 1981–2010 机场站气候平均值，非市中心或山区的预测，不是日最高或最低的边界。格拉纳达清晨、山坡和宫殿园区更应分层保暖；全程准备防风防雨外层与防滑鞋。
+
+逐日官方入口：[Barcelona](https://www.aemet.es/es/eltiempo/prediccion/municipios/barcelona-id08019) · [Sevilla](https://www.aemet.es/es/eltiempo/prediccion/municipios/sevilla-id41091) · [Granada](https://www.aemet.es/es/eltiempo/prediccion/municipios/granada-id18087)。AEMET 页面为未来 7 天与部分逐小时预报，具体日期进入范围后再查。
+
+> 历史资料：下方为旧 2027 年 1 月底路线，仅存档；其日落日期、三人安排不得套用于本次。
+
 # 三城日落与一月底天气参考
 
 最后核验/生成：2026-10-11T00:56:53+08:00。本文服务于新路线 **Barcelona → Granada → Seville → Barcelona**，不是 2027 年逐日天气预报。日落时间按 `Europe/Madrid` 冬季当地时间估算；出发前 T-14/T-1 重新查看天气、云量、降雨、风和能见度。
