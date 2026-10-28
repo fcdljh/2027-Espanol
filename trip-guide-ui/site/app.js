@@ -56,7 +56,10 @@ const tagLabels = {
   opener: "建议先做"
 };
 
-const NAVIGATION_OVERRIDES = {};
+const NAVIGATION_OVERRIDES = {
+  // For the intercity leg, navigate to the departure station, not on foot to Seville.
+  "2026-12-31": { 0: { stop: "Barcelona Sants", mode: "transit" } }
+};
 
 const TRAVEL_MODES = [
   { id: "walking", label: "步行" },
