@@ -749,7 +749,7 @@ function lodgingMarkup(day) {
             </a>
           `).join("")}
         </div>
-        <p class="lodging-note">这里只打开 Airbnb、Trip.com、携程或机场官方页面，不创建订单。床型、税费、取消截止和最终地址请在出发前重新核对。</p>
+        <p class="lodging-note">优先酒店和含两人早餐的房价；民宿仅考虑风景或拍照体验突出的房源。每晚总价含早餐及必付税费不超过 ¥1,000；确认两张独立床、早餐时间和最终地址。1/6 早赴机场需确认早餐是否来得及。</p>
       </div>
     </details>
   `;

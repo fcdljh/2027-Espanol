@@ -6,7 +6,7 @@
     "theme": "illustrated",
     "pictures": "stock",
     "travel_style": "public",
-    "lodging": "两人两张独立床、高评分、交通方便；携程至少三星；整间每晚含税不超过CNY1000",
+    "lodging": "优先酒店及两人早餐，民宿仅考虑景观或拍照突出；两张独立床、高评分、交通方便；携程至少三星；每晚含早餐及必付税费不超过CNY1000",
     "pace": 3,
     "budget": "住宿每晚CNY1000以内",
     "scenery": [
@@ -35,7 +35,7 @@
     {
       "item": "核实并决定两人双床住宿",
       "deadline": "2026-11-20",
-      "note": "自定提醒；按四段日期比较含税总价与退改。"
+      "note": "按四段日期比较双床、两人早餐、含税总价与退改；确认1/6早餐供应时间。"
     },
     {
       "item": "检查景点门票及城际交通",
@@ -701,17 +701,12 @@
       "status": "to_select",
       "base": "12/29–12/31 · 2 晚 · 2 人",
       "area": "Eixample / Sants 交通方便区域",
-      "why": "La Palmera 临近 Liceu，去 Sants 可考虑地铁 L3；老城需留意人流、噪音及共用厕所，实际税费待核实。",
+      "why": "La Palmera 临近 Liceu，去 Sants 可考虑地铁 L3；老城需留意人流、噪音及共用厕所，实际税费待核实。 优先寻找含两人早餐的酒店；民宿景观尚待核实。",
       "options": [
         {
-          "name": "Airbnb · Hostal La Palmera 双床（待核实）",
-          "band": "4.77/5，852评价；市中心两张床、独立淋浴、共用厕所；¥1,781/2晚，旅游税另付",
+          "name": "Airbnb 备选 · Hostal La Palmera 双床（待核实）",
+          "band": "4.77/5，852评价；市中心两张床、独立淋浴、共用厕所；¥1,781/2晚，旅游税另付；风景及早餐未确认",
           "link": "https://zh.airbnb.com/rooms/52047182?check_in=2026-12-29&check_out=2026-12-31&adults=2&currency=CNY"
-        },
-        {
-          "name": "Airbnb 巴塞罗那房源搜索",
-          "band": "目标日期 2 人；价格含税费和两张床须逐项核实",
-          "link": "https://zh.airbnb.com/s/Barcelona--Spain/homes?checkin=2026-12-29&checkout=2026-12-31&adults=2&currency=CNY"
         }
       ]
     },
@@ -722,17 +717,12 @@
       "status": "to_select",
       "base": "12/31–1/3 · 3 晚 · 2 人",
       "area": "Triana / 老城边缘 / Santa Justa",
-      "why": "Alameda 老城利于步行游览；准确地址、去 Santa Justa 的交通、夜间噪音与总价待核实。",
+      "why": "Alameda 老城利于步行游览；准确地址、去 Santa Justa 的交通、夜间噪音与总价待核实。 优先寻找含两人早餐的酒店；民宿景观尚待核实。",
       "options": [
         {
-          "name": "Airbnb · Alameda 老城独卫双床（待核实）",
-          "band": "4.9/5，284评价；两张单人床；¥2,909/3晚，最终税费待查",
+          "name": "Airbnb 备选 · Alameda 老城独卫双床（待核实）",
+          "band": "4.9/5，284评价；两张单人床；¥2,909/3晚，最终税费待查；风景及早餐未确认",
           "link": "https://zh.airbnb.com/rooms/15877284?check_in=2026-12-31&check_out=2027-01-03&adults=2&currency=CNY"
-        },
-        {
-          "name": "Airbnb · Casa Lasso Triana（待核实）",
-          "band": "4.88/5；双人床＋沙发床；页面税前 ¥2,590 / 3晚，税费待核实",
-          "link": "https://zh.airbnb.com/rooms/904483733325681919?check_in=2026-12-31&check_out=2027-01-03&adults=2&currency=CNY"
         }
       ]
     },
@@ -743,17 +733,17 @@
       "status": "to_select",
       "base": "1/3–1/5 · 2 晚 · 2 人",
       "area": "大教堂 / 火车站方便区域",
-      "why": "Gamboa 位于大教堂附近，适合市中心步行；核实车站接驳、隔音与实际总价。",
+      "why": "Gamboa 位于大教堂附近，适合市中心步行；核实车站接驳、隔音与实际总价。 优先寻找含两人早餐的酒店；民宿景观尚待核实。",
       "options": [
         {
-          "name": "Airbnb · 陶宾宫殿式公寓双床房（待核实）",
-          "band": "4.9/5；两张单人床；页面税前 ¥1,039 / 2晚，税费待核实",
-          "link": "https://zh.airbnb.com/rooms/1558015621284285662?check_in=2027-01-03&check_out=2027-01-05&adults=2&currency=CNY"
+          "name": "携程 · Palacio de Los Gamboa（待核实）",
+          "band": "4.5分；两张单人床；旧价 ¥699/晚不含早餐，含双早价格待查",
+          "link": "https://hotels.ctrip.com/hotels/1625246.html?checkIn=2027-01-03&checkOut=2027-01-05&crn=1&adult=2&children=0"
         },
         {
-          "name": "携程 · Palacio de Los Gamboa（待核实）",
-          "band": "4.5分；两张单人床，含税费均价 ¥699/晚；最终总额待复核",
-          "link": "https://hotels.ctrip.com/hotels/1625246.html?checkIn=2027-01-03&checkOut=2027-01-05&crn=1&adult=2&children=0"
+          "name": "Airbnb 备选 · 陶宾宫殿式公寓双床房（待核实）",
+          "band": "4.9/5；两张单人床；页面税前 ¥1,039 / 2晚，税费待核实；风景及早餐未确认",
+          "link": "https://zh.airbnb.com/rooms/1558015621284285662?check_in=2027-01-03&check_out=2027-01-05&adults=2&currency=CNY"
         }
       ]
     },
@@ -764,22 +754,17 @@
       "status": "to_select",
       "base": "1/5–1/6 · 返程前 1 晚 · 2 人",
       "area": "机场接驳方便、次日早出发",
-      "why": "西班牙广场附近有机场巴士；核实双床及 1/6 假日班次、站点和航站楼。",
+      "why": "西班牙广场附近有机场巴士；核实双床及 1/6 假日班次、站点和航站楼。 优先寻找含两人早餐的酒店；民宿景观尚待核实。",
       "options": [
         {
           "name": "携程 · Occidental Barcelona 1929（床型待确认）",
-          "band": "三星 4.5/5；西班牙广场旁；¥537＋到店¥115；双床或大床，不能保证双床",
+          "band": "三星 4.5/5；西班牙广场旁；¥537＋到店¥115；双床或大床，不能保证双床；早餐未确认",
           "link": "https://hotels.ctrip.com/hotels/46315768.html?checkIn=2027-01-05&checkOut=2027-01-06&crn=1&adult=2&children=0"
         },
         {
-          "name": "Airbnb · Raval 独卫双床房（待核实）",
-          "band": "4.79/5；两张单人床；税前 ¥557/晚，最终税费待查",
+          "name": "Airbnb 备选 · Raval 独卫双床房（待核实）",
+          "band": "4.79/5；两张单人床；税前 ¥557/晚，最终税费待查；风景及早餐未确认",
           "link": "https://zh.airbnb.com/rooms/52047490?check_in=2027-01-05&check_out=2027-01-06&adults=2&currency=CNY"
-        },
-        {
-          "name": "Airbnb 巴塞罗那返程夜搜索",
-          "band": "1 晚 2 人；总价和床型需复核",
-          "link": "https://zh.airbnb.com/s/Barcelona--Spain/homes?checkin=2027-01-05&checkout=2027-01-06&adults=2&currency=CNY"
         }
       ]
     }
