@@ -1,3 +1,5 @@
+> **历史版本提示（2026-10-28）：**下文是旧三人、旧日期及旧路线资料，不适用于当前行程。请先看[两人新行程](itinerary.md)和[共享事实](../CONTEXT.md)；价格、证件、班次及住宿均须重查。
+
 # 西班牙三城小时级执行攻略
 
 最后整理：2026-10-11。给第一次走 Barcelona、Granada、Seville 的旅伴使用。当前结构是 **阿联酋航空北京→Dubai→Barcelona 往返**，西班牙境内为 **Barcelona → Granada → Seville → Barcelona**；全程不安排 Madrid。

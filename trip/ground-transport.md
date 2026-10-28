@@ -1,3 +1,5 @@
+> **历史版本提示（2026-10-28）：**下文是旧三人、旧日期及旧路线资料，不适用于当前行程。请先看[两人新行程](itinerary.md)和[共享事实](../CONTEXT.md)；价格、证件、班次及住宿均须重查。
+
 # 城市间与市内交通
 
 最后整理：2026-10-11。当前路线只使用 Barcelona、Granada、Seville 三城：**BCN机场 → Barcelona → Granada → Seville → Barcelona → BCN机场**。不安排 Madrid，也不需要从 Madrid 再定位 Barcelona。
