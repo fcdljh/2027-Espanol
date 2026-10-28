@@ -935,10 +935,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
     }
     function combinedFeatures(cityId) {
       const base = CITIES[cityId].features || [];
-      const planFeatures = ATLAS_RESEARCH.mapFeatures && Array.isArray(ATLAS_RESEARCH.mapFeatures[cityId]) ? ATLAS_RESEARCH.mapFeatures[cityId] : [];
       const additions = importedFeaturesByCity[cityId] || [];
       const byId = new Map();
-      base.concat(planFeatures,additions).forEach((feature,index)=>byId.set(featureKey(feature,index),feature));
+      base.concat(additions).forEach((feature,index)=>byId.set(featureKey(feature,index),feature));
       return Array.from(byId.values());
     }
     function visibleFeatures(cityId) {
@@ -1297,7 +1296,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     function planHotelForDay(day) {
       const hotels = Array.isArray(ATLAS_RESEARCH.plan && ATLAS_RESEARCH.plan.hotels) ? ATLAS_RESEARCH.plan.hotels : [];
       const cityId = planCityId(day);
-      return hotels.find((hotel)=>hotel.city_id === cityId) || hotels.find((hotel)=>cityIdsInText(hotel.base).includes(cityId));
+      return hotels.find((hotel)=>hotel.city_id === cityId && (!hotel.start || (day.date >= hotel.start && day.date < hotel.end))) || null;
     }
     function planDiningForDay(day) {
       const sections = Array.isArray(ATLAS_RESEARCH.dining) ? ATLAS_RESEARCH.dining : [];
@@ -1327,7 +1326,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     }
     function guideChecklistMarkup(day,hotel) {
       const first = day.travel_day ? "确认车次/航班、行李、车站到住宿的接驳和入住地址" : "确认固定预约、入场证件、官方营业页面和当天导航";
-      const second = hotel ? "住宿仍是候选而非预订：复核房型、独立床、免费取消、税费和门禁" : "确认当晚住宿已在正式页面闭合，不把研究卡当成预订证明";
+      const second = hotel ? "住宿仍是候选而非预订：复核两张独立床、取消规则、含税总价和门禁" : "确认当晚住宿，不把研究卡当成预订证明";
       return "<div class='guide-module'><div class='guide-module-title'>小白出门前只看这三件事 <span class='research-badge'>执行清单</span></div><ul class='guide-checklist'><li>"+esc(first)+"</li><li>"+esc(second)+"</li><li>晚间查看天气与次日运营变化；雨天/晚到时按下方删减规则执行</li></ul></div>";
     }
     function planDayCard(day) {
@@ -1364,9 +1363,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
     function planHotelSections() {
       const hotels = Array.isArray(ATLAS_RESEARCH.plan && ATLAS_RESEARCH.plan.hotels) ? ATLAS_RESEARCH.plan.hotels : [];
       const citySet = new Set(researchCityIds());
-      return hotels.filter((hotel)=>cityIdsInText(hotel.base).some((cityId)=>citySet.has(cityId))).map((hotel)=>{
+      return hotels.filter((hotel)=>citySet.has(hotel.city_id)).map((hotel)=>{
         const options = Array.isArray(hotel.options) ? hotel.options.filter((option)=>!String(option.name || "").includes("排除") && !String(option.band || "").includes("超过")).slice(0,3) : [];
-        return "<div class='research-card'><div class='research-badges'><span class='research-badge'>"+esc(cityIdsInText(hotel.base).map(researchCityLabel).join(" / "))+"</span><span class='research-badge'>当前规划 Top 候选</span></div><h3 class='research-card-title'>"+esc(hotel.base || "")+"</h3><p class='research-text'>"+esc(hotel.why || "")+"</p>"+options.map((option)=>"<div class='lodging-card'><h3>"+esc(option.name || "")+"</h3><p>"+esc(option.band || "")+"</p><div class='research-actions'>"+researchLink("打开平台页面",option.link,"")+"</div></div>").join("")+"</div>";
+        return "<div class='research-card'><div class='research-badges'><span class='research-badge'>"+esc(researchCityLabel(hotel.city_id))+"</span><span class='research-badge'>待核实线索</span></div><h3 class='research-card-title'>"+esc(hotel.base || "")+"</h3><p class='research-text'>"+esc(hotel.why || "")+"</p>"+options.map((option)=>"<div class='lodging-card'><h3>"+esc(option.name || "")+"</h3><p>"+esc(option.band || "")+"</p><div class='research-actions'>"+researchLink("打开平台页面",option.link,"")+"</div></div>").join("")+"</div>";
       }).join("");
     }
     function lodgingCard(record) {
@@ -1385,7 +1384,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       const query = String(document.getElementById("researchSearch").value || "").trim().toLocaleLowerCase();
       if (query) pool = pool.filter((record)=>researchTextMatch([record.propertyName,record.platform,record.roomType,record.beds,record.notes,record.rateConditions].join(" "),query));
       pool.sort((a,b)=>(a.perNight == null ? 999999 : a.perNight)-(b.perNight == null ? 999999 : b.perNight));
-      const note = "酒店仅使用 Trip.com/携程记录，民宿/旅馆房源仅使用 Airbnb；TourMind 不进入推荐视图。当前范围有 "+excluded+" 条已因超预算、不可取消或硬条件不合格排除。预算上限：CNY 1500/晚。";
+      const note = "按两人、两张独立床、每晚含税 CNY 1000 上限筛选；可接受不可退款。当前范围有 "+excluded+" 条超预算或不合格记录。税费、最终总价和床型均须复核。";
       return "<div class='research-summary'>"+esc(note)+"</div>"+planHotelSections()+"<div class='research-subhead'>平台快照（"+pool.length+" 条）</div>"+(pool.length?pool.map(lodgingCard).join(""):"<div class='empty-state'>没有符合当前价格/来源筛选的住宿记录；超出预算的房源不作为推荐。</div>");
     }
     function renderFoodResearch() {

@@ -1,7 +1,7 @@
-const STORAGE_KEY = "spain-guide-ui-progress-v1";
-const NAVIGATION_KEY = "spain-guide-ui-navigation-v1";
-const PREPARATION_KEY = "spain-guide-ui-preparation-v1";
-const DEFAULT_DATE = "2027-01-26";
+const STORAGE_KEY = "spain-guide-ui-progress-2026-v2";
+const NAVIGATION_KEY = "spain-guide-ui-navigation-2026-v2";
+const PREPARATION_KEY = "spain-guide-ui-preparation-2026-v2";
+const DEFAULT_DATE = "2026-12-29";
 const savedNavigation = loadNavigation();
 
 const state = {
@@ -56,44 +56,7 @@ const tagLabels = {
   opener: "建议先做"
 };
 
-const NAVIGATION_OVERRIDES = {
-  "2027-01-26": {
-    0: { stop: "Barcelona–El Prat Airport（入境节点）", mode: "transit" },
-    1: { stop: "Barcelona Sants（住宿交通节点）", mode: "transit" },
-    2: { stop: "Barcelona Sants（住宿交通节点）", mode: "transit" }
-  },
-  "2027-01-27": {
-    1: { stop: "Sagrada Família", mode: "walking" },
-    2: { stop: "Sant Pau", mode: "walking" }
-  },
-  "2027-01-28": {
-    1: { stop: "Passeig de Gràcia", mode: "walking" },
-    2: { stop: "Casa Batlló", mode: "walking" }
-  },
-  "2027-01-29": {
-    1: { stop: "Barcelona departure", mode: "transit" },
-    5: { stop: "Granada base", mode: "walking" }
-  },
-  "2027-01-30": {
-    2: { stop: "Alhambra", mode: "transit" },
-    3: { stop: "Alhambra", mode: "walking" }
-  },
-  "2027-01-31": {
-    1: { stop: "Granada departure", mode: "transit" },
-    3: { stop: "Seville base", mode: "walking" }
-  },
-  "2027-02-01": {
-    1: { stop: "Real Alcázar", mode: "walking" },
-    3: { stop: "Cathedral and Giralda", mode: "walking" }
-  },
-  "2027-02-02": {
-    1: { stop: "Sevilla Santa Justa", mode: "transit" },
-    2: { stop: "Barcelona Sants（返程定位）", mode: "train" }
-  },
-  "2027-02-03": {
-    1: { stop: "Barcelona–El Prat Airport（离境节点）", mode: "transit" }
-  }
-};
+const NAVIGATION_OVERRIDES = {};
 
 const TRAVEL_MODES = [
   { id: "walking", label: "步行" },
@@ -102,44 +65,110 @@ const TRAVEL_MODES = [
 ];
 
 const DAILY_MAPS = {
-  "2027-01-26": {
-    description: "抵达日只定位 Barcelona 机场到住宿的方向；先入境、取行李和入住，不安排城市观光。",
-    panels: [{ src: "./assets/trip/daily-maps/d01-barcelona-arrival-1.jpg", title: "Barcelona · 机场—住宿定位", alt: "Barcelona 机场到 Sants/住宿方向的定位图" }]
-  },
-  "2027-01-27": {
-    description: "Barcelona 北侧现代主义轴线：圣家堂 → Avinguda Gaudí → Sant Pau。",
-    panels: [{ src: "./assets/trip/daily-maps/d02-barcelona-modernisme-1.jpg", title: "Barcelona · 现代主义轴线", alt: "Barcelona 圣家堂到 Sant Pau 的街巷路线图" }]
-  },
-  "2027-01-28": {
-    description: "Barcelona Eixample 与 Passeig de Gràcia；付费高迪建筑最多选择一座。",
-    panels: [{ src: "./assets/trip/daily-maps/d03-barcelona-eixample-1.jpg", title: "Barcelona · Eixample 街区", alt: "Barcelona 巴特罗之家与格拉西亚大道路线图" }]
-  },
-  "2027-01-29": {
-    description: "跨城日分成两张局部图：Barcelona Sants 出发定位，以及 Granada 住宿方向；抵达后只做平地短线。",
-    panels: [
-      { src: "./assets/trip/daily-maps/d04-barcelona-granada-1.jpg", title: "Barcelona · Sants 出发", alt: "Barcelona Sants 车站定位图" },
-      { src: "./assets/trip/daily-maps/d04-barcelona-granada-2.jpg", title: "Granada · 到站定位", alt: "Granada 住宿方向定位图" }
+  "2026-12-29": {
+    "description": "巴塞罗那老城；线路为示意，现场导航及官方安排优先。",
+    "panels": [
+      {
+        "src": "./assets/trip/daily-maps/d01-barcelona-arrival-1.jpg",
+        "alt": "巴塞罗那老城区域地图",
+        "title": "巴塞罗那老城"
+      }
     ]
   },
-  "2027-01-30": {
-    description: "Granada 的 Alhambra 山坡定位；按预约入口行动，Nasrid之后其余区域按体力取舍。",
-    panels: [{ src: "./assets/trip/daily-maps/d05-granada-alhambra-1.jpg", title: "Granada · Alhambra 山坡", alt: "Granada Alhambra 定位路线图" }]
+  "2026-12-30": {
+    "description": "高迪建筑；线路为示意，现场导航及官方安排优先。",
+    "panels": [
+      {
+        "src": "./assets/trip/daily-maps/d02-barcelona-modernisme-1.jpg",
+        "alt": "高迪建筑区域地图",
+        "title": "高迪建筑"
+      }
+    ]
   },
-  "2027-01-31": {
-    description: "跨城日只显示 Granada 车站到 Seville 住宿方向；入住后短线按现场时间决定。",
-    panels: [{ src: "./assets/trip/daily-maps/d06-granada-seville-1.jpg", title: "Granada → Seville · 跨城定位", alt: "Granada 到 Seville 的跨城定位图" }]
+  "2026-12-31": {
+    "description": "跨城转场；线路为示意，现场导航及官方安排优先。",
+    "panels": [
+      {
+        "src": "./assets/trip/daily-maps/d03-barcelona-seville-1.jpg",
+        "alt": "跨城转场区域地图",
+        "title": "出发地"
+      },
+      {
+        "src": "./assets/trip/daily-maps/d03-barcelona-seville-2.jpg",
+        "alt": "跨城转场区域地图",
+        "title": "抵达地"
+      }
+    ]
   },
-  "2027-02-01": {
-    description: "Seville 老城核心：王宫 → 主教座堂；Santa Cruz为可删延伸。",
-    panels: [{ src: "./assets/trip/daily-maps/d07-seville-old-town-1.jpg", title: "Seville · 老城核心", alt: "Seville 王宫与主教座堂的街巷路线图" }]
+  "2027-01-01": {
+    "description": "元旦河岸；线路为示意，现场导航及官方安排优先。",
+    "panels": [
+      {
+        "src": "./assets/trip/daily-maps/d04-seville-newyear-1.jpg",
+        "alt": "元旦河岸区域地图",
+        "title": "元旦河岸"
+      }
+    ]
   },
-  "2027-02-02": {
-    description: "返程缓冲日：Sevilla Santa Justa → Barcelona Sants；抵达后只做住宿和机场路线确认。",
-    panels: [{ src: "./assets/trip/daily-maps/d08-seville-barcelona-1.jpg", title: "Seville → Barcelona · 返程定位", alt: "Sevilla Santa Justa 到 Barcelona Sants 的返程定位图" }]
+  "2027-01-02": {
+    "description": "王宫与主教堂；线路为示意，现场导航及官方安排优先。",
+    "panels": [
+      {
+        "src": "./assets/trip/daily-maps/d05-seville-palace-1.jpg",
+        "alt": "王宫与主教堂区域地图",
+        "title": "王宫与主教堂"
+      }
+    ]
   },
-  "2027-02-03": {
-    description: "离境日只定位 Barcelona 住宿到 BCN 机场的方向，不安排临时观光。",
-    panels: [{ src: "./assets/trip/daily-maps/d09-barcelona-airport-1.jpg", title: "Barcelona · 离境机场定位", alt: "Barcelona 住宿到机场的离境定位图" }]
+  "2027-01-03": {
+    "description": "前往格拉纳达；线路为示意，现场导航及官方安排优先。",
+    "panels": [
+      {
+        "src": "./assets/trip/daily-maps/d06-seville-granada-1.jpg",
+        "alt": "前往格拉纳达区域地图",
+        "title": "出发地"
+      },
+      {
+        "src": "./assets/trip/daily-maps/d06-seville-granada-2.jpg",
+        "alt": "前往格拉纳达区域地图",
+        "title": "抵达地"
+      }
+    ]
+  },
+  "2027-01-04": {
+    "description": "阿尔罕布拉宫；线路为示意，现场导航及官方安排优先。",
+    "panels": [
+      {
+        "src": "./assets/trip/daily-maps/d07-granada-alhambra-1.jpg",
+        "alt": "阿尔罕布拉宫区域地图",
+        "title": "阿尔罕布拉宫"
+      }
+    ]
+  },
+  "2027-01-05": {
+    "description": "回巴塞罗那；线路为示意，现场导航及官方安排优先。",
+    "panels": [
+      {
+        "src": "./assets/trip/daily-maps/d08-granada-barcelona-1.jpg",
+        "alt": "回巴塞罗那区域地图",
+        "title": "出发地"
+      },
+      {
+        "src": "./assets/trip/daily-maps/d08-granada-barcelona-2.jpg",
+        "alt": "回巴塞罗那区域地图",
+        "title": "抵达地"
+      }
+    ]
+  },
+  "2027-01-06": {
+    "description": "机场返程；线路为示意，现场导航及官方安排优先。",
+    "panels": [
+      {
+        "src": "./assets/trip/daily-maps/d09-barcelona-airport-1.jpg",
+        "alt": "机场返程区域地图",
+        "title": "机场返程"
+      }
+    ]
   }
 };
 
@@ -409,6 +438,7 @@ function isTravelDay(day) {
 }
 
 function walkingStatus(day) {
+  if (day?.walking_km?.total == null) return { km: "待估", label: "按体力分段", tone: "soft" };
   const km = Number(day?.walking_km?.total);
   if (!Number.isFinite(km)) return { km: "待估", label: "按体力分段", tone: "soft" };
   if (km <= 3) return { km: `${km} km`, label: "轻松", tone: "easy" };
@@ -454,7 +484,7 @@ function ticketPriceMarkup(item) {
 function heroForDay(day) {
   if (!day) return null;
   if (day.city.includes("Seville") || day.city.includes("塞维利亚")) return "./assets/trip/seville-hero.jpg";
-  if (isTravelDay(day)) return "./assets/trip/route-map.jpg";
+  if (isTravelDay(day)) return null;
   return null;
 }
 
@@ -476,7 +506,7 @@ function dailyMapMarkup(day) {
           </figure>
         `).join("")}
       </div>
-      <p class="daily-map-note">底图保留真实街道、街区和地标关系；彩色线是今天建议的走法，圆点数字对应顺序。具体出发仍按每一步的导航入口核对，底图数据 © OpenStreetMap contributors。</p>
+      <p class="daily-map-note">底图显示街道和地点的相对位置；连线仅供理解方位，跨城和市内实际路线请按车票与导航确认。底图数据 © OpenStreetMap contributors。</p>
     </section>
   `;
 }
@@ -596,7 +626,7 @@ function renderPreDeparture(preparation) {
       <h2>出发前，把路线、签证和行李准备好</h2>
       <p>${escapeHtml(preparation.basis)}</p>
       <div class="prep-progress-track" aria-label="行前清单完成度"><span style="width:${progress.percent}%"></span></div>
-      <div class="prep-hero-meta"><span>签证：${escapeHtml(visa.status)}</span><span>行李：三人冬季转场</span></div>
+      <div class="prep-hero-meta"><span>签证：${escapeHtml(visa.status)}</span><span>行李：两人冬季转场</span></div>
     </section>
 
     <section class="prep-section plan-lock-section">
@@ -674,7 +704,7 @@ function xhsAppUrl(noteId) {
 }
 
 function hotelForDay(day) {
-  return state.plan?.hotels?.find((hotel) => hotel.city_id === day?.city_id) || null;
+  return state.plan?.hotels?.find((hotel) => hotel.city_id === day?.city_id && (!hotel.start || (day.date >= hotel.start && day.date < hotel.end))) || null;
 }
 
 function hotelStatusLabel(status) {
@@ -776,7 +806,7 @@ function restaurantMarkup(day, item = null) {
     <section class="restaurant-section" aria-label="餐厅推荐">
       <div class="card-heading-row">
         <div><span class="section-kicker">${isMealStep ? periodLabel : "今天吃什么"}</span><h3>${isMealStep ? `${periodLabel}只看这一家` : "午餐、晚餐各留一家"}</h3></div>
-        <span class="muted-label">三人共享</span>
+        <span class="muted-label">两人共享</span>
       </div>
       <p class="restaurant-intro">${isMealStep ? `这张卡只对应今天的${periodLabel}；先看菜品和点法，再按当天营业、排队和菜单决定。` : "这里只列当天午餐、晚餐或特别值得体验的下午茶，不会把餐厅塞进每一个步骤。小红书只用于看菜品长相和体验，动态信息出发前再查。"}</p>
       <div class="restaurant-list">
@@ -791,7 +821,7 @@ function restaurantMarkup(day, item = null) {
               </div>
             </div>
             <div class="restaurant-copy-block"><strong>为什么适合今天</strong><p>${escapeHtml(restaurant.fit)}</p></div>
-            <div class="restaurant-copy-block"><strong>三个人这样点</strong><p>${escapeHtml(restaurant.order_for_three)}</p></div>
+            <div class="restaurant-copy-block"><strong>两个人这样点</strong><p>${escapeHtml(restaurant.order_for_three)}</p></div>
             <div class="restaurant-copy-block">
               <strong>推荐菜长什么样</strong>
               <div class="restaurant-dishes">
@@ -1083,9 +1113,9 @@ function renderToday(day) {
       <section class="route-card">
           <div class="card-heading-row">
           <div><span class="section-kicker">交通</span><h3>今天的交通</h3></div>
-          <a class="text-link" href="${escapeHtml(dayRouteUrl(day))}" target="_blank" rel="noreferrer">打开当天串联路线 ↗</a>
+          <a class="text-link" href="${escapeHtml(dayRouteUrl(day))}" target="_blank" rel="noreferrer">核对目的地 ↗</a>
         </div>
-        <div class="route-map-wrap"><img src="./assets/trip/route-map.jpg" alt="西班牙三城路线示意" loading="lazy" /></div>
+        <div class="route-order">巴塞罗那 → 塞维利亚 → 格拉纳达 → 巴塞罗那</div>
         <p>只按最终车票、航站楼和住宿地址行动；不要把不确定的换乘写成“肯定赶得上”。</p>
       </section>
     ` : ""}
@@ -1141,7 +1171,7 @@ function renderStep(day) {
 
     ${stepPhotoMarkup(day, item, index)}
 
-    ${isTransfer ? `<section class="step-image-card"><img src="./assets/trip/route-map.jpg" alt="三城路线示意" loading="lazy" /><div><span class="section-kicker">留出交通时间</span><p>交通日不追景点。先核对车票、站台、行李和入住地址；晚到时按当天交通安排直接入住和用餐。</p></div></section>` : ""}
+    ${isTransfer ? `<section class="step-image-card"><div><span class="section-kicker">留出交通时间</span><p>交通日不追景点。先核对车票、站台、行李和入住地址；晚到时按当天交通安排直接入住和用餐。</p></div></section>` : ""}
 
     ${lodgingMarkup(day)}
     ${restaurantMarkup(day, item)}

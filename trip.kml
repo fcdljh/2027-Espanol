@@ -1,45 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2"><Document>
-<name>西班牙三城慢游｜建筑、历史与城市漫步</name>
-<Folder><name>Day 1 2027-01-26 — Barcelona入境、入住与恢复日</name>
-<Placemark><name>1. Barcelona–El Prat Airport（入境节点）</name><Point><coordinates>2.083294,41.297445,0</coordinates></Point></Placemark>
-<Placemark><name>2. Barcelona Sants（住宿交通节点）</name><Point><coordinates>2.140543,41.378414,0</coordinates></Point></Placemark>
-<Placemark><name>Day 1 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>2.083294,41.297445,0 2.140543,41.378414,0</coordinates></LineString></Placemark>
+<name>西班牙跨年三城行｜两人</name>
+<Folder><name>Day 1 2026-12-29 — 抵达巴塞罗那 · 老城初见</name>
+<Placemark><name>1. BCN机场</name><Point><coordinates>2.083300,41.297400,0</coordinates></Point></Placemark>
+<Placemark><name>2. 哥特区</name><Point><coordinates>2.176100,41.383900,0</coordinates></Point></Placemark>
+<Placemark><name>3. Born街区</name><Point><coordinates>2.183700,41.384900,0</coordinates></Point></Placemark>
+<Placemark><name>Day 1 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>2.083300,41.297400,0 2.176100,41.383900,0 2.183700,41.384900,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 2 2027-01-27 — Sagrada Família—Sant Pau现代主义轴线</name>
-<Placemark><name>1. Sagrada Família</name><Point><coordinates>2.174428,41.403505,0</coordinates></Point></Placemark>
-<Placemark><name>2. Sant Pau</name><Point><coordinates>2.175547,41.413976,0</coordinates></Point></Placemark>
-<Placemark><name>Day 2 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>2.174428,41.403505,0 2.175547,41.413976,0</coordinates></LineString></Placemark>
+<Folder><name>Day 2 2026-12-30 — 圣家堂与高迪建筑</name>
+<Placemark><name>1. 圣家堂</name><Point><coordinates>2.174400,41.403500,0</coordinates></Point></Placemark>
+<Placemark><name>2. 圣保罗医院</name><Point><coordinates>2.175500,41.414000,0</coordinates></Point></Placemark>
+<Placemark><name>3. 巴特罗之家</name><Point><coordinates>2.164900,41.391700,0</coordinates></Point></Placemark>
+<Placemark><name>Day 2 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>2.174400,41.403500,0 2.175500,41.414000,0 2.164900,41.391700,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 3 2027-01-28 — Gothic/Born主线＋Passeig外观</name>
-<Placemark><name>1. Casa Batlló</name><Point><coordinates>2.164696,41.391545,0</coordinates></Point></Placemark>
-<Placemark><name>2. Passeig de Gràcia</name><Point><coordinates>2.167757,41.390104,0</coordinates></Point></Placemark>
-<Placemark><name>Day 3 route</name><Style><LineStyle><color>ff00aa00</color><width>3</width></LineStyle></Style><LineString><coordinates>2.164696,41.391545,0 2.167757,41.390104,0</coordinates></LineString></Placemark>
+<Folder><name>Day 3 2026-12-31 — 前往塞维利亚 · 跨年夜</name>
+<Placemark><name>1. Barcelona Sants</name><Point><coordinates>2.140300,41.379100,0</coordinates></Point></Placemark>
+<Placemark><name>2. Santa Justa</name><Point><coordinates>-5.975800,37.392500,0</coordinates></Point></Placemark>
+<Placemark><name>3. 西班牙广场</name><Point><coordinates>-5.986900,37.377200,0</coordinates></Point></Placemark>
+<Placemark><name>4. 新广场</name><Point><coordinates>-5.994800,37.388600,0</coordinates></Point></Placemark>
+<Placemark><name>Day 3 route</name><Style><LineStyle><color>ff00aa00</color><width>3</width></LineStyle></Style><LineString><coordinates>2.140300,41.379100,0 -5.975800,37.392500,0 -5.986900,37.377200,0 -5.994800,37.388600,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 4 2027-01-29 — 长距离转场与中心平地短线</name>
-<Placemark><name>1. Barcelona departure</name><Point><coordinates>2.140543,41.378414,0</coordinates></Point></Placemark>
-<Placemark><name>2. Granada base</name><Point><coordinates>-3.597812,37.174346,0</coordinates></Point></Placemark>
-<Placemark><name>Day 4 route</name><Style><LineStyle><color>ff00aaff</color><width>3</width></LineStyle></Style><LineString><coordinates>2.140543,41.378414,0 -3.597812,37.174346,0</coordinates></LineString></Placemark>
+<Folder><name>Day 4 2027-01-01 — 元旦 · 公园与河岸</name>
+<Placemark><name>1. 西班牙广场</name><Point><coordinates>-5.986900,37.377200,0</coordinates></Point></Placemark>
+<Placemark><name>2. 黄金塔</name><Point><coordinates>-5.996300,37.382600,0</coordinates></Point></Placemark>
+<Placemark><name>3. 特里亚纳桥</name><Point><coordinates>-6.004700,37.385700,0</coordinates></Point></Placemark>
+<Placemark><name>4. 都市阳伞</name><Point><coordinates>-5.991200,37.393000,0</coordinates></Point></Placemark>
+<Placemark><name>Day 4 route</name><Style><LineStyle><color>ff00aaff</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.986900,37.377200,0 -5.996300,37.382600,0 -6.004700,37.385700,0 -5.991200,37.393000,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 5 2027-01-30 — Alhambra预约日</name>
-<Placemark><name>1. Alhambra</name><Point><coordinates>-3.588110,37.176055,0</coordinates></Point></Placemark>
+<Folder><name>Day 5 2027-01-02 — 王宫与主教堂</name>
+<Placemark><name>1. 塞维利亚王宫</name><Point><coordinates>-5.990200,37.383200,0</coordinates></Point></Placemark>
+<Placemark><name>2. 塞维利亚主教堂</name><Point><coordinates>-5.993100,37.385900,0</coordinates></Point></Placemark>
+<Placemark><name>Day 5 route</name><Style><LineStyle><color>ffaa00aa</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.990200,37.383200,0 -5.993100,37.385900,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 6 2027-01-31 — 转场与Seville入住缓冲</name>
-<Placemark><name>1. Granada departure</name><Point><coordinates>-3.608628,37.183694,0</coordinates></Point></Placemark>
-<Placemark><name>2. Seville base</name><Point><coordinates>-5.982991,37.381102,0</coordinates></Point></Placemark>
-<Placemark><name>Day 6 route</name><Style><LineStyle><color>ff777777</color><width>3</width></LineStyle></Style><LineString><coordinates>-3.608628,37.183694,0 -5.982991,37.381102,0</coordinates></LineString></Placemark>
+<Folder><name>Day 6 2027-01-03 — 抵达格拉纳达 · 山城街区</name>
+<Placemark><name>1. Santa Justa</name><Point><coordinates>-5.975800,37.392500,0</coordinates></Point></Placemark>
+<Placemark><name>2. 格拉纳达站</name><Point><coordinates>-3.608600,37.183700,0</coordinates></Point></Placemark>
+<Placemark><name>3. 格拉纳达大教堂</name><Point><coordinates>-3.599100,37.176600,0</coordinates></Point></Placemark>
+<Placemark><name>4. 圣尼古拉斯观景台</name><Point><coordinates>-3.592700,37.181200,0</coordinates></Point></Placemark>
+<Placemark><name>Day 6 route</name><Style><LineStyle><color>ff777777</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.975800,37.392500,0 -3.608600,37.183700,0 -3.599100,37.176600,0 -3.592700,37.181200,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 7 2027-02-01 — 王宫与主教座堂；Santa Cruz可选</name>
-<Placemark><name>1. Real Alcázar</name><Point><coordinates>-5.990183,37.383210,0</coordinates></Point></Placemark>
-<Placemark><name>2. Cathedral and Giralda</name><Point><coordinates>-5.993141,37.385915,0</coordinates></Point></Placemark>
-<Placemark><name>Day 7 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.990183,37.383210,0 -5.993141,37.385915,0</coordinates></LineString></Placemark>
+<Folder><name>Day 7 2027-01-04 — 阿尔罕布拉宫 · 花园与纳斯里德宫</name>
+<Placemark><name>1. 阿尔罕布拉宫</name><Point><coordinates>-3.588100,37.176100,0</coordinates></Point></Placemark>
+<Placemark><name>2. 格拉纳达大教堂</name><Point><coordinates>-3.599100,37.176600,0</coordinates></Point></Placemark>
+<Placemark><name>Day 7 route</name><Style><LineStyle><color>ff0000ff</color><width>3</width></LineStyle></Style><LineString><coordinates>-3.588100,37.176100,0 -3.599100,37.176600,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 8 2027-02-02 — Seville退房、Barcelona返程定位缓冲</name>
-<Placemark><name>1. Sevilla Santa Justa</name><Point><coordinates>-5.975750,37.392450,0</coordinates></Point></Placemark>
-<Placemark><name>2. Barcelona Sants（返程定位）</name><Point><coordinates>2.140543,41.378414,0</coordinates></Point></Placemark>
-<Placemark><name>Day 8 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>-5.975750,37.392450,0 2.140543,41.378414,0</coordinates></LineString></Placemark>
+<Folder><name>Day 8 2027-01-05 — 返巴塞罗那 · 三王巡游</name>
+<Placemark><name>1. 格拉纳达站</name><Point><coordinates>-3.608600,37.183700,0</coordinates></Point></Placemark>
+<Placemark><name>2. Barcelona Sants</name><Point><coordinates>2.140300,41.379100,0</coordinates></Point></Placemark>
+<Placemark><name>Day 8 route</name><Style><LineStyle><color>ffff0000</color><width>3</width></LineStyle></Style><LineString><coordinates>-3.608600,37.183700,0 2.140300,41.379100,0</coordinates></LineString></Placemark>
 </Folder>
-<Folder><name>Day 9 2027-02-03 — Barcelona机场返程：只做离境流程</name>
-<Placemark><name>1. Barcelona–El Prat Airport（离境节点）</name><Point><coordinates>2.083294,41.297445,0</coordinates></Point></Placemark>
+<Folder><name>Day 9 2027-01-06 — 三王节 · 前往机场返程</name>
+<Placemark><name>1. BCN机场</name><Point><coordinates>2.083300,41.297400,0</coordinates></Point></Placemark>
 </Folder>
 </Document></kml>

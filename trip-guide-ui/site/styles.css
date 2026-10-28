@@ -448,6 +448,8 @@ a { color: inherit; }
 .step-image-card img { width: 116px; height: 82px; border-radius: 14px; object-fit: cover; }
 .step-image-card .section-kicker { color: var(--teal-dark); }
 .step-image-card p { margin-top: 4px; }
+.step-image-card { display: block; }
+.route-order { margin-top: 12px; padding: 14px; border: 1px solid rgba(24, 57, 74, 0.10); border-radius: 15px; color: var(--navy); background: #eef5ef; font-size: 13px; font-weight: 800; line-height: 1.6; }
 .step-nav-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 13px; }
 .nav-step-button { min-width: 0; min-height: 66px; border: 1px solid var(--line); border-radius: 14px; padding: 10px; color: var(--navy); background: #fbfaf5; font-size: 11px; line-height: 1.35; text-align: left; }
 .nav-step-button.next { color: var(--white); background: var(--navy); }

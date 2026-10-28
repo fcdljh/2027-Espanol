@@ -126,6 +126,11 @@ def parse_lodging(checked_at: str) -> list[dict]:
         encoding="utf-8", newline=""
     ) as handle:
         for raw in csv.DictReader(handle):
+            # Old three-person and other-date snapshots remain in the CSV archive,
+            # but must not be presented as current two-person recommendations.
+            valid_stays = {("Barcelona", "2026-12-29", "2"), ("Seville", "2026-12-31", "3"), ("Granada", "2027-01-03", "2"), ("Barcelona", "2027-01-05", "1")}
+            if raw.get("guest_count") != "2" or (raw.get("destination"), raw.get("check_in_date"), raw.get("nights")) not in valid_stays:
+                continue
             try:
                 nights = int(raw.get("nights") or 0)
             except ValueError:
@@ -140,9 +145,7 @@ def parse_lodging(checked_at: str) -> list[dict]:
                 budget_status = "out_of_scope_source"
             elif not raw.get("total_price"):
                 budget_status = "price_missing"
-            elif raw.get("free_cancellation", "").lower() != "yes":
-                budget_status = "no_free_cancellation"
-            elif per_night is not None and per_night > 1500:
+            elif per_night is not None and per_night > 1000:
                 budget_status = "over_cap"
             elif raw.get("tax_status") != "included":
                 budget_status = "tax_not_included_or_unknown"
@@ -322,7 +325,7 @@ def plan_map_features(plan: dict, checked_at: str) -> dict[str, list[dict]]:
                             "cityId": city_id,
                             "layer": "route",
                             "nameZh": f"{day.get('date', '')} · {day.get('label', '')}",
-                            "description": f"{day.get('ribbon', '')}。预计步行 {day.get('walking_km', {}).get('total', '—')} km；雨天方案：{day.get('rain_alt', '')}",
+                            "description": f"{day.get('ribbon', '')}。步行距离待导航核实；雨天方案：{day.get('rain_alt', '')}",
                             "display_status": "planned",
                             "display_scope": "itinerary_plan",
                             "status": "规划路线候选；作者经验和导航时长不替代当天导航。",
@@ -358,18 +361,27 @@ def main() -> None:
             "note": "小红书记录是已阅读的经验线索，不是官方事实；动态信息和安全结论仍需官方或运营方复核。",
         },
         "lodging": {
-            "budgetCapPerNight": 1500,
+            "budgetCapPerNight": 1000,
             "allowedSources": sorted(ALLOWED_HOTEL_SOURCES),
             "records": parse_lodging(checked_at),
-            "note": "酒店只保留 Trip.com/携程比价；Airbnb 记录为民宿/旅馆房源。TourMind 快照保留在原始 CSV，但不进入此推荐视图。",
+            "note": "仅显示当前两人实际日期的记录。未明确含税总价和两张独立床的房源仍需核实；可接受不可退款。",
         },
-        "dining": parse_dining(),
+        "dining": [],  # The previous dining plan used different dates and party size.
         "plan": plan_view,
         "mapFeatures": plan_map_features(plan, checked_at),
     }
     encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     encoded = encoded.replace("</", "<\\/")
     OUT.write_text("/* Generated from canonical project research sources. Do not hand-edit. */\nwindow.CITY_ATLAS_RESEARCH = " + encoded + ";\n", encoding="utf-8")
+    # Persist the planned map layer in city-data.js, the viewer's canonical map source.
+    city_path = OUT.with_name("city-data.js")
+    begin = "\n/* BEGIN GENERATED ITINERARY FEATURES */"
+    end = "/* END GENERATED ITINERARY FEATURES */"
+    city_source = city_path.read_text(encoding="utf-8")
+    if begin in city_source:
+        city_source = city_source[:city_source.index(begin)]
+    features = json.dumps(payload["mapFeatures"], ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    city_path.write_text(city_source.rstrip() + begin + "\nObject.entries(" + features + ").forEach(([city, features]) => window.CITY_ATLAS_DATA.cities[city].features.push(...features));\n" + end + "\n", encoding="utf-8")
     print(f"wrote {OUT} · XHS {len(xhs_records)} · lodging {len(payload['lodging']['records'])} · map features {sum(len(v) for v in payload['mapFeatures'].values())}")
 
 

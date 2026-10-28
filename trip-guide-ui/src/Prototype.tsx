@@ -37,6 +37,7 @@ type PlanDay = {
   late_cut: string;
   walking_km?: { total?: number; how?: string };
   timeline: PlanTimeline[];
+  stops?: { name: string; query?: string }[];
   sun?: string;
 };
 
@@ -59,6 +60,7 @@ type GuideDay = {
   sun: string;
   dayNumber: number;
   items: GuideItem[];
+  stops: { name: string; query?: string }[];
 };
 
 type PrepItem = {
@@ -108,8 +110,8 @@ type Tab = "today" | "current" | "prep";
 type CompletionState = Record<string, string[]>;
 type PreparationState = Record<string, boolean>;
 
-const PROGRESS_KEY = "spain-guide-ui-progress-v1";
-const PREPARATION_KEY = "spain-guide-ui-preparation-v1";
+const PROGRESS_KEY = "spain-guide-ui-progress-2026-v2";
+const PREPARATION_KEY = "spain-guide-ui-preparation-2026-v2";
 
 const CITY_NAMES: Record<string, { zh: string; en: string }> = {
   Barcelona: { zh: "巴塞罗那", en: "Barcelona" },
@@ -130,43 +132,16 @@ const KIND_LABELS: Record<string, string> = {
 };
 
 const FALLBACK_DAYS: GuideDay[] = [
-  {
-    date: "2027-01-26",
-    city: "巴塞罗那",
-    cityEn: "Barcelona",
-    label: "抵达与入住缓冲",
-    ribbon: "BCN入境取行李 → 机场接驳 → 入住 → 附近补给",
-    rainAlt: "大雨或晚到时只执行入住、买水和附近简餐。",
-    lateCut: "延误时不硬接同日城际车，删除当天所有景点。",
-    walking: "机场/车站与住宿附近短距离",
-    sun: "天亮 07:59 · 日落 18:25 · CET",
-    dayNumber: 1,
-    items: [
-      fallbackItem("落地–H+1:30", "入境、取行李、确认航站楼和三人行李", "arrival", "不要在到达层临时分散。"),
-      fallbackItem("H+1:30–H+2:15", "从 BCN 机场前往 Barcelona 住宿", "hop", "晚到就删除散步和远距离用餐。"),
-      fallbackItem("H+3:00–H+5:00", "入住或寄存行李，确认门禁和暖气", "lodging", ""),
-    ],
-  },
-  ...[
-    ["2027-01-27", "巴塞罗那", "Barcelona", "圣家堂 · Sant Pau", "08:45", "前往 Sagrada Família，先到入口附近", "hop"],
-    ["2027-01-28", "巴塞罗那", "Barcelona", "现代主义 / Gothic-Born 备选", "09:15", "看当日票面和阳光，决定今天走哪条线", "check"],
-    ["2027-01-29", "巴塞罗那", "Barcelona", "Barcelona Sants → Granada", "07:45", "前往 Barcelona Sants，按车票上的出发地执行", "hop"],
-    ["2027-01-30", "格拉纳达", "Granada", "Alhambra 纳斯里德宫", "08:15", "到 Alhambra 后找入口，票面时间前留缓冲", "check"],
-    ["2027-01-31", "格拉纳达", "Granada", "Granada → Seville", "08:15", "去铁路站或 Bus Station，车票站名优先", "hop"],
-    ["2027-02-01", "塞维利亚", "Seville", "阿尔卡萨宫 · 主教堂 · Santa Cruz", "08:30", "步行或按 T1 接近老城，找正确入口队列", "hop"],
-    ["2027-02-02", "塞维利亚→巴塞罗那", "Seville", "Santa Justa → Barcelona Sants返程定位", "白天车次", "先完成返程住宿和机场路线确认，不安排观光", "hop"],
-    ["2027-02-03", "巴塞罗那", "Barcelona", "BCN机场返程", "起飞前约 4–5 小时", "退房并按机场航站楼倒推离开时间", "check"],
-  ].map(([date, city, cityEn, label, time, title, kind], index) => makeFallbackDay({
-    date,
-    city,
-    cityEn,
-    label,
-    time,
-    title,
-    kind,
-    dayNumber: index + 2,
-  })),
-];
+  ["2026-12-29", "巴塞罗那", "Barcelona", "抵达 · 老城初见", "08:05", "抵达 BCN 机场", "arrival"],
+  ["2026-12-30", "巴塞罗那", "Barcelona", "圣家堂与高迪建筑", "09:15", "前往圣家堂", "hop"],
+  ["2026-12-31", "塞维利亚", "Seville", "前往塞维利亚 · 跨年", "白天", "核对 Barcelona Sants 到 Santa Justa 车次", "hop"],
+  ["2027-01-01", "塞维利亚", "Seville", "元旦 · 公园与河岸", "10:00", "前往西班牙广场", "photo"],
+  ["2027-01-02", "塞维利亚", "Seville", "王宫与主教堂", "09:00", "前往塞维利亚王宫", "hop"],
+  ["2027-01-03", "格拉纳达", "Granada", "抵达格拉纳达", "上午", "核对塞维利亚至格拉纳达车次", "hop"],
+  ["2027-01-04", "格拉纳达", "Granada", "阿尔罕布拉宫", "08:30", "按预约前往阿尔罕布拉宫", "hop"],
+  ["2027-01-05", "巴塞罗那", "Barcelona", "返巴塞罗那 · 三王巡游", "上午", "核对格拉纳达至巴塞罗那交通", "hop"],
+  ["2027-01-06", "巴塞罗那", "Barcelona", "前往机场返程", "08:30", "抵达 BCN 机场，11:30 起飞", "check"],
+].map(([date, city, cityEn, label, time, title, kind], index) => makeFallbackDay({date, city, cityEn, label, time, title, kind, dayNumber:index + 1}));
 
 function fallbackItem(t: string, what: string, kind: string, note: string): GuideItem {
   return {
@@ -203,6 +178,7 @@ function makeFallbackDay(input: {
     walking: "步行距离按当天地图和体力动态调整",
     sun: "日出/日落：出发前复核",
     dayNumber: input.dayNumber,
+    stops: [],
     items: [
       fallbackItem(input.time, input.title, input.kind, "先完成这一项，再决定是否追加下一项。"),
       fallbackItem("下一步", "确认交通、门票或入口规则", "check", "只把已核验的动态信息当作确定安排。"),
@@ -235,6 +211,7 @@ function toGuideDay(day: PlanDay, index: number): GuideDay {
     walking: day.walking_km?.how ?? "按当天地图和体力动态调整",
     sun: day.sun ?? "日出/日落：出发前复核",
     dayNumber: index + 1,
+    stops: day.stops ?? [],
     items: day.timeline.map((item, itemIndex) => ({
       ...item,
       id: `${day.date}-${itemIndex}`,
@@ -261,14 +238,14 @@ function itemIcon(kind: string) {
   return <SewingPinFilledIcon aria-hidden="true" />;
 }
 
-function mapSearchUrl(item: GuideItem, day: GuideDay): string {
-  const query = encodeURIComponent(`${item.what} ${day.cityEn} Spain`);
-  return `https://www.google.com/maps/search/?api=1&query=${query}`;
+function mapSearchUrl(item: GuideItem, day: GuideDay): string | null {
+  const stop = day.stops.find((entry) => item.what.includes(entry.name));
+  return stop ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(stop.query || stop.name)}` : null;
 }
 
 export default function Prototype() {
   const [days, setDays] = useState<GuideDay[]>(FALLBACK_DAYS);
-  const [selectedDate, setSelectedDate] = useState("2027-02-01");
+  const [selectedDate, setSelectedDate] = useState("2026-12-29");
   const [tab, setTab] = useState<Tab>("today");
   const [activeItemId, setActiveItemId] = useState<string | null>(null);
   const [preDeparture, setPreDeparture] = useState<PreDeparture | null>(null);
@@ -398,7 +375,7 @@ function Hero({ day }: { day: GuideDay }) {
         <p className="eyebrow">WINTER SPAIN · 2027</p>
         <h1>冬日西行</h1>
         <p className="hero-route">Barcelona → Granada → Seville</p>
-        <div className="hero-meta"><span><CalendarIcon aria-hidden="true" /> 1/26 — 2/3</span><span><SewingPinFilledIcon aria-hidden="true" /> {day.city}</span></div>
+        <div className="hero-meta"><span><CalendarIcon aria-hidden="true" /> 12/29 — 1/6</span><span><SewingPinFilledIcon aria-hidden="true" /> {day.city}</span></div>
       </div>
     </header>
   );
@@ -462,14 +439,15 @@ function QuickAction({ image, icon, title, subtitle, onClick }: { image: string;
 
 function CurrentView({ day, item, doneSet, onToggleCompleted, onOpenToday }: { day: GuideDay; item: GuideItem; doneSet: Set<string>; onToggleCompleted: (item: GuideItem) => void; onOpenToday: () => void }) {
   const done = doneSet.has(item.id);
+  const mapUrl = mapSearchUrl(item, day);
   return <section className="current-view" aria-label="当前步骤详情">
     <div className="current-kicker"><span className="live-dot" /> 当前步骤 <span>· {day.city}</span></div>
     <h2>{item.title}</h2>
     <div className="current-meta"><span><ClockIcon aria-hidden="true" /> {item.t}</span><span className="kind-tag">{item.kindLabel}</span></div>
-    <div className="current-map-frame"><img src="./assets/trip/route-map.png" alt="当前城市在西班牙路线中的位置" /><div className="map-float-label"><GlobeIcon aria-hidden="true" /> {day.cityEn} · 当前位置</div></div>
+    <div className="current-map-frame"><div className="map-float-label"><GlobeIcon aria-hidden="true" /> {day.cityEn} · 计划城市</div></div>
     <div className="step-detail"><div className="step-detail-icon">{itemIcon(item.kind)}</div><div><p className="eyebrow">现在要做</p><p className="step-detail-body">{item.what}</p>{item.note ? <p className="step-detail-note">{item.note}</p> : null}</div></div>
     {item.verify ? <div className="review-callout"><ReaderIcon aria-hidden="true" /><div><strong>出发前复核</strong><span>这是动态信息；以官方页面、票面或现场指引为准。</span></div></div> : null}
-    <div className="current-actions"><a className="primary-action" href={item.link ?? mapSearchUrl(item, day)} target="_blank" rel="noreferrer"><ExternalLinkIcon aria-hidden="true" /> 打开地图路线</a><button className={done ? "secondary-action is-done" : "secondary-action"} type="button" onClick={() => onToggleCompleted(item)}>{done ? <CheckIcon aria-hidden="true" /> : <span className="empty-action-circle" />}{done ? "已完成" : "完成这一步"}</button></div>
+    <div className="current-actions">{mapUrl ? <a className="primary-action" href={mapUrl} target="_blank" rel="noreferrer"><ExternalLinkIcon aria-hidden="true" /> 查看地点</a> : <span>具体地点待确认</span>}{item.link ? <a href={item.link} target="_blank" rel="noreferrer">查看参考来源</a> : null}<button className={done ? "secondary-action is-done" : "secondary-action"} type="button" onClick={() => onToggleCompleted(item)}>{done ? <CheckIcon aria-hidden="true" /> : <span className="empty-action-circle" />}{done ? "已完成" : "完成这一步"}</button></div>
     <div className="current-lower-actions"><button type="button" onClick={onOpenToday}><ArrowRightIcon aria-hidden="true" /> 回到今日安排</button><span>完成后自动进入下一步</span></div>
     <PlanningNotes day={day} />
   </section>;
@@ -501,7 +479,7 @@ function PreDepartureView({ data, completed, onToggle }: { data: PreDeparture; c
       <h2>出发前，先把两件大事做完</h2>
       <p>{data.basis}</p>
       <div className="prep-progress-track" aria-label={`行前清单完成度 ${progress}%`}><span style={{ width: `${progress}%` }} /></div>
-      <div className="prep-hero-meta"><span>签证：{data.visa.status}</span><span>行李：三人冬季转场</span></div>
+      <div className="prep-hero-meta"><span>签证：{data.visa.status}</span><span>行李：两人冬季转场</span></div>
     </section>
 
     <section className="prep-section visa-prep-section">

@@ -31,139 +31,15 @@ const tileCache = new Map();
 const routeCache = new Map();
 
 const MAP_SPECS = [
-  {
-    date: "2027-01-26",
-    slug: "d01-barcelona-arrival",
-    description: "抵达日：只定位 Barcelona 机场到住宿的方向，不安排城市观光线。",
-    panels: [
-      {
-        title: "Barcelona · 机场—住宿定位",
-        zoom: 12,
-        routeMode: "transfer",
-        points: ["Barcelona–El Prat Airport（入境节点）", "Barcelona Sants（住宿交通节点）"],
-        labels: {
-          "Barcelona–El Prat Airport（入境节点）": "BCN 机场",
-          "Barcelona Sants（住宿交通节点）": "Sants / 住宿方向"
-        }
-      }
-    ]
-  },
-  {
-    date: "2027-01-27",
-    slug: "d02-barcelona-modernisme",
-    description: "Barcelona 北侧现代主义轴线：圣家堂 → Avinguda Gaudí → Sant Pau。",
-    panels: [
-      {
-        title: "Barcelona · 现代主义轴线",
-        zoom: 15,
-        points: ["Sagrada Família", "Sant Pau"],
-        photo_spot_ids: ["sagrada-pool", "sant-pau-axis"],
-        labels: { "Sagrada Família": "圣家堂", "Sant Pau": "Sant Pau" }
-      }
-    ]
-  },
-  {
-    date: "2027-01-28",
-    slug: "d03-barcelona-eixample",
-    description: "Barcelona Eixample 与老城边缘：从格拉西亚大道沿街区向北短走。",
-    panels: [
-      {
-        title: "Barcelona · Eixample 街区",
-        zoom: 15,
-        points: ["Casa Batlló", "Passeig de Gràcia"],
-        photo_spot_ids: ["casa-batllo-corner", "passeig-gracia-axis"],
-        labels: { "Casa Batlló": "巴特罗之家", "Passeig de Gràcia": "格拉西亚大道" }
-      }
-    ]
-  },
-  {
-    date: "2027-01-29",
-    slug: "d04-barcelona-granada",
-    description: "跨城日：左图看 Barcelona Sants 出发位置，右图看 Granada 住处到大教堂的中心短线。",
-    panels: [
-      {
-        title: "Barcelona · Sants 出发",
-        zoom: 15,
-        points: ["Barcelona departure"],
-        labels: { "Barcelona departure": "Barcelona Sants" }
-      },
-      {
-        title: "Granada · 到站定位",
-        zoom: 15,
-        points: ["Granada base"],
-        labels: { "Granada base": "Granada 住宿方向" }
-      }
-    ]
-  },
-  {
-    date: "2027-01-30",
-    slug: "d05-granada-alhambra",
-    description: "Granada 东南侧山坡定位：先看住处/市中心与 Alhambra 的相对方向，再按预约入口行动。",
-    panels: [
-      {
-        title: "Granada · Alhambra 山坡",
-        zoom: 15,
-        points: ["Alhambra"],
-        photo_spot_ids: ["generalife-window"],
-        labels: { Alhambra: "Alhambra" }
-      }
-    ]
-  },
-  {
-    date: "2027-01-31",
-    slug: "d06-granada-seville",
-    description: "跨城日：Granada 车站到 Seville 住宿的定位方向；抵达后短线按现场时间决定。",
-    panels: [
-      {
-        title: "Granada → Seville · 跨城定位",
-        zoom: 9,
-        routeMode: "transfer",
-        points: ["Granada departure", "Seville base"],
-        labels: { "Granada departure": "Granada 车站", "Seville base": "Seville 住宿方向" }
-      }
-    ]
-  },
-  {
-    date: "2027-02-01",
-    slug: "d07-seville-old-town",
-    description: "Seville 老城南侧：王宫 → 主教座堂 → Santa Cruz，沿街区关系理解今天的短线。",
-    panels: [
-      {
-        title: "Seville · 老城核心",
-        zoom: 15,
-        points: ["Real Alcázar", "Cathedral and Giralda"],
-        photo_spot_ids: ["alcazar-garden", "orange-court"],
-        labels: { "Real Alcázar": "王宫", "Cathedral and Giralda": "主教座堂" }
-      }
-    ]
-  },
-  {
-    date: "2027-02-02",
-    slug: "d08-seville-barcelona",
-    description: "返程缓冲日：Sevilla Santa Justa → Barcelona Sants，抵达后只做住宿和机场路线确认。",
-    panels: [
-      {
-        title: "Seville · 车站出发",
-        zoom: 8,
-        points: ["Sevilla Santa Justa", "Barcelona Sants（返程定位）"],
-        labels: { "Sevilla Santa Justa": "Santa Justa 车站", "Barcelona Sants（返程定位）": "Barcelona Sants" }
-      },
-
-    ]
-  },
-  {
-    date: "2027-02-03",
-    slug: "d09-barcelona-airport",
-    description: "离境日：只定位 Barcelona 住宿到机场的方向，不安排临时观光。",
-    panels: [
-      {
-        title: "Barcelona · 离境机场定位",
-        zoom: 14,
-        points: ["Barcelona–El Prat Airport（离境节点）"],
-        labels: { "Barcelona–El Prat Airport（离境节点）": "BCN 机场" }
-      }
-    ]
-  }
+  {date:"2026-12-29",slug:"d01-barcelona-arrival",description:"巴塞罗那老城和 Born：入境后按体力安排。",panels:[{title:"Barcelona · 老城",zoom:15,points:["哥特区","Born街区"],labels:{"哥特区":"哥特区","Born街区":"Born"}}]},
+  {date:"2026-12-30",slug:"d02-barcelona-modernisme",description:"圣家堂、圣保罗医院和格拉西亚大道。",panels:[{title:"Barcelona · 现代主义",zoom:14,points:["圣家堂","圣保罗医院","巴特罗之家"],labels:{"圣家堂":"圣家堂","圣保罗医院":"Sant Pau","巴特罗之家":"巴特罗之家"}}]},
+  {date:"2026-12-31",slug:"d03-barcelona-seville",description:"先核实跨城车次，到达塞维利亚后再安排活动。",panels:[{title:"Barcelona · 出发",zoom:14,points:["Barcelona Sants"],labels:{"Barcelona Sants":"Sants"}},{title:"Seville · 到达",zoom:14,points:["Santa Justa","西班牙广场","新广场"],routeMode:"transfer",labels:{"Santa Justa":"Santa Justa","西班牙广场":"西班牙广场","新广场":"新广场"}}]},
+  {date:"2027-01-01",slug:"d04-seville-newyear",description:"元旦步行与河岸。",panels:[{title:"Seville · 河岸与广场",zoom:14,points:["西班牙广场","黄金塔","特里亚纳桥","都市阳伞"],labels:{"西班牙广场":"西班牙广场","黄金塔":"黄金塔","特里亚纳桥":"Triana桥","都市阳伞":"都市阳伞"}}]},
+  {date:"2027-01-02",slug:"d05-seville-palace",description:"王宫与主教堂相邻；按预约入场。",panels:[{title:"Seville · 王宫与主教堂",zoom:15,points:["塞维利亚王宫","塞维利亚主教堂"],labels:{"塞维利亚王宫":"王宫","塞维利亚主教堂":"主教堂"}}]},
+  {date:"2027-01-03",slug:"d06-seville-granada",description:"先完成跨城交通与行李寄存。",panels:[{title:"Seville · 出发",zoom:14,points:["Santa Justa"],labels:{"Santa Justa":"Santa Justa"}},{title:"Granada · 中心与观景台",zoom:14,points:["格拉纳达站","格拉纳达大教堂","圣尼古拉斯观景台"],routeMode:"transfer",labels:{"格拉纳达站":"火车站","格拉纳达大教堂":"大教堂","圣尼古拉斯观景台":"观景台"}}]},
+  {date:"2027-01-04",slug:"d07-granada-alhambra",description:"阿尔罕布拉宫与中心街区。",panels:[{title:"Granada · 阿尔罕布拉宫",zoom:14,points:["阿尔罕布拉宫","格拉纳达大教堂"],labels:{"阿尔罕布拉宫":"阿尔罕布拉宫","格拉纳达大教堂":"大教堂"}}]},
+  {date:"2027-01-05",slug:"d08-granada-barcelona",description:"白天回巴塞罗那，巡游路线等官方公布。",panels:[{title:"Granada · 出发",zoom:14,points:["格拉纳达站"],labels:{"格拉纳达站":"火车站"}},{title:"Barcelona · 到达",zoom:14,points:["Barcelona Sants"],labels:{"Barcelona Sants":"Sants"}}]},
+  {date:"2027-01-06",slug:"d09-barcelona-airport",description:"1月6日去 BCN 机场，按具体航站楼核对。",panels:[{title:"Barcelona · BCN 机场",zoom:13,points:["BCN机场"],labels:{"BCN机场":"BCN机场"}}]}
 ];
 
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));

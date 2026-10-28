@@ -1,4 +1,4 @@
-const CACHE_NAME = "spain-guide-static-v16";
+const CACHE_NAME = "spain-guide-static-v17";
 const PRECACHE = [
   "./",
   "./index.html",
@@ -16,13 +16,15 @@ const PRECACHE = [
   "./assets/trip/tapas.jpg",
   "./assets/trip/daily-maps/d01-barcelona-arrival-1.jpg",
   "./assets/trip/daily-maps/d02-barcelona-modernisme-1.jpg",
-  "./assets/trip/daily-maps/d03-barcelona-eixample-1.jpg",
-  "./assets/trip/daily-maps/d04-barcelona-granada-1.jpg",
-  "./assets/trip/daily-maps/d04-barcelona-granada-2.jpg",
-  "./assets/trip/daily-maps/d05-granada-alhambra-1.jpg",
-  "./assets/trip/daily-maps/d06-granada-seville-1.jpg",
-  "./assets/trip/daily-maps/d07-seville-old-town-1.jpg",
-  "./assets/trip/daily-maps/d08-seville-barcelona-1.jpg",
+  "./assets/trip/daily-maps/d03-barcelona-seville-1.jpg",
+  "./assets/trip/daily-maps/d03-barcelona-seville-2.jpg",
+  "./assets/trip/daily-maps/d04-seville-newyear-1.jpg",
+  "./assets/trip/daily-maps/d05-seville-palace-1.jpg",
+  "./assets/trip/daily-maps/d06-seville-granada-1.jpg",
+  "./assets/trip/daily-maps/d06-seville-granada-2.jpg",
+  "./assets/trip/daily-maps/d07-granada-alhambra-1.jpg",
+  "./assets/trip/daily-maps/d08-granada-barcelona-1.jpg",
+  "./assets/trip/daily-maps/d08-granada-barcelona-2.jpg",
   "./assets/trip/daily-maps/d09-barcelona-airport-1.jpg",
   "./assets/trip/references/barcelona/barcelona-69035b8e0000000004012896-01.jpg",
   "./assets/trip/references/barcelona/barcelona-69679455000000002203ad5e-01.jpg",

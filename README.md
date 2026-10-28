@@ -10,7 +10,7 @@
 >
 > **返程与三王节：**1/5 白天返回巴塞罗那并住宿，晚上可候选三王巡游；1/6 11:30 从巴塞罗那起飞，1/7 北京 05:30 抵达、13:00 续飞香港。原先 1/6 抵港已由旅客更正为 1/7 16:45。
 >
-> **旧数据警告：**以下旧三人攻略、`plan.geo.json`、KML、日历、城市地图中的日期路线，以及线上和本地手机网页仍为旧方案，尚未同步新行程；不可用作本次执行或导航。旧住宿/交通/门票价格不适用于新日期和两人。页面没有发布或更新。
+> **旧数据警告：**本地 `plan.geo.json`、KML、行前日历、地图与手机网页已更新；线上网页尚未发布新版本，仍不可按其旧日期导航。以下旧三人攻略及旧住宿/交通/门票快照仅供历史参考，不适用于新行程。
 
 | 领域 | 当前状态 | 主记录 |
 |---|---|---|
@@ -18,7 +18,7 @@
 | 航班与交通 | 用户已提供国航四段时间；航班号、机场/航站楼、行李及城际班次待核实 | [航班](trip/flights.md)、[航班与节日研究](research/holiday-2026-2027.md) |
 | 节日 | 1/1 两座宫殿关闭；12/31 塞维利亚跨年、1/5 巡游为条件活动 | [证据记录](research/holiday-2026-2027.md) |
 | 小红书 | 本次逐篇阅读三城笔记，运营事实另查官方 | [专项记录](research/holiday-2026-2027.md)、[历史索引](research/xhs/README.md) |
-| 住宿及预算 | 原三人条件不可直接套用；两人预算、床型和真实日期库存待核实 | [住宿历史](trip/accommodation.md) |
+| 住宿及预算 | 已按两人双床重查：格拉纳达携程含税均价 ¥699/晚；其他段仍待核实含税总价 | [住宿调研](trip/accommodation.md) |
 
 ## 资料流
 
@@ -73,7 +73,7 @@ flowchart LR
 - [参考图素材清单](research/xhs/assets/pose-references/README.md)：人像机位清单；项目另保留落日/晚霞/天际线和食物，排除纯建筑空镜
 - [中文交互地图](research/city-maps/city-atlas.html)与[地图接口规范](research/city-maps/README.md)
 - [地图研究台生成脚本](research/city-maps/build-atlas-research-data.py)与[生成数据适配层](research/city-maps/atlas-research-data.js)
-- [本次可编辑路线计划](plan.geo.json)、[KML](trip.kml)、[行前检查日历](gates.ics)、[插画版视觉摘要（非执行稿）](trip-illustrated.html)
+- [本次可编辑路线计划](plan.geo.json)、[KML](trip.kml)、[行前检查日历](gates.ics)、[旧插画版视觉摘要（历史方案，非执行稿）](trip-illustrated.html)
 - [旅行工具与平台调研](research/tools-and-sources.md)
 - [原始文档归档说明](research/archive/README.md)
 
