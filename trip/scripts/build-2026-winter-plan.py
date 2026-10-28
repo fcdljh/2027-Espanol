@@ -53,6 +53,17 @@ D.append(day('2027-01-03','Seville → Granada','granada','抵达格拉纳达 ·
 D.append(day('2027-01-04','Granada','granada','阿尔罕布拉宫 · 花园与纳斯里德宫','阿尔罕布拉宫 → 市中心茶馆',['阿尔罕布拉宫','格拉纳达大教堂'],[step('08:30–09:00','到阿尔罕布拉宫入口及证件安检','hop'),step('09:00–13:00','阿尔罕布拉宫、纳斯里德宫及 Generalife','anchor','每人携带预订证件原件与 QR 票；Nasrid 须按票面时段入场；不带大行李，时间仅为计划。','https://www.alhambra-patronato.es/en/visit/opening-hours-and-prices'),step('13:00–14:15','市中心午餐','meal'),step('下午','中心街区、茶馆；整理行李','free')],'保留票面 Nasrid 时段，删茶馆。','雨天穿防滑鞋并减少户外停留。'))
 D.append(day('2027-01-05','Granada → Barcelona','barcelona','返巴塞罗那 · 三王巡游','格拉纳达 → 巴塞罗那 → 三王巡游',['格拉纳达站','Barcelona Sants'],[step('上午','优先选择较早抵巴塞罗那的车或飞机，日期班次待查','hop'),step('抵达后','入住或寄存行李、用餐','lodging'),step('傍晚','三王巡游：等 2027 官方路线与时间公布','photo','时间、路线和道路管制均待核实；延误可取消。'),step('晚上','准备 1/6 早餐、机场交通与行李','check')],'转场延误则取消巡游，确保在巴塞罗那过夜。','雨天先按市府公告核实活动是否继续。',True))
 D.append(day('2027-01-06','Barcelona','barcelona','三王节 · 前往机场返程','住宿 → BCN 机场 → 北京',['BCN机场'],[step('约07:00','按住宿和假日接驳时刻出发，时间待倒推','hop'),step('08:30','建议抵达 BCN 机场，核对航站楼、行李和值机','check'),step('11:30','国航起飞往北京；次日 05:30 抵京','arrival','航班号及航站楼以订单为准。')],'交通异常优先改用可靠接驳，不安排观光。','不安排户外景点。',True))
+# 冬季机位随既有路线嵌入；日落为当地时间天文估算，光线取决于天气与遮挡。
+D[0]['timeline'][2]['note'] = '大教堂周边及主教桥可拍街巷人像；冬季约17:30日落，窄巷可能较早进入阴影。'
+D[1]['timeline'][2]['note'] = 'Avinguda Gaudí 沿线拍圣家堂远景和圣保罗外观；留在人行道，别进入车道取景。'
+D[1]['timeline'][4]['note'] += ' 冬季约17:30日落，屋顶与街景尽量排在天黑前；阴雨优先室内。'
+D[3]['timeline'][0]['note'] = '广场桥拱、瓷砖长椅与回廊适合双人互拍；雨后石面可能湿滑。元旦具体开放以现场公告为准。'
+D[3]['timeline'][2]['note'] = '河岸及桥上拍人像；冬季约18:16日落，选择视天气调整停留。'
+D[4]['timeline'][4]['note'] = '利用拱巷和广场拍人像；当天约18:17日落，窄街光照受建筑遮挡。'
+D[5]['timeline'][3]['t'] = '约17:15–18:15'
+D[5]['timeline'][3]['what'] = '圣尼古拉斯观景台：红宫与雪山方向'
+D[5]['timeline'][3]['note'] = '1/3日落约18:09；建议提前到场，前提是车次准时且天气允许。落日和积雪不保证；坡路防滑，天黑后结伴下山。'
+D[6]['timeline'][1]['note'] += ' 冬季现行开放至18:00；庭院拍照留意场馆当日规则与参观秩序。'
 # Transport modes represent planning candidates, not purchased or date-verified services.
 D[0]['stops'][1]['mode']='bus'
 D[0].pop('day_map',None)
@@ -74,7 +85,7 @@ for hotel in H:
         if option['name'].startswith('Airbnb'):
             option['name'] = option['name'].replace('Airbnb ·', 'Airbnb 备选 ·', 1)
             option['band'] += '；风景及早餐未确认'
-H[2]['options'][0]['band'] = '4.5分；两张单人床；旧价 ¥699/晚不含早餐，含双早价格待查'
+H[2]['options'][0]['band'] = '4.5分；两张单人床；旧价 ¥699/晚不含早餐，含双早及最终总价待核；携程早餐一般07:00–10:00，节日需复核'
 H[3]['options'][0]['band'] += '；早餐未确认'
 p={'trip':'西班牙跨年三城行｜两人','lang':'zh','tz':'Europe/Madrid','prefs':{'theme':'illustrated','pictures':'stock','travel_style':'public','lodging':'两人两张独立床、高评分、交通方便；携程至少三星；整间每晚含税不超过CNY1000','pace':3,'budget':'住宿每晚CNY1000以内','scenery':['city'],'notes':'两人大学生；12/28香港出发，1/7抵港；国航经北京。'},'meta':{'dates':'2026-12-28 → 2027-01-07','party':'2位大学生','route':'Barcelona → Seville → Granada → Barcelona','budget_total':'住宿实际总价、税费与床型待查','generated':'2026-10-28','self_check':'行程时刻为草案，酒店及车票未预订。'},'decisions':['城市顺序按旅客要求，1/5回巴塞罗那、1/6国际返程。','元旦王宫闭馆；三王巡游时间待官方公布。'],'checklist':[{'item':'核实国航订单与北京中转','deadline':'2026-11-15','note':'自定提醒；确认航班号、行李直挂、机场航站楼与休息室资格。'},{'item':'核实并决定两人双床住宿','deadline':'2026-11-20','note':'自定提醒；按四段日期比较含税总价与退改。'},{'item':'检查景点门票及城际交通','deadline':'2026-12-01','note':'自定提醒；以官方放票时间为准，尤其确认阿尔罕布拉宫及1月5日返巴塞罗那。'},{'item':'复核节日运营与机场交通','deadline':'2026-12-20','note':'自定提醒；核查1月1日与三王节官方公告。'}],'legs':[{'type':'flight','date':'2026-12-28','carrier':'Air China','from':'香港','to':'北京','dep':'13:40','arr':'17:05','note':'用户提供；航班号待订单核实'},{'type':'flight','date':'2026-12-29','carrier':'Air China','from':'北京','to':'巴塞罗那','dep':'03:05','arr':'08:05','note':'用户提供；北京中转10小时'},{'type':'bus','date':'2026-12-29','from':'BCN机场','to':'哥特区','note':'机场接驳方案及实际班次待核实'},{'type':'train','date':'2026-12-31','from':'Barcelona Sants','to':'Santa Justa','note':'候选铁路；具体班次待核实'},{'type':'train','date':'2027-01-03','from':'Santa Justa','to':'格拉纳达站','note':'候选铁路；具体班次待核实'},{'type':'train','date':'2027-01-05','from':'格拉纳达站','to':'Barcelona Sants','note':'候选铁路；与航班比较，班次待核实'},{'type':'flight','date':'2027-01-06','carrier':'Air China','from':'巴塞罗那','to':'北京','dep':'11:30','arr':'次日05:30','note':'用户提供；订单核实航班号'},{'type':'flight','date':'2027-01-07','carrier':'Air China','from':'北京','to':'香港','dep':'13:00','arr':'16:45','note':'用户提供；中转7.5小时'}], 'days':D,'hotels':H,'budget':[],'brief':{'insurance':'核对申根全程及保险援助渠道。'},'unverified':['航班号、北京机场航站楼、行李直挂、城际班次、酒店含税及双床、景点票务和2027三王巡游。']}
 p['prefs']['lodging'] = '优先酒店及两人早餐，民宿仅考虑景观或拍照突出；两张独立床、高评分、交通方便；携程至少三星；每晚含早餐及必付税费不超过CNY1000'

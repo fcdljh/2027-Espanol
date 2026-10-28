@@ -52,6 +52,8 @@
 
 ## 补充检查
 
+- 冬季拍照已放进既有路线：[逐日机位与日落](../research/city-weather-sun.md)。12/30 高迪大道拍圣家堂与圣保罗外观；1/1 西班牙广场桥拱、瓷砖长椅和回廊适合双人互拍；1/3 若按时到达格拉纳达，约 17:15 到圣尼古拉斯观景台，18:09 左右日落。天气、遮挡与实际交通决定能否拍到；不要承诺晚霞或雪山积雪。
+- 阿尔罕布拉宫[官方冬季一般日间开放时间](https://www.alhambra-patronato.es/visitar/horarios-y-tarifas)为 08:30–18:00；1/4 个别开放调整与售票时段仍须复核。先以纳斯里德宫票面入场时刻决定整体走法。
 - 12/30 的高迪主线没有包含桂尔公园；如果特别想看，可用它替换当天下午一座建筑的室内参观，并按[公园官方票面](https://parkguell.barcelona/en/planning-your-visit/access-regulations)和交通时间重新排程，不叠加成赶场。
 - Alhambra 官方要求证件原件及 QR 票，Nasrid 按时入场；按[官方须知](https://tickets.alhambra-patronato.es/)核对大包尺寸，尽量不带行李去宫殿。
 - Barcelona 1/6 假日机场接驳：西班牙广场附近 A1 对应 T1、A2 对应 T2；[运营商](https://aerobusbarcelona.es/estado-del-servicio/ubicacion-parada-plaza-espana/?lang=ca)当前提示机场方向站点因施工调整，出发前按当日公告与航站楼复核。

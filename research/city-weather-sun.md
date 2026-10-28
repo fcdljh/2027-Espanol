@@ -14,6 +14,12 @@
 
 逐日官方入口：[Barcelona](https://www.aemet.es/es/eltiempo/prediccion/municipios/barcelona-id08019) · [Sevilla](https://www.aemet.es/es/eltiempo/prediccion/municipios/sevilla-id41091) · [Granada](https://www.aemet.es/es/eltiempo/prediccion/municipios/granada-id18087)。AEMET 页面为未来 7 天与部分逐小时预报，具体日期进入范围后再查。
 
+## 当前行程的日落与冬季机位
+
+`sun-winter-20261029`｜[sunrise-sunset.org](https://sunrise-sunset.org/api) 天文计算，2026-10-29T00:22:09+08:00 查询；以下均为 Europe/Madrid 当地时间的约数，不代表云量、山脊遮挡或晚霞预报。巴塞罗那 12/29–30 约 17:30；塞维利亚 12/31 约 18:15、1/1 约 18:16、1/2 约 18:17；格拉纳达 San Nicolás 1/3 约 18:09、阿宫 1/4 约 18:10；巴塞罗那 1/5 约 17:35。实地建筑阴影可能更早出现。
+
+1/3 观景台可争取 17:15 左右到达，但只在交通准时和天气适合的情况下执行；积雪和红霞不是保证。1/1 西班牙广场可用拱廊、瓷砖长椅与桥作为画面框架，雨天以防滑和保暖为先。12/30 高迪大道在圣家堂与圣保罗之间，安排在原步行路线上，避免为了日落临时跨城或上山。照片参考与限制见[冬季拍照研究](xhs/winter-photo-20261029.md)。
+
 > 历史资料：下方为旧 2027 年 1 月底路线，仅存档；其日落日期、三人安排不得套用于本次。
 
 # 三城日落与一月底天气参考
