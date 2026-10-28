@@ -6,7 +6,7 @@
     "theme": "illustrated",
     "pictures": "stock",
     "travel_style": "public",
-    "lodging": "两人两张独立床，整间每晚含税不超过CNY1000",
+    "lodging": "两人两张独立床、高评分、交通方便；携程至少三星；整间每晚含税不超过CNY1000",
     "pace": 3,
     "budget": "住宿每晚CNY1000以内",
     "scenery": [
@@ -704,6 +704,11 @@
       "why": "两张独立床、每晚总价不超 ¥1,000；高评价优先，税费和实际床型待复核。",
       "options": [
         {
+          "name": "Airbnb · Hostal La Palmera 双床（待核实）",
+          "band": "4.77/5，852评价；市中心两张床、独立淋浴、共用厕所；¥1,781/2晚，旅游税另付",
+          "link": "https://zh.airbnb.com/rooms/52047182?check_in=2026-12-29&check_out=2026-12-31&adults=2&currency=CNY"
+        },
+        {
           "name": "Airbnb 巴塞罗那房源搜索",
           "band": "目标日期 2 人；价格含税费和两张床须逐项核实",
           "link": "https://zh.airbnb.com/s/Barcelona--Spain/homes?checkin=2026-12-29&checkout=2026-12-31&adults=2&currency=CNY"
@@ -720,14 +725,14 @@
       "why": "价格与两张床须逐项核对；当前线索尚未证明含税总价符合预算。",
       "options": [
         {
+          "name": "Airbnb · Alameda 老城独卫双床（待核实）",
+          "band": "4.9/5，284评价；两张单人床；¥2,909/3晚，最终税费待查",
+          "link": "https://zh.airbnb.com/rooms/15877284?check_in=2026-12-31&check_out=2027-01-03&adults=2&currency=CNY"
+        },
+        {
           "name": "Airbnb · Casa Lasso Triana（待核实）",
           "band": "4.88/5；双人床＋沙发床；页面税前 ¥2,590 / 3晚，税费待核实",
           "link": "https://zh.airbnb.com/rooms/904483733325681919?check_in=2026-12-31&check_out=2027-01-03&adults=2&currency=CNY"
-        },
-        {
-          "name": "携程 · Hotel Giralda Center（待核实）",
-          "band": "4.5分；含税均价 ¥1,544/晚，超预算；床型非保证双床",
-          "link": "https://hotels.ctrip.com/hotels/94971922.html?checkIn=2026-12-31&checkOut=2027-01-03&crn=1&adult=2&children=0"
         }
       ]
     },
@@ -761,6 +766,11 @@
       "area": "机场接驳方便、次日早出发",
       "why": "核实两张独立床、总价及 1/6 假日机场接驳。",
       "options": [
+        {
+          "name": "携程 · Occidental Barcelona 1929（床型待确认）",
+          "band": "三星 4.5/5；西班牙广场旁；¥537＋到店¥115；双床或大床，不能保证双床",
+          "link": "https://hotels.ctrip.com/hotels/46315768.html?checkIn=2027-01-05&checkOut=2027-01-06&crn=1&adult=2&children=0"
+        },
         {
           "name": "Airbnb · Raval 独卫双床房（待核实）",
           "band": "4.79/5；两张单人床；税前 ¥557/晚，最终税费待查",

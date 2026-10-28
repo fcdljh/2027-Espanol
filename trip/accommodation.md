@@ -1,9 +1,12 @@
 # 当前两人住宿调研（2026-10-28）
 
-条件：两人一间、两张独立床、评价高、每晚合计含税不超过人民币 1,000 元；可接受不可退款。四段分别为巴塞罗那 12/29–12/31、塞维利亚 12/31–1/3、格拉纳达 1/3–1/5、巴塞罗那 1/5–1/6。
+条件：两人一间、两张独立床、评价高、交通方便且不偏僻、携程酒店至少三星、每晚合计含税不超过人民币 1,000 元；可接受不可退款。四段分别为巴塞罗那 12/29–12/31、塞维利亚 12/31–1/3、格拉纳达 1/3–1/5、巴塞罗那 1/5–1/6。
 
 | 城市与日期 | 线索 | 尚待核实 |
 |---|---|---|
+| 巴塞罗那 12/29–12/31 | [Airbnb Hostal La Palmera 双床房](https://zh.airbnb.com/rooms/52047182?check_in=2026-12-29&check_out=2026-12-31&adults=2&currency=CNY)，4.77/5、852评价；两张单人床，房内淋浴与洗手盆，公用 WC，靠近 La Rambla；页面 ¥1,781/2晚（`ACM-AIR-20261028-004`） | 旅游税须现场另付，最终两晚总价及具体位置、交通需核对，尚不能认定合预算 |
+| 塞维利亚 12/31–1/3 | [Airbnb Alameda 老城双床房](https://zh.airbnb.com/rooms/15877284?check_in=2026-12-31&check_out=2027-01-03&adults=2&currency=CNY)，4.9/5、284评价，两张单人床、卧室私用卫生间；Alameda 老城，页面 ¥2,909/3晚（`ACM-AIR-20261028-005`） | 独立房间、住宅共用区域；税费及三晚最终总价未确认，距预算仅剩 ¥91 |
+| 巴塞罗那 1/5–1/6 | [携程 Occidental Barcelona 1929](https://hotels.ctrip.com/hotels/46315768.html?checkIn=2027-01-05&checkOut=2027-01-06&crn=1&adult=2&children=0)，三星、4.5/5、166评价；西班牙广场附近；两人房页面 ¥537 加到店 ¥115（`ACM-CTRIP-20261028-005`） | 床型为双床或大床，未保证两张独立床；具体税费、节日机场交通需核实 |
 | 巴塞罗那 12/29–12/31 | [携程 Barceló Sants](https://hotels.ctrip.com/hotels/754849.html?checkIn=2026-12-29&checkOut=2026-12-31&crn=1&adult=2&children=0)，4.5分、525评价，含税费均价 ¥1,353/晚，双床或大床（`ACM-CTRIP-20261028-004`） | 超预算且双床未保证，排除 |
 | 巴塞罗那 12/29–12/31 | [Airbnb 搜索页](https://zh.airbnb.com/s/Barcelona--Spain/homes?checkin=2026-12-29&checkout=2026-12-31&adults=2&currency=CNY)已按 2 人搜索 | 返程夜 Raval 双床房在首段不可出租；仍未找到含税总价和两张床都确认的合格选项 |
 | 塞维利亚 12/31–1/3 | [Casa Lasso Triana](https://zh.airbnb.com/rooms/904483733325681919?check_in=2026-12-31&check_out=2027-01-03&adults=2&currency=CNY)，4.88/5、219 评价；一张双人床及一张沙发床、私用卫生间和小厨房、共用庭院。税前 ¥2,590/3 晚（`ACM-AIR-20261028-001`） | 沙发床是否舒适及最终含税总价；搜索页明确称展示税前价格，不能认定符合预算 |
@@ -13,9 +16,9 @@
 | 格拉纳达 1/3–1/5 | [陶宾宫殿式公寓双床房](https://zh.airbnb.com/rooms/1558015621284285662?check_in=2027-01-03&check_out=2027-01-05&adults=2&currency=CNY)，4.9/5、138 评价，两张单人床、房客专用卫生间；税前 ¥1,039/2 晚（`ACM-AIR-20261028-002`） | 最终含税总价；个别评价提到走廊噪音，取消条款以结算页为准 |
 | 巴塞罗那 1/5–1/6 | [Airbnb 返程夜搜索页](https://zh.airbnb.com/s/Barcelona--Spain/homes?checkin=2027-01-05&checkout=2027-01-06&adults=2&currency=CNY) | 尚未逐房核实价格、双床及 1/6 假日机场接驳 |
 
-携程 [Sercotel Palacio de Los Gamboa](https://hotels.ctrip.com/hotels/1625246.html?checkIn=2027-01-03&checkOut=2027-01-05&crn=1&adult=2&children=0) 为格拉纳达候选：4.5 分、117 条点评；该次页面房价与目标房型未观察到，不能算作合格报价。小红书用户在[塞维利亚住宿经历](https://www.xiaohongshu.com/explore/6a02fc6f000000003701c1f3)中提到老城区钟声和 Giralda Center 的住宿体验，仅作个人经验，不替代实时房价及房型核实。
+携程 Gamboa 最新查询已显示两张单人床和含税费均价，仍应复核两晚结算总额。小红书用户在[塞维利亚住宿经历](https://www.xiaohongshu.com/explore/6a02fc6f000000003701c1f3)中提到老城区钟声和 Giralda Center 的住宿体验，仅作个人经验，不替代实时房价及房型核实。
 
-TourMind 在本次真实日期的塞维利亚和格拉纳达区域查询返回 “no hotels found with available rates”；这不是所有平台无房的证明。巴塞罗那部分酒店报价查询出现上游超时。携程登录后取得格拉纳达双床含税均价，塞维利亚 Giralda Center 超预算；Airbnb 页面所见为税前价格，仍没有四段均满足含税预算的完整核验组合。价格、评价、房态随时变化，均未预订。
+TourMind 在本次真实日期的塞维利亚和格拉纳达区域查询返回 “no hotels found with available rates”；这不是所有平台无房的证明。巴塞罗那部分酒店报价查询出现上游超时。携程登录后取得格拉纳达双床含税均价，塞维利亚 Giralda Center 超预算；Airbnb 房源列价不代表最终含税总价，部分旅游税到店另付，仍没有四段均满足含税预算的完整核验组合。价格、评价、房态随时变化，均未预订。
 
 > **历史版本提示：**以下为旧三人、旧日期及旧路线资料，不适用于当前行程。
 
