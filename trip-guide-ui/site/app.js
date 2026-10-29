@@ -1097,6 +1097,22 @@ async function updateWeather(day) {
   }
 }
 
+function dailyTransitMarkup(day) {
+  const route = state.plan?.pre_departure?.city_transport?.daily_routes?.[day?.date];
+  if (!route) return "";
+  return `
+    <section class="daily-transit-card" aria-label="今日市内接驳">
+      <div class="card-heading-row"><div><span class="section-kicker">今天怎么坐车 · 按候选住宿</span><h3>${escapeHtml(route.title)}</h3></div></div>
+      <p class="daily-transit-intro">${escapeHtml(route.intro)}</p>
+      <div class="daily-transit-segments">${route.segments.map((item) => `
+        <article class="daily-transit-segment"><h4>${escapeHtml(item.title)}</h4><p>${escapeHtml(item.text)}</p>${item.map_url ? `<a href="${escapeHtml(item.map_url)}" target="_blank" rel="noreferrer">打开路线导航 ↗</a>` : ""}</article>
+      `).join("")}</div>
+      <details class="daily-transit-sources"><summary>查看线路和时刻来源</summary><div>${route.sources.map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)} ↗</a>`).join("")}</div></details>
+      <p class="daily-transit-footnote">住宿与车票均未确认；节日班次、入口、转乘和航站楼以出发前及当天官方信息为准。</p>
+    </section>
+  `;
+}
+
 function renderToday(day) {
   const completedCount = day.timeline.filter((_, index) => isComplete(day, index)).length;
   const progress = Math.round((completedCount / Math.max(1, day.timeline.length)) * 100);
@@ -1127,6 +1143,8 @@ function renderToday(day) {
     ${weatherMarkup(day)}
 
     ${nextStepMarkup(day, firstOpenIndex, allComplete)}
+
+    ${dailyTransitMarkup(day)}
 
     <button class="transport-shortcut" data-open-transport type="button"><span><strong>市内交通与购票</strong><small>三城刷卡、交通卡和机场票券</small></span><span aria-hidden="true">→</span></button>
 

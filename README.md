@@ -16,7 +16,7 @@
 |---|---|---|
 | 行程 | 新城市顺序及人数已确认；1/5 转场班次与巡游待核实 | [共享事实](CONTEXT.md)、[新行程](trip/itinerary.md) |
 | 航班与交通 | 城际计划选择火车—巴士—火车，三段均未出票；票价、ISIC 折后、换乘与早餐衔接需复核；国航订单细节待核实 | [城际交通](trip/ground-transport.md)、[查询证据](research/intercity-20261029.md)、[航班](trip/flights.md) |
-| 市内交通 | 按每日路线估算各城乘车次数并比较票种；酒店、早班接驳及 2027 票价需复核 | [市内交通](trip/city-transport.md)、[查询证据](research/city-transport-20261029.md) |
+| 市内交通 | 手机网页每日显示住宿候选与线路接驳；格拉纳达早班、航站楼、节日时刻及 2027 票价需复核 | [市内交通](trip/city-transport.md)、[查询证据](research/city-transport-20261029.md) |
 | 节日 | 1/1 两座宫殿关闭；12/31 塞维利亚跨年、1/5 巡游为条件活动 | [证据记录](research/holiday-2026-2027.md) |
 | 小红书 | 本次逐篇阅读三城笔记，运营事实另查官方 | [专项记录](research/holiday-2026-2027.md)、[历史索引](research/xhs/README.md) |
 | 天气 | 三城气候历史值已区分预报；手机页在日期进入未来 7 天后提供逐日预报和 AEMET 入口 | [天气研究](research/city-weather-sun.md) |

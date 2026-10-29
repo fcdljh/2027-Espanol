@@ -3,6 +3,100 @@
 核查：2026-10-29（香港时间）。适用于两人 2026-12-29 至 2027-01-06 的行程；2027 新票价、跨年票券期限及节日班次出发前复核。详细证据见[查询记录](../research/city-transport-20261029.md)。
 
 
+## 逐日接驳：按目前住宿候选
+
+最后查询：2026-10-29T11:13:53+08:00。酒店、城际车次均未订，导航按钮提供实时路线，不代表已核实班次；所有 2027 节日运行和施工变化仍需复核。[查询证据](../research/city-transport-20261029.md)包含来源及 record_id。
+
+### 2026-12-29｜机场抵达 → 巴塞罗那住宿
+
+示例依目前酒店候选；航站楼、酒店及航班均待确认。
+
+- **机场 → Villa Emilia：**从机场 T1 搭 Aerobús A1、T2 搭 A2 到 Plaça Espanya，再步行或换地铁 L1 到 Rocafort，步行至 C. Calàbria 115；需另购 Aerobús 票。也可从 T2 乘 R2 Nord 到 Sants，再按实际路线换乘；T1 先搭机场免费接驳到 T2。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Barcelona+Airport&destination=Hotel+Villa+Emilia+Barcelona&travelmode=transit&dir_action=navigate)
+- **机场 → Alexandra / Dante：**可考虑 R2 Nord 从 T2 到 Passeig de Gràcia，按具体酒店位置步行或换乘；T1 先搭免费接驳到 T2。也可乘 Aerobús 到 Plaça Catalunya 后按酒店位置步行或换乘；带箱先核对站台及步行。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Barcelona+Airport&destination=Alexandra+Barcelona+Hotel+Curio+Collection+by+Hilton&travelmode=transit&dir_action=navigate)
+- **市内游览：**安顿行李后，哥特区→Born 以步行为主；晚餐地点和回酒店交通按最终地址导航。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Barcelona+Cathedral&destination=El+Born+Centre+de+Cultura+i+Mem%C3%B2ria+Barcelona&travelmode=walking&dir_action=navigate)
+
+来源：[Aena 航站楼接驳](https://www.aena.es/es/josep-tarradellas-barcelona-el-prat/servicios-del-aeropuerto/transporte-gratuito-entre-terminales.html) · [Rodalies R2 时刻](https://rodalies.gencat.cat/web/.content/01_Actualitat/2026/02_12_Garraf/PDF/R2.pdf) · [Aerobús 从机场 A1](https://aerobusbarcelona.es/ca/linies-parades-i-horaris/linia-a1-tornada/)。证据：`CITYROUTE-20261029-BCN-01`、`CITYROUTE-20261029-BCN-03`、`CITYROUTE-20261029-BCN-04`。
+
+### 2026-12-30｜圣家堂 → 圣保罗 → 高迪建筑
+
+按 Villa Emilia / Alexandra / Dante 三家候选分别出发；参观时段按门票。
+
+- **Villa Emilia → 圣家堂：**步行至 Rocafort，地铁 L1 到 Universitat，换 L2 至 Sagrada Família；核对方向和站内换乘。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Hotel+Villa+Emilia+Barcelona&destination=Sagrada+Familia+Barcelona&travelmode=transit&dir_action=navigate)
+- **Alexandra / Dante → 圣家堂：**Alexandra 可从 Diagonal，Dante 可从 Hospital Clínic，乘 L5 至 Sagrada Família；酒店到站步行及入口以导航为准。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Alexandra+Barcelona+Hotel+Curio+Collection+by+Hilton&destination=Sagrada+Familia+Barcelona&travelmode=transit&dir_action=navigate)
+- **圣家堂 → 圣保罗 → 巴特罗/米拉：**沿 Avinguda Gaudí 步行到圣保罗；之后可查 L5 Sant Pau | Dos de Maig → Diagonal，再步行至所选建筑。晚饭与回程按住宿导航。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Sagrada+Familia+Barcelona&destination=Recinte+Modernista+de+Sant+Pau+Barcelona&travelmode=walking&dir_action=navigate)
+
+来源：[TMB 地铁营业时间](https://www.tmb.cat/ca/transport-barcelona/horari-metro-bus) · [TMB L5 站点](https://www.tmb.cat/en/barcelona/metro/-/lineametro/L5)。证据：`CITYROUTE-20261029-BCN-01`、`CITYROUTE-20261029-BCN-02`。
+
+### 2026-12-31｜早到 Sants → Santa Justa 接驳
+
+06:35 火车只是未出票的计划；建议按票面及铁路安检要求倒推。
+
+- **Villa Emilia → Sants：**Rocafort 乘 L1 到 Espanya，换 L3 到 Sants Estació；也可直接打车。TMB 通常周四 05:00 开始运行，指线路营业时间，并非 Rocafort 指定首班；务必查当站当日并预留换乘与站内安检时间。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Hotel+Villa+Emilia+Barcelona&destination=Barcelona+Sants&travelmode=transit&dir_action=navigate)
+- **Alexandra / Dante → Sants：**Alexandra 从 Diagonal、Dante 从 Hospital Clínic 可乘 L5 至 Sants Estació。按候选酒店步行到站；当站首班未核实，行李多或无法留足余量时改正规出租车。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Alexandra+Barcelona+Hotel+Curio+Collection+by+Hilton&destination=Barcelona+Sants&travelmode=transit&dir_action=navigate)
+- **Santa Justa → Hotel Bécquer：**酒店官网指引从 José Laguillo（Santa Justa）乘 TUSSAM 21 至 Marqués de Paradas，再步行。跨年时刻和站点须当日确认；另有车站正规出租车。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Estacion+Santa+Justa+Sevilla&destination=Hotel+Becquer+Sevilla&travelmode=transit&dir_action=navigate)
+- **Santa Justa → Murillo Reinoso：**Santa Cruz 石板路带箱可优先考虑正规出租车；具体公交站与步行接驳尚未核实，不把它当作已确认路线。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Estacion+Santa+Justa+Sevilla&destination=Hotel+Murillo+Reinoso+Sevilla&travelmode=transit&dir_action=navigate)
+
+来源：[TMB 地铁营业时间](https://www.tmb.cat/ca/transport-barcelona/horari-metro-bus) · [Hotel Bécquer 交通指引](https://www.hotelbecquer.com/faqs/)。证据：`CITYROUTE-20261029-BCN-01`、`CITYROUTE-20261029-BCN-02`、`CITYROUTE-20261029-SVQ-01`。
+
+### 2027-01-01｜塞维利亚元旦：公园与河岸
+
+元旦班次及跨年临时改线待公告；以下按中心候选估算。
+
+- **酒店 → 西班牙广场：**Murillo Reinoso 在 Santa Cruz，可查步行至 Plaza de España；Bécquer 出发也可按体力步行或查公交，确切元旦路线和时间未核实。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Hotel+Murillo+Reinoso+Sevilla&destination=Plaza+de+Espa%C3%B1a+Sevilla&travelmode=walking&dir_action=navigate)
+- **广场 → 河岸 → Triana → 都市阳伞：**分段步行，路程较长；天气、体力或酒店位置不适合时，实时导航查公交或正规出租车。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Plaza+de+Espa%C3%B1a+Sevilla&destination=Setas+de+Sevilla&travelmode=walking&dir_action=navigate)
+
+来源：[TUSSAM 线路与实时](https://www.tussam.es/)。证据：`CITYROUTE-20261029-SVQ-01`。
+
+### 2027-01-02｜王宫、主教堂与 Santa Cruz
+
+两个候选都在中心，先按步行组织。
+
+- **Murillo Reinoso → 王宫 → 主教堂：**从 Santa Cruz 步行至王宫，之后到主教堂与 Santa Cruz；入口与安检缓冲按票面安排。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Hotel+Murillo+Reinoso+Sevilla&destination=Real+Alcazar+de+Sevilla&travelmode=walking&dir_action=navigate)
+- **Bécquer → 王宫：**从 Reyes Católicos 4 按步行导航前往；若体力或天气不适合再查公交或出租车。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Hotel+Becquer+Sevilla&destination=Real+Alcazar+de+Sevilla&travelmode=walking&dir_action=navigate)
+
+来源：[Hotel Bécquer 交通指引](https://www.hotelbecquer.com/faqs/)。证据：`CITYROUTE-20261029-SVQ-01`。
+
+### 2027-01-03｜Plaza de Armas → 格拉纳达中心
+
+09:00 ALSA 和 12:00 抵达为未出票的计划；周日班次、寄存和行李时间另核。
+
+- **Bécquer → Plaza de Armas：**酒店在 Reyes Católicos 4 一带，可先用步行导航评估；两人拖箱或天气不好时改出租车。09:00 车次按车站要求提前到站。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Hotel+Becquer+Sevilla&destination=Estaci%C3%B3n+de+Autobuses+Plaza+de+Armas+Sevilla&travelmode=walking&dir_action=navigate)
+- **Murillo Reinoso → Plaza de Armas：**Santa Cruz 到汽车站按实际酒店出口比较公交和正规出租车；具体周日站点与班次尚未核实，带大箱不预设能步行。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Hotel+Murillo+Reinoso+Sevilla&destination=Estaci%C3%B3n+de+Autobuses+Plaza+de+Armas+Sevilla&travelmode=transit&dir_action=navigate)
+- **Granada 汽车站 → Gamboa / Granada Suites：**市旅游局指 33 路在汽车站正门对面乘车，往中心可在 Catedral 或 Acera del Darro 40 下；具体哪站更适合候选酒店、步行入口和当日班次需导航确认。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Estaci%C3%B3n+de+Autobuses+de+Granada&destination=Sercotel+Palacio+de+los+Gamboa+Granada&travelmode=transit&dir_action=navigate)
+- **中心 → Albaicín 观景台：**市旅游局指 Catedral 一带可换 C31 上 Albaicín；下车点与临时改线按当日核对，观景后可步行下山或再乘车。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Granada+Cathedral&destination=Mirador+de+San+Nicol%C3%A1s+Granada&travelmode=transit&dir_action=navigate)
+
+来源：[Hotel Bécquer 交通指引](https://www.hotelbecquer.com/faqs/) · [Granada 33 / C31 / C32 接驳](https://turismo.granada.org/es/como-llegar-al-centro-granada-desde-estacion-autobuses) · [Rober 公交线路](https://www.transportesrober.com/flotamovimiento/lineas.htm)。证据：`CITYROUTE-20261029-SVQ-01`、`CITYROUTE-20261029-GRX-01`。
+
+### 2027-01-04｜中心 ↔ 阿尔罕布拉宫
+
+当前市旅游局提示 Santiago 街施工；1 月是否继续及预约入口尚待确认。
+
+- **Gamboa / Granada Suites → C32：**旅游局目前建议在 Calle Pavaneras 乘 C32 上山；其线路指引列 Generalife 可到售票处及 Generalife，Palacio de Carlos V / Puerta de la Justicia 可到宫区。按票面入口核对车站、改道及上下坡。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Sercotel+Palacio+de+los+Gamboa+Granada&destination=Alhambra+Generalife+Granada&travelmode=transit&dir_action=navigate)
+- **回中心：**按当日 C32 实际返程方向及站点搭车，或视体力步行下山；施工是否持续到 2027 未确认。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Alhambra+Granada&destination=Granada+Cathedral&travelmode=transit&dir_action=navigate)
+
+来源：[Granada 上山巴士改道公告](https://turismo.granada.org/es) · [Granada 33 / C31 / C32 接驳](https://turismo.granada.org/es/como-llegar-al-centro-granada-desde-estacion-autobuses)。证据：`CITYROUTE-20261029-GRX-01`、`CITYROUTE-20261029-GRX-02`。
+
+### 2027-01-05｜格拉纳达早火车 → 巴塞罗那住宿
+
+06:09 火车未出票。旅游局提到 4 路连接火车站和中心，但不能证明当日清晨反向首班赶得上。
+
+- **Gamboa / Granada Suites → Granada 火车站：**优先前一晚与酒店核实正规出租车上车点和可否提前安排；建议按车站要求倒推并预留进站、安检与两只箱子余量。若出租车无法确认，提前查步行路况和实时公交，不能保证 4 路首班可用。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Sercotel+Palacio+de+los+Gamboa+Granada&destination=Estaci%C3%B3n+de+tren+de+Granada&travelmode=transit&dir_action=navigate)
+- **Sants → Mercure Condor：**可查 L5 至 Diagonal、步行换 FGC Provença，乘往 Sant Gervasi 方向的 L6；站间步行、换乘入口及当日行驶需实查。两只大箱也可在 Sants 乘正规出租车直达。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Barcelona+Sants&destination=Mercure+Barcelona+Condor&travelmode=transit&dir_action=navigate)
+- **Sants → Occidental 1929 备选：**位于 Espanya 一带，可先比较步行、L3 或出租车；酒店双床尚未保证。巡游路线及交通管制未公布，出行前再核对。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Barcelona+Sants&destination=Occidental+Barcelona+1929&travelmode=transit&dir_action=navigate)
+
+来源：[Granada 火车站接驳](https://turismo.granada.org/es/como-llegar-granada) · [FGC L6 线路与时刻](https://www.fgc.cat/xarxa-fgc/l-barcelona-valles/linies-i-horaris-barcelona-valles-l6-barcelona-placa-catalunya-sarria/) · [TMB 地铁营业时间](https://www.tmb.cat/ca/transport-barcelona/horari-metro-bus)。证据：`CITYROUTE-20261029-GRX-03`、`CITYROUTE-20261029-BCN-05`。
+
+### 2027-01-06｜三王节：住宿 → BCN 机场
+
+11:30 起飞，规划目标 08:30 前到正确航站楼；航班号、T1/T2 和节日运行均待核实。
+
+- **若住 Mercure Condor：**可查步行至 FGC Sant Gervasi，乘 L6 往 Plaça Catalunya，再乘 Aerobús A1 到 T1 或 A2 到 T2。FGC 当日首班、转乘步行及到站时间尚未确认；需另买 Aerobús 票。若余量不足或停运，提前安排正规出租车。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Mercure+Barcelona+Condor&destination=Barcelona+Airport&travelmode=transit&dir_action=navigate)
+- **若住 Occidental 1929：**可查步行至 Plaça Espanya 机场方向站牌，搭 A1 去 T1 或 A2 去 T2。官网目前列 24 小时运营；约 07:00 A1 名义每 5 分钟、A2 每 10 分钟，属于当前频率而不是 2027 指定班次。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Occidental+Barcelona+1929&destination=Barcelona+Airport&travelmode=transit&dir_action=navigate)
+- **省钱备选：R2 Nord：**若酒店→Sants 或 Passeig de Gràcia 的接驳适合，可查 R2 到机场 T2；若实际航班从 T1 起飞，再换免费接驳车。机场目前列早上 05:00–08:00 接驳约每 7 分钟，T2→T1 车程约 14 分钟，另加步行、等待及延误余量。 [路线导航](https://www.google.com/maps/dir/?api=1&origin=Barcelona+Sants&destination=Barcelona+Airport+T2&travelmode=transit&dir_action=navigate)
+- **出发时间：**07:00 是原行程初步出门时间，不是已核实的班次或保证。确认酒店、航站楼和实时线路后倒推；两箱、节日、等待及行李值机都需留缓冲。
+
+来源：[Aerobús A1 往机场](https://aerobusbarcelona.es/lineas-paradas-y-horarios/linea-a1-ida/) · [Aerobús A2 往机场](https://aerobusbarcelona.es/lineas-paradas-y-horarios/linea-a2-ida/) · [FGC L6 线路与时刻](https://www.fgc.cat/xarxa-fgc/l-barcelona-valles/linies-i-horaris-barcelona-valles-l6-barcelona-placa-catalunya-sarria/) · [Rodalies R2 时刻](https://rodalies.gencat.cat/web/.content/01_Actualitat/2026/02_12_Garraf/PDF/R2.pdf) · [Aena 航站楼接驳](https://www.aena.es/es/josep-tarradellas-barcelona-el-prat/servicios-del-aeropuerto/transporte-gratuito-entre-terminales.html)。证据：`CITYROUTE-20261029-BCN-03`、`CITYROUTE-20261029-BCN-04`、`CITYROUTE-20261029-BCN-05`。
+
 ## 按当前行程估算：每人多少次？
 
 以下是**每位旅客的计费行程**，不是两人合计，也不是逐辆车的刷卡次数；符合换乘规则的多次验证算一次。假设住宿在市中心、两人一起乘车、平地以步行为主，机场选择可用一区综合票的机场火车或普通公交。路线和换乘只作规划假设，尚未按最终地址及具体时刻逐段验证。两只约 20 kg 行李箱可能使你们改乘出租车。

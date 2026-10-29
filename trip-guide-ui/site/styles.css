@@ -537,3 +537,14 @@ a { color: inherit; }
 .estimate-row > div { display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 10px; font-size:12px; color:var(--navy); }
 .estimate-row b { color:var(--teal-dark); }
 .estimate-row p { margin:5px 0 0; color:var(--muted); font-size:12px; line-height:1.6; }
+
+.daily-transit-card { margin-top:12px; padding:17px; border:1px solid rgba(61,129,126,.2); border-radius:22px; background:#f2f8f4; box-shadow:0 8px 26px rgba(24,57,74,.05); }
+.daily-transit-card h3 { margin:5px 0 0; color:var(--navy); font-family:Georgia, "Songti SC", serif; font-size:21px; line-height:1.25; }
+.daily-transit-intro, .daily-transit-footnote { margin:9px 0 0; color:#59746d; font-size:12px; line-height:1.6; }
+.daily-transit-segments { margin-top:10px; }
+.daily-transit-segment { padding:12px 0; border-top:1px solid rgba(61,129,126,.16); }
+.daily-transit-segment h4 { margin:0; color:var(--navy); font-size:14px; }
+.daily-transit-segment p { margin:5px 0 0; color:var(--muted); font-size:13px; line-height:1.65; }
+.daily-transit-segment a, .daily-transit-sources a { display:inline-flex; margin:8px 6px 0 0; padding:7px 10px; border-radius:999px; color:var(--teal-dark); background:#fff; font-size:11px; font-weight:850; text-decoration:none; }
+.daily-transit-sources { border-top:1px solid rgba(61,129,126,.16); padding-top:12px; }
+.daily-transit-sources summary { color:var(--teal-dark); font-size:12px; font-weight:850; cursor:pointer; }
