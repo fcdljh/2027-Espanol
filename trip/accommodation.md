@@ -1,7 +1,22 @@
 # 当前两人住宿调研（2026-10-28）
 
 
-## 2026-10-29 三城地区与酒店复筛（现行）
+## 2026-10-29 更新：每晚上限 ¥1,500
+
+两人一间、两张单人床、至少三星、优先双早；上限包括税和其他必付费用。此次新观察的精确时分未逐条保存，`018`–`022` 按项目证据规范列为未核验快照，提交前请重新打开携程确认。差评标签与首页样本不等于已审阅所有近三个月点评；所有方案均未预订。
+
+| 日期 | 当前候选 | 价格和需要权衡的事项 |
+|---|---|---|
+| 巴塞罗那首段 12/29–31 | [Barcelona Century Hotel](https://hotels.ctrip.com/hotels/detail/?cityEnName=Barcelona&cityId=40795&hotelId=754944&checkIn=2026-12-29&checkOut=2026-12-31&adult=2&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&masterhotelid_tracelogid=100025527-0a63d009-498123-1609829&detailFilters=4%7C2~4~2*16%7C4~16~4*16%7C3~16~3*50%7C9%7C99828~9~99828%7C41.391843%7C2.1641969%7C1*17%7C3~17~3*6%7C3~6~3*80%7C2~80~2*29%7C1~29~1%7C2&hotelType=normal&display=incavg&subStamp=154&isCT=true&isFlexible=F&fullProcessProductId=F&isFirstEnterDetail=T)，三星，4.1/5，Hospital Clínic 站约470米 | 两张0.8米床、双早，页面均 ¥1,309/晚，另列到店付 ¥115，不可取消（`ACM-CTRIP-20261029-018`）。到店费用按整段还是按晚及逐晚金额待核。差评标签3条较早；2026年2月有清洁及噪音投诉。 |
+| 塞维利亚 12/31–1/3 | [Colectia Hotel Santa Lucía](https://hotels.ctrip.com/hotels/detail/?cityEnName=Seville&cityId=1350&hotelId=2171747&checkIn=2026-12-31&checkOut=2027-01-03&adult=2&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&masterhotelid_tracelogid=100025527-0a6d0193-498123-1547447&detailFilters=4%7C2~4~2*17%7C3~17~3*16%7C4~16~4*16%7C3~16~3*50%7C8%7C2114~8~2114%7C37.38582229614258%7C-5.993106842041016%7C1*6%7C3~6~3*80%7C2~80~2*29%7C1~29~1%7C2&hotelType=normal&display=incavg&subStamp=392&isCT=true&isFlexible=F&fullProcessProductId=F&isFirstEnterDetail=T)，三星，4.3/5；**有条件备选** | 两张0.8米床、双早均 ¥1,416/晚，不可取消（`ACM-CTRIP-20261029-019`）；距大教堂约1.5–1.6公里，并非理想的老城核心。页面列 €200 可退押金；逐晚及三晚总价待核。 |
+| 格拉纳达 1/3–5 | [Sercotel Palacio de Los Gamboa](https://hotels.ctrip.com/hotels/1625246.html?checkIn=2027-01-03&checkOut=2027-01-05&crn=1&adult=2&children=0)，四星，4.5/5 | 早前查得双床双早均 ¥875/晚、12/27 23:59 前可退（`ACM-CTRIP-20261029-001`）；近大教堂，旧建筑隔音需留意；房态、逐晚金额及节日早餐需重查。 |
+| 巴塞罗那返程 1/5–6 | Mercure Barcelona Condor，四星，4.3/5 | 早前查得双床双早 ¥819，另列到店 ¥138，约 ¥957，不可取消（`ACM-CTRIP-20261029-003`）。近期差评、机场接驳和1/6早餐能否赶上待复核。 |
+
+补充：[Caledonian](https://hotels.ctrip.com/hotels/detail/?cityEnName=Barcelona&cityId=40795&hotelId=754480&checkIn=2026-12-29&checkOut=2026-12-31&adult=2&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&masterhotelid_tracelogid=100025527-0a63d009-498123-1609829&detailFilters=4%7C2~4~2*16%7C4~16~4*16%7C3~16~3*50%7C9%7C99828~9~99828%7C41.391843%7C2.1641969%7C1*17%7C3~17~3*6%7C3~6~3*80%7C2~80~2*29%7C1~29~1%7C2&hotelType=normal&display=incavg&subStamp=154&isCT=true&isFlexible=F&fullProcessProductId=F&isFirstEnterDetail=T) 近 Urgell / Universitat 地铁站，双床无早可退均 ¥1,373，另到店付 ¥115；加双早后的总额及近期点评仍待核（`ACM-CTRIP-20261029-021`）。[Onix Fira](https://hotels.ctrip.com/hotels/detail/?cityEnName=Barcelona&cityId=40795&hotelId=2164719&checkIn=2026-12-29&checkOut=2026-12-31&adult=2&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&masterhotelid_tracelogid=100025527-0a63d009-498123-1609829&detailFilters=4%7C2~4~2*16%7C4~16~4*16%7C3~16~3*50%7C9%7C99828~9~99828%7C41.391843%7C2.1641969%7C1*17%7C3~17~3*6%7C3~6~3*80%7C2~80~2*29%7C1~29~1%7C2&hotelType=normal&display=incavg&subStamp=154&isCT=true&isFlexible=F&fullProcessProductId=F&isFirstEnterDetail=T) 位置较好，但10月住客严厉投诉环境和服务，7月24日有异味和卫生投诉，谨慎排除（`ACM-CTRIP-20261029-022`）。[Hotel Palace Sevilla](https://hotels.ctrip.com/hotels/detail/?cityEnName=Seville&cityId=1350&hotelId=2507390&checkIn=2026-12-31&checkOut=2027-01-03&adult=2&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&masterhotelid_tracelogid=100025527-0a6d0193-498123-1547447&detailFilters=4%7C2~4~2*17%7C3~17~3*16%7C4~16~4*16%7C3~16~3*50%7C8%7C2114~8~2114%7C37.38582229614258%7C-5.993106842041016%7C1*6%7C3~6~3*80%7C2~80~2*29%7C1~29~1%7C2&hotelType=normal&display=incavg&subStamp=392&isCT=true&isFlexible=F&fullProcessProductId=F&isFirstEnterDetail=T) 双床双早均 ¥1,423，但10月住客投诉霉味和下水道异味，排除（`ACM-CTRIP-20261029-020`）。
+
+携程显示的“均价”不能证明每一晚都不超过上限；要核对每晚明细、税费口径和结算总价。区域地图见[三城住宿区域地图](../visualizations/住宿区域-20261029/)；阴影是近似选址范围，并非行政或安全边界。
+
+## 2026-10-29 三城地区与酒店复筛（历史：当时无预算上限）
 
 无预算上限；两位成人一间、明确两张单人床，优先双早，至少三星。小红书区域线索为 `xhs-stay-area-bcn-6969ede2`、`xhs-stay-area-svq-6a005f4b`、`xhs-granada-692ee3c4000000001e035bc0`；其评论为个人经验。地图及绘制参数在 [三城区域地图](../visualizations/住宿区域-20261029/)，蓝色圆形是选址近似范围，不是治安或行政边界。
 
@@ -21,7 +36,7 @@
 
 **排除与未完成：**Casa Luz 在2026-09-26有住客疑似虫咬投诉；酒店称检查未发现虫迹、无法判断来源，谨慎排除。Anacapri 10月有浴室严重异味投诉；Barceló Sants 9月有房间及卫生间清洁投诉。Áurea Catedral 的普通房写双床或大床，一位8月住客称备注双床却拿到大床，未满足明确双床。低分标签和样本筛查不能证明近三个月全部评价不存在严重问题。以上尚属候选，未订房。
 
-## 四段怎么选：携程复查结论（2026-10-29）
+## 四段怎么选：携程较早复查结论（历史，以本页最新预算为准）
 
 按两位成人、一间房、明确两张单人床、携程至少三星筛选；无预算上限，双人早餐优先。以下是规划建议，价格与房态是携程页面快照，尚未在酒店或供应商结算页面核实，也没有预订。页面显示的均价不等于已经核对的整段结算总额。
 

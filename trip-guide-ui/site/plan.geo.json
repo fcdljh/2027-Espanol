@@ -6,9 +6,9 @@
     "theme": "illustrated",
     "pictures": "stock",
     "travel_style": "public",
-    "lodging": "优先酒店及两人早餐，民宿仅考虑景观或拍照突出；两张独立床、高评分、交通方便；携程至少三星；无预算上限；优先双早并核查近期严重差评",
+    "lodging": "优先酒店及两人早餐；两张独立床、交通方便、携程至少三星；含税和必付费用不超过人民币1500元/间/晚；核查近三个月严重差评",
     "pace": 3,
-    "budget": "住宿不设预算上限；比较含税费和早餐的实际总价",
+    "budget": "住宿含税及必付费用不超过人民币1500元/间/晚，逐晚及结算总价待核",
     "scenery": [
       "city"
     ],
@@ -714,12 +714,17 @@
       "status": "to_select",
       "base": "12/29–12/31 · 2 晚 · 2 人",
       "area": "Eixample / Sants 交通方便区域",
-      "why": "La Palmera 临近 Liceu，去 Sants 可考虑地铁 L3；老城需留意人流、噪音及共用厕所，实际税费待核实。 优先寻找含两人早餐的酒店；民宿景观尚待核实。",
+      "why": "优先地铁便利与双床双早；核对城市税、逐晚价格及近期差评。",
       "options": [
         {
-          "name": "Airbnb 备选 · Hostal La Palmera 双床（待核实）",
-          "band": "4.77/5，852评价；市中心两张床、独立淋浴、共用厕所；¥1,781/2晚，旅游税另付；风景及早餐未确认",
-          "link": "https://zh.airbnb.com/rooms/52047182?check_in=2026-12-29&check_out=2026-12-31&adults=2&currency=CNY"
+          "name": "携程 · Barcelona Century Hotel（待复核）",
+          "band": "三星；双床双早均 ¥1,309，另付 ¥115；不可退；2026年2月有清洁与噪音投诉，逐晚和近期点评待核",
+          "link": "https://hotels.ctrip.com/hotels/detail/?cityEnName=Barcelona&cityId=40795&hotelId=754944&checkIn=2026-12-29&checkOut=2026-12-31&adult=2&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&masterhotelid_tracelogid=100025527-0a63d009-498123-1609829&detailFilters=4%7C2~4~2*16%7C4~16~4*16%7C3~16~3*50%7C9%7C99828~9~99828%7C41.391843%7C2.1641969%7C1*17%7C3~17~3*6%7C3~6~3*80%7C2~80~2*29%7C1~29~1%7C2&hotelType=normal&display=incavg&subStamp=154&isCT=true&isFlexible=F&fullProcessProductId=F&isFirstEnterDetail=T"
+        },
+        {
+          "name": "携程 · Caledonian（待复核）",
+          "band": "三星；双床无早可退均 ¥1,373，另付 ¥115；双早和近期点评待核",
+          "link": "https://hotels.ctrip.com/hotels/detail/?cityEnName=Barcelona&cityId=40795&hotelId=754480&checkIn=2026-12-29&checkOut=2026-12-31&adult=2&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&masterhotelid_tracelogid=100025527-0a63d009-498123-1609829&detailFilters=4%7C2~4~2*16%7C4~16~4*16%7C3~16~3*50%7C9%7C99828~9~99828%7C41.391843%7C2.1641969%7C1*17%7C3~17~3*6%7C3~6~3*80%7C2~80~2*29%7C1~29~1%7C2&hotelType=normal&display=incavg&subStamp=154&isCT=true&isFlexible=F&fullProcessProductId=F&isFirstEnterDetail=T"
         }
       ]
     },
@@ -730,12 +735,12 @@
       "status": "to_select",
       "base": "12/31–1/3 · 3 晚 · 2 人",
       "area": "Triana / 老城边缘 / Santa Justa",
-      "why": "Alameda 老城利于步行游览；准确地址、去 Santa Justa 的交通、夜间噪音与总价待核实。 优先寻找含两人早餐的酒店；民宿景观尚待核实。",
+      "why": "优先老城步行方便的酒店；现有双早备选距离大教堂仍较远，继续寻找更靠近老城的选择。",
       "options": [
         {
-          "name": "Airbnb 备选 · Alameda 老城独卫双床（待核实）",
-          "band": "4.9/5，284评价；两张单人床；¥2,909/3晚，最终税费待查；风景及早餐未确认",
-          "link": "https://zh.airbnb.com/rooms/15877284?check_in=2026-12-31&check_out=2027-01-03&adults=2&currency=CNY"
+          "name": "携程 · Colectia Hotel Santa Lucía（位置有条件备选）",
+          "band": "三星；双床双早均 ¥1,416；不可退；距大教堂约1.5–1.6公里，押金及逐晚价格待核",
+          "link": "https://hotels.ctrip.com/hotels/detail/?cityEnName=Seville&cityId=1350&hotelId=2171747&checkIn=2026-12-31&checkOut=2027-01-03&adult=2&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&masterhotelid_tracelogid=100025527-0a6d0193-498123-1547447&detailFilters=4%7C2~4~2*17%7C3~17~3*16%7C4~16~4*16%7C3~16~3*50%7C8%7C2114~8~2114%7C37.38582229614258%7C-5.993106842041016%7C1*6%7C3~6~3*80%7C2~80~2*29%7C1~29~1%7C2&hotelType=normal&display=incavg&subStamp=392&isCT=true&isFlexible=F&fullProcessProductId=F&isFirstEnterDetail=T"
         }
       ]
     },
@@ -750,13 +755,8 @@
       "options": [
         {
           "name": "携程 · Palacio de Los Gamboa（待核实）",
-          "band": "4.5分；两张单人床；旧价 ¥699/晚不含早餐，含双早及最终总价待核；携程早餐一般07:00–10:00，节日需复核",
+          "band": "四星4.5分；两张单人床，早前双早均 ¥875/晚，可退；逐晚总价、近期点评及节日早餐待核",
           "link": "https://hotels.ctrip.com/hotels/1625246.html?checkIn=2027-01-03&checkOut=2027-01-05&crn=1&adult=2&children=0"
-        },
-        {
-          "name": "Airbnb 备选 · 陶宾宫殿式公寓双床房（待核实）",
-          "band": "4.9/5；两张单人床；页面税前 ¥1,039 / 2晚，税费待核实；风景及早餐未确认",
-          "link": "https://zh.airbnb.com/rooms/1558015621284285662?check_in=2027-01-03&check_out=2027-01-05&adults=2&currency=CNY"
         }
       ]
     },
@@ -767,17 +767,12 @@
       "status": "to_select",
       "base": "1/5–1/6 · 返程前 1 晚 · 2 人",
       "area": "机场接驳方便、次日早出发",
-      "why": "西班牙广场附近有机场巴士；核实双床及 1/6 假日班次、站点和航站楼。 优先寻找含两人早餐的酒店；民宿景观尚待核实。",
+      "why": "核对返程酒店双床、近期点评、1/6假日机场接驳及早餐时间。",
       "options": [
         {
-          "name": "携程 · Occidental Barcelona 1929（床型待确认）",
-          "band": "三星 4.5/5；西班牙广场旁；¥537＋到店¥115；双床或大床，不能保证双床；早餐未确认",
-          "link": "https://hotels.ctrip.com/hotels/46315768.html?checkIn=2027-01-05&checkOut=2027-01-06&crn=1&adult=2&children=0"
-        },
-        {
-          "name": "Airbnb 备选 · Raval 独卫双床房（待核实）",
-          "band": "4.79/5；两张单人床；税前 ¥557/晚，最终税费待查；风景及早餐未确认",
-          "link": "https://zh.airbnb.com/rooms/52047490?check_in=2027-01-05&check_out=2027-01-06&adults=2&currency=CNY"
+          "name": "携程 · Mercure Barcelona Condor（待复核）",
+          "band": "四星；早前双床双早 ¥819＋到店 ¥138；不可退；近期点评与1/6机场接驳待核",
+          "link": "https://hotels.ctrip.com/hotels/detail/?cityEnName=Barcelona&cityId=40795&hotelId=755171&checkIn=2027-01-05&checkOut=2027-01-06&adult=2&children=0&crn=1&ages=&curr=CNY&barcurr=CNY&masterhotelid_tracelogid=100053755-0a14206f-498113-34588&detailFilters=17%7C1~17~1*80%7C2~80~2*29%7C1~29~1%7C2&hotelType=normal&display=incavg&subStamp=1710&isCT=true&isFlexible=F&fullProcessProductId=F&isFirstEnterDetail=T"
         }
       ]
     }
