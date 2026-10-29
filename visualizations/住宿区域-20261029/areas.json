@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-10-29",
+  "purpose": "三城住宿区域示意；圆形范围是规划者为选址绘制的近似搜索范围，不是行政或安全边界",
+  "basemap": "OpenStreetMap contributors, https://www.openstreetmap.org/copyright",
+  "coordinate_evidence": "plan.geo.json（Sants、塞维利亚大教堂、格拉纳达大教堂）；携程位置筛选（西班牙广场、扩展区）",
+  "cities": [
+    {"id":"barcelona","title":"巴塞罗那","subtitle":"Sants · 西班牙广场 · 扩展区","center":[41.3844,2.1518],"zoom":14,"areas":[{"name":"Sants / 西班牙广场","center":[41.3773,2.1449],"radius":1000},{"name":"扩展区","center":[41.391843,2.1641969],"radius":1050}],"markers":[{"name":"Sants 火车站","at":[41.3791,2.1403]},{"name":"西班牙广场","at":[41.3750289,2.1491173]}],"sources":["https://www.xiaohongshu.com/explore/6969ede2000000001a029f72?xsec_token=ABrtbVABrtx0lUFFQeueqKJ2I5P6ZZjtwLUy_KL9SUs4w=&xsec_source=pc_search&source=web_search_result_notes"]},
+    {"id":"seville","title":"塞维利亚","subtitle":"大教堂 · 圣十字区 · 老城南侧","center":[37.386,-5.991],"zoom":14,"areas":[{"name":"圣十字 / 大教堂周边","center":[37.3859,-5.9931],"radius":780}],"markers":[{"name":"塞维利亚大教堂","at":[37.3859,-5.9931]},{"name":"圣胡斯塔站","at":[37.3925,-5.9758]}],"sources":["https://www.xiaohongshu.com/explore/6a005f4b0000000038021a9e?xsec_token=ABAMvS7WAUP-hv7IX7pKqvCJSXYfppDLpY67Dea5SGAPc=&xsec_source=pc_search&source=web_search_result_notes"]},
+    {"id":"granada","title":"格拉纳达","subtitle":"大教堂 · 新广场 · 中心平地区域","center":[37.1766,-3.5991],"zoom":14,"areas":[{"name":"大教堂 / 市中心","center":[37.1766,-3.5991],"radius":600}],"markers":[{"name":"格拉纳达大教堂","at":[37.1766,-3.5991]}],"sources":["https://www.xiaohongshu.com/explore/692ee3c4000000001e035bc0?xsec_token=ABLmM69G3v9EkvX6YcYiGEUj5gjgk04aCDXi6n47kITJ4=&xsec_source=pc_search&source=web_search_result_notes"]}
+  ]
+}

@@ -20,7 +20,7 @@
 | 小红书 | 本次逐篇阅读三城笔记，运营事实另查官方 | [专项记录](research/holiday-2026-2027.md)、[历史索引](research/xhs/README.md) |
 | 天气 | 三城气候历史值已区分预报；手机页在日期进入未来 7 天后提供逐日预报和 AEMET 入口 | [天气研究](research/city-weather-sun.md) |
 | 冬季拍照 | 已把当地日落估算和三城沿线拍照建议加入当天路线；天气、实地光线与交通均需现场判断 | [日落与天气](research/city-weather-sun.md)、[小红书笔记](research/xhs/winter-photo-20261029.md) |
-| 住宿及预算 | 优先酒店与两人早餐，民宿仅考虑风景或拍照体验突出的房源；双床、早餐和每晚含税上限需按实际房价逐项核实 | [住宿调研](trip/accommodation.md) |
+| 住宿及预算 | 已取消预算上限；三城优先地段与携程双床候选已更新，差评检查范围、房价和返程夜仍需复核；四段均未预订 | [住宿调研](trip/accommodation.md)、[三城住宿区域地图](visualizations/住宿区域-20261029/) |
 
 ## 资料流
 

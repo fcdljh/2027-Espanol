@@ -12,3 +12,9 @@
 - `xhs-granada-6921a98f000000001e0326e3`｜[那些我们在格拉纳达踩过的坑](https://www.xiaohongshu.com/explore/6921a98f000000001e0326e3)｜废柴少女兔🐰｜小红书个人经验｜source_checked｜2026-10-29T00:07:32+08:00：作者住 Albaicín 山坡，行李需拖过坡道石板，曾因行李寄存影响 Nasrid 入场；适合提醒轻装并预留上坡时间，但不代表所有街区情况相同。
 - `xhs-stay-gamboa-6959ce31000000002202dda8`｜[西葡游｜亲测5家高性价比酒店](https://www.xiaohongshu.com/explore/6959ce31000000002202dda8)｜爱玩的珍娜酱｜小红书个人经验｜source_checked｜2026-10-29T00:07:32+08:00：作者称 Gamboa 双床是两张独立单人床、老城位置方便；她的历史房价与“Albaicín”描述不能替代本次报价和地址，酒店官方地址为 Plaza de Gamboa。
 - `xhs-route-sevgrx-6911d1ed000000000701719b`｜[塞维利亚格拉纳达三天两晚行程及避雷](https://www.xiaohongshu.com/explore/6911d1ed000000000701719b)｜Jojo就是啾啾｜小红书个人经验｜source_checked｜2026-10-29T00:07:32+08:00：作者认为王宫与大教堂邻近、Gir​alda 登塔耗时；往返格拉纳达一日团路途长。本行程已在格拉纳达过夜；她建议可跳过登塔，但现行官方一般参观规则是先进入塔，须按票种核实。
+
+## 2026-10-29 三城优先住宿区补充
+
+- `xhs-stay-area-bcn-6969ede2`：小红书《一篇讲清楚巴塞罗那住哪》，[原帖](https://www.xiaohongshu.com/explore/6969ede2000000001a029f72?xsec_token=ABrtbVABrtx0lUFFQeueqKJ2I5P6ZZjtwLUy_KL9SUs4w=&xsec_source=pc_search&source=web_search_result_notes)。作者以扩展区为交通及观光便利选项，也提及 Les Corts、Gràcia。评价为个人经验，不等于安全保证。2026-10-29 浏览；精确时分未留存。
+- `xhs-stay-area-svq-6a005f4b`：小红书《塞维利亚住哪里？分区+景点》，[原帖](https://www.xiaohongshu.com/explore/6a005f4b0000000038021a9e?xsec_token=ABAMvS7WAUP-hv7IX7pKqvCJSXYfppDLpY67Dea5SGAPc=&xsec_source=pc_search&source=web_search_result_notes)。笔记将 Santa Cruz 作为景点步行方便区域，另提 Triana 与 Nervión；个体经验不构成安全或交通班次保证。2026-10-29 浏览；精确时分未留存。
+- Granada 原有笔记 `xhs-granada-692ee3c4000000001e035bc0`：大教堂周边生活便利，作者也提及噪音；本次复看日期 2026-10-29，精确时分未留存。
