@@ -10,7 +10,7 @@ const state = {
   plan: null,
   photoReferences: null,
   selectedDate: savedNavigation.date || DEFAULT_DATE,
-  selectedTab: ["today", "step", "prep"].includes(savedNavigation.tab) ? savedNavigation.tab : "today",
+  selectedTab: ["today", "step", "prep", "transport"].includes(savedNavigation.tab) ? savedNavigation.tab : "today",
   currentIndex: Number.isInteger(savedNavigation.index) ? savedNavigation.index : 0,
   completed: loadCompleted(),
   preparation: loadPreparation(),
@@ -612,6 +612,27 @@ function preparationSourceMarkup(sources = []) {
   `).join("");
 }
 
+function renderCityTransport(data) {
+  if (!data?.cities?.length) {
+    elements.appContent.innerHTML = `<section class="error-card prep-load-error"><h2>市内交通暂时没有载入</h2><p>请联网打开一次网页，让交通资料进入离线缓存。</p></section>`;
+    return;
+  }
+  elements.appContent.innerHTML = `
+    <section class="prep-hero-card transport-hero"><div class="prep-hero-top"><span class="section-kicker">市内交通 · ${escapeHtml(data.updated_at)} 核查</span><span class="prep-status">三城速查</span></div><h2>坐车怎么付？</h2><p>${escapeHtml(data.summary)}</p></section>
+    <section class="prep-window transport-notice"><span class="prep-window-icon">!</span><p>${escapeHtml(data.notice)}</p></section>
+    ${data.cities.map((city) => `
+      <details class="transport-city" ${currentDay()?.city_id === city.id ? "open" : ""}>
+        <summary><span><strong>${escapeHtml(city.name)}</strong><small>${escapeHtml(city.subtitle)}</small></span><b aria-hidden="true">＋</b></summary>
+        <div class="transport-city-body">
+          ${city.sections.map((section) => `<section class="transport-topic"><h3>${escapeHtml(section.title)}</h3><p>${escapeHtml(section.text)}</p></section>`).join("")}
+          <div class="transport-sources"><strong>查看原始信息</strong>${city.sources.map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)} ↗</a>`).join("")}</div>
+        </div>
+      </details>
+    `).join("")}
+    <p class="transport-footer">先联网打开一次以便离线查看；票价、线路和设备以现场及运营方最新信息为准。</p>
+  `;
+}
+
 function renderPreDeparture(preparation) {
   if (!preparation) {
     elements.appContent.innerHTML = `
@@ -1106,6 +1127,8 @@ function renderToday(day) {
 
     ${nextStepMarkup(day, firstOpenIndex, allComplete)}
 
+    <button class="transport-shortcut" data-open-transport type="button"><span><strong>市内交通与购票</strong><small>三城刷卡、交通卡和机场票券</small></span><span aria-hidden="true">→</span></button>
+
     <section class="timeline-card">
       <div class="card-heading-row">
         <div><span class="section-kicker">今天路线</span><h3>今天按这个顺序走</h3></div>
@@ -1248,6 +1271,9 @@ function completedCount(day) {
 }
 
 function bindTodayEvents() {
+  document.querySelectorAll("[data-open-transport]").forEach((button) => {
+    button.addEventListener("click", () => setTab("transport"));
+  });
   document.querySelectorAll("[data-open-prep]").forEach((button) => {
     button.addEventListener("click", () => {
       state.selectedTab = "prep";
@@ -1311,11 +1337,13 @@ function render() {
   saveNavigation();
   const day = currentDay();
   const isPreparation = state.selectedTab === "prep";
-  elements.dayStrip.hidden = isPreparation;
-  elements.viewTabs.hidden = isPreparation;
-  if (!isPreparation) renderDayPicker();
+  const isTransport = state.selectedTab === "transport";
+  elements.dayStrip.hidden = isPreparation || isTransport;
+  elements.viewTabs.hidden = isPreparation || isTransport;
+  if (!isPreparation && !isTransport) renderDayPicker();
   renderTabs();
   if (isPreparation) renderPreDeparture(state.plan.pre_departure);
+  else if (isTransport) renderCityTransport(state.plan.pre_departure?.city_transport);
   else if (state.selectedTab === "step") renderStep(day);
   else { renderToday(day); updateWeather(day); }
 }
@@ -1354,7 +1382,7 @@ async function copyEntryLink() {
 function readHash() {
   const [date, tab, index] = window.location.hash.replace(/^#/, "").split("/");
   if (date && state.plan?.days?.some((day) => day.date === date)) state.selectedDate = date;
-  if (tab === "today" || tab === "step" || tab === "prep") state.selectedTab = tab;
+  if (tab === "today" || tab === "step" || tab === "prep" || tab === "transport") state.selectedTab = tab;
   if (Number.isInteger(Number(index))) state.currentIndex = Number(index);
 }
 

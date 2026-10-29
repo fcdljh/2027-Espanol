@@ -16,6 +16,7 @@
 |---|---|---|
 | 行程 | 新城市顺序及人数已确认；1/5 转场班次与巡游待核实 | [共享事实](CONTEXT.md)、[新行程](trip/itinerary.md) |
 | 航班与交通 | 城际计划选择火车—巴士—火车，三段均未出票；票价、ISIC 折后、换乘与早餐衔接需复核；国航订单细节待核实 | [城际交通](trip/ground-transport.md)、[查询证据](research/intercity-20261029.md)、[航班](trip/flights.md) |
+| 市内交通 | 手机网页加入三城公交、地铁刷卡和购票速查；2027 票价和节日班次待复核 | [市内交通](trip/city-transport.md)、[查询证据](research/city-transport-20261029.md) |
 | 节日 | 1/1 两座宫殿关闭；12/31 塞维利亚跨年、1/5 巡游为条件活动 | [证据记录](research/holiday-2026-2027.md) |
 | 小红书 | 本次逐篇阅读三城笔记，运营事实另查官方 | [专项记录](research/holiday-2026-2027.md)、[历史索引](research/xhs/README.md) |
 | 天气 | 三城气候历史值已区分预报；手机页在日期进入未来 7 天后提供逐日预报和 AEMET 入口 | [天气研究](research/city-weather-sun.md) |
@@ -51,10 +52,11 @@ flowchart LR
 - [签证与入境](trip/visa-and-entry.md)
 - [景点与门票](trip/attractions-and-tickets.md)
 - [城市间交通](trip/ground-transport.md)
+- [三城市内交通与购票](trip/city-transport.md)
 - [预算与冲突审查](trip/budget-and-conflicts.md)
 - [餐饮策略](trip/dining.md)
 - [旅行当天跟随 UI 原型](trip-guide-ui/)
-- [vivo Chrome 手机网页/PWA](trip-guide-ui/site/)，底部“出发前”入口含签证流程、北京/香港材料分组和行李 checklist
+- [vivo Chrome 手机网页/PWA](trip-guide-ui/site/)，底部“市内交通”提供三城购票速查，“出发前”入口含签证流程和行李 checklist
 - [行前清单数据](trip-guide-ui/public/pre-departure.json)
 - [网页托管与安装说明](trip-guide-ui/site/README.md)
 

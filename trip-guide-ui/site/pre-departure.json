@@ -7,28 +7,205 @@
     "summary": "两人分别核实护照、签证申请地、有效期、保险和材料；不要沿用旧三人资料。",
     "window": "以对应领区最新要求、实际出发日期和受理时间为准，预留节假日及补件缓冲。",
     "steps": [
-      {"id":"2026-visa-1","phase":"现在","title":"核实各自申请地与资格","note":"以所属领区官方要求为准。","tag":"签证"},
-      {"id":"2026-visa-2","phase":"材料","title":"准备签证与保险材料","note":"两人各自核对行程、住宿、资金和保险；不在网页保存个人证件资料。","tag":"材料"}
+      {
+        "id": "2026-visa-1",
+        "phase": "现在",
+        "title": "核实各自申请地与资格",
+        "note": "以所属领区官方要求为准。",
+        "tag": "签证"
+      },
+      {
+        "id": "2026-visa-2",
+        "phase": "材料",
+        "title": "准备签证与保险材料",
+        "note": "两人各自核对行程、住宿、资金和保险；不在网页保存个人证件资料。",
+        "tag": "材料"
+      }
     ],
-    "materials": [{"title":"两人分别核对","items":[
-      {"id":"2026-doc-1","label":"护照和签证材料","note":"有效期、空白页及签证类型以官方要求为准。"},
-      {"id":"2026-doc-2","label":"航班、住宿和保险","note":"按实际行程和官方要求准备。"}
-    ]}],
-    "sources":[{"label":"西班牙驻香港总领馆","url":"https://www.exteriores.gob.es/Consulados/hongkong/en/ServiciosConsulares/Paginas/index.aspx","note":"按实际申请地核查"}]
+    "materials": [
+      {
+        "title": "两人分别核对",
+        "items": [
+          {
+            "id": "2026-doc-1",
+            "label": "护照和签证材料",
+            "note": "有效期、空白页及签证类型以官方要求为准。"
+          },
+          {
+            "id": "2026-doc-2",
+            "label": "航班、住宿和保险",
+            "note": "按实际行程和官方要求准备。"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "西班牙驻香港总领馆",
+        "url": "https://www.exteriores.gob.es/Consulados/hongkong/en/ServiciosConsulares/Paginas/index.aspx",
+        "note": "按实际申请地核查"
+      }
+    ]
   },
   "baggage": {
-    "title":"行李与出发",
-    "summary":"两人按国航实际票规及北京中转规则准备，不假定行李直挂。",
-    "hard_rules":["核对每个航段行李额度和北京转机手续。","1 月 6 日假日按机场接驳时间提前出发。"],
-    "groups":[
-      {"title":"随身携带","subtitle":"两人分别核对","items":[
-        {"id":"2026-pack-1","label":"证件、支付方式与离线行程","note":"各自妥善保管，不保存在网页中。"},
-        {"id":"2026-pack-2","label":"防风外套和防滑鞋","note":"天气出发前复核。"}
-      ]},
-      {"title":"托运行李","subtitle":"以航司规则为准","items":[
-        {"id":"2026-pack-3","label":"检查托运行李及充电宝限制","note":"行李尺寸、重量和电池要求以航司与机场为准。"}
-      ]}
+    "title": "行李与出发",
+    "summary": "两人按国航实际票规及北京中转规则准备，不假定行李直挂。",
+    "hard_rules": [
+      "核对每个航段行李额度和北京转机手续。",
+      "1 月 6 日假日按机场接驳时间提前出发。"
     ],
-    "sources":[{"label":"中国国际航空","url":"https://www.airchina.com.cn/","note":"核对行李和北京中转"}]
+    "groups": [
+      {
+        "title": "随身携带",
+        "subtitle": "两人分别核对",
+        "items": [
+          {
+            "id": "2026-pack-1",
+            "label": "证件、支付方式与离线行程",
+            "note": "各自妥善保管，不保存在网页中。"
+          },
+          {
+            "id": "2026-pack-2",
+            "label": "防风外套和防滑鞋",
+            "note": "天气出发前复核。"
+          }
+        ]
+      },
+      {
+        "title": "托运行李",
+        "subtitle": "以航司规则为准",
+        "items": [
+          {
+            "id": "2026-pack-3",
+            "label": "检查托运行李及充电宝限制",
+            "note": "行李尺寸、重量和电池要求以航司与机场为准。"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "中国国际航空",
+        "url": "https://www.airchina.com.cn/",
+        "note": "核对行李和北京中转"
+      }
+    ]
+  },
+  "city_transport": {
+    "updated_at": "2026-10-29",
+    "summary": "两人各备一张可境外非接触支付的银行卡，另带少量欧元零钱；三城交通卡不通用。",
+    "notice": "以下票价为 2026 年参考。2027 年票价、跨年票券有效期和节日班次出发前复核。银行卡直刷通常购买单程票，不一定包含换乘；查票时出示使用的卡或设备。",
+    "cities": [
+      {
+        "id": "barcelona",
+        "name": "巴塞罗那",
+        "subtitle": "公交可刷卡 · 地铁部分入口可刷卡",
+        "sections": [
+          {
+            "title": "公交与地铁",
+            "text": "TMB 公交在司机旁银行卡读卡器买单程票；两人可各刷一次，或同卡连续刷两次。单程票不能换乘另一辆公交或地铁。地铁只有部分入口可直接刷银行卡，找不到就到售票机买票。"
+          },
+          {
+            "title": "两人多次乘车：T-familiar",
+            "text": "地铁售票机买匿名 T-mobilitat 纸卡并选择 T-familiar；2026 年一区 €11.50 / 8 次，纸卡另 €1。两人共用时连续刷两次；换乘按规定再验证。首次验证起 30 天内使用，一区可按规则在 75 分钟内换乘。"
+          },
+          {
+            "title": "乘车更多：T-casual",
+            "text": "2026 年一区 €13 / 10 次，纸卡另 €1；同一时间一张只能供一人使用。每人预计各坐 9–10 次时，可比较各买一张与共享 T-familiar 的总价。"
+          },
+          {
+            "title": "机场例外",
+            "text": "T-familiar 与 T-casual 不能在 L9 Sud 机场 T1/T2 地铁站使用；2026 年机场地铁票 €5.90 / 人。符合票区的机场火车或普通公交可用这两种票，Aerobús 不默认包含；先核对航站楼与当天班次。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "TMB 刷银行卡",
+            "url": "https://www.tmb.cat/en/barcelona-fares-metro-bus/bank-card-validation"
+          },
+          {
+            "label": "TMB 票价与票种",
+            "url": "https://www.tmb.cat/en/barcelona-fares-metro-bus/transport-ticket-fares"
+          },
+          {
+            "label": "机场票券规则",
+            "url": "https://t-mobilitat.atm.cat/en/web/t-mobilitat/atencio-i-ajuda/faqs"
+          }
+        ],
+        "records": [
+          "CITYTRANS-20261029-BCN-01",
+          "CITYTRANS-20261029-BCN-02",
+          "CITYTRANS-20261029-BCN-03",
+          "CITYTRANS-20261029-BCN-04"
+        ]
+      },
+      {
+        "id": "seville",
+        "name": "塞维利亚",
+        "subtitle": "公交可刷卡 · 地铁进出站都刷卡",
+        "sections": [
+          {
+            "title": "公交",
+            "text": "TUSSAM 公交可直接刷非接触银行卡买单程票。经常搭乘可考虑多人共用的 Multiviaje 储值卡，按人数验证，选含换乘或不含换乘的充值类型；不默认可用于地铁。电车银行卡直刷仍待核实。"
+          },
+          {
+            "title": "地铁 Tap&Go",
+            "text": "可直接用非接触银行卡或手机乘车，进站、出站均验证。建议两人各用自己的卡，进出使用同一张卡或同一设备。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "TUSSAM 银行卡乘车",
+            "url": "https://abt.tussam.es/portal/preguntas-respuestas"
+          },
+          {
+            "label": "塞维利亚地铁 Tap&Go",
+            "url": "https://metro-sevilla.es/tap-and-go"
+          }
+        ],
+        "records": [
+          "CITYTRANS-20261029-SVQ-01",
+          "CITYTRANS-20261029-SVQ-02"
+        ]
+      },
+      {
+        "id": "granada",
+        "name": "格拉纳达",
+        "subtitle": "公交备零钱 · 地铁售票机可刷卡",
+        "sections": [
+          {
+            "title": "公交与景点小巴",
+            "text": "去阿尔罕布拉、Albaicín、Sacromonte 可查 C30 / C31 / C32 / C34。银行卡设备仍在逐步推广，无法确认每条小巴都能刷；带零钱，现场向司机确认单程票。Credibús 共享、押金及 2027 价格待核实。"
+          },
+          {
+            "title": "地铁",
+            "text": "站点售票机可用银行卡买票。地面站在车内验证；地下站进出站均验证。2026 年参考：柔性卡 €0.30，单程 €1.35，可按人数购买、同行逐一验证。银行卡直接乘车是否全面开通仍待核实。"
+          },
+          {
+            "title": "青年优惠",
+            "text": "Bono Joven 要求格拉纳达市登记居住；22 岁和持 ISIC 不自动符合条件。"
+          }
+        ],
+        "sources": [
+          {
+            "label": "格拉纳达地铁票价与验证",
+            "url": "https://www.metropolitanogranada.es/tarifas"
+          },
+          {
+            "label": "Rober 公交线路",
+            "url": "https://www.transportesrober.com/flotamovimiento/lineas.htm"
+          },
+          {
+            "label": "公交刷卡设备进展",
+            "url": "https://www.gmv.com/es/comunicacion/noticias/gmv-amplia-sistema-validacion-transporte-urbano-granada-258-nuevos-equipos"
+          }
+        ],
+        "records": [
+          "CITYTRANS-20261029-GRX-01",
+          "CITYTRANS-20261029-GRX-02",
+          "CITYTRANS-20261029-GRX-03"
+        ]
+      }
+    ]
   }
 }
