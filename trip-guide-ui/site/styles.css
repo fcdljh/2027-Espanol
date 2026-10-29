@@ -96,6 +96,7 @@ a { color: inherit; }
 .day-chip-city { display: block; overflow: hidden; margin-top: 4px; font-size: 10px; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
 
 .view-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin: 0 0 15px; padding: 5px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255, 253, 248, 0.58); }
+.view-tabs[hidden], .day-strip[hidden] { display: none; }
 .view-tab, .bottom-action { border: 0; color: var(--muted); background: transparent; font-weight: 800; }
 .view-tab { border-radius: 11px; padding: 11px 10px; font-size: 13px; }
 .view-tab.is-active { color: var(--navy); background: var(--white); box-shadow: 0 4px 13px rgba(24, 57, 74, 0.08); }
