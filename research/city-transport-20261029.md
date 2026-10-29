@@ -15,3 +15,14 @@
 | CITYTRANS-20261029-GRX-03 | Granada Bono Joven 虽面向 6–25 岁，但要求在 Granada Capital 登记居住；22 岁及 ISIC 不自动满足。C30/C31/C32/C34 为城市线路。 | [Rober 青年卡](https://www.transportesrober.com/titulos/bono-joven.html)、[Rober 线路](https://www.transportesrober.com/flotamovimiento/lineas.htm)；运营商 | officially_verified | candidate |
 
 尚未核实：Granada C30/C31/C32/C34 每条的现场银行卡覆盖、城市 Credibús 的现行押金/多人共享与 2027 价格；TUSSAM 电车直接刷银行卡的具体现场设备；2027 全部票价与跨年票券过渡规定。不要以设备供应商的铺设计划推断每台车辆均已开通。
+
+## 追加：按两人行程比较的票价资料（2026-10-29T11:05:46+08:00）
+
+| record_id | 观察 | 来源名称、类型及直接链接 | evidence_status | decision_status |
+|---|---|---|---|---|
+| CITYTRANS-20261029-GRX-04 | 市旅游局页面列普通公交单程 €1.60，60 分钟内更换线路可多次换乘；公交卡 €2，可多人按人数验证，充值 €5/10/20，除 4 路外可在公交车向司机购买；卡不能用银行卡买，页面称单程票自 2024 年 9 月可刷银行卡。页面未说明各车临时故障、卡款退款或 2027 价格。 | [格拉纳达市旅游局城市公交](https://turismo.granada.org/es/bus-urbano)；市政府 | officially_verified | candidate |
+| CITYTRANS-20261029-GRX-05 | 2024 批准的一般票价列 €5 充值 Credibús 每次 €0.90；运营商公告列有补贴价 €0.54，并列出其他额度价格。资料不能证明 2027 年将继续补贴或沿用原价；模拟只作条件计算。 | [Granada 2024 批准票价](https://www.granada.org/inet/wordenanz.nsf/mtod/D078C27AF3EF5C74C1258BFC003575EA)、[Rober 票价公告](https://www.transportesrober.com/pdf/FinusoTUI%281%29.PDF)；市政府/运营商 | officially_verified | candidate |
+| CITYTRANS-20261029-SVQ-03 | 市议会 2025 票价提案列普通单程 €1.40、无换乘卡每次 €0.69、最少充值 €7；TUSSAM 票卡条款列普通卡押金 €1.50，符合条件可退。2026 或 2027 具体价格与补贴不可由 2025 提案推定。 | [2025 市议会提案](https://www.sevilla.org/ayuntamiento/el-ayuntamiento/pleno-municipal/actas-plenos/2025/2o-acta-pleno-2025-01-16-pl-report.pdf)、[TUSSAM 押金条款](https://www.tussam.es/sites/default/files/2024-06/20240624_%20condiciones_tarjetas.pdf)；市政府/运营商 | officially_verified | candidate |
+| CITYTRANS-20261029-BCN-05 | TMB 2026 一区 T-usual €22.80，每人使用独立票，匿名纸卡费用及机场覆盖条件应按其支持类型核对；作为次数少时的参照而非必买。 | [TMB 2026 票价表](https://www.tmb.cat/en/barcelona-fares-metro-bus/transport-ticket-fares)、[T-usual](https://www.tmb.cat/en/barcelona-fares-metro-bus/t-usual)；运营商 | officially_verified | candidate |
+
+补充证据使 GRX-01 中“未逐条证实”的限制更具体：旅游局已明确说城市单程票可刷卡，但仍不能据此保证每次设备正常；现场零钱作故障备用。2027 补贴、卡款退款和线路调整仍须核实。

@@ -620,6 +620,7 @@ function renderCityTransport(data) {
   elements.appContent.innerHTML = `
     <section class="prep-hero-card transport-hero"><div class="prep-hero-top"><span class="section-kicker">市内交通 · ${escapeHtml(data.updated_at)} 核查</span><span class="prep-status">三城速查</span></div><h2>坐车怎么付？</h2><p>${escapeHtml(data.summary)}</p></section>
     <section class="prep-window transport-notice"><span class="prep-window-icon">!</span><p>${escapeHtml(data.notice)}</p></section>
+    ${data.estimate ? `<section class="transport-estimate"><div class="card-heading-row"><div><span class="section-kicker">两人行程估算</span><h3>${escapeHtml(data.estimate.title)}</h3></div></div><p>${escapeHtml(data.estimate.summary)}</p><details class="estimate-days"><summary>展开每日乘车估算 <span aria-hidden="true">＋</span></summary><p class="estimate-assumptions">${escapeHtml(data.estimate.assumptions)}</p>${data.estimate.days.map((day) => `<div class="estimate-row"><div><strong>${escapeHtml(day.date)} · ${escapeHtml(day.city)}</strong><b>${escapeHtml(day.count)}</b></div><p>${escapeHtml(day.detail)}</p></div>`).join("")}</details></section>` : ""}
     ${data.cities.map((city) => `
       <details class="transport-city" ${currentDay()?.city_id === city.id ? "open" : ""}>
         <summary><span><strong>${escapeHtml(city.name)}</strong><small>${escapeHtml(city.subtitle)}</small></span><b aria-hidden="true">＋</b></summary>

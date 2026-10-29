@@ -525,3 +525,15 @@ a { color: inherit; }
 .transport-sources strong { flex-basis:100%; color:var(--navy); font-size:12px; }
 .transport-sources a { border-radius:999px; padding:7px 10px; color:var(--teal-dark); background:#edf5f1; font-size:11px; font-weight:800; text-decoration:none; }
 .transport-footer { margin:14px 4px; color:var(--muted); font-size:12px; line-height:1.6; }
+
+.transport-estimate { margin-top:12px; padding:17px; border:1px solid rgba(61,129,126,.2); border-radius:21px; background:#edf5f1; }
+.transport-estimate h3 { margin:5px 0 0; color:var(--navy); font-size:19px; }
+.transport-estimate > p, .estimate-assumptions { color:#3c625d; font-size:13px; line-height:1.6; }
+.estimate-days summary { display:flex; justify-content:space-between; align-items:center; min-height:44px; color:var(--teal-dark); font-size:13px; font-weight:850; cursor:pointer; list-style:none; }
+.estimate-days summary::-webkit-details-marker { display:none; }
+.estimate-days summary span { font-size:20px; font-weight:500; }
+.estimate-days[open] summary span { transform:rotate(45deg); }
+.estimate-row { padding:10px 0; border-top:1px solid rgba(61,129,126,.2); }
+.estimate-row > div { display:flex; flex-wrap:wrap; justify-content:space-between; gap:4px 10px; font-size:12px; color:var(--navy); }
+.estimate-row b { color:var(--teal-dark); }
+.estimate-row p { margin:5px 0 0; color:var(--muted); font-size:12px; line-height:1.6; }
