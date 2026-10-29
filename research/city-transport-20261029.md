@@ -44,3 +44,5 @@
 | CITYROUTE-20261029-GRX-03 | 市旅游局指火车站至中心乘 4 路并在 Catedral 下车；这不证明 2027-01-05 清晨反方向站点及首班能衔接 06:09 火车。提前到站及出租车是规划建议，不是确认的运营班次。 | [Granada 交通指引](https://turismo.granada.org/es/como-llegar-granada)、[Rober 线路/即时](https://www.transportesrober.com/flotamovimiento/lineas.htm)；市政府/运营商 | officially_verified | candidate |
 
 **未核实：**各候选酒店到站的门到门路径、步行距离与无障碍入口；2026-12-31 约 05:00 的各站首班及具体到站时间；1/1、1/3、1/5、1/6 特殊时刻；2027-01-05 早上 Granada 市中心向火车站的公交班次；两次航班的 T1/T2；节日施工及运行中断。地图路线按钮调用当时的导航结果，不是查询日已确认的班次。
+
+- `CITYROUTE-20261029-BCN-06`｜来源：[Hostal La Palmera 官方交通说明](https://www.lapalmerabcn.com/es/pagina/como-llegar)，旅馆；`checked_at_hkt=2026-10-29T11:17:49+08:00`；`evidence_status=officially_verified`；`decision_status=candidate`。地址 Carrer de Jerusalem 30；酒店说明 Liceu 与 Sants 可乘 L3，机场巴士至 Plaça Catalunya 后可换 L3。酒店页面称 R2 到 Plaça Catalunya，与铁路线路资料有出入，故不采用该说法；实际班次另核。

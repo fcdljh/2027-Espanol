@@ -302,9 +302,19 @@
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Barcelona+Airport&destination=Hotel+Villa+Emilia+Barcelona&travelmode=transit&dir_action=navigate"
           },
           {
-            "title": "机场 → Alexandra / Dante",
+            "title": "机场 → La Palmera 旧备选",
+            "text": "旅馆官方地址为 Carrer de Jerusalem 30、Liceu 附近。可搭 Aerobús 从机场到 Plaça Catalunya，再按行李情况步行或乘 L3 至 Liceu；机场快线另购票，注意返程与到达方向停站不同。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Barcelona+Airport&destination=Hostal+La+Palmera+Barcelona%2C+Carrer+de+Jerusalem+30&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "机场 → Alexandra",
             "text": "可考虑 R2 Nord 从 T2 到 Passeig de Gràcia，按具体酒店位置步行或换乘；T1 先搭免费接驳到 T2。也可乘 Aerobús 到 Plaça Catalunya 后按酒店位置步行或换乘；带箱先核对站台及步行。",
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Barcelona+Airport&destination=Alexandra+Barcelona+Hotel+Curio+Collection+by+Hilton&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "机场 → Dante",
+            "text": "如选择 Dante，可查 R2 Nord 从 T2 到 Passeig de Gràcia 后步行或换乘；T1 先坐机场航站楼接驳到 T2。行李步行距离与出口须实查。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Barcelona+Airport&destination=Best+Western+Premier+Hotel+Dante+Barcelona&travelmode=transit&dir_action=navigate"
           },
           {
             "title": "市内游览",
@@ -324,12 +334,17 @@
           {
             "label": "Aerobús 从机场 A1",
             "url": "https://aerobusbarcelona.es/ca/linies-parades-i-horaris/linia-a1-tornada/"
+          },
+          {
+            "label": "La Palmera 交通说明",
+            "url": "https://www.lapalmerabcn.com/es/pagina/como-llegar"
           }
         ],
         "records": [
           "CITYROUTE-20261029-BCN-01",
           "CITYROUTE-20261029-BCN-03",
-          "CITYROUTE-20261029-BCN-04"
+          "CITYROUTE-20261029-BCN-04",
+          "CITYROUTE-20261029-BCN-06"
         ]
       },
       "2026-12-30": {
@@ -342,9 +357,19 @@
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Hotel+Villa+Emilia+Barcelona&destination=Sagrada+Familia+Barcelona&travelmode=transit&dir_action=navigate"
           },
           {
-            "title": "Alexandra / Dante → 圣家堂",
-            "text": "Alexandra 可从 Diagonal，Dante 可从 Hospital Clínic，乘 L5 至 Sagrada Família；酒店到站步行及入口以导航为准。",
+            "title": "La Palmera → 圣家堂",
+            "text": "从 Liceu 乘 L3 至 Diagonal，换 L5 至 Sagrada Família；沿途站内换乘、方向及实际入场位置以当日导航为准。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Hostal+La+Palmera+Barcelona%2C+Carrer+de+Jerusalem+30&destination=Sagrada+Familia+Barcelona&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Alexandra → 圣家堂",
+            "text": "步行到 Diagonal，乘 L5 至 Sagrada Família；具体入口和方向以当日导航为准。",
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Alexandra+Barcelona+Hotel+Curio+Collection+by+Hilton&destination=Sagrada+Familia+Barcelona&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Dante → 圣家堂",
+            "text": "可查步行至 Hospital Clínic，乘 L5 至 Sagrada Família；具体入口和方向以当日导航为准。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Best+Western+Premier+Hotel+Dante+Barcelona&destination=Sagrada+Familia+Barcelona&travelmode=transit&dir_action=navigate"
           },
           {
             "title": "圣家堂 → 圣保罗 → 巴特罗/米拉",
@@ -364,7 +389,8 @@
         ],
         "records": [
           "CITYROUTE-20261029-BCN-01",
-          "CITYROUTE-20261029-BCN-02"
+          "CITYROUTE-20261029-BCN-02",
+          "CITYROUTE-20261029-BCN-06"
         ]
       },
       "2026-12-31": {
@@ -377,9 +403,19 @@
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Hotel+Villa+Emilia+Barcelona&destination=Barcelona+Sants&travelmode=transit&dir_action=navigate"
           },
           {
-            "title": "Alexandra / Dante → Sants",
-            "text": "Alexandra 从 Diagonal、Dante 从 Hospital Clínic 可乘 L5 至 Sants Estació。按候选酒店步行到站；当站首班未核实，行李多或无法留足余量时改正规出租车。",
+            "title": "La Palmera → Sants",
+            "text": "酒店官网指引 Liceu 乘地铁 L3 至 Sants Estació；按 06:35 火车倒推。当站首班未核实，带箱需要在前一晚确认，余量不足选正规出租车。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Hostal+La+Palmera+Barcelona%2C+Carrer+de+Jerusalem+30&destination=Barcelona+Sants&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Alexandra → Sants",
+            "text": "可从 Diagonal 乘 L5 至 Sants Estació；当站首班未核实，行李多或无法留足余量时改正规出租车。",
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Alexandra+Barcelona+Hotel+Curio+Collection+by+Hilton&destination=Barcelona+Sants&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Dante → Sants",
+            "text": "可从 Hospital Clínic 乘 L5 至 Sants Estació；先核对酒店到站步行、当站首班及火车安检时间，不够余量时打车。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Best+Western+Premier+Hotel+Dante+Barcelona&destination=Barcelona+Sants&travelmode=transit&dir_action=navigate"
           },
           {
             "title": "Santa Justa → Hotel Bécquer",
@@ -390,6 +426,11 @@
             "title": "Santa Justa → Murillo Reinoso",
             "text": "Santa Cruz 石板路带箱可优先考虑正规出租车；具体公交站与步行接驳尚未核实，不把它当作已确认路线。",
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Estacion+Santa+Justa+Sevilla&destination=Hotel+Murillo+Reinoso+Sevilla&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Santa Justa → Alameda 房源旧备选",
+            "text": "房源只知 Alameda 区域，未公开准确地址；到站后先确认住宿地址，比较公交和车站正规出租车，不能指定具体下车站。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Estacion+Santa+Justa+Sevilla&destination=Alameda+de+H%C3%A9rcules+Sevilla&travelmode=transit&dir_action=navigate"
           }
         ],
         "sources": [
@@ -400,12 +441,17 @@
           {
             "label": "Hotel Bécquer 交通指引",
             "url": "https://www.hotelbecquer.com/faqs/"
+          },
+          {
+            "label": "La Palmera 交通说明",
+            "url": "https://www.lapalmerabcn.com/es/pagina/como-llegar"
           }
         ],
         "records": [
           "CITYROUTE-20261029-BCN-01",
           "CITYROUTE-20261029-BCN-02",
-          "CITYROUTE-20261029-SVQ-01"
+          "CITYROUTE-20261029-SVQ-01",
+          "CITYROUTE-20261029-BCN-06"
         ]
       },
       "2027-01-01": {
@@ -473,9 +519,24 @@
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Hotel+Murillo+Reinoso+Sevilla&destination=Estaci%C3%B3n+de+Autobuses+Plaza+de+Armas+Sevilla&travelmode=transit&dir_action=navigate"
           },
           {
-            "title": "Granada 汽车站 → Gamboa / Granada Suites",
-            "text": "市旅游局指 33 路在汽车站正门对面乘车，往中心可在 Catedral 或 Acera del Darro 40 下；具体哪站更适合候选酒店、步行入口和当日班次需导航确认。",
+            "title": "Alameda 房源 → Plaza de Armas",
+            "text": "房源精确地址未确认；按实际位置查询步行、公交或正规出租车。不要仅凭区域名确定站点或出门时间。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Alameda+de+H%C3%A9rcules+Sevilla&destination=Estaci%C3%B3n+de+Autobuses+Plaza+de+Armas+Sevilla&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Granada 汽车站 → Gamboa",
+            "text": "市旅游局指 33 路在汽车站正门对面乘车，往中心可在 Catedral 或 Acera del Darro 40 下；哪站更适合 Gamboa、步行入口和当日班次需导航确认。",
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Estaci%C3%B3n+de+Autobuses+de+Granada&destination=Sercotel+Palacio+de+los+Gamboa+Granada&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Granada 汽车站 → Granada Suites",
+            "text": "可按 33 路往中心方向查询 Catedral 或 Acera del Darro 40，之后步行至 Calle Párraga 25；具体下车站及步行入口尚未实测。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Estaci%C3%B3n+de+Autobuses+de+Granada&destination=Sercotel+Granada+Suites&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Granada 汽车站 → 陶宾公寓旧备选",
+            "text": "房源具体地址未确认，只知 Calle Navas / Plaza del Campillo 周边；先核实地址再判断 33 路下车站和拖箱步行。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Estaci%C3%B3n+de+Autobuses+de+Granada&destination=Plaza+del+Campillo+Granada&travelmode=transit&dir_action=navigate"
           },
           {
             "title": "中心 → Albaicín 观景台",
@@ -537,9 +598,14 @@
         "intro": "06:09 火车未出票。旅游局提到 4 路连接火车站和中心，但不能证明当日清晨反向首班赶得上。",
         "segments": [
           {
-            "title": "Gamboa / Granada Suites → Granada 火车站",
+            "title": "Gamboa → Granada 火车站",
             "text": "优先前一晚与酒店核实正规出租车上车点和可否提前安排；建议按车站要求倒推并预留进站、安检与两只箱子余量。若出租车无法确认，提前查步行路况和实时公交，不能保证 4 路首班可用。",
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Sercotel+Palacio+de+los+Gamboa+Granada&destination=Estaci%C3%B3n+de+tren+de+Granada&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Granada Suites → Granada 火车站",
+            "text": "06:09 火车的早班公交衔接未核实；建议前晚问酒店正规出租车上车点及安排方式，预留进站安检和两只箱子的时间。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Sercotel+Granada+Suites&destination=Estaci%C3%B3n+de+tren+de+Granada&travelmode=transit&dir_action=navigate"
           },
           {
             "title": "Sants → Mercure Condor",
@@ -550,6 +616,11 @@
             "title": "Sants → Occidental 1929 备选",
             "text": "位于 Espanya 一带，可先比较步行、L3 或出租车；酒店双床尚未保证。巡游路线及交通管制未公布，出行前再核对。",
             "map_url": "https://www.google.com/maps/dir/?api=1&origin=Barcelona+Sants&destination=Occidental+Barcelona+1929&travelmode=transit&dir_action=navigate"
+          },
+          {
+            "title": "Sants → Raval 房源旧备选",
+            "text": "返程夜 Raval 房源的具体地址未确认，不能确定最近地铁站或机场接驳；先核实实际入口、航站楼与假日线路。",
+            "map_url": "https://www.google.com/maps/dir/?api=1&origin=Barcelona+Sants&destination=El+Raval+Barcelona&travelmode=transit&dir_action=navigate"
           }
         ],
         "sources": [
@@ -593,6 +664,10 @@
           {
             "title": "出发时间",
             "text": "07:00 是原行程初步出门时间，不是已核实的班次或保证。确认酒店、航站楼和实时线路后倒推；两箱、节日、等待及行李值机都需留缓冲。"
+          },
+          {
+            "title": "若住 Raval 房源旧备选",
+            "text": "准确地址未确认，不能指定步行站点。以实际地址查去 Plaça Catalunya / Espanya 的机场方向 Aerobús，或查至 R2 Nord 的车站接驳；航站楼、节日运行和拖箱时间需先核实。"
           }
         ],
         "sources": [
